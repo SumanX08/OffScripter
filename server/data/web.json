@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "what-happens-when-you-enter-a-url",
+    "title": "What happens when you enter a URL in a browser?",
+    "category": "web",
+    "difficulty": "beginner",
+    "researchTime": 5,
+    "speakingTime": 2
+  },
+  {
+    "slug": "what-is-dns",
+    "title": "What is DNS and how does DNS resolution work?",
+    "category": "web",
+    "difficulty": "beginner",
+    "researchTime": 5,
+    "speakingTime": 2
+  },
+  {
+    "slug": "how-does-https-work",
+    "title": "How does HTTPS make communication secure?",
+    "category": "web",
+    "difficulty": "beginner",
+    "researchTime": 5,
+    "speakingTime": 2
+  },
+  {
+    "slug": "tls-handshake",
+    "title": "What happens during a TLS handshake?",
+    "category": "web",
+    "difficulty": "intermediate",
+    "researchTime": 7,
+    "speakingTime": 3
+  },
+  {
+    "slug": "rest-vs-graphql",
+    "title": "REST vs GraphQL: when would you choose each?",
+    "category": "web",
+    "difficulty": "intermediate",
+    "researchTime": 7,
+    "speakingTime": 3
+  }
+]

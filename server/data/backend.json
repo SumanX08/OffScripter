@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "express-middleware",
+    "title": "What is middleware in Express?",
+    "category": "backend",
+    "difficulty": "beginner",
+    "researchTime": 5,
+    "speakingTime": 2
+  },
+  {
+    "slug": "nodejs-event-loop",
+    "title": "How does the Node.js event loop work?",
+    "category": "backend",
+    "difficulty": "intermediate",
+    "researchTime": 7,
+    "speakingTime": 3
+  },
+  {
+    "slug": "websockets",
+    "title": "What is a WebSocket and when would you use one?",
+    "category": "backend",
+    "difficulty": "intermediate",
+    "researchTime": 5,
+    "speakingTime": 2
+  },
+  {
+    "slug": "api-10000-requests-per-second",
+    "title": "How would you design an API that handles 10,000 requests per second?",
+    "category": "backend",
+    "difficulty": "advanced",
+    "researchTime": 10,
+    "speakingTime": 5
+  },
+  {
+    "slug": "jwt-vs-sessions",
+    "title": "JWT vs session-based authentication: how do they differ?",
+    "category": "backend",
+    "difficulty": "intermediate",
+    "researchTime": 7,
+    "speakingTime": 3
+  }
+]

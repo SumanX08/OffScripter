@@ -3,6 +3,7 @@ import cors from 'cors'
 import { notFoundHandler } from './middleware/not-found.middleware.js'
 import { errorHandler } from './middleware/error.middleware.js'
 import topicRoutes from "./routes/topic.route.js";
+import attemptRoutes from "./routes/attempt.route.js";
 
 const app = express()
 
@@ -18,6 +19,7 @@ app.get("/api/health", (_req, res) => {
 });
 
 app.use('/api/topic',topicRoutes)
+app.use("/api/attempts", attemptRoutes);
 
 app.use(notFoundHandler);
 

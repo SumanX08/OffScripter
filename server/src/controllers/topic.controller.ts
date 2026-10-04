@@ -7,12 +7,15 @@ export const spin = async (
   req: Request,
   res: Response
 ) => {
-  const filters = spinTopicSchema.parse(req.body);
+  const filters = spinTopicSchema.parse(req.body ?? {});
 
-  const topic = await spinChallenge(filters);
+  const { attempt, topic } = await spinChallenge(filters);
 
-  res.status(200).json({
+  res.status(201).json({
     success: true,
-    data: topic,
+    data: {
+      attemptId: attempt.id,
+      topic,
+    },
   });
 };

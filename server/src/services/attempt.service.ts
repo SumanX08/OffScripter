@@ -1,9 +1,13 @@
 import { prisma } from "../config/prisma.js";
 
-export const completeAttempt = async (attemptId: string) => {
-  const attempt = await prisma.attempt.findUnique({
+export const completeAttempt = async (
+  attemptId: string,
+  userId: string
+) => {
+  const attempt = await prisma.attempt.findFirst({
     where: {
       id: attemptId,
+      userId,
     },
   });
 
@@ -17,7 +21,7 @@ export const completeAttempt = async (attemptId: string) => {
 
   return prisma.attempt.update({
     where: {
-      id: attemptId,
+      id: attempt.id,
     },
     data: {
       status: "COMPLETED",

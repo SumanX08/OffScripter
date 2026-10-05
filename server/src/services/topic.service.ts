@@ -5,7 +5,7 @@ import { spinTopicSchema } from "../validator/topic.validator.js";
 
 type SpinFilters = z.infer<typeof spinTopicSchema>;
 
-export const spinChallenge = async (filters: SpinFilters) => {
+export const spinChallenge = async (filters: SpinFilters,userId:string) => {
   const where = {
     ...(filters.category !== undefined && {
       category: filters.category,
@@ -38,6 +38,7 @@ export const spinChallenge = async (filters: SpinFilters) => {
   const attempt = await prisma.attempt.create({
     data: {
       topicId: topic.id,
+      userId
     },
   });
 

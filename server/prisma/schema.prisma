@@ -8,11 +8,13 @@ datasource db {
 }
 
 model User {
-  id           String   @id @default(cuid())
-  email        String   @unique
-  passwordHash String
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  id       String @id @default(cuid())
+  clerkId  String @unique
+  email    String @unique
+  username String @unique
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
   attempts Attempt[]
 }
@@ -39,14 +41,14 @@ enum AttemptStatus {
 
 model Attempt {
   id      String        @id @default(cuid())
-  userId  String?
+  userId  String
   topicId String
   status  AttemptStatus @default(IN_PROGRESS)
 
   startedAt DateTime  @default(now())
   endedAt   DateTime?
 
-  user  User? @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user  User  @relation(fields: [userId], references: [id], onDelete: Cascade)
   topic Topic @relation(fields: [topicId], references: [id], onDelete: Restrict)
 
   createdAt DateTime @default(now())

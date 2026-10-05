@@ -11,7 +11,12 @@ export const complete = async (
 ) => {
   const { attemptId } = req.params;
 
-  const attempt = await completeAttempt(attemptId);
+  const user = res.locals.user;
+
+  const attempt = await completeAttempt(
+    attemptId,
+    user.id
+  );
 
   res.status(200).json({
     success: true,

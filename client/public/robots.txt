@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+Disallow: /dashboard
+Disallow: /speaking
+Disallow: /history
+Disallow: /profile
+Disallow: /settings
+
+Sitemap: https://offscripter.in/sitemap.xml

@@ -4,39 +4,39 @@
     "title": "What is the Virtual DOM?",
     "category": "frontend",
     "difficulty": "beginner",
-    "researchTime": 5,
-    "speakingTime": 2
+    "researchTime": 600,
+    "speakingTime": 120
   },
   {
     "slug": "react-keys",
     "title": "Why does React need keys when rendering lists?",
     "category": "frontend",
     "difficulty": "beginner",
-    "researchTime": 5,
-    "speakingTime": 2
+    "researchTime": 600,
+    "speakingTime": 120
   },
   {
     "slug": "web-hydration",
     "title": "What is hydration in a web application?",
     "category": "frontend",
     "difficulty": "intermediate",
-    "researchTime": 7,
-    "speakingTime": 3
+    "researchTime": 600,
+    "speakingTime": 120
   },
   {
     "slug": "browser-rendering",
     "title": "How does browser rendering work?",
     "category": "frontend",
     "difficulty": "intermediate",
-    "researchTime": 7,
-    "speakingTime": 3
+   "researchTime": 600,
+    "speakingTime": 120
   },
   {
     "slug": "csr-vs-ssr",
     "title": "Client-side rendering vs server-side rendering",
     "category": "frontend",
     "difficulty": "intermediate",
-    "researchTime": 7,
-    "speakingTime": 3
+    "researchTime": 600,
+    "speakingTime": 120
   }
 ]

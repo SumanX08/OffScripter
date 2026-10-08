@@ -8,6 +8,7 @@ import { clerkMiddleware } from '@clerk/express'
 import { requireAuthentication } from "./middleware/auth.middleware.js";
 import userRoutes from "./routes/user.route.js";
 import { attachCurrentUser } from "./middleware/user.middleware.js";
+import evaluationRoutes from "./routes/evaluation.routes.js";
 
 
 const app = express()
@@ -25,10 +26,37 @@ app.get("/api/health", (_req, res) => {
   });
 });
 
+app.get("/api/health/db", async (_req, res) => {
+  try {
+    await prisma.$queryRaw`SELECT 1`;
+
+    res.status(200).json({
+      status: "ok",
+      database: "connected",
+    });
+  } catch (error) {
+    console.error(
+      "Database health check failed:",
+      error
+    );
+
+    res.status(500).json({
+      status: "error",
+      database: "unavailable",
+    });
+  }
+});
+
 app.use("/api/users",requireAuthentication,userRoutes);
 
 app.use('/api/topic',requireAuthentication,attachCurrentUser,topicRoutes)
 app.use("/api/attempts", requireAuthentication, attachCurrentUser,attemptRoutes);
+app.use(
+  "/api/evaluations",
+  requireAuthentication,
+  attachCurrentUser,
+  evaluationRoutes
+);
 
 app.use(notFoundHandler);
 

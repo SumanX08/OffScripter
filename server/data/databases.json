@@ -4,39 +4,39 @@
     "title": "Why do databases use indexes?",
     "category": "databases",
     "difficulty": "beginner",
-    "researchTime": 5,
-    "speakingTime": 2
+   "researchTime": 600,
+    "speakingTime": 120
   },
   {
     "slug": "database-normalization",
     "title": "What is database normalization?",
     "category": "databases",
     "difficulty": "beginner",
-    "researchTime": 5,
-    "speakingTime": 2
+    "researchTime": 600,
+    "speakingTime": 120
   },
   {
     "slug": "database-transactions",
     "title": "What is a database transaction?",
     "category": "databases",
     "difficulty": "intermediate",
-    "researchTime": 7,
-    "speakingTime": 3
+    "researchTime": 600,
+    "speakingTime": 120
   },
   {
     "slug": "sql-vs-nosql",
     "title": "SQL vs NoSQL: when would you choose each?",
     "category": "databases",
     "difficulty": "intermediate",
-    "researchTime": 7,
-    "speakingTime": 3
+    "researchTime": 600,
+    "speakingTime": 120
   },
   {
     "slug": "database-replication",
     "title": "How does database replication work?",
     "category": "databases",
     "difficulty": "intermediate",
-    "researchTime": 7,
-    "speakingTime": 3
+  "researchTime": 600,
+    "speakingTime": 120
   }
 ]

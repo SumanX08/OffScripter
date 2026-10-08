@@ -80,7 +80,7 @@ export default function HeroTopicReel() {
   const nextQuestion = getQuestion(activeIndex + 1);
 
   return (
-    <div className="mx-auto flex items-center w-full max-w-[620px]">
+    <div className="mx-auto flex flex-col items-center w-full max-w-[620px]">
 
       {/* Reel */}
       <div
@@ -199,13 +199,13 @@ export default function HeroTopicReel() {
         disabled={spinning}
         className={`
             text-center
-          mt-5 flex h-14 w-1/2
+          mt-5 flex h-12 w-2/5
           items-center justify-between
           rounded-[5px]
           border border-rust
           bg-rust
           px-6
-          text-[11px]
+          text-[12px]
           font-bold
           uppercase
           tracking-[0.12em]

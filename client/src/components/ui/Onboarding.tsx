@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ArrowRight, Loader2 } from "lucide-react";
+import type { SubmitEvent } from "react";
 
 import Button from "./Button";
 import Logo from "./Logo";

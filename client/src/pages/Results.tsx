@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import {
   ArrowRight,
   Check,
-  FileText,
+ 
   Lightbulb,
   RotateCcw,
   X,

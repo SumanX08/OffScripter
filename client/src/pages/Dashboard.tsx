@@ -17,20 +17,9 @@ type UserProfile = {
   username: string;
 };
 
-type Topic = {
-  id: string;
-  slug: string;
-  title: string;
-  category: string;
-  difficulty: string;
-  researchTime: number;
-  speakingTime: number;
-};
 
-type Attempt = {
-  id: string;
-  topic: Topic;
-};
+
+
 
 export default function Dashboard() {
   const { user } = useUser();
@@ -39,8 +28,8 @@ export default function Dashboard() {
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [profile, setProfile] = useState<UserProfile | null>(null);
-  const [spinning, setSpinning] = useState(false);
-  const [error, setError] = useState("");
+  const [spinning] = useState(false);
+  const [error] = useState("");
 
   useEffect(() => {
     const loadProfile = async () => {

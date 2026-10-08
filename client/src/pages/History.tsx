@@ -4,7 +4,7 @@ import {
   CalendarDays,
   ChevronLeft,
   ChevronRight,
-  Clock3,
+  
   History as HistoryIcon,
   Trophy,
 } from "lucide-react";

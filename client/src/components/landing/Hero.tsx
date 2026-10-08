@@ -2,7 +2,7 @@
 import { ArrowRight, Play } from "lucide-react";
 
 import Button from "../ui/Button";
-import HeroTopicReel from "./HeroTopicreel";
+import HeroTopicReel from "./HeroTopicReel";
 function AvatarStack() {
   const avatars = ["AS", "JM", "RK", "NP"];
 

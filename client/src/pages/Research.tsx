@@ -1,6 +1,6 @@
 import {
   useEffect,
-  useMemo,
+ 
   useState,
 } from "react";
 
@@ -361,29 +361,9 @@ export default function Research() {
     setError("");
   };
 
-  const researchDuration =
-    attempt?.topic.researchTime ?? 1;
+ 
 
-  const progress = useMemo(() => {
-    if (!attempt) {
-      return 0;
-    }
-
-    return Math.min(
-      100,
-      Math.max(
-        0,
-        ((researchDuration -
-          timeLeft) /
-          researchDuration) *
-          100,
-      ),
-    );
-  }, [
-    attempt,
-    researchDuration,
-    timeLeft,
-  ]);
+  
 
   /*
    * --------------------------------------------------

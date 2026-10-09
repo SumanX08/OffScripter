@@ -12,6 +12,7 @@ import History from "./pages/History";
 
 import Onboarding from "./components/ui/Onboarding";
 import { useAuthenticatedApi } from "./hooks/useAuthApi";
+import Progress from "./pages/Progress";
 
 type ProfileStatus = "checking" | "exists" | "missing";
 
@@ -193,7 +194,7 @@ function App() {
       <Route
         path="/progress"
         element={
-          <div className="min-h-screen bg-[#FCF9EC]" />
+          <Progress/>
         }
       />
 

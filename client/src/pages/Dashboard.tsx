@@ -1,25 +1,27 @@
 import { useEffect, useState } from "react";
-import {
-  ArrowRight,
-  BarChart3,
-  CheckCircle2,
-  Flame,
-  Menu,
-  Star,
-} from "lucide-react";
+import { ArrowRight, Menu } from "lucide-react";
 import { useUser } from "@clerk/clerk-react";
 import { useNavigate } from "react-router-dom";
 
 import Sidebar from "../components/ui/Sidebar";
 import Button from "../components/ui/Button";
+import DashboardStats from "../components/ui/DashboardStats";
+import ProgressSnapshot from "../components/ui/ProgressSnapshot";
+import RecentAttempt, {
+  type RecentAttemptData,
+} from "../components/ui/RecentAttempt";
 import { useAuthenticatedApi } from "../hooks/useAuthApi";
+
 type UserProfile = {
-  username: string;
+  username?: string;
 };
 
-
-
-
+type HistoryResponse = {
+  attempts: RecentAttemptData[];
+  pagination: {
+    total: number;
+  };
+};
 
 export default function Dashboard() {
   const { user } = useUser();
@@ -28,35 +30,76 @@ export default function Dashboard() {
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [profile, setProfile] = useState<UserProfile | null>(null);
-  const [spinning] = useState(false);
-  const [error] = useState("");
+  const [attempts, setAttempts] = useState<RecentAttemptData[]>([]);
+  const [challengesDone, setChallengesDone] = useState(0);
+  const [totalPoints, setTotalPoints] = useState(0);
+  const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState(false);
+  const [spinning, setSpinning] = useState(false);
 
   useEffect(() => {
-    const loadProfile = async () => {
+    let cancelled = false;
+
+    async function loadDashboard() {
+      setLoading(true);
+      setLoadError(false);
+
       try {
-        const response = await api.get("/users/me");
+        const [profileResponse, historyResponse] = await Promise.all([
+          api.get("/users/me"),
+          api.get("/attempts/history", {
+            params: { page: 1, limit: 10 },
+          }),
+        ]);
 
-        setProfile(response.data.data);
+        if (cancelled) return;
+
+        const history: HistoryResponse = historyResponse.data.data;
+        const completedAttempts = history.attempts ?? [];
+
+        setProfile(profileResponse.data.data);
+        setAttempts(completedAttempts);
+        setChallengesDone(history.pagination?.total ?? 0);
+
+        // Temporary MVP calculation: points from the latest 10 attempts.
+        // Replace with a lifetime aggregate API when we add reusable stats.
+        setTotalPoints(
+          completedAttempts.reduce(
+            (sum, attempt) =>
+              sum +
+              Math.round(attempt.evaluation?.overallScore ?? 0),
+            0
+          )
+        );
       } catch (error) {
-        console.error("Failed to load profile:", error);
+        if (!cancelled) {
+          console.error("Failed to load dashboard:", error);
+          setLoadError(true);
+        }
+      } finally {
+        if (!cancelled) setLoading(false);
       }
-    };
+    }
 
-    loadProfile();
+    loadDashboard();
+
+    return () => {
+      cancelled = true;
+    };
   }, [api]);
 
-  const handleSpin = async () => {
-    
-
-      navigate(`/challenge`);
-    
-  };
-
+  const latestAttempt = attempts[0] ?? null;
   const displayName =
     profile?.username ||
     user?.firstName ||
     user?.username ||
     "there";
+
+  const handleSpin = () => {
+    if (spinning) return;
+    setSpinning(true);
+    navigate("/challenge");
+  };
 
   return (
     <div className="flex min-h-screen bg-[#FCF9EC] text-forest">
@@ -66,7 +109,6 @@ export default function Dashboard() {
       />
 
       <main className="min-w-0 flex-1">
-        {/* Mobile header */}
         <div className="flex items-center border-b border-forest/10 px-5 py-4 lg:hidden">
           <button
             type="button"
@@ -77,183 +119,89 @@ export default function Dashboard() {
             <Menu size={20} />
           </button>
 
-          <div className="ml-4">
-            <span className="font-serif text-xl font-bold">
-              OffScripter
-            </span>
-          </div>
+          <span className="ml-4 font-serif text-xl font-bold">
+            OffScripter
+          </span>
         </div>
 
-        <div className="mx-auto max-w-295 px-5 py-10 md:px-8 lg:px-12 lg:py-14">
-          {/* Header */}
+        <div className="mx-auto max-w-[1180px] px-5 py-10 md:px-8 lg:px-12 lg:py-14">
           <header className="mb-6">
-
-            <h1 className="font-serif text-4xl tracking-tight text-forest ">
+            <h1 className="font-serif text-4xl tracking-tight text-forest">
               Good evening, {displayName}.
             </h1>
+            <p className="mt-2 text-sm text-forest/55">
+              Keep showing up. Every explanation makes you better.
+            </p>
           </header>
 
-          {/* Stats */}
-          <section
-            aria-label="Your statistics"
-            className="mb-8 grid gap-4 md:grid-cols-3"
-          >
-            <StatCard
-              icon={<Star size={19} />}
-              value="0"
-              label="Total Points"
-            />
-
-            <StatCard
-              icon={<Flame size={19} />}
-              value="0"
-              label="Day Streak"
-            />
-
-            <StatCard
-              icon={<CheckCircle2 size={19} />}
-              value="0"
-              label="Challenges Done"
-            />
-          </section>
-
-          {/* Challenge */}
-          <section className="mb-8 overflow-hidden rounded-2xl bg-forest">
-            <div className="p-7  flex justify-between">
-              <div>
-                 <p className="mb-5 text-xs font- uppercase tracking-[0.18em] text-cream">
-                Today's challenge
+          {loadError && (
+            <div
+              role="alert"
+              className="mb-6 flex flex-wrap items-center justify-between gap-3 border border-rust/30 bg-[#FBEEDC] p-4"
+            >
+              <p className="text-sm text-forest">
+                We couldn't load your latest statistics.
               </p>
+              <button
+                type="button"
+                onClick={() => window.location.reload()}
+                className="text-sm font-bold text-forest underline"
+              >
+                Try again
+              </button>
+            </div>
+          )}
 
-              <h2 className="max-w-3xl font-serif text-3xl font-bold leading-[1.08] text-cream md:text-4xl ">
-                Spin for a topic
-              </h2>
-              </div>
-             
+          <DashboardStats
+            totalPoints={totalPoints}
+            dayStreak={null}
+            challengesDone={challengesDone}
+            loading={loading}
+          />
 
-             
-
-              <div className="mt-8">
-                <Button
-                  onClick={handleSpin}
-                  disabled={spinning}
-                  className="bg-rust text-white hover:bg-rust/90"
-                >
-                  {spinning ? "Finding a topic..." : "Spin for a Topic"}
-
-                  {!spinning && <ArrowRight size={17} />}
-                </Button>
-              </div>
-
-              {error && (
-                <p className="mt-4 text-sm text-red-300">
-                  {error}
+          <section className="mb-8 overflow-hidden rounded-2xl border border-forest bg-forest shadow-[5px_5px_0_var(--color-amber)]">
+            <div className="flex min-h-40 items-center justify-between gap-6 px-7 py-7">
+              <div>
+                <p className="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-cream/70">
+                  Today's challenge
                 </p>
-              )}
+                <h2 className="max-w-3xl font-serif text-3xl font-bold leading-tight text-cream md:text-4xl">
+                  Spin for a topic
+                </h2>
+                <p className="mt-4 max-w-md text-sm leading-6 text-cream/60">
+                  Let chance choose your next technical challenge.
+                </p>
+              </div>
+
+              <Button
+                onClick={handleSpin}
+                disabled={spinning}
+                className="shrink-0 bg-rust text-white hover:bg-rust/90"
+              >
+                Spin for a Topic
+                <ArrowRight size={17} />
+              </Button>
             </div>
           </section>
 
-          {/* Bottom cards */}
-          <section className="grid gap-5 lg:grid-cols-2">
-            <ProgressCard />
+          <section className="grid items-stretch gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.85fr)]">
+            <ProgressSnapshot
+              evaluation={latestAttempt?.evaluation ?? null}
+              loading={loading}
+              onViewProgress={() => navigate("/progress")}
+            />
 
-            <RecentChallenges />
+            <RecentAttempt
+              attempt={latestAttempt}
+              loading={loading}
+              onViewResults={(id) =>
+                navigate(`/challenge/${id}/results`)
+              }
+              onViewAll={() => navigate("/history")}
+            />
           </section>
         </div>
       </main>
-    </div>
-  );
-}
-
-function StatCard({
-  icon,
-  value,
-  label,
-  change,
-}: {
-  icon: React.ReactNode;
-  value: string;
-  label: string;
-  change?: string;
-}) {
-  return (
-    <div className="border border-forest/10 bg-cream p-6">
-      <div className="flex items-center gap-5">
-        {/* Icon */}
-        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-sage/50 text-forest">
-          {icon}
-        </div>
-
-        {/* Content */}
-        <div className="min-w-0">
-          <p className="font-sans text-sm font-semibold text-forest/60">
-            {label}
-          </p>
-
-          <div className="mt-1 flex items-baseline gap-3">
-            <p className="font-serif text-4xl font-bold leading-none text-forest">
-              {value}
-            </p>
-
-            {change && (
-              <span className="font-sans text-xs font-semibold text-olive">
-                {change}
-              </span>
-            )}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function ProgressCard() {
-  return (
-    <div className="rounded-2xl border border-forest/10 bg-[#FFFDF4] p-7">
-      <div className="mb-8 flex items-center justify-between">
-        <h2 className="font-serif text-2xl font-bold">
-          Your progress
-        </h2>
-
-        <button className="text-sm font-semibold text-rust">
-          Details →
-        </button>
-      </div>
-
-      <div className="flex items-center gap-5">
-        <div className="grid size-16 place-items-center rounded-full bg-[#E4EBCD]">
-          <BarChart3 size={25} />
-        </div>
-
-        <div>
-          <p className="text-2xl font-bold">0%</p>
-          <p className="text-sm text-forest/50">
-            Complete your first challenge
-          </p>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function RecentChallenges() {
-  return (
-    <div className="rounded-2xl border border-forest/10 bg-[#FFFDF4] p-7">
-      <div className="mb-8 flex items-center justify-between">
-        <h2 className="font-serif text-2xl font-bold">
-          Recent
-        </h2>
-
-        <button className="text-sm font-semibold text-rust">
-          All →
-        </button>
-      </div>
-
-      <div className="flex min-h-30 items-center justify-center">
-        <p className="text-sm text-forest/40">
-          No challenges yet. Start your first one.
-        </p>
-      </div>
     </div>
   );
 }

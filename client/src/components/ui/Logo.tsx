@@ -1,21 +1,33 @@
-export default function Logo({ inverted = false }) {
+import logo from "../../assets/logo2.png";
+
+interface LogoProps {
+  inverted?: boolean;
+  showText?: boolean;
+}
+
+export default function Logo({
+  inverted = false,
+  showText = true,
+}: LogoProps) {
   return (
     <a
       href="#top"
       aria-label="OffScripter home"
-      className={`group inline-flex items-center gap-3 font-semibold tracking-tight ${
+      className={`group inline-flex items-center gap-2 ${
         inverted ? "text-cream" : "text-forest"
       }`}
     >
-      <span
-        className={`grid size-9 place-items-center border-2 ${
-          inverted ? "border-cream" : "border-forest"
-        } transition-transform group-hover:-rotate-6`}
-      >
-        <span className="font-serif text-xl italic leading-none">O</span>
-      </span>
+      <img
+        src={logo}
+        alt=""
+        className="h-7 w-7 shrink-0 object-contain transition-transform duration-200 group-hover:scale-105"
+      />
 
-      <span className="text-lg">OffScripter</span>
+      {showText && (
+        <span className="text-xl font-extrabold tracking-tight">
+          OffScripter
+        </span>
+      )}
     </a>
   );
 }

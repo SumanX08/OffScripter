@@ -116,12 +116,12 @@ export default function Sidebar({ open, onClose }: SidebarProps) {
                           text-cream
                           shadow-sm
                           before:absolute
-                          before:left-0
+                          before:-left-1
                           before:top-0
                           before:h-full
-                          before:w-1.5
-                          before:rounded-r-full
-                          before:bg-rust
+                          before:w-2
+                          before:rounded-l-full
+                          before:bg-amber
                         `
                         : `
                           text-forest/70

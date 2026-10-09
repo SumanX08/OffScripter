@@ -21,7 +21,7 @@ import { useNavigate } from "react-router-dom";
 
 import Sidebar from "../components/ui/Sidebar";
 import { useAuthenticatedApi } from "../hooks/useAuthApi";
-import type { Evaluation } from "../components/dashboard/ProgressSnapshot";
+import type { Evaluation } from "../components/ui/ProgressSnapshot";
 
 type Attempt = {
   id: string;
@@ -415,7 +415,7 @@ export default function Progress() {
                   const safeScore = Math.max(0, Math.min(100, score));
 
                   return (
-                    <div key={key}>
+                    <div >
                       <div className="mb-2 flex items-center justify-between gap-3">
                         <span className="text-sm font-semibold">
                           {label}

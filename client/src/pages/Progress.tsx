@@ -181,7 +181,7 @@ export default function Progress() {
           </span>
         </div>
 
-        <div className="mx-auto max-w-[1180px] px-5 py-10 md:px-8 lg:px-12 lg:py-14">
+        <div className="mx-auto max-w-295 px-5 py-10 md:px-8 lg:px-12 lg:py-14">
           <header className="mb-9">
             <p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-olive">
               Your growth
@@ -276,13 +276,13 @@ export default function Progress() {
                 </p>
               </div>
 
-              <span className="border border-forest/10 bg-[#E9EDC9] px-3 py-2 text-xs font-bold text-olive">
+              <span className="border border-forest/10 bg-mist px-3 py-2 text-xs font-bold text-olive">
                 Last 10 attempts
               </span>
             </div>
 
             {loading ? (
-              <div className="grid h-[280px] place-items-center text-sm text-forest/50">
+              <div className="grid h-70 place-items-center text-sm text-forest/50">
                 Loading your rating history...
               </div>
             ) : chartData.length === 0 ? (
@@ -290,7 +290,7 @@ export default function Progress() {
                 onStart={() => navigate("/challenge")}
               />
             ) : (
-              <div className="h-[280px] w-full md:h-[340px]">
+              <div className="h-70 w-full md:h-85">
                 <ResponsiveContainer width="100%" height="100%">
                   <LineChart
                     data={chartData}
@@ -429,7 +429,7 @@ export default function Progress() {
                       </div>
 
                       <div
-                        className="h-2 overflow-hidden rounded-full bg-[#E9EDC9]"
+                        className="h-2 overflow-hidden rounded-full bg-mist"
                         role="progressbar"
                         aria-label={label}
                         aria-valuemin={0}
@@ -517,7 +517,7 @@ function ScoreTooltip({
   const point = payload[0].payload;
 
   return (
-    <div className="max-w-[240px] border border-forest/15 bg-[#FEFAE0] p-4 shadow-lg">
+    <div className="max-w-60 border border-forest/15 bg-mist p-4 shadow-lg">
       <p className="text-xs text-forest/55">{point.date}</p>
       <p className="mt-1 font-semibold text-forest">{point.topic}</p>
       <p className="mt-2 font-serif text-2xl font-bold text-olive">
@@ -530,7 +530,7 @@ function ScoreTooltip({
 
 function EmptyState({ onStart }: { onStart: () => void }) {
   return (
-    <div className="flex min-h-[260px] flex-col items-center justify-center text-center">
+    <div className="flex min-h-65 flex-col items-center justify-center text-center">
       <div className="mb-4 grid size-14 place-items-center rounded-full bg-sage/40 text-forest">
         <BarChart3 size={25} />
       </div>

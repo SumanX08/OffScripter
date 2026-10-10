@@ -9,6 +9,7 @@ import { requireAuthentication } from "./middleware/auth.middleware.js";
 import userRoutes from "./routes/user.route.js";
 import { attachCurrentUser } from "./middleware/user.middleware.js";
 import evaluationRoutes from "./routes/evaluation.routes.js";
+import { prisma } from "./config/prisma.js";
 
 
 const app = express()

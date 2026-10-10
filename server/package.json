@@ -23,6 +23,7 @@
     "express": "^5.2.1",
     "multer": "^2.4.0",
     "openai": "^7.28.0",
+    "razorpay": "^2.9.8",
     "zod": "^4.6.5"
   },
   "devDependencies": {

@@ -9,19 +9,19 @@ datasource db {
 
 model User {
   id        String   @id @default(cuid())
-  email     String   @unique
   clerkId   String   @unique
+  email     String   @unique
   username  String   @unique
-
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  attempts Attempt[]
+  attempts      Attempt[]
+  subscriptions Subscription[]
 }
 
 model Topic {
-  id           String   @id @default(cuid())
-  slug         String   @unique
+  id           String @id @default(cuid())
+  slug         String @unique
   title        String
   category     String
   difficulty   String
@@ -101,4 +101,29 @@ enum AttemptStage {
   RESEARCHING
   SPEAKING
   SUBMITTED
+}
+
+model Subscription {
+  id                     String    @id @default(cuid())
+  userId                 String
+  razorpaySubscriptionId String    @unique
+  razorpayPlanId         String
+  status                 String    @default("created")
+  currentPeriodStart     DateTime?
+  currentPeriodEnd       DateTime?
+  cancelAtCycleEnd       Boolean   @default(false)
+  createdAt              DateTime  @default(now())
+  updatedAt              DateTime  @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, status])
+  @@index([currentPeriodEnd])
+}
+
+model ProcessedWebhook {
+  id          String   @id @default(cuid())
+  eventId     String   @unique
+  eventType   String
+  processedAt DateTime @default(now())
 }

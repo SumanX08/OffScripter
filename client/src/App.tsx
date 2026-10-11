@@ -9,10 +9,13 @@ import Research from "./pages/Research";
 import Speaking from "./pages/Speaking";
 import Results from "./pages/Results";
 import History from "./pages/History";
+import Upgrade from "./pages/Upgrade";
+
 
 import Onboarding from "./components/ui/Onboarding";
 import { useAuthenticatedApi } from "./hooks/useAuthApi";
 import Progress from "./pages/Progress";
+import Settings from "./pages/Settings";
 
 type ProfileStatus = "checking" | "exists" | "missing";
 
@@ -191,6 +194,8 @@ function App() {
         }
       />
 
+      <Route path="/upgrade" element={<Upgrade />} />
+
       <Route
         path="/progress"
         element={
@@ -201,7 +206,7 @@ function App() {
       <Route
         path="/settings"
         element={
-          <div className="min-h-screen bg-[#FCF9EC]" />
+          <Settings/>
         }
       />
 

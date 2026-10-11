@@ -9,6 +9,8 @@ import { requireAuthentication } from "./middleware/auth.middleware.js";
 import userRoutes from "./routes/user.route.js";
 import { attachCurrentUser } from "./middleware/user.middleware.js";
 import evaluationRoutes from "./routes/evaluation.routes.js";
+import {razorpayWebhook,} from "./controllers/payment.controller.js";
+import paymentRoutes from "./routes/payment.route.js";
 import { prisma } from "./config/prisma.js";
 
 
@@ -52,13 +54,15 @@ app.use("/api/users",requireAuthentication,userRoutes);
 
 app.use('/api/topic',requireAuthentication,attachCurrentUser,topicRoutes)
 app.use("/api/attempts", requireAuthentication, attachCurrentUser,attemptRoutes);
+app.use("/api/evaluations",requireAuthentication,attachCurrentUser,evaluationRoutes);
+app.use("/api/payments/webhook",express.raw({ type: "application/json" }),razorpayWebhook);
 app.use(
-  "/api/evaluations",
+  "/api/payments",
   requireAuthentication,
   attachCurrentUser,
-  evaluationRoutes
+  paymentRoutes
 );
-
+app.use(express.json());
 app.use(notFoundHandler);
 
 // Global error handler

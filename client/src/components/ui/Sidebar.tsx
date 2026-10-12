@@ -13,7 +13,7 @@ import {
   LogOut,
   ChevronRight,
 } from "lucide-react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { UserButton, useClerk, useUser } from "@clerk/clerk-react";
 
 import Logo from "./Logo";
@@ -33,7 +33,6 @@ const navigation = [
 
 export default function Sidebar({ open, onClose }: SidebarProps) {
   const location = useLocation();
-  const navigate = useNavigate();
   const { signOut } = useClerk();
   const { user } = useUser();
 

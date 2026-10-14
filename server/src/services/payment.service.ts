@@ -72,6 +72,7 @@ export async function createSubscription(userId: string) {
   };
 }
 
+
 export async function verifyCheckout(
   userId: string,
   subscriptionId: string,
@@ -94,6 +95,10 @@ export async function verifyCheckout(
     .update(`${paymentId}|${subscriptionId}`)
     .digest("hex");
 
+  if (!/^[a-fA-F0-9]{64}$/.test(signature)) {
+    throw new Error("INVALID_PAYMENT_SIGNATURE");
+  }
+
   const suppliedBuffer = Buffer.from(signature, "hex");
   const expectedBuffer = Buffer.from(expected, "hex");
 
@@ -104,20 +109,47 @@ export async function verifyCheckout(
     throw new Error("INVALID_PAYMENT_SIGNATURE");
   }
 
-  // Signature verification proves the Checkout response is authentic.
-  // The webhook is responsible for confirming the subscription's actual
-  // lifecycle status before Pro access is granted.
   const providerSubscription = await razorpay.subscriptions.fetch(
     subscriptionId
   );
+
+  console.log("RAZORPAY SUBSCRIPTION:", {
+  id: providerSubscription.id,
+  status: providerSubscription.status,
+  current_start: providerSubscription.current_start,
+  current_end: providerSubscription.current_end,
+  plan_id: providerSubscription.plan_id,
+});
 
   if (providerSubscription.plan_id !== subscription.razorpayPlanId) {
     throw new Error("SUBSCRIPTION_PLAN_MISMATCH");
   }
 
+  const currentPeriodStart =
+    providerSubscription.current_start
+      ? new Date(Number(providerSubscription.current_start) * 1000)
+      : null;
+
+  const currentPeriodEnd =
+    providerSubscription.current_end
+      ? new Date(Number(providerSubscription.current_end) * 1000)
+      : null;
+
   await prisma.subscription.update({
     where: { id: subscription.id },
-    data: { status: providerSubscription.status },
+    data: {
+      status: providerSubscription.status,
+      currentPeriodStart:
+        currentPeriodStart &&
+        !Number.isNaN(currentPeriodStart.getTime())
+          ? currentPeriodStart
+          : undefined,
+      currentPeriodEnd:
+        currentPeriodEnd &&
+        !Number.isNaN(currentPeriodEnd.getTime())
+          ? currentPeriodEnd
+          : undefined,
+    },
   });
 
   return {
@@ -126,26 +158,42 @@ export async function verifyCheckout(
   };
 }
 
+
+
 export async function getSubscriptionStatus(userId: string) {
+  const now = new Date();
+
   const subscription = await prisma.subscription.findFirst({
+   where: {
+  userId,
+  status: "active",
+  currentPeriodEnd: {
+    gt: now,
+  },
+},
+    orderBy: { createdAt: "desc" },
+  });
+
+  if (subscription) {
+    return {
+      isPro: true,
+      status: subscription.status,
+      currentPeriodStart: subscription.currentPeriodStart,
+      currentPeriodEnd: subscription.currentPeriodEnd,
+      cancelAtCycleEnd: subscription.cancelAtCycleEnd,
+    };
+  }
+
+  const latestSubscription = await prisma.subscription.findFirst({
     where: { userId },
     orderBy: { createdAt: "desc" },
   });
 
-  const isPro =
-    subscription?.status === "active" &&
-    (!subscription.currentPeriodEnd ||
-      subscription.currentPeriodEnd > new Date());
-
   return {
-    isPro,
-    subscription: subscription
-      ? {
-          status: subscription.status,
-          currentPeriodStart: subscription.currentPeriodStart,
-          currentPeriodEnd: subscription.currentPeriodEnd,
-          cancelAtCycleEnd: subscription.cancelAtCycleEnd,
-        }
-      : null,
+    isPro: false,
+    status: latestSubscription?.status ?? null,
+    currentPeriodStart: latestSubscription?.currentPeriodStart ?? null,
+    currentPeriodEnd: latestSubscription?.currentPeriodEnd ?? null,
+    cancelAtCycleEnd: latestSubscription?.cancelAtCycleEnd ?? false,
   };
 }

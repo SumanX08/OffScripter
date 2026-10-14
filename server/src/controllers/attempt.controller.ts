@@ -177,7 +177,7 @@ export const submitAudio = async (
 
     console.log("TRANSCRIPT SAVED");
 
-    // 3. Evaluate transcript with AI
+    // 3. Evaluate transcript 
     const evaluation = await evaluateAttempt(
       attemptId,
       user.id

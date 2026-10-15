@@ -38,7 +38,7 @@ export default function Hero() {
   return (
     <main id="top" className="overflow-hidden">
       <section
-        className="mx-auto grid min-h-[calc(100vh-5rem)] w-[calc(100%-2.5rem)] max-w-7xl items-center gap-14 py-8 md:w-[calc(100%-4rem)] lg:grid-cols-[0.9fr_1.1fr]"
+        className="mx-auto grid min-h-[calc(100vh-5rem)] w-[calc(100%-2.5rem)] max-w-7xl items-center gap-14 py-4 md:w-[calc(100%-4rem)] lg:grid-cols-[0.9fr_1.1fr]"
         aria-labelledby="hero-heading"
       >
         {/* Hero content */}
@@ -52,7 +52,7 @@ export default function Hero() {
             className="mt-4 max-w-180 font-serif text-[clamp(2.5rem,7vw,5rem)] leading-[0.89] tracking-[-0.045em]"
           >
             Stop reading.
-            <span className="block italic text-rust">
+            <span className="block italic text-rust mt-6">
               Start explaining.
             </span>
           </h1>

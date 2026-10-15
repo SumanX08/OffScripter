@@ -52,7 +52,7 @@ export default function Pricing() {
       aria-labelledby="pricing-heading"
       className="border-t border-forest/10 bg-cream px-6 py-18 md:px-10 lg:px-16"
     >
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-7xl">
         {/* Header */}
         <div className="mx-auto max-w-3xl text-center">
 

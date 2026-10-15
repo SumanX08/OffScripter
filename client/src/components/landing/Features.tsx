@@ -41,7 +41,7 @@ export default function Features() {
       aria-labelledby="features-heading"
       className="bg-cream px-6 py-24 md:px-10 lg:px-16"
     >
-      <div className="mx-auto grid max-w-6xl gap-16 lg:grid-cols-2 lg:items-center lg:gap-24">
+      <div className="mx-auto grid max-w-7xl gap-16 lg:grid-cols-2 lg:items-center lg:gap-24">
         {/* Left Content */}
         <div>
           {/* Eyebrow */}

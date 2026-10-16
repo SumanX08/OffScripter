@@ -44,7 +44,7 @@ export default function HowItWorks() {
       aria-labelledby="how-it-works-heading"
       className="bg-cream px-6 py-20 md:px-10 lg:px-16"
     >
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-7xl">
         {/* Header */}
         <div className="mb-16 grid items-end gap-10 md:grid-cols-2">
           {/* Left */}

@@ -1,351 +1,362 @@
 
-import { useCallback, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { useUser } from "@clerk/clerk-react";
 import {
   ArrowLeft,
   ArrowRight,
+  AudioLines,
+  BarChart3,
   Check,
-  CheckCircle2,
-  Crown,
   LoaderCircle,
   ShieldCheck,
   Sparkles,
+  Target,
 } from "lucide-react";
 import { useAuthenticatedApi } from "../hooks/useAuthApi";
+import { useSubscription } from "../hooks/useSubscription";
 
-type SubscriptionStatus = {
-  isPro: boolean;
-  status?: string | null;
-  currentPeriodEnd?: string | null;
-  cancelAtCycleEnd?: boolean;
-};
+interface SubscribeResponse {
+  success: boolean;
+  data: {
+    subscriptionId: string;
+    keyId: string;
+  };
+}
+
+interface VerifyResponse {
+  success: boolean;
+  data: {
+    verified: boolean;
+    status: string;
+  };
+}
 
 const features = [
-  "Detailed AI feedback",
-  "More daily topics",
-  "Advanced speaking analytics",
-  "Pronunciation analysis",
+  {
+    icon: Sparkles,
+    title: "Detailed AI feedback",
+    description:
+      "Understand your strengths, mistakes, missing concepts, and how to improve.",
+  },
+  {
+    icon: Target,
+    title: "More daily topics",
+    description:
+      "Practice more technical topics and build a consistent speaking habit.",
+  },
+  {
+    icon: BarChart3,
+    title: "Advanced speaking analytics",
+    description:
+      "Track your progress and identify areas that need more practice.",
+  },
+  {
+    icon: AudioLines,
+    title: "Pronunciation analysis",
+    description:
+      "Get additional insights into how clearly you communicate.",
+  },
 ];
 
 export default function Upgrade() {
   const api = useAuthenticatedApi();
+  const navigate = useNavigate();
+  const { user } = useUser();
+  const { subscription, loading, refresh } = useSubscription();
 
-  const [loading, setLoading] = useState(false);
-  const [checkingStatus, setCheckingStatus] = useState(true);
-  const [message, setMessage] = useState("");
-  const [subscription, setSubscription] =
-    useState<SubscriptionStatus | null>(null);
-  const [statusError, setStatusError] = useState(false);
+  const [checkoutLoading, setCheckoutLoading] = useState(false);
+  const [message, setMessage] = useState<string | null>(null);
+  const [successMessage, setSuccessMessage] = useState<string | null>(null);
 
-  const refreshStatus = useCallback(async () => {
-    setCheckingStatus(true);
-    setStatusError(false);
+  const isPro = subscription?.isPro === true;
 
-    try {
-      const response = await api.get("/payments/status");
-      setSubscription(response.data.data);
-    } catch {
-      setStatusError(true);
-    } finally {
-      setCheckingStatus(false);
-    }
-  }, [api]);
+  async function handleUpgrade() {
+    if (checkoutLoading) return;
 
-  useEffect(() => {
-    void refreshStatus();
-  }, [refreshStatus]);
-
-  const periodEnd = subscription?.currentPeriodEnd
-    ? new Date(subscription.currentPeriodEnd).toLocaleDateString("en-IN", {
-        day: "numeric",
-        month: "long",
-        year: "numeric",
-      })
-    : null;
-
-  async function handleSubscribe() {
-    if (!window.Razorpay) {
-      setMessage("Checkout could not load. Refresh and try again.");
-      return;
-    }
-
-    setLoading(true);
-    setMessage("");
+    setMessage(null);
+    setSuccessMessage(null);
+    setCheckoutLoading(true);
 
     try {
-      const response = await api.post("/payments/subscribe");
-      const { subscriptionId, keyId } = response.data.data;
+      if (!window.Razorpay) {
+        throw new Error(
+          "Razorpay Checkout could not be loaded. Refresh the page and try again."
+        );
+      }
+
+      // Ask the authenticated backend to create or reuse a subscription.
+      const subscribeResponse =
+        await api.post<SubscribeResponse>("/payments/subscribe");
+
+      const { subscriptionId, keyId } = subscribeResponse.data.data;
+
+      if (!subscriptionId || !keyId) {
+        throw new Error("The server returned invalid subscription details.");
+      }
 
       const checkout = new window.Razorpay({
         key: keyId,
         subscription_id: subscriptionId,
         name: "OffScripter",
-        description: "OffScripter Pro — monthly subscription",
-        theme: { color: "#283618" },
-
-        handler: async (checkoutResponse) => {
+        description: "OffScripter Pro — Monthly Subscription",
+        prefill: {
+          name: user?.fullName ?? user?.username ?? "",
+          email: user?.primaryEmailAddress?.emailAddress ?? "",
+        },
+        notes: {
+          product: "OffScripter Pro",
+        },
+        theme: {
+          color: "#283618",
+        },
+        modal: {
+          ondismiss: () => {
+            setCheckoutLoading(false);
+          },
+        },
+        handler: async (paymentResponse) => {
           try {
-            await api.post("/payments/verify", {
+            setMessage(null);
+
+            // The backend verifies the Razorpay signature.
+            await api.post<VerifyResponse>("/payments/verify", {
               subscriptionId:
-                checkoutResponse.razorpay_subscription_id,
-              paymentId: checkoutResponse.razorpay_payment_id,
-              signature: checkoutResponse.razorpay_signature,
+                paymentResponse.razorpay_subscription_id,
+              paymentId: paymentResponse.razorpay_payment_id,
+              signature: paymentResponse.razorpay_signature,
             });
 
-            await refreshStatus();
+            // The webhook/provider status remains authoritative for Pro access.
+            await refresh();
 
-            // A checkout callback alone does not prove Pro access.
-            // The backend status endpoint is the source of truth.
-            const statusResponse = await api.get("/payments/status");
-            const currentStatus = statusResponse.data.data as SubscriptionStatus;
-
-            setSubscription(currentStatus);
-
-            if (currentStatus.isPro) {
-              window.location.assign("/dashboard");
-            } else {
-              setMessage(
-                "Checkout was submitted. Your subscription is not active yet. Please wait a moment and check your status before trying again."
-              );
-            }
+            setSuccessMessage(
+              "Payment response verified. Your Pro status is being refreshed."
+            );
           } catch {
             setMessage(
-              "We couldn't confirm your subscription yet. Please refresh your status before trying again."
+              "Checkout completed, but verification could not be confirmed. Please check your subscription status before trying again."
             );
           } finally {
-            setLoading(false);
+            setCheckoutLoading(false);
           }
-        },
-
-        modal: {
-          ondismiss: () => setLoading(false),
         },
       });
 
+      checkout.on("payment.failed", (response) => {
+        setMessage(
+          response.error?.description ??
+            "Payment failed. Please try again."
+        );
+        setCheckoutLoading(false);
+      });
+
       checkout.open();
-    } catch (error) {
-      console.error("Unable to start subscription:", error);
-      setMessage("Unable to start checkout. Please try again.");
-      setLoading(false);
+    } catch (error: unknown) {
+      const errorMessage =
+        typeof error === "object" &&
+        error !== null &&
+        "response" in error
+          ? (
+              error as {
+                response?: {
+                  data?: {
+                    error?: { message?: string };
+                  };
+                };
+              }
+            ).response?.data?.error?.message
+          : error instanceof Error
+            ? error.message
+            : null;
+
+      setMessage(errorMessage ?? "Unable to start checkout. Please try again.");
+      setCheckoutLoading(false);
     }
   }
 
   return (
-    <main className="min-h-full bg-cream px-4 py-8 text-forest sm:px-7 lg:px-10 lg:py-12">
-      <div className="mx-auto max-w-5xl">
+    <main className="min-h-screen bg-cream px-4 py-8 text-forest sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-6xl">
         <Link
           to="/dashboard"
-          className="mb-8 inline-flex items-center gap-2 text-sm text-forest/60 transition hover:text-forest"
+          className="mb-8 inline-flex items-center gap-2 text-sm font-semibold text-olive transition hover:text-forest"
         >
-          <ArrowLeft size={17} />
+          <ArrowLeft size={16} />
           Back to dashboard
         </Link>
 
-        <header className="mb-9 text-center">
-          <div className="mx-auto mb-4 grid size-14 place-items-center rounded-2xl bg-mist">
-            <Sparkles size={26} />
+        <header className="mx-auto mb-12 max-w-2xl text-center">
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-sage bg-soft px-4 py-2 text-sm font-bold text-forest">
+            <Sparkles size={16} />
+            OffScripter Pro
           </div>
 
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-olive">
-            Invest in your communication
-          </p>
-
-          <h1 className="mt-3 font-serif text-4xl font-bold sm:text-5xl">
-            Find your voice.
-            <br />
-            <span className="text-olive">Own the conversation.</span>
+          <h1 className="font-serif text-4xl leading-tight sm:text-5xl">
+            Turn practice into
+            <span className="block text-rust">real progress.</span>
           </h1>
 
-          <p className="mx-auto mt-4 max-w-xl text-sm leading-6 text-forest/60 sm:text-base">
-            Go beyond basic practice with detailed insights into how you
-            research, think, and explain technical concepts.
+          <p className="mx-auto mt-5 max-w-xl text-base leading-7 text-olive sm:text-lg">
+            Go beyond speaking practice with detailed feedback and deeper
+            insights into your technical communication.
           </p>
         </header>
 
-        {checkingStatus ? (
-          <div className="mx-auto flex max-w-xl items-center justify-center gap-3 rounded-2xl border border-forest/10 bg-[#FFFDF5] p-10 text-sm text-forest/60">
-            <LoaderCircle size={20} className="animate-spin" />
-            Checking your subscription...
+        {message && (
+          <div
+            role="alert"
+            className="mx-auto mb-5 max-w-3xl rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-800"
+          >
+            {message}
           </div>
-        ) : statusError ? (
-          <div className="mx-auto max-w-xl rounded-2xl border border-rust/20 bg-[#FFFDF5] p-7 text-center">
-            <p className="font-semibold">Couldn't verify your plan</p>
-            <p className="mt-2 text-sm leading-6 text-forest/60">
-              For your protection, checkout is disabled until your current
-              subscription status can be confirmed.
+        )}
+
+        {successMessage && (
+          <div
+            role="status"
+            className="mx-auto mb-5 max-w-3xl rounded-xl border border-sage bg-mist p-4 text-sm text-forest"
+          >
+            {successMessage}
+          </div>
+        )}
+
+        <div className="mx-auto grid max-w-5xl gap-6 lg:grid-cols-[1.2fr_0.8fr]">
+          <section className="rounded-3xl border border-sage bg-white p-6 shadow-sm sm:p-8">
+            <p className="text-sm font-bold uppercase tracking-[0.18em] text-olive">
+              Everything you need to improve
             </p>
-            <button
-              type="button"
-              onClick={() => void refreshStatus()}
-              className="mt-5 rounded-lg bg-forest px-5 py-3 text-sm font-semibold text-cream hover:bg-olive"
-            >
-              Check again
-            </button>
-          </div>
-        ) : subscription?.isPro ? (
-          /* Already subscribed */
-          <section className="mx-auto max-w-2xl overflow-hidden rounded-2xl border border-forest/15 bg-[#FFFDF5] shadow-sm">
-            <div className="bg-forest px-6 py-8 text-cream sm:px-9">
-              <div className="flex flex-wrap items-center justify-between gap-4">
-                <div className="flex items-center gap-3">
-                  <div className="grid size-12 place-items-center rounded-xl bg-amber text-forest">
-                    <Crown size={25} />
-                  </div>
-                  <div>
-                    <h2 className="font-serif text-2xl font-bold">
-                      You're on Pro!
-                    </h2>
-                    <p className="mt-1 text-sm text-cream/65">
-                      Your next level starts here.
-                    </p>
-                  </div>
-                </div>
 
-                <span className="inline-flex items-center gap-2 rounded-full bg-mist px-3 py-1.5 text-xs font-bold text-forest">
-                  <CheckCircle2 size={15} />
-                  Active
-                </span>
-              </div>
+            <div className="mt-7 space-y-7">
+              {features.map((feature) => {
+                const Icon = feature.icon;
 
-              <div className="mt-7">
-                <span className="font-serif text-4xl font-bold">₹299</span>
-                <span className="ml-2 text-sm text-cream/60">/ month</span>
-              </div>
+                return (
+                  <div key={feature.title} className="flex gap-4">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-mist text-forest">
+                      <Icon size={21} />
+                    </div>
+
+                    <div>
+                      <h2 className="font-bold">{feature.title}</h2>
+                      <p className="mt-1 text-sm leading-6 text-olive">
+                        {feature.description}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
 
-            <div className="p-6 sm:p-9">
-              <h3 className="font-semibold">Your Pro benefits</h3>
-
-              <div className="mt-5 grid gap-4 sm:grid-cols-2">
-                {features.map((feature) => (
-                  <div key={feature} className="flex items-start gap-3">
-                    <div className="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-mist">
-                      <Check size={15} />
-                    </div>
-                    <span className="text-sm leading-6 text-forest/80">
-                      {feature}
-                    </span>
-                  </div>
-                ))}
+            <div className="mt-8 flex items-start gap-3 rounded-2xl bg-soft p-4">
+              <ShieldCheck className="mt-0.5 shrink-0 text-olive" size={20} />
+              <div>
+                <p className="text-sm font-bold">Secure checkout</p>
+                <p className="mt-1 text-sm leading-6 text-olive">
+                  Payments are processed through Razorpay. Your subscription
+                  status is checked by OffScripter's backend.
+                </p>
               </div>
-
-              {periodEnd && (
-                <div className="mt-7 rounded-xl border border-forest/10 bg-cream p-4">
-                  <p className="text-xs text-forest/55">
-                    {subscription.cancelAtCycleEnd
-                      ? "Pro access ends on"
-                      : "Current billing period ends"}
-                  </p>
-                  <p className="mt-1 font-semibold">{periodEnd}</p>
-                  {subscription.cancelAtCycleEnd && (
-                    <p className="mt-2 text-sm leading-5 text-forest/65">
-                      Your subscription is set to end at the end of this
-                      billing period. You can continue using Pro until then.
-                    </p>
-                  )}
-                </div>
-              )}
-
-              <Link
-                to="/dashboard"
-                className="mt-7 flex w-full items-center justify-center gap-2 rounded-lg bg-forest px-5 py-4 text-sm font-bold text-cream transition hover:bg-olive"
-              >
-                Go to dashboard
-                <ArrowRight size={18} />
-              </Link>
-
-              <p className="mt-4 flex items-center justify-center gap-2 text-xs text-forest/45">
-                <ShieldCheck size={14} />
-                Your subscription status is verified by OffScripter.
-              </p>
             </div>
           </section>
-        ) : (
-          /* Free user */
-          <section className="mx-auto max-w-2xl overflow-hidden rounded-2xl border border-forest/15 bg-[#FFFDF5] shadow-sm">
-            <div className="bg-forest px-6 py-8 text-cream sm:px-9">
-              <div className="flex items-center gap-3">
-                <div className="grid size-12 place-items-center rounded-xl bg-amber text-forest">
-                  <Crown size={25} />
-                </div>
-                <div>
-                  <h2 className="font-serif text-2xl font-bold">
-                    OffScripter Pro
-                  </h2>
-                  <p className="mt-1 text-sm text-cream/65">
-                    For serious speaking improvement
-                  </p>
-                </div>
-              </div>
 
-              <div className="mt-7">
-                <span className="font-serif text-5xl font-bold">₹299</span>
-                <span className="ml-2 text-sm text-cream/60">/ month</span>
-              </div>
-              <p className="mt-3 text-sm text-cream/65">
-                One subscription. More ways to improve.
-              </p>
+          <section className="flex flex-col rounded-3xl border-2 border-forest bg-[#f5f0df] p-6 sm:p-8">
+            <div className="flex items-center justify-between gap-3">
+              <h2 className="font-serif text-2xl">Pro Plan</h2>
+              <span className="rounded-full bg-forest px-3 py-1 text-xs font-bold text-cream">
+                MONTHLY
+              </span>
             </div>
 
-            <div className="p-6 sm:p-9">
-              <p className="text-sm leading-6 text-forest/60">
-                Everything you need to build deeper technical understanding
-                and communicate your ideas with confidence.
-              </p>
+            <div className="mt-7 flex items-baseline gap-2">
+              <span className="font-serif text-5xl">₹299</span>
+              <span className="text-sm text-olive">/ month</span>
+            </div>
 
-              <div className="mt-6 space-y-4">
-                {features.map((feature) => (
-                  <div key={feature} className="flex items-center gap-3">
-                    <div className="grid size-6 shrink-0 place-items-center rounded-full bg-mist">
-                      <Check size={15} />
-                    </div>
-                    <span className="text-sm">{feature}</span>
-                  </div>
-                ))}
-              </div>
+            <p className="mt-3 text-sm leading-6 text-olive">
+              For developers who want to explain technical concepts with
+              confidence.
+            </p>
 
-              <button
-                type="button"
-                onClick={handleSubscribe}
-                disabled={loading}
-                className="mt-8 flex w-full items-center justify-center gap-2 rounded-lg bg-forest px-5 py-4 font-bold text-cream transition hover:bg-olive disabled:cursor-not-allowed disabled:opacity-60"
-              >
-                {loading ? (
-                  <>
-                    <LoaderCircle size={18} className="animate-spin" />
-                    Processing...
-                  </>
-                ) : (
-                  <>
-                    Upgrade to Pro
-                    <ArrowRight size={18} />
-                  </>
-                )}
-              </button>
+            <div className="my-7 h-px bg-sage" />
 
-              {message && (
-                <div
-                  role="status"
-                  className="mt-4 rounded-lg border border-amber/40 bg-amber/10 p-3 text-sm leading-6 text-forest/80"
+            <ul className="flex-1 space-y-4">
+              {[
+                "Detailed AI feedback",
+                "More daily topics",
+                "Advanced speaking analytics",
+                "Pronunciation analysis",
+              ].map((feature) => (
+                <li key={feature} className="flex items-center gap-3 text-sm">
+                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-mist">
+                    <Check size={13} strokeWidth={3} />
+                  </span>
+                  {feature}
+                </li>
+              ))}
+            </ul>
+
+            <div className="mt-8">
+              {loading ? (
+                <button
+                  disabled
+                  className="flex w-full items-center justify-center gap-2 rounded-xl bg-sage px-5 py-3.5 font-bold text-forest"
                 >
-                  {message}
+                  <LoaderCircle className="animate-spin" size={18} />
+                  Checking plan...
+                </button>
+              ) : isPro ? (
+                <div>
+                  <div className="mb-3 rounded-xl bg-mist p-3 text-center text-sm font-bold text-forest">
+                    <Check className="mr-2 inline" size={17} />
+                    You're on Pro
+                  </div>
+
                   <button
-                    type="button"
-                    onClick={() => void refreshStatus()}
-                    className="ml-1 font-bold underline underline-offset-2"
+                    onClick={() => navigate("/dashboard")}
+                    className="flex w-full items-center justify-center gap-2 rounded-xl bg-forest px-5 py-3.5 font-bold text-cream transition hover:bg-olive"
                   >
-                    Check status
+                    Go to dashboard
+                    <ArrowRight size={18} />
                   </button>
                 </div>
+              ) : (
+                <button
+                  onClick={handleUpgrade}
+                  disabled={checkoutLoading}
+                  className="flex w-full items-center justify-center gap-2 rounded-xl bg-forest px-5 py-3.5 font-bold text-cream transition hover:bg-olive disabled:cursor-not-allowed disabled:opacity-60"
+                >
+                  {checkoutLoading ? (
+                    <>
+                      <LoaderCircle className="animate-spin" size={18} />
+                      Processing...
+                    </>
+                  ) : (
+                    <>
+                      Upgrade to Pro
+                      <ArrowRight size={18} />
+                    </>
+                  )}
+                </button>
               )}
 
-              <p className="mt-4 text-center text-xs leading-5 text-forest/45">
-                Recurring monthly subscription. Payment and subscription
-                activation are confirmed by the backend.
+              <p className="mt-4 text-center text-xs leading-5 text-olive">
+                Monthly subscription. Review the recurring payment terms
+                during checkout.
               </p>
             </div>
           </section>
-        )}
+        </div>
+
+        <p className="mt-8 text-center text-sm text-olive">
+          Questions about your plan?{" "}
+          <Link
+            to="/settings"
+            className="font-bold underline underline-offset-4"
+          >
+            View account settings
+          </Link>
+        </p>
       </div>
     </main>
   );

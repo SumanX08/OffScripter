@@ -38,6 +38,9 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
+button:hover{
+  cursor: pointer;
+}
 button:focus-visible,
 a:focus-visible {
   outline: 3px solid var(--color-amber);

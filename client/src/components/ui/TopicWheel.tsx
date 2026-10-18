@@ -217,7 +217,7 @@ export default function TopicWheel({
           "relative w-full overflow-hidden",
           "rounded-[3px]",
           "border border-[#283618]/40",
-          "bg-[#FAEDCD]",
+          "bg-soft",
           "shadow-[8px_10px_0_rgba(204,213,174,0.7),0_22px_45px_rgba(40,54,24,0.13)]",
           "transition-all duration-300",
 
@@ -337,7 +337,7 @@ export default function TopicWheel({
           disabled={spinning}
           onClick={onSpin}
           className={[
-            "mt-[22px] inline-flex h-[58px] w-full",
+            "mt-[22px] inline-flex h-[58px] w-1/2",
             "items-center justify-between",
             "rounded-[6px]",
             "border border-[#BC6C25]",

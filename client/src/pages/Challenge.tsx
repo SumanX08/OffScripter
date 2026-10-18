@@ -39,6 +39,8 @@ export default function Challenge() {
   const [error, setError] =
     useState("");
 
+    
+
   const handleSpin = async () => {
     if (spinning) {
       return;
@@ -137,36 +139,35 @@ export default function Challenge() {
           <div className="mb-10 text-center">
 
             <h1 className="font-serif text-4xl leading-tight tracking-[-0.03em] text-[#263911] sm:text-5xl">
-              Pick your challenge.
+              Pick your topic
             </h1>
 
            
           </div>
 
           {/* Challenge Area */}
-          <div className="grid flex-1 items-start gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-center lg:gap-16">
-            {/* Topic Wheel */}
-            <div className="flex justify-center">
-              <TopicWheel
-                spinning={spinning}
-                selectedTopic={selectedTopic}
-                onSpin={handleSpin}
-                onAnimationComplete={
-                  handleAnimationComplete
-                }
-              />
-            </div>
+         {/* Challenge Area */}
+<div className="grid flex-1 grid-cols-1 items-center gap-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:gap-12">
+  {/* Topic Wheel */}
+  <div className="flex w-full items-center justify-center">
+    <TopicWheel
+      spinning={spinning}
+      selectedTopic={selectedTopic}
+      onSpin={handleSpin}
+      onAnimationComplete={handleAnimationComplete}
+    />
+  </div>
 
-            {/* Spin Info */}
-            <div className="w-full max-w-xl justify-self-center lg:max-w-md">
-              <SpinInfo
-                spinning={spinning}
-                selectedTopic={
-                  selectedTopic ?? undefined
-                }
-              />
-            </div>
-          </div>
+  {/* Spin Info */}
+<div className="flex w-full min-w-0 items-center justify-center lg:justify-self-center">
+    <SpinInfo
+      spinning={spinning}
+      selectedTopic={selectedTopic ?? undefined}
+      attemptId={attemptId ?? undefined}
+      handleStartChallenge={handleStartChallenge}
+    />
+  </div>
+</div>  
 
           {/* Error */}
           {error && (
@@ -176,20 +177,7 @@ export default function Challenge() {
           )}
 
           {/* Start Challenge */}
-          {selectedTopic &&
-            !spinning &&
-            attemptId && (
-              <div className="mt-7 flex justify-center">
-                <Button
-                  onClick={
-                    handleStartChallenge
-                  }
-                >
-                  Start Challenge
-                  <ArrowRight size={17} />
-                </Button>
-              </div>
-            )}
+          
         </div>
       </main>
     </div>

@@ -147,7 +147,7 @@ export default function Challenge() {
 
           {/* Challenge Area */}
          {/* Challenge Area */}
-<div className="grid flex-1 grid-cols-1 items-center gap-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:gap-12">
+<div className="grid flex-1 grid-cols-1 items-start gap-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:gap-12">
   {/* Topic Wheel */}
   <div className="flex w-full items-center justify-center">
     <TopicWheel

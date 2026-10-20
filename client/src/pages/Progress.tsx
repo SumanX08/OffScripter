@@ -19,7 +19,6 @@ import {
 } from "recharts";
 import { useNavigate } from "react-router-dom";
 
-import Sidebar from "../components/ui/Sidebar";
 import { useAuthenticatedApi } from "../hooks/useAuthApi";
 import type { Evaluation } from "../components/ui/ProgressSnapshot";
 
@@ -160,10 +159,7 @@ export default function Progress() {
 
   return (
     <div className="flex min-h-screen bg-[#FCF9EC] text-forest">
-      <Sidebar
-        open={sidebarOpen}
-        onClose={() => setSidebarOpen(false)}
-      />
+      
 
       <main className="min-w-0 flex-1">
         <div className="flex items-center border-b border-forest/10 px-5 py-4 lg:hidden">

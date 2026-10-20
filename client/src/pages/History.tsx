@@ -10,7 +10,6 @@ import {
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-import Sidebar from "../components/ui/Sidebar";
 import { useAuthenticatedApi } from "../hooks/useAuthApi";
 
 type Evaluation = {
@@ -104,10 +103,6 @@ export default function History() {
 
     <div className="flex min-h-screen bg-[#FCF9EC] text-forest">
 
- <Sidebar
-                open={sidebarOpen}
-                onClose={() => setSidebarOpen(false)}
-              />
     
     <main className="min-w-0 flex-1 px-5 py-8 sm:px-8 lg:px-10">
 

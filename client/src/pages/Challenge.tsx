@@ -1,11 +1,9 @@
 import { useState } from "react";
-import { ArrowRight, Menu } from "lucide-react";
+import {  Menu } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-import Sidebar from "../components/ui/Sidebar";
 import TopicWheel from "../components/ui/TopicWheel";
 import SpinInfo from "../components/ui/SpinInfo";
-import Button from "../components/ui/Button";
 import { useAuthenticatedApi } from "../hooks/useAuthApi";
 
 type SpinResponse = {
@@ -109,10 +107,7 @@ export default function Challenge() {
   return (
     <div className="flex min-h-screen bg-[#FCF9EC] text-[#263911]">
       {/* Sidebar */}
-      <Sidebar
-        open={sidebarOpen}
-        onClose={() => setSidebarOpen(false)}
-      />
+     
 
       <main className="min-w-0 flex-1">
         {/* Mobile Header */}

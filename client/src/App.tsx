@@ -10,6 +10,7 @@ import Speaking from "./pages/Speaking";
 import Results from "./pages/Results";
 import History from "./pages/History";
 import Upgrade from "./pages/Upgrade";
+import AppLayout from "./components/ui/AppLayout";
 
 
 import Onboarding from "./components/ui/Onboarding";
@@ -104,111 +105,114 @@ function App() {
       />
 
       {/* Dashboard */}
-      <Route
-        path="/dashboard"
-        element={
-          !isSignedIn ? (
-            <Navigate to="/" replace />
-          ) : profileStatus === "missing" ? (
-            <Navigate to="/onboarding" replace />
-          ) : (
-            <Dashboard />
-          )
-        }
-      />
+     
+{/* Shared authenticated layout */}
+<Route element={<AppLayout />}>
+  <Route
+    path="/dashboard"
+    element={
+      !isSignedIn ? (
+        <Navigate to="/" replace />
+      ) : profileStatus === "missing" ? (
+        <Navigate to="/onboarding" replace />
+      ) : (
+        <Dashboard />
+      )
+    }
+  />
 
-      {/* Challenge selection / reel */}
-      <Route
-        path="/challenge"
-        element={
-          !isSignedIn ? (
-            <Navigate to="/" replace />
-          ) : profileStatus === "missing" ? (
-            <Navigate to="/onboarding" replace />
-          ) : (
-            <Challenge />
-          )
-        }
-      />
+  <Route
+    path="/challenge"
+    element={
+      !isSignedIn ? (
+        <Navigate to="/" replace />
+      ) : profileStatus === "missing" ? (
+        <Navigate to="/onboarding" replace />
+      ) : (
+        <Challenge />
+      )
+    }
+  />
 
-      {/* Research */}
-      <Route
-        path="/challenge/:attemptId/research"
-        element={
-          !isSignedIn ? (
-            <Navigate to="/" replace />
-          ) : profileStatus === "missing" ? (
-            <Navigate to="/onboarding" replace />
-          ) : (
-            <Research />
-          )
-        }
-      />
+  <Route
+    path="/challenge/:attemptId/research"
+    element={
+      !isSignedIn ? (
+        <Navigate to="/" replace />
+      ) : profileStatus === "missing" ? (
+        <Navigate to="/onboarding" replace />
+      ) : (
+        <Research />
+      )
+    }
+  />
 
-      {/* Speaking */}
-      <Route
-        path="/challenge/:attemptId/speaking"
-        element={
-          !isSignedIn ? (
-            <Navigate to="/" replace />
-          ) : profileStatus === "missing" ? (
-            <Navigate to="/onboarding" replace />
-          ) : (
-            <Speaking />
-          )
-        }
-      />
+  <Route
+    path="/challenge/:attemptId/speaking"
+    element={
+      !isSignedIn ? (
+        <Navigate to="/" replace />
+      ) : profileStatus === "missing" ? (
+        <Navigate to="/onboarding" replace />
+      ) : (
+        <Speaking />
+      )
+    }
+  />
 
+  <Route
+    path="/challenge/:attemptId/results"
+    element={
+      !isSignedIn ? (
+        <Navigate to="/" replace />
+      ) : profileStatus === "missing" ? (
+        <Navigate to="/onboarding" replace />
+      ) : (
+        <Results />
+      )
+    }
+  />
 
-<Route
-  path="/challenge/:attemptId/results"
-  element={
-    !isSignedIn ? (
-      <Navigate to="/" replace />
-    ) : profileStatus === "missing" ? (
-      <Navigate to="/onboarding" replace />
-    ) : (
-      <Results />
-    )
-  }
-/>
+  <Route
+    path="/history"
+    element={
+      !isSignedIn ? (
+        <Navigate to="/" replace />
+      ) : profileStatus === "missing" ? (
+        <Navigate to="/onboarding" replace />
+      ) : (
+        <History />
+      )
+    }
+  />
 
-      {/* Placeholder pages */}
-     <Route
-  path="/history"
-  element={
-    !isSignedIn ? (
-      <Navigate to="/" replace />
-    ) : profileStatus === "missing" ? (
-      <Navigate to="/onboarding" replace />
-    ) : (
-      <History />
-    )
-  }
-/>
+  <Route
+    path="/leaderboard"
+    element={
+      !isSignedIn ? (
+        <Navigate to="/" replace />
+      ) : (
+        <div className="min-h-screen bg-[#FCF9EC]" />
+      )
+    }
+  />
 
-      <Route
-        path="/leaderboard"
-        element={
-          <div className="min-h-screen bg-[#FCF9EC]" />
-        }
-      />
+  <Route
+    path="/upgrade"
+    element={<Upgrade />}
+  />
 
-      <Route path="/upgrade" element={<Upgrade />} />
+  <Route
+    path="/progress"
+    element={<Progress />}
+  />
 
-      <Route
-        path="/progress"
-        element={
-          <Progress/>
-        }
-      />
+  <Route
+    path="/settings"
+    element={<Settings />}
+  />
+</Route>
 
-      <Route
-        path="/settings"
-        element={
-          <Settings/>
-        }
-      />
 
       {/* Fallback */}
       <Route

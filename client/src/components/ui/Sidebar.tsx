@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { UserButton, useClerk, useUser } from "@clerk/clerk-react";
+import { useStreak } from "../../hooks/useStreak";
 
 import Logo from "./Logo";
 
@@ -35,6 +36,8 @@ export default function Sidebar({ open, onClose }: SidebarProps) {
   const location = useLocation();
   const { signOut } = useClerk();
   const { user } = useUser();
+
+  const { streak, loading: streakLoading } = useStreak();
 
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -94,7 +97,7 @@ export default function Sidebar({ open, onClose }: SidebarProps) {
       <aside
         className={`
           fixed inset-y-0 left-0 z-50
-          flex w-[300px] flex-col
+          flex h-screen w-[300px] flex-col
           border-r border-forest/10
           bg-cream
           transition-transform duration-300
@@ -173,22 +176,45 @@ export default function Sidebar({ open, onClose }: SidebarProps) {
         {/* Bottom section */}
         <div className="px-5 pb-5">
           {/* Streak */}
-          <div className="rounded-xl border border-forest/20 px-4 py-4">
-            <div className="flex items-center gap-4">
-              <div className="flex size-10 shrink-0 items-center justify-center rounded-full">
-                <Flame size={22} strokeWidth={1.8} className="text-rust" />
-              </div>
+          
+{/* Streak */}
+<Link
+  to="/progress"
+  onClick={onClose}
+  className="block rounded-xl border border-forest/20 px-4 py-4 transition-colors hover:bg-forest/5"
+  aria-label={`Current practice streak: ${
+    streak?.currentStreak ?? 0
+  } days. View progress.`}
+>
+  <div className="flex items-center gap-4">
+    <div className="flex size-10 shrink-0 items-center justify-center rounded-full">
+      <Flame
+        size={22}
+        strokeWidth={1.8}
+        className="text-rust"
+      />
+    </div>
 
-              <div>
-                <p className="font-sans text-sm font-bold text-forest">
-                  7 day streak
-                </p>
-                <p className="mt-0.5 font-sans text-xs text-forest/50">
-                  Keep it going
-                </p>
-              </div>
-            </div>
-          </div>
+    <div className="min-w-0">
+      <p className="font-sans text-sm font-bold text-forest">
+        {streakLoading
+          ? "Loading streak..."
+          : `${streak?.currentStreak ?? 0} day${
+              streak?.currentStreak === 1 ? "" : "s"
+            } streak`}
+      </p>
+
+      <p className="mt-0.5 font-sans text-xs text-forest/50">
+        {streakLoading
+          ? "Checking your progress"
+          : streak?.practicedToday
+            ? "You've practised today!"
+            : "Complete a challenge to keep it going"}
+      </p>
+    </div>
+  </div>
+</Link>
+
 
           <div className="my-4 border-t border-forest/10" />
 

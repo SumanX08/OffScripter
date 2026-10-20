@@ -3,7 +3,6 @@ import { ArrowRight, Menu } from "lucide-react";
 import { useUser } from "@clerk/clerk-react";
 import { useNavigate } from "react-router-dom";
 
-import Sidebar from "../components/ui/Sidebar";
 import Button from "../components/ui/Button";
 import DashboardStats from "../components/ui/DashboardStats";
 import ProgressSnapshot from "../components/ui/ProgressSnapshot";
@@ -11,6 +10,7 @@ import RecentAttempt, {
   type RecentAttemptData,
 } from "../components/ui/RecentAttempt";
 import { useAuthenticatedApi } from "../hooks/useAuthApi";
+import { useStreak } from "../hooks/useStreak";
 
 type UserProfile = {
   username?: string;
@@ -27,6 +27,7 @@ export default function Dashboard() {
   const { user } = useUser();
   const api = useAuthenticatedApi();
   const navigate = useNavigate();
+const { streak, loading: streakLoading } = useStreak();
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [profile, setProfile] = useState<UserProfile | null>(null);
@@ -103,10 +104,7 @@ export default function Dashboard() {
 
   return (
     <div className="flex min-h-screen bg-[#FCF9EC] text-forest">
-      <Sidebar
-        open={sidebarOpen}
-        onClose={() => setSidebarOpen(false)}
-      />
+      
 
       <main className="min-w-0 flex-1">
         <div className="flex items-center border-b border-forest/10 px-5 py-4 lg:hidden">
@@ -153,11 +151,11 @@ export default function Dashboard() {
           )}
 
           <DashboardStats
-            totalPoints={totalPoints}
-            dayStreak={null}
-            challengesDone={challengesDone}
-            loading={loading}
-          />
+  totalPoints={totalPoints}
+  dayStreak={streak?.currentStreak ?? 0}
+  challengesDone={challengesDone}
+  loading={loading || streakLoading}
+/>
 
           <section className="mb-8 overflow-hidden rounded-2xl border border-forest bg-forest shadow-[5px_5px_0_var(--color-amber)]">
             <div className="flex min-h-40 items-center justify-between gap-6 px-7 py-7">

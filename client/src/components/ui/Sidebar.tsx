@@ -97,7 +97,7 @@ export default function Sidebar({ open, onClose }: SidebarProps) {
       <aside
         className={`
           fixed inset-y-0 left-0 z-50
-          flex h-screen w-[300px] flex-col
+          flex h-screen w-75 flex-col
           border-r border-forest/10
           bg-cream
           transition-transform duration-300
@@ -106,7 +106,7 @@ export default function Sidebar({ open, onClose }: SidebarProps) {
         `}
       >
         {/* Logo */}
-        <div className="flex h-[86px] items-center justify-between px-6">
+        <div className="flex h-21.5 items-center justify-between px-6">
           <Logo />
 
           <button
@@ -263,8 +263,8 @@ export default function Sidebar({ open, onClose }: SidebarProps) {
                 role="menu"
                 aria-label="Account menu"
                 className="
-                  absolute bottom-full right-0 z-[60] mb-3
-                  w-full min-w-[240px] overflow-hidden
+                  absolute bottom-full right-0 z-60 mb-3
+                  w-full min-w-60 overflow-hidden
                   rounded-xl border border-forest/10
                   bg-cream p-2 shadow-xl
                   animate-in fade-in slide-in-from-bottom-2 duration-150

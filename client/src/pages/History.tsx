@@ -288,7 +288,7 @@ export default function History() {
                             `/challenge/${attempt.id}/results`
                           )
                         }
-                        className="group flex w-full flex-col gap-5 border-b border-forest/10 px-5 py-5 text-left transition last:border-b-0 hover:bg-forest/[0.025] sm:flex-row sm:items-center sm:px-7"
+                        className="group flex w-full flex-col gap-5 border-b border-forest/10 px-5 py-5 text-left transition last:border-b-0 hover:bg-forest/2.5 sm:flex-row sm:items-center sm:px-7"
                       >
                         {/* Icon */}
                         <div className="hidden size-11 shrink-0 items-center justify-center rounded-xl bg-mist text-olive sm:flex">

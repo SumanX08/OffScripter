@@ -122,7 +122,7 @@ const { streak, loading: streakLoading } = useStreak();
           </span>
         </div>
 
-        <div className="mx-auto max-w-[1180px] px-5 py-10 md:px-8 lg:px-12 lg:py-14">
+        <div className="mx-auto max-w-295 px-5 py-10 md:px-8 lg:px-12 lg:py-14">
           <header className="mb-6">
             <h1 className="font-serif text-4xl tracking-tight text-forest">
               Good evening, {displayName}.

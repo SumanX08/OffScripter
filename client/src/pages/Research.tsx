@@ -412,7 +412,7 @@ export default function Research() {
 
   return (
     <main className="min-h-screen bg-[#FCF9EC] text-[#263911]">
-      <div className="mx-auto flex min-h-screen w-full max-w-[1000px] flex-col px-6 py-10 sm:px-10 sm:py-14 lg:px-16 lg:py-12">
+      <div className="mx-auto flex min-h-screen w-full max-w-250 flex-col px-6 py-10 sm:px-10 sm:py-14 lg:px-16 lg:py-12">
 
         {/* -------------------------------------------
             TOPIC
@@ -421,7 +421,7 @@ export default function Research() {
         <section className="text-center">
           
 
-          <h1 className="mx-auto mt-3 max-w-[850px] font-serif text-4xl leading-[1.04] tracking-[-0.04em] text-green sm:text-[45px] lg:text-[58px]">
+          <h1 className="mx-auto mt-3 max-w-212.5 font-serif text-4xl leading-[1.04] tracking-[-0.04em] text-green sm:text-[45px] lg:text-[58px]">
             {attempt.topic.title}
           </h1>
         </section>
@@ -460,7 +460,7 @@ export default function Research() {
                 timeLeft === 0 ||
                 finishing
               }
-              className="inline-flex h-12 min-w-[156px] items-center justify-center gap-3 rounded-xl bg-[#E8EDC7] px-6 text-[15px] font-medium text-[#263911] transition hover:bg-[#E0E7B8] disabled:cursor-not-allowed disabled:opacity-40"
+              className="inline-flex h-12 min-w-39 items-center justify-center gap-3 rounded-xl bg-[#E8EDC7] px-6 text-[15px] font-medium text-[#263911] transition hover:bg-[#E0E7B8] disabled:cursor-not-allowed disabled:opacity-40"
             >
               {paused ? (
                 <Play size={17} />
@@ -479,7 +479,7 @@ export default function Research() {
                 handleReset
               }
               disabled={finishing}
-              className="inline-flex h-12 min-w-[136px] items-center justify-center gap-3 rounded-xl bg-[#E8EDC7] px-6 text-[15px] font-medium text-[#263911] transition hover:bg-[#E0E7B8] disabled:cursor-not-allowed disabled:opacity-40"
+              className="inline-flex h-12 min-w-34 items-center justify-center gap-3 rounded-xl bg-[#E8EDC7] px-6 text-[15px] font-medium text-[#263911] transition hover:bg-[#E0E7B8] disabled:cursor-not-allowed disabled:opacity-40"
             >
               <RotateCcw
                 size={17}
@@ -494,7 +494,7 @@ export default function Research() {
             NOTES
         ------------------------------------------- */}
 
-        <section className="mx-auto mt-8 w-full max-w-[560px] ">
+        <section className="mx-auto mt-8 w-full max-w-140 ">
           <label
             htmlFor="research-notes"
             className="block text-[15px] font-medium text-[#263911]/75"
@@ -511,7 +511,7 @@ export default function Research() {
                 event.target.value,
               )
             }
-            className="mt-3 min-h-[182px] w-full resize-none rounded-2xl border border-[#263911]/15 bg-[#F8EDCE] px-5 py-5 text-[15px] leading-7 text-[#263911] outline-none transition placeholder:text-[#263911]/30 focus:border-[#263911]/30 focus:ring-2 focus:ring-[#263911]/5"
+            className="mt-3 min-h-45.5 w-full resize-none rounded-2xl border border-[#263911]/15 bg-[#F8EDCE] px-5 py-5 text-[15px] leading-7 text-[#263911] outline-none transition placeholder:text-[#263911]/30 focus:border-[#263911]/30 focus:ring-2 focus:ring-[#263911]/5"
             placeholder="Jot down key points, concepts, examples..."
             spellCheck
           />
@@ -528,7 +528,7 @@ export default function Research() {
               void finishResearch()
             }
             disabled={finishing}
-            className="inline-flex h-14 mt-3 min-w-[252px] items-center justify-center gap-4 rounded-xl bg-[#263911] px-8 text-[16px] font-semibold text-[#FCF9EC] shadow-[0_12px_30px_rgba(35,49,17,0.14)] transition hover:-translate-y-0.5 hover:bg-[#30471B] disabled:cursor-not-allowed disabled:opacity-50"
+            className="inline-flex h-14 mt-3 min-w-63 items-center justify-center gap-4 rounded-xl bg-[#263911] px-8 text-[16px] font-semibold text-[#FCF9EC] shadow-[0_12px_30px_rgba(35,49,17,0.14)] transition hover:-translate-y-0.5 hover:bg-[#30471B] disabled:cursor-not-allowed disabled:opacity-50"
           >
             {finishing
               ? "Starting..."

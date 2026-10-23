@@ -113,6 +113,8 @@ export const spinChallenge = async (
         },
         {
           isolationLevel: Prisma.TransactionIsolationLevel.Serializable,
+          maxWait: 10000,
+  timeout: 15000,
         }
       );
     } catch (error) {

@@ -131,7 +131,7 @@ export default function Challenge() {
         {/* Main Content */}
         <div className="mx-auto flex min-h-screen w-full max-w-7xl flex-col px-5 py-10 sm:px-8 lg:px-12 lg:py-14">
           {/* Heading */}
-          <div className="mb-10 text-center">
+          <div className="mb-20 text-center">
 
             <h1 className="font-serif text-4xl leading-tight tracking-[-0.03em] text-[#263911] sm:text-5xl">
               Pick your topic

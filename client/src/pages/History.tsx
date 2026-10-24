@@ -207,7 +207,7 @@ export default function History() {
             <>
               {/* Summary */}
               <div className="mb-5 grid gap-4 sm:grid-cols-3">
-                <div className="border border-forest/10 bg-[#FFFDF4] p-5">
+                <div className="border border-forest/10 bg-cream p-5">
                   <div className="flex items-center gap-3">
                     <div className="flex size-10 items-center justify-center rounded-xl bg-sage/50 text-olive">
                       <Trophy size={19} />
@@ -225,7 +225,7 @@ export default function History() {
                   </div>
                 </div>
 
-                <div className="border border-forest/10 bg-[#FFFDF4] p-5">
+                <div className="border border-forest/10 bg-cream p-5">
                   <div className="flex items-center gap-3">
                     <div className="flex size-10 items-center justify-center rounded-xl bg-sage/50 text-olive">
                       <Trophy size={19} />
@@ -243,7 +243,7 @@ export default function History() {
                   </div>
                 </div>
 
-                <div className="border border-forest/10 bg-[#FFFDF4] p-5">
+                <div className="border border-forest/10 bg-cream p-5">
                   <div className="flex items-center gap-3">
                     <div className="flex size-10 items-center justify-center rounded-xl bg-sage/50 text-olive">
                       <HistoryIcon size={19} />
@@ -263,9 +263,9 @@ export default function History() {
               </div>
 
               {/* List */}
-              <section className="overflow-hidden rounded-2xl border border-forest/10 bg-[#FFFDF4]">
+              <section className="overflow-hidden rounded-2xl border border-forest/10 bg-cream">
                 <div className="border-b border-forest/10 px-5 py-5 sm:px-7">
-                  <h2 className="font-serif text-2xl text-forest">
+                  <h2 className="font-serif text-2xl text-rust">
                     Previous challenges
                   </h2>
 
@@ -302,15 +302,7 @@ export default function History() {
                           </h3>
 
                           <div className="mt-2 flex flex-wrap items-center gap-x-4 gap-y-2 font-sans text-xs text-forest/50">
-                            <span className="capitalize">
-                              {attempt.topic.category}
-                            </span>
-
-                            <span className="h-1 w-1 rounded-full bg-forest/20" />
-
-                            <span className="capitalize">
-                              {attempt.topic.difficulty}
-                            </span>
+                            
 
                             <span className="h-1 w-1 rounded-full bg-forest/20" />
 
@@ -324,7 +316,7 @@ export default function History() {
                         {/* Score */}
                         <div className="flex items-center justify-between gap-5 sm:justify-end">
                           <div className="text-left sm:text-right">
-                            <span className="font-sans text-[10px] font-semibold uppercase tracking-wider text-forest/40">
+                            <span className="font-sans text-[10px] font-semibold uppercase tracking-wider text-rust/40">
                               Score
                             </span>
 

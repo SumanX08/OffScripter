@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { complete,finishResearchController ,submit,getAttemptController,getHistory} from "../controllers/attempt.controller.js";
+import { complete,finishResearchController ,submit,getAttemptController,getHistory,getStreakController} from "../controllers/attempt.controller.js";
 import { uploadAudio } from "../middleware/upload.middleware.js";
 import { submitAudio } from "../controllers/attempt.controller.js";
 
@@ -7,7 +7,7 @@ import { submitAudio } from "../controllers/attempt.controller.js";
 const router = Router();
 
 router.get("/history", getHistory);
-
+router.get("/streak", getStreakController);
 
 router.get("/:attemptId", getAttemptController);
 

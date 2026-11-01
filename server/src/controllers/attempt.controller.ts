@@ -14,6 +14,8 @@ import { submitAttemptSchema } from "../validator/attempt.validator.js";
 
 import { transcribeAudio } from "../services/transcription.service.js";
 
+import { getUserStreak } from "../services/streak.service.js";
+
 type AttemptParams = {
   attemptId: string;
 };
@@ -245,3 +247,42 @@ export const getHistory = async (
     });
   }
 };
+
+
+export const getStreakController = async (
+  _req: Request,
+  res: Response
+) => {
+  try {
+    const user = res.locals.user;
+
+    if (!user?.id) {
+      res.status(401).json({
+        success: false,
+        error: {
+          code: "UNAUTHENTICATED",
+          message: "Please sign in to view your streak.",
+        },
+      });
+      return;
+    }
+
+    const streak = await getUserStreak(user.id);
+
+    res.status(200).json({
+      success: true,
+      data: streak,
+    });
+  } catch (error) {
+    console.error("GET STREAK ERROR:", error);
+
+    res.status(500).json({
+      success: false,
+      error: {
+        code: "STREAK_FETCH_FAILED",
+        message: "Unable to fetch your practice streak.",
+      },
+    });
+  }
+};
+

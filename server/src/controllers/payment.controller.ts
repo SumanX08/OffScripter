@@ -92,6 +92,7 @@ export async function subscriptionStatus(
   }
 }
 
+
 export async function razorpayWebhook(req: Request, res: Response) {
   const webhookSecret = process.env.RAZORPAY_WEBHOOK_SECRET;
   const signature = req.headers["x-razorpay-signature"];
@@ -100,16 +101,24 @@ export async function razorpayWebhook(req: Request, res: Response) {
   if (
     !webhookSecret ||
     typeof signature !== "string" ||
+    typeof eventId !== "string" ||
+    !eventId.trim() ||
     !Buffer.isBuffer(req.body)
   ) {
     res.status(400).send("Invalid webhook request");
     return;
   }
 
+  // Verify Razorpay's signature against the original raw request body.
   const expected = crypto
     .createHmac("sha256", webhookSecret)
     .update(req.body)
     .digest("hex");
+
+  if (!/^[a-fA-F0-9]{64}$/.test(signature)) {
+    res.status(400).send("Invalid webhook signature");
+    return;
+  }
 
   const suppliedBuffer = Buffer.from(signature, "hex");
   const expectedBuffer = Buffer.from(expected, "hex");
@@ -131,68 +140,115 @@ export async function razorpayWebhook(req: Request, res: Response) {
     return;
   }
 
+  const eventType = event?.event;
+
+  if (typeof eventType !== "string") {
+    res.status(400).send("Missing event type");
+    return;
+  }
+
+  const entity = event.payload?.subscription?.entity;
+  const subscriptionId = entity?.id;
+
   try {
-    if (typeof eventId === "string") {
-      try {
-        await prisma.processedWebhook.create({
-          data: {
-            eventId,
-            eventType: String(event.event ?? "unknown"),
-          },
-        });
-      } catch (error) {
-        // A unique event ID means Razorpay is retrying an event
-        // that has already been recorded.
-        if (
-          typeof error === "object" &&
-          error !== null &&
-          "code" in error &&
-          error.code === "P2002"
-        ) {
-          res.status(200).json({ received: true, duplicate: true });
-          return;
-        }
-
-        throw error;
-      }
-    }
-
-    const entity = event.payload?.subscription?.entity;
-    const subscriptionId = entity?.id;
-
-    if (typeof subscriptionId === "string") {
-      const status = String(entity.status ?? "");
-      const periodStart = entity.current_start
-        ? new Date(Number(entity.current_start) * 1000)
-        : null;
-      const periodEnd = entity.current_end
-        ? new Date(Number(entity.current_end) * 1000)
-        : null;
-
-      const cancellationRequested =
-        entity.has_scheduled_changes === true ||
-        entity.cancel_at_cycle_end === true;
-
-      await prisma.subscription.updateMany({
-        where: { razorpaySubscriptionId: subscriptionId },
+    await prisma.$transaction(async (tx) => {
+      // Claim this event. The unique eventId prevents duplicate processing.
+      await tx.processedWebhook.create({
         data: {
-          status,
-          currentPeriodStart:
-            periodStart && !Number.isNaN(periodStart.getTime())
-              ? periodStart
-              : undefined,
-          currentPeriodEnd:
-            periodEnd && !Number.isNaN(periodEnd.getTime())
-              ? periodEnd
-              : undefined,
-          cancelAtCycleEnd: cancellationRequested,
+          eventId,
+          eventType,
         },
       });
-    }
+
+      if (typeof subscriptionId !== "string") {
+        // Some events may not contain a subscription entity.
+        // The event is recorded so it isn't processed repeatedly.
+        return;
+      }
+
+      const existing = await tx.subscription.findUnique({
+        where: {
+          razorpaySubscriptionId: subscriptionId,
+        },
+        select: { id: true },
+      });
+
+      if (!existing) {
+        // Throwing rolls back the event record, allowing a retry.
+        throw new Error("SUBSCRIPTION_NOT_FOUND");
+      }
+
+      const updates: {
+        status?: string;
+        currentPeriodStart?: Date | null;
+        currentPeriodEnd?: Date | null;
+        cancelAtCycleEnd?: boolean;
+      } = {};
+
+      // Only update status when the provider supplies one.
+      if (typeof entity.status === "string") {
+        updates.status = entity.status;
+      }
+
+      if (
+        entity.current_start !== undefined &&
+        entity.current_start !== null
+      ) {
+        const start = new Date(Number(entity.current_start) * 1000);
+
+        if (!Number.isNaN(start.getTime())) {
+          updates.currentPeriodStart = start;
+        }
+      }
+
+      if (
+        entity.current_end !== undefined &&
+        entity.current_end !== null
+      ) {
+        const end = new Date(Number(entity.current_end) * 1000);
+
+        if (!Number.isNaN(end.getTime())) {
+          updates.currentPeriodEnd = end;
+        }
+      }
+
+      // Preserve cancellation information when the event omits it.
+      if (
+        typeof entity.has_scheduled_changes === "boolean" ||
+        typeof entity.cancel_at_cycle_end === "boolean"
+      ) {
+        updates.cancelAtCycleEnd =
+          entity.has_scheduled_changes === true ||
+          entity.cancel_at_cycle_end === true;
+      }
+
+      await tx.subscription.update({
+        where: { id: existing.id },
+        data: updates,
+      });
+    });
 
     res.status(200).json({ received: true });
   } catch (error) {
+    // Prisma P2002 means the unique event ID was already processed.
+    if (
+      typeof error === "object" &&
+      error !== null &&
+      "code" in error &&
+      error.code === "P2002"
+    ) {
+      res.status(200).json({
+        received: true,
+        duplicate: true,
+      });
+      return;
+    }
+
     console.error("RAZORPAY WEBHOOK ERROR:", error);
-    res.status(500).json({ error: "Webhook processing failed" });
+
+    // A 500 lets Razorpay retry transient processing failures.
+    res.status(500).json({
+      error: "Webhook processing failed",
+    });
   }
 }

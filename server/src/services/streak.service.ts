@@ -2,6 +2,7 @@
 import { prisma } from "../config/prisma.js";
 
 const TIME_ZONE = "Asia/Kolkata";
+const HISTORY_DAYS = 365;
 
 function getDateKey(date: Date): string {
   const parts = new Intl.DateTimeFormat("en-GB", {
@@ -18,8 +19,6 @@ function getDateKey(date: Date): string {
   return `${values.year}-${values.month}-${values.day}`;
 }
 
-// Date keys are YYYY-MM-DD, so UTC arithmetic gives reliable
-// calendar-day differences without DST complications.
 function addDays(dateKey: string, amount: number): string {
   const [year, month, day] = dateKey.split("-").map(Number);
 
@@ -31,6 +30,10 @@ function addDays(dateKey: string, amount: number): string {
 }
 
 export async function getUserStreak(userId: string) {
+  const today = getDateKey(new Date());
+  const historyStart = addDays(today, -(HISTORY_DAYS - 1));
+
+  // Fetch completed speaking attempts only.
   const attempts = await prisma.attempt.findMany({
     where: {
       userId,
@@ -48,9 +51,8 @@ export async function getUserStreak(userId: string) {
     },
   });
 
-  const today = getDateKey(new Date());
-
-  // Multiple completed attempts on one day count as one practice day.
+  // Convert timestamps into calendar dates in IST.
+  // Multiple attempts on one day count as one practice day.
   const practiceDates = [
     ...new Set(
       attempts
@@ -61,29 +63,37 @@ export async function getUserStreak(userId: string) {
   ].sort();
 
   const practicedToday = practiceDates.includes(today);
+
   const lastPracticeDate =
     practiceDates.length > 0
       ? practiceDates[practiceDates.length - 1]
       : null;
 
-  // Calculate the longest streak across all recorded practice days.
+  // Calculate the longest streak from all historical practice dates.
   let longestStreak = 0;
   let runningStreak = 0;
   let previousDate: string | null = null;
 
   for (const date of practiceDates) {
-    if (previousDate && addDays(previousDate, 1) === date) {
+    if (
+      previousDate &&
+      addDays(previousDate, 1) === date
+    ) {
       runningStreak += 1;
     } else {
       runningStreak = 1;
     }
 
-    longestStreak = Math.max(longestStreak, runningStreak);
+    longestStreak = Math.max(
+      longestStreak,
+      runningStreak
+    );
+
     previousDate = date;
   }
 
-  // The current streak remains alive if the user practiced today
-  // or yesterday. Otherwise it is zero until they practice again.
+  // Current streak is alive if the last practice was today
+  // or yesterday.
   let currentStreak = 0;
 
   if (
@@ -91,9 +101,14 @@ export async function getUserStreak(userId: string) {
     lastPracticeDate === addDays(today, -1)
   ) {
     currentStreak = 1;
+
     let expectedDate = addDays(lastPracticeDate!, -1);
 
-    for (let i = practiceDates.length - 2; i >= 0; i--) {
+    for (
+      let i = practiceDates.length - 2;
+      i >= 0;
+      i--
+    ) {
       if (practiceDates[i] !== expectedDate) {
         break;
       }
@@ -103,8 +118,9 @@ export async function getUserStreak(userId: string) {
     }
   }
 
+  // Only return the latest 365 calendar days for the heatmap.
   const recentPracticeDates = practiceDates.filter(
-    (date) => date >= addDays(today, -29) && date <= today
+    (date) => date >= historyStart && date <= today
   );
 
   return {
@@ -113,6 +129,8 @@ export async function getUserStreak(userId: string) {
     practicedToday,
     lastPracticeDate,
     practiceDates: recentPracticeDates,
+    totalPracticeDays: practiceDates.length,
     timeZone: TIME_ZONE,
+    historyDays: HISTORY_DAYS,
   };
 }

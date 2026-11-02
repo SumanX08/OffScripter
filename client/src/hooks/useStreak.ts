@@ -1,5 +1,5 @@
 
-import { useCallback, useEffect, useState } from "react";
+import { useQuery } from "@tanstack/react-query";
 import { useAuthenticatedApi } from "./useAuthApi";
 
 export interface StreakData {
@@ -8,7 +8,9 @@ export interface StreakData {
   practicedToday: boolean;
   lastPracticeDate: string | null;
   practiceDates: string[];
+  totalPracticeDays: number;
   timeZone: string;
+  historyDays: number;
 }
 
 interface StreakResponse {
@@ -19,29 +21,23 @@ interface StreakResponse {
 export function useStreak() {
   const api = useAuthenticatedApi();
 
-  const [streak, setStreak] = useState<StreakData | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const query = useQuery({
+    queryKey: ["streak"],
+    queryFn: async () => {
+      const response = await api.get<StreakResponse>(
+        "/attempts/streak"
+      );
 
-  const refresh = useCallback(async () => {
-    setLoading(true);
-    setError(null);
+      return response.data.data;
+    },
+  });
 
-    try {
-      const response =
-        await api.get<StreakResponse>("/attempts/streak");
-
-      setStreak(response.data.data);
-    } catch {
-      setError("Couldn't load your practice streak.");
-    } finally {
-      setLoading(false);
-    }
-  }, [api]);
-
-  useEffect(() => {
-    void refresh();
-  }, [refresh]);
-
-  return { streak, loading, error, refresh };
+  return {
+    streak: query.data ?? null,
+    loading: query.isLoading,
+    error: query.error
+      ? "Unable to load practice streak."
+      : null,
+    refresh: query.refetch,
+  };
 }

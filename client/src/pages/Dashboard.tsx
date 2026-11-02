@@ -1,4 +1,6 @@
-import { useEffect, useState } from "react";
+
+import { useState } from "react";
+import { useQuery } from "@tanstack/react-query";
 import { ArrowRight, Menu } from "lucide-react";
 import { useUser } from "@clerk/clerk-react";
 import { useNavigate } from "react-router-dom";
@@ -23,73 +25,75 @@ type HistoryResponse = {
   };
 };
 
+type DashboardData = {
+  profile: UserProfile;
+  attempts: RecentAttemptData[];
+  challengesDone: number;
+  totalPoints: number;
+};
+
 export default function Dashboard() {
-  const { user } = useUser();
+  const { user, isLoaded } = useUser();
   const api = useAuthenticatedApi();
   const navigate = useNavigate();
-const { streak, loading: streakLoading } = useStreak();
+  const { streak, loading: streakLoading } = useStreak();
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [profile, setProfile] = useState<UserProfile | null>(null);
-  const [attempts, setAttempts] = useState<RecentAttemptData[]>([]);
-  const [challengesDone, setChallengesDone] = useState(0);
-  const [totalPoints, setTotalPoints] = useState(0);
-  const [loading, setLoading] = useState(true);
-  const [loadError, setLoadError] = useState(false);
   const [spinning, setSpinning] = useState(false);
 
-  useEffect(() => {
-    let cancelled = false;
+  // Fetch and cache dashboard data
+  const dashboardQuery = useQuery({
+    queryKey: ["dashboard", user?.id],
 
-    async function loadDashboard() {
-      setLoading(true);
-      setLoadError(false);
+    enabled: isLoaded && !!user?.id,
 
-      try {
-        const [profileResponse, historyResponse] = await Promise.all([
+    queryFn: async (): Promise<DashboardData> => {
+      const [profileResponse, historyResponse] =
+        await Promise.all([
           api.get("/users/me"),
           api.get("/attempts/history", {
             params: { page: 1, limit: 10 },
           }),
         ]);
 
-        if (cancelled) return;
+      const profile: UserProfile =
+        profileResponse.data.data;
 
-        const history: HistoryResponse = historyResponse.data.data;
-        const completedAttempts = history.attempts ?? [];
+      const history: HistoryResponse =
+        historyResponse.data.data;
 
-        setProfile(profileResponse.data.data);
-        setAttempts(completedAttempts);
-        setChallengesDone(history.pagination?.total ?? 0);
+      const completedAttempts = history.attempts ?? [];
 
-        // Temporary MVP calculation: points from the latest 10 attempts.
-        // Replace with a lifetime aggregate API when we add reusable stats.
-        setTotalPoints(
-          completedAttempts.reduce(
-            (sum, attempt) =>
-              sum +
-              Math.round(attempt.evaluation?.overallScore ?? 0),
-            0
-          )
-        );
-      } catch (error) {
-        if (!cancelled) {
-          console.error("Failed to load dashboard:", error);
-          setLoadError(true);
-        }
-      } finally {
-        if (!cancelled) setLoading(false);
-      }
-    }
+      const totalPoints = completedAttempts.reduce(
+        (sum, attempt) =>
+          sum +
+          Math.round(attempt.evaluation?.overallScore ?? 0),
+        0
+      );
 
-    loadDashboard();
+      return {
+        profile,
+        attempts: completedAttempts,
+        challengesDone: history.pagination?.total ?? 0,
+        totalPoints,
+      };
+    },
+  });
 
-    return () => {
-      cancelled = true;
-    };
-  }, [api]);
+  // Extract cached data
+  const profile = dashboardQuery.data?.profile ?? null;
+  const attempts = dashboardQuery.data?.attempts ?? [];
+  const challengesDone =
+    dashboardQuery.data?.challengesDone ?? 0;
+  const totalPoints = dashboardQuery.data?.totalPoints ?? 0;
+
+  const loading =
+    !isLoaded || dashboardQuery.isLoading;
+
+  const loadError = dashboardQuery.isError;
 
   const latestAttempt = attempts[0] ?? null;
+
   const displayName =
     profile?.username ||
     user?.firstName ||
@@ -104,8 +108,6 @@ const { streak, loading: streakLoading } = useStreak();
 
   return (
     <div className="flex min-h-screen bg-[#FCF9EC] text-forest">
-      
-
       <main className="min-w-0 flex-1">
         <div className="flex items-center border-b border-forest/10 px-5 py-4 lg:hidden">
           <button
@@ -127,6 +129,7 @@ const { streak, loading: streakLoading } = useStreak();
             <h1 className="font-serif text-4xl tracking-tight text-forest">
               Good evening, {displayName}.
             </h1>
+
             <p className="mt-2 text-sm text-forest/55">
               Keep showing up. Every explanation makes you better.
             </p>
@@ -140,9 +143,10 @@ const { streak, loading: streakLoading } = useStreak();
               <p className="text-sm text-forest">
                 We couldn't load your latest statistics.
               </p>
+
               <button
                 type="button"
-                onClick={() => window.location.reload()}
+                onClick={() => dashboardQuery.refetch()}
                 className="text-sm font-bold text-forest underline"
               >
                 Try again
@@ -151,11 +155,11 @@ const { streak, loading: streakLoading } = useStreak();
           )}
 
           <DashboardStats
-  totalPoints={totalPoints}
-  dayStreak={streak?.currentStreak ?? 0}
-  challengesDone={challengesDone}
-  loading={loading || streakLoading}
-/>
+            totalPoints={totalPoints}
+            dayStreak={streak?.currentStreak ?? 0}
+            challengesDone={challengesDone}
+            loading={loading || streakLoading}
+          />
 
           <section className="mb-8 overflow-hidden rounded-2xl border border-forest bg-forest shadow-[5px_5px_0_var(--color-amber)]">
             <div className="flex min-h-40 items-center justify-between gap-6 px-7 py-7">
@@ -163,9 +167,11 @@ const { streak, loading: streakLoading } = useStreak();
                 <p className="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-cream/70">
                   Today's challenge
                 </p>
+
                 <h2 className="max-w-3xl font-serif text-3xl font-bold leading-tight text-cream md:text-4xl">
                   Spin for a topic
                 </h2>
+
                 <p className="mt-4 max-w-md text-sm leading-6 text-cream/60">
                   Let chance choose your next technical challenge.
                 </p>

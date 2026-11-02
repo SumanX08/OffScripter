@@ -13,6 +13,8 @@ import {
 
 import { useAuthenticatedApi } from "../hooks/useAuthApi";
 
+import { useQueryClient } from "@tanstack/react-query";
+
 type AttemptResponse = {
   id: string;
 
@@ -65,10 +67,13 @@ export default function Speaking() {
     attemptId: string;
   }>();
 
+  
+
   const autoSubmitTriggeredRef = useRef(false);
 
   const api = useAuthenticatedApi();
   const navigate = useNavigate();
+  const queryClient = useQueryClient();
 
   const [attempt, setAttempt] =
     useState<AttemptResponse | null>(null);
@@ -401,17 +406,30 @@ export default function Speaking() {
          * The browser/Axios will add the multipart boundary.
          */
 
-        await api.post(
-          `/attempts/${attemptId}/submit-audio`,
-          formData,
-        );
+       await api.post(
+  `/attempts/${attemptId}/submit-audio`,
+  formData,
+);
 
-        navigate(
-          `/challenge/${attemptId}/results`,
-          {
-            replace: true,
-          },
-        );
+// Refresh cached data after successful submission
+await Promise.all([
+  queryClient.invalidateQueries({
+    queryKey: ["streak"],
+  }),
+  queryClient.invalidateQueries({
+    queryKey: ["dashboard"],
+  }),
+  queryClient.invalidateQueries({
+    queryKey: ["attempt-history"],
+  }),
+]);
+
+navigate(
+  `/challenge/${attemptId}/results`,
+  {
+    replace: true,
+  },
+);
       } catch (error) {
         console.error(
           "Failed to submit recording:",
@@ -435,6 +453,7 @@ export default function Speaking() {
       navigate,
       stopMicrophone,
       stopRecording,
+       queryClient,
     ]);
 
   /*

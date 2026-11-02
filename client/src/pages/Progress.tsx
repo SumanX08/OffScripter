@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { useQuery } from "@tanstack/react-query";
 import {
   ArrowDownRight,
   ArrowRight,
@@ -19,6 +20,8 @@ import {
 } from "recharts";
 import { useNavigate } from "react-router-dom";
 
+import StreakHeatmap from "../components/ui/StreakHeatMap";
+import { useStreak } from "../hooks/useStreak";
 import { useAuthenticatedApi } from "../hooks/useAuthApi";
 import type { Evaluation } from "../components/ui/ProgressSnapshot";
 
@@ -65,46 +68,24 @@ export default function Progress() {
   const api = useAuthenticatedApi();
   const navigate = useNavigate();
 
+  const { streak, loading: streakLoading } = useStreak();
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [attempts, setAttempts] = useState<Attempt[]>([]);
-  const [totalAttempts, setTotalAttempts] = useState(0);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
 
-  useEffect(() => {
-    let cancelled = false;
+  const progressQuery = useQuery({
+    queryKey: ["attempt-history", 1],
+    queryFn: async (): Promise<HistoryResponse> => {
+      const response = await api.get("/attempts/history", {
+        params: { page: 1, limit: 10 },
+      });
 
-    async function loadProgress() {
-      setLoading(true);
-      setError(false);
+      return response.data.data;
+    },
+  });
 
-      try {
-        const response = await api.get("/attempts/history", {
-          params: { page: 1, limit: 10 },
-        });
-
-        if (cancelled) return;
-
-        const data: HistoryResponse = response.data.data;
-
-        setAttempts(data.attempts ?? []);
-        setTotalAttempts(data.pagination?.total ?? 0);
-      } catch (err) {
-        if (!cancelled) {
-          console.error("Failed to load progress:", err);
-          setError(true);
-        }
-      } finally {
-        if (!cancelled) setLoading(false);
-      }
-    }
-
-    loadProgress();
-
-    return () => {
-      cancelled = true;
-    };
-  }, [api]);
+  const attempts = progressQuery.data?.attempts ?? [];
+  const totalAttempts = progressQuery.data?.pagination?.total ?? 0;
+  const loading = progressQuery.isLoading;
+  const error = progressQuery.isError;
 
   // The API returns newest first. Reverse it so the chart reads left to right.
   const chartData: ChartPoint[] = [...attempts]
@@ -115,9 +96,7 @@ export default function Progress() {
     )
     .reverse()
     .map((attempt, index) => {
-      const date = new Date(
-        attempt.submittedAt ?? attempt.createdAt
-      );
+      const date = new Date(attempt.submittedAt ?? attempt.createdAt);
 
       return {
         attemptId: attempt.id,
@@ -137,6 +116,7 @@ export default function Progress() {
   );
 
   const latestScore = latestAttempt?.evaluation?.overallScore;
+
   const previousScore =
     chartData.length >= 2
       ? chartData[chartData.length - 2].score
@@ -159,8 +139,6 @@ export default function Progress() {
 
   return (
     <div className="flex min-h-screen bg-[#FCF9EC] text-forest">
-      
-
       <main className="min-w-0 flex-1">
         <div className="flex items-center border-b border-forest/10 px-5 py-4 lg:hidden">
           <button
@@ -193,6 +171,14 @@ export default function Progress() {
             </p>
           </header>
 
+          {/* Streak heatmap */}
+          {streakLoading ? (
+            <div className="h-64 animate-pulse rounded-2xl bg-sage/30" />
+          ) : (
+            <StreakHeatmap streak={streak} />
+          )}
+
+          {/* Error */}
           {error && (
             <div
               role="alert"
@@ -204,10 +190,11 @@ export default function Progress() {
 
               <button
                 type="button"
-                onClick={() => window.location.reload()}
-                className="text-sm font-bold underline"
+                onClick={() => progressQuery.refetch()}
+                disabled={progressQuery.isFetching}
+                className="text-sm font-bold underline disabled:opacity-50"
               >
-                Try again
+                {progressQuery.isFetching ? "Retrying..." : "Try again"}
               </button>
             </div>
           )}
@@ -282,9 +269,7 @@ export default function Progress() {
                 Loading your rating history...
               </div>
             ) : chartData.length === 0 ? (
-              <EmptyState
-                onStart={() => navigate("/challenge")}
-              />
+              <EmptyState onStart={() => navigate("/challenge")} />
             ) : (
               <div className="h-70 w-full md:h-85">
                 <ResponsiveContainer width="100%" height="100%">
@@ -411,11 +396,12 @@ export default function Progress() {
                   const safeScore = Math.max(0, Math.min(100, score));
 
                   return (
-                    <div >
+                    <div key={key}>
                       <div className="mb-2 flex items-center justify-between gap-3">
                         <span className="text-sm font-semibold">
                           {label}
                         </span>
+
                         <span className="font-serif text-lg font-bold">
                           {score}
                           <span className="ml-1 text-xs font-normal text-forest/45">

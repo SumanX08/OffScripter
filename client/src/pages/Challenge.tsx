@@ -22,7 +22,7 @@ export default function Challenge() {
   const api = useAuthenticatedApi();
   const navigate = useNavigate();
 
-  const [sidebarOpen, setSidebarOpen] =
+  const [, setSidebarOpen] =
     useState(false);
 
   const [spinning, setSpinning] =

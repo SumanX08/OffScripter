@@ -11,6 +11,8 @@ export interface StreakData {
   totalPracticeDays: number;
   timeZone: string;
   historyDays: number;
+  totalCompletedAttempts: number;
+  dailyActivity: Record<string, number>;
 }
 
 interface StreakResponse {

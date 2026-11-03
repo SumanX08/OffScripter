@@ -38,7 +38,7 @@ export default function Dashboard() {
   const navigate = useNavigate();
   const { streak, loading: streakLoading } = useStreak();
 
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [, setSidebarOpen] = useState(false);
   const [spinning, setSpinning] = useState(false);
 
   // Fetch and cache dashboard data

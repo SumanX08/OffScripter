@@ -69,7 +69,7 @@ export default function Progress() {
   const navigate = useNavigate();
 
   const { streak, loading: streakLoading } = useStreak();
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [, setSidebarOpen] = useState(false);
 
   const progressQuery = useQuery({
     queryKey: ["attempt-history", 1],

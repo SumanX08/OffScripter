@@ -20,7 +20,27 @@ function getDateKey(date: Date): string {
 }
 
 function addDays(dateKey: string, amount: number): string {
-  const [year, month, day] = dateKey.split("-").map(Number);
+  const parts = dateKey.split("-");
+
+  if (parts.length !== 3) {
+    throw new Error(`Invalid date: ${dateKey}`);
+  }
+
+  const year = Number(parts[0]);
+  const month = Number(parts[1]);
+  const day = Number(parts[2]);
+
+  if (
+    !Number.isInteger(year) ||
+    !Number.isInteger(month) ||
+    !Number.isInteger(day) ||
+    month < 1 ||
+    month > 12 ||
+    day < 1 ||
+    day > 31
+  ) {
+    throw new Error(`Invalid date: ${dateKey}`);
+  }
 
   const date = new Date(
     Date.UTC(year, month - 1, day + amount)

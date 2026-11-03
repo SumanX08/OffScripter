@@ -138,18 +138,18 @@ export async function verifyCheckout(
   await prisma.subscription.update({
     where: { id: subscription.id },
     data: {
-      status: providerSubscription.status,
-      currentPeriodStart:
-        currentPeriodStart &&
-        !Number.isNaN(currentPeriodStart.getTime())
-          ? currentPeriodStart
-          : undefined,
-      currentPeriodEnd:
-        currentPeriodEnd &&
-        !Number.isNaN(currentPeriodEnd.getTime())
-          ? currentPeriodEnd
-          : undefined,
-    },
+  status: providerSubscription.status,
+
+  ...(currentPeriodStart &&
+    !Number.isNaN(currentPeriodStart.getTime()) && {
+      currentPeriodStart,
+    }),
+
+  ...(currentPeriodEnd &&
+    !Number.isNaN(currentPeriodEnd.getTime()) && {
+      currentPeriodEnd,
+    }),
+},
   });
 
   return {

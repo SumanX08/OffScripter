@@ -7,7 +7,7 @@ import {
   Home,
   Settings,
   Sparkles,
-  Trophy,
+  
   X,
   Crown,
   LogOut,

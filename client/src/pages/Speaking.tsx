@@ -463,14 +463,16 @@ navigate(
    */
 
   useEffect(() => {
-    if (
-      !attempt ||
-      paused ||
-      ending ||
-      timeLeft <= 0
-    ) {
-      return;
-    }
+  if (
+    !attempt ||
+    loading ||
+    !recordingReady ||
+    paused ||
+    ending ||
+    timeLeft <= 0
+  ) {
+    return;
+  }
 
     const interval =
       window.setInterval(() => {
@@ -519,6 +521,7 @@ navigate(
   paused,
   recordingReady,
   handleEndSession,
+  loading,
 ]);
 
   /*

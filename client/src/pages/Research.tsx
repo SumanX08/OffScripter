@@ -156,26 +156,11 @@ export default function Research() {
 
         setAttempt(data);
 
-        /*
-         * Start the research timer.
-         */
-        const startedAt = new Date(
-          data.startedAt,
-        ).getTime();
-
-        const endAt =
-          startedAt +
-          data.topic.researchTime * 1000;
-
-        const remaining = Math.max(
-          0,
-          Math.ceil(
-            (endAt - Date.now()) / 1000,
-          ),
-        );
-
-        setTimerEndAt(endAt);
-        setTimeLeft(remaining);
+// Prepare the full duration.
+// The actual deadline will be initialized
+// after the research screen is rendered.
+setTimerEndAt(null);
+setTimeLeft(data.topic.researchTime);
       } catch (error) {
         console.error(
           "Failed to load attempt:",
@@ -197,6 +182,21 @@ export default function Research() {
     navigate,
   ]);
 
+  useEffect(() => {
+  if (
+    loading ||
+    !attempt ||
+    timerEndAt !== null
+  ) {
+    return;
+  }
+
+  const endAt =
+    Date.now() +
+    attempt.topic.researchTime * 1000;
+
+  setTimerEndAt(endAt);
+}, [loading, attempt, timerEndAt]);
   /*
    * --------------------------------------------------
    * Countdown
@@ -248,22 +248,24 @@ export default function Research() {
    */
 
   useEffect(() => {
-    if (
-      timeLeft !== 0 ||
-      !attempt ||
-      finishing ||
-      paused
-    ) {
-      return;
-    }
+  if (
+    timeLeft !== 0 ||
+    !attempt ||
+    finishing ||
+    paused ||
+    timerEndAt === null
+  ) {
+    return;
+  }
 
-    void finishResearch();
-  }, [
-    timeLeft,
-    attempt,
-    finishing,
-    paused,
-  ]);
+  void finishResearch();
+}, [
+  timeLeft,
+  attempt,
+  finishing,
+  paused,
+  timerEndAt,
+]);
 
   /*
    * --------------------------------------------------

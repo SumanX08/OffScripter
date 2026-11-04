@@ -3,36 +3,7 @@ import { ArrowRight, Play } from "lucide-react";
 
 import Button from "../ui/Button";
 import HeroTopicReel from "./HeroTopicReel";
-function AvatarStack() {
-  const avatars = ["AS", "JM", "RK", "NP"];
 
-  return (
-    <div className="flex items-center gap-3">
-      <div className="flex -space-x-2" aria-hidden="true">
-        {avatars.map((initials, index) => (
-          <span
-            key={initials}
-            className={`grid size-9 place-items-center rounded-full border-2 border-cream text-[0.58rem] font-extrabold text-forest ${
-              [
-                "bg-amber",
-                "bg-sage",
-                "bg-tan",
-                "bg-mist",
-              ][index]
-            }`}
-          >
-            {initials}
-          </span>
-        ))}
-      </div>
-
-      <p className="text-sm font-semibold text-forest/70">
-        <strong className="text-forest">500+</strong>{" "}
-        developers practicing
-      </p>
-    </div>
-  );
-}
 
 export default function Hero() {
   return (
@@ -82,9 +53,7 @@ export default function Hero() {
             </Button>
           </div>
 
-          <div className="mt-9 border-t border-forest/15 pt-6">
-            <AvatarStack />
-          </div>
+          
         </div>
 
         {/* Topic spinner */}

@@ -28,7 +28,7 @@ const navigation = [
   { label: "Dashboard", icon: Home, path: "/dashboard" },
   { label: "Challenges", icon: Sparkles, path: "/challenge" },
   { label: "History", icon: History, path: "/history" },
-  { label: "Leaderboard", icon: Trophy, path: "/leaderboard" },
+ // { label: "Leaderboard", icon: Trophy, path: "/leaderboard" },
   { label: "Progress", icon: BarChart3, path: "/progress" },
 ];
 

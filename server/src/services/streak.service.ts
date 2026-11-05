@@ -143,14 +143,29 @@ export async function getUserStreak(userId: string) {
     (date) => date >= historyStart && date <= today
   );
 
+  // Count completed attempts per calendar day (IST).
+const dailyActivity: Record<string, number> = {};
+
+for (const attempt of attempts) {
+  if (!attempt.submittedAt) continue;
+
+  const dateKey = getDateKey(attempt.submittedAt);
+
+  if (dateKey >= historyStart && dateKey <= today) {
+    dailyActivity[dateKey] = (dailyActivity[dateKey] ?? 0) + 1;
+  }
+}
+
   return {
-    currentStreak,
-    longestStreak,
-    practicedToday,
-    lastPracticeDate,
-    practiceDates: recentPracticeDates,
-    totalPracticeDays: practiceDates.length,
-    timeZone: TIME_ZONE,
-    historyDays: HISTORY_DAYS,
-  };
+  currentStreak,
+  longestStreak,
+  practicedToday,
+  lastPracticeDate,
+  practiceDates: recentPracticeDates,
+  totalPracticeDays: practiceDates.length,
+  totalCompletedAttempts: attempts.length,
+  dailyActivity,
+  timeZone: TIME_ZONE,
+  historyDays: HISTORY_DAYS,
+};
 }

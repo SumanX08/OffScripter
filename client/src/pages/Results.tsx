@@ -19,12 +19,14 @@ type Evaluation = {
   depth: number;
   examples: number;
   conciseness: number;
-  fillerWordsCount: number;
+
+  paceFeedback: string;
+  fillerWordFeedback: string;
+
   missingConcepts: string[];
   incorrectClaims: string[];
   feedback: string;
 };
-
 type Attempt = {
   id: string;
   transcript: string | null;
@@ -117,9 +119,13 @@ function getSuggestions(evaluation: Evaluation) {
     suggestions.push("Be more concise");
   }
 
-  if (evaluation.fillerWordsCount > 5) {
-    suggestions.push("Reduce filler words");
-  }
+  if (evaluation.fillerWordFeedback) {
+  suggestions.push(evaluation.fillerWordFeedback);
+}
+
+if (evaluation.paceFeedback) {
+  suggestions.push(evaluation.paceFeedback);
+}
 
   if (evaluation.clarity < 80) {
     suggestions.push("Make your explanation easier to follow");
@@ -367,18 +373,7 @@ export default function Results() {
               })}
             </div>
 
-            {/* Filler words */}
-            <div className="mt-8 border-t border-forest/10 pt-6">
-              <div className="flex items-center justify-between">
-                <span className="text-sm font-semibold text-forest">
-                  Filler words
-                </span>
-
-                <span className="font-serif text-xl text-forest">
-                  {evaluation.fillerWordsCount}
-                </span>
-              </div>
-            </div>
+            
           </div>
         </section>
 
@@ -511,6 +506,27 @@ export default function Results() {
                     </div>
                   </div>
                 )}
+                <div className="mt-8 space-y-6 border-t border-forest/10 pt-7">
+  <div>
+    <p className="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-rust">
+      Speaking pace
+    </p>
+
+    <p className="text-sm leading-7 text-forest/70 sm:text-base">
+      {evaluation.paceFeedback}
+    </p>
+  </div>
+
+  <div>
+    <p className="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-rust">
+      Speaking fluency
+    </p>
+
+    <p className="text-sm leading-7 text-forest/70 sm:text-base">
+      {evaluation.fillerWordFeedback}
+    </p>
+  </div>
+</div>
               </AnalysisContent>
             )}
 

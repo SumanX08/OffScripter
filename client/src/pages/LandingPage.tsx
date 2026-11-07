@@ -5,6 +5,7 @@ import Features from "../components/landing/Features"
 import Pricing from "../components/landing/Pricing"
 import FAQ from "../components/landing/FAQ"
 import Footer from "../components/landing/Footer"
+import DemoVideo from "../components/landing/DemoVideo"
 const LandingPage = () => {
   return (
      <div className="landing-page">
@@ -13,6 +14,7 @@ const LandingPage = () => {
       <main>
         <Hero />
         <HowItWorks />
+        <DemoVideo/>
         <Features/>
         <Pricing/>
         <FAQ/>

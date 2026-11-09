@@ -18,6 +18,14 @@ type SpinResponse = {
   };
 };
 
+type ApiErrorResponse = {
+  success: false;
+  error?: {
+    code?: string;
+    message?: string;
+  };
+};
+
 export default function Challenge() {
   const api = useAuthenticatedApi();
   const navigate = useNavigate();
@@ -73,18 +81,28 @@ export default function Challenge() {
 
       setAttemptId(data.attemptId);
       setSelectedTopic(data.topic.title);
-    } catch (error) {
-      console.error(
-        "Failed to generate challenge:",
-        error,
-      );
+   } catch (error: any) {
+  console.error("Failed to generate challenge:", error);
 
-      setError(
-        "Couldn't create your challenge. Please try again.",
-      );
+  const apiError = error.response?.data as ApiErrorResponse | undefined;
 
-      setSpinning(false);
-    }
+  if (apiError?.error?.code === "DAILY_TOPIC_LIMIT_REACHED") {
+    setError(
+      "Daily limit reached! You've used all your topics for today."
+    );
+  } else if (apiError?.error?.code === "NO_TOPICS_AVAILABLE") {
+    setError(
+      "No topics available for these filters. Try different filters."
+    );
+  } else {
+    setError(
+      apiError?.error?.message ||
+        "Couldn't create your challenge. Please try again."
+    );
+  }
+
+  setSpinning(false);
+}
   };
 
   const handleAnimationComplete = () => {

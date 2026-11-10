@@ -9,6 +9,7 @@ import {
   Trophy,
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { motion } from "motion/react";
 
 import { useAuthenticatedApi } from "../hooks/useAuthApi";
 
@@ -63,6 +64,29 @@ function getScoreStyle(score: number) {
   return "bg-rust/10 text-rust";
 }
 
+const pageVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.08,
+    },
+  },
+};
+
+const sectionVariants = {
+  hidden: { opacity: 0, y: 18 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: [0.22, 1, 0.36, 1] as const,
+    },
+  },
+};
+
 export default function History() {
   const api = useAuthenticatedApi();
   const navigate = useNavigate();
@@ -87,9 +111,14 @@ export default function History() {
   return (
     <div className="flex min-h-screen bg-[#FCF9EC] text-forest">
       <main className="min-w-0 flex-1 px-5 py-8 sm:px-8 lg:px-10">
-        <div className="mx-auto max-w-6xl">
+        <motion.div
+          className="mx-auto max-w-6xl"
+          variants={pageVariants}
+          initial="hidden"
+          animate="visible"
+        >
           {/* Header */}
-          <header className="mb-8">
+          <motion.header className="mb-8" variants={sectionVariants}>
             <div className="mb-3 flex items-center gap-3">
               <div className="flex size-10 items-center justify-center rounded-xl bg-sage/50 text-olive">
                 <HistoryIcon size={21} />
@@ -108,11 +137,11 @@ export default function History() {
               Look back at your previous speaking challenges and see how
               you're improving.
             </p>
-          </header>
+          </motion.header>
 
           {/* Loading */}
           {loading && (
-            <div className="rounded-2xl border border-forest/10 bg-[#FFFDF4] p-10">
+            <motion.div variants={sectionVariants} className="rounded-2xl border border-forest/10 bg-[#FFFDF4] p-10">
               <div className="flex flex-col items-center justify-center text-center">
                 <div className="mb-5 h-10 w-10 animate-spin rounded-full border-4 border-mist border-t-olive" />
 
@@ -124,12 +153,12 @@ export default function History() {
                   Getting your previous challenges.
                 </p>
               </div>
-            </div>
+            </motion.div>
           )}
 
           {/* Error */}
           {!loading && error && (
-            <div className="rounded-2xl border border-rust/20 bg-rust/5 p-8 text-center">
+            <motion.div variants={sectionVariants} className="rounded-2xl border border-rust/20 bg-rust/5 p-8 text-center">
               <h2 className="font-serif text-2xl text-forest">
                 Something went wrong
               </h2>
@@ -145,7 +174,7 @@ export default function History() {
               >
                 Try again
               </button>
-            </div>
+            </motion.div>
           )}
 
           {/* Empty */}
@@ -153,7 +182,7 @@ export default function History() {
             !error &&
             history &&
             history.attempts.length === 0 && (
-              <div className="rounded-2xl border border-forest/10 bg-[#FFFDF4] px-6 py-16 text-center">
+              <motion.div variants={sectionVariants} className="rounded-2xl border border-forest/10 bg-[#FFFDF4] px-6 py-16 text-center">
                 <div className="mx-auto flex size-16 items-center justify-center rounded-full bg-mist text-olive">
                   <HistoryIcon size={28} />
                 </div>
@@ -175,7 +204,7 @@ export default function History() {
                   Start a Challenge
                   <ArrowRight size={17} />
                 </button>
-              </div>
+              </motion.div>
             )}
 
           {/* History */}
@@ -185,7 +214,7 @@ export default function History() {
             history.attempts.length > 0 && (
               <>
                 {/* Summary */}
-                <div className="mb-5 grid gap-4 sm:grid-cols-3">
+                <motion.div variants={sectionVariants} className="mb-5 grid gap-4 sm:grid-cols-3">
                   <div className="border border-forest/10 bg-cream p-5">
                     <div className="flex items-center gap-3">
                       <div className="flex size-10 items-center justify-center rounded-xl bg-sage/50 text-olive">
@@ -239,10 +268,10 @@ export default function History() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
 
                 {/* List */}
-                <section className="overflow-hidden rounded-2xl border border-forest/10 bg-cream">
+                <motion.section variants={sectionVariants} className="overflow-hidden rounded-2xl border border-forest/10 bg-cream">
                   <div className="border-b border-forest/10 px-5 py-5 sm:px-7">
                     <h2 className="font-serif text-2xl text-rust">
                       Previous challenges
@@ -258,8 +287,14 @@ export default function History() {
                       const score = attempt.evaluation?.overallScore ?? 0;
 
                       return (
-                        <button
+                        <motion.button
                           key={attempt.id}
+                          initial={{ opacity: 0, y: 12 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          whileHover={{ x: 4 }}
+                          whileTap={{ scale: 0.99 }}
+                          transition={{ duration: 0.25 }}
+
                           type="button"
                           onClick={() =>
                             navigate(`/challenge/${attempt.id}/results`)
@@ -313,15 +348,15 @@ export default function History() {
                               className="text-forest/30 transition-transform group-hover:translate-x-1 group-hover:text-olive"
                             />
                           </div>
-                        </button>
+                        </motion.button>
                       );
                     })}
                   </div>
-                </section>
+                </motion.section>
 
                 {/* Pagination */}
                 {history.pagination.totalPages > 1 && (
-                  <div className="mt-6 flex items-center justify-between">
+                  <motion.div variants={sectionVariants} className="mt-6 flex items-center justify-between">
                     <button
                       type="button"
                       disabled={!history.pagination.hasPreviousPage}
@@ -348,11 +383,11 @@ export default function History() {
                       Next
                       <ChevronRight size={17} />
                     </button>
-                  </div>
+                  </motion.div>
                 )}
               </>
             )}
-        </div>
+        </motion.div>
       </main>
     </div>
   );

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { ArrowRight } from "lucide-react";
+import { motion } from "motion/react";
 
 type TopicWheelProps = {
   spinning: boolean;
@@ -210,8 +211,25 @@ export default function TopicWheel({
       : selectedTopic;
 
   return (
-    <div className="mx-auto w-full max-w-[620px]">
+    <motion.div
+  initial={{ opacity: 0, y: 24 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{
+    duration: 0.65,
+    ease: [0.22, 1, 0.36, 1],
+  }}
+  className="mx-auto w-full max-w-[620px]"
+>
       {/* Reel */}
+      <motion.div
+  initial={{ opacity: 0, scale: 0.96 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{
+    duration: 0.55,
+    delay: 0.12,
+    ease: [0.22, 1, 0.36, 1],
+  }}
+>
       <div
         className={[
           "relative w-full overflow-hidden",
@@ -329,8 +347,10 @@ export default function TopicWheel({
           </div>
         </div>
       </div>
+      </motion.div>
 
       {/* Generate button */}
+      
     <div className="flex justify-center">
         <button
           type="button"
@@ -371,6 +391,6 @@ export default function TopicWheel({
       <p className="mt-3 text-center font-mono text-[8px] uppercase tracking-[0.06em] text-[#283618]/35">
         One spin. One challenge.
       </p>
-    </div>
+    </motion.div>
   );
 }

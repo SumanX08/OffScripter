@@ -1,25 +1,9 @@
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
-import {
-  ArrowDownRight,
-  ArrowRight,
-  ArrowUpRight,
-  BarChart3,
-  Menu,
-  Target,
-  TrendingUp,
-} from "lucide-react";
-import {
-  CartesianGrid,
-  Line,
-  LineChart,
-  ResponsiveContainer,
-  Tooltip,
-  XAxis,
-  YAxis,
-} from "recharts";
+import {ArrowDownRight,ArrowRight,ArrowUpRight,BarChart3,Menu,Target,TrendingUp,} from "lucide-react";
+import {CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip,XAxis,YAxis,} from "recharts";
 import { useNavigate } from "react-router-dom";
-
+import { motion } from "motion/react";
 import StreakHeatmap from "../components/ui/StreakHeatMap";
 import { useStreak } from "../hooks/useStreak";
 import { useAuthenticatedApi } from "../hooks/useAuthApi";
@@ -63,6 +47,29 @@ const metrics: {
   { key: "examples", label: "Examples" },
   { key: "conciseness", label: "Conciseness" },
 ];
+
+const pageVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.12,
+      delayChildren: 0.08,
+    },
+  },
+};
+
+const sectionVariants = {
+  hidden: { opacity: 0, y: 18 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: [0.22, 1, 0.36, 1] as const,
+    },
+  },
+};
 
 export default function Progress() {
   const api = useAuthenticatedApi();
@@ -155,8 +162,11 @@ export default function Progress() {
           </span>
         </div>
 
-        <div className="mx-auto max-w-295 px-5 py-10 md:px-8 lg:px-12 lg:py-14">
-          <header className="mb-9">
+        <motion.div variants={pageVariants}
+  initial="hidden"
+  animate="visible"
+ className="mx-auto max-w-295 px-5 py-10 md:px-8 lg:px-12 lg:py-14">
+          <motion.header variants={sectionVariants} className="mb-9">
             <p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-olive">
               Your growth
             </p>
@@ -169,19 +179,22 @@ export default function Progress() {
               Every attempt is a chance to become a clearer, more confident
               technical communicator.
             </p>
-          </header>
+          </motion.header>
 
           {/* Streak heatmap */}
-          {streakLoading ? (
-            <div className="h-64 animate-pulse rounded-2xl bg-sage/30" />
-          ) : (
-            <StreakHeatmap streak={streak} />
-          )}
+          <motion.div variants={sectionVariants}>
+  {streakLoading ? (
+    <div className="h-64 animate-pulse rounded-2xl bg-sage/30" />
+  ) : (
+    <StreakHeatmap streak={streak} />
+  )}
+</motion.div>
 
           {/* Error */}
           {error && (
-            <div
+            <motion.div
               role="alert"
+              variants={sectionVariants}
               className="mb-6 flex flex-wrap items-center justify-between gap-3 border border-rust/30 bg-[#FBEEDC] p-4"
             >
               <p className="text-sm">
@@ -196,11 +209,11 @@ export default function Progress() {
               >
                 {progressQuery.isFetching ? "Retrying..." : "Try again"}
               </button>
-            </div>
+            </motion.div>
           )}
 
           {/* Summary cards */}
-          <section className="mb-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+          <motion.section variants={sectionVariants} className="mb-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
             <SummaryCard
               icon={<Target size={20} />}
               label="Latest rating"
@@ -234,16 +247,18 @@ export default function Progress() {
               description="Across your latest 10 rated attempts"
             />
 
+             <motion.div variants={sectionVariants}>
             <SummaryCard
               icon={<BarChart3 size={20} />}
               label="Challenges completed"
               value={loading ? "—" : String(totalAttempts)}
               description="All completed challenges"
             />
-          </section>
+            </motion.div>
+          </motion.section>
 
           {/* Overall rating graph */}
-          <section className="mb-8 border border-forest/15 bg-[#FFFDF0] p-5 md:p-8">
+          <motion.section variants={sectionVariants} className="mb-8 border border-forest/15 bg-[#FFFDF0] p-5 md:p-8">
             <div className="mb-7 flex flex-wrap items-start justify-between gap-4">
               <div>
                 <p className="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-rust">
@@ -343,10 +358,10 @@ export default function Progress() {
                 {chartData.length === 1 ? "" : "s"}, from oldest to newest.
               </p>
             )}
-          </section>
+          </motion.section>
 
           {/* Latest evaluation */}
-          <section className="border border-forest/15 bg-[#FFFDF0] p-5 md:p-8">
+          <motion.section variants={sectionVariants} className="border border-forest/15 bg-[#FFFDF0] p-5 md:p-8">
             <div className="mb-7 flex flex-wrap items-start justify-between gap-4">
               <div>
                 <p className="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-rust">
@@ -396,7 +411,10 @@ export default function Progress() {
                   const safeScore = Math.max(0, Math.min(100, score));
 
                   return (
-                    <div key={key}>
+                    <motion.div key={key}
+                    initial={{ opacity: 0, y: 12 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.4, delay: 0.08 }}>
                       <div className="mb-2 flex items-center justify-between gap-3">
                         <span className="text-sm font-semibold">
                           {label}
@@ -418,18 +436,21 @@ export default function Progress() {
                         aria-valuemax={100}
                         aria-valuenow={safeScore}
                       >
-                        <div
+                        <motion.div
                           className="h-full rounded-full bg-olive transition-[width] duration-500"
                           style={{ width: `${safeScore}%` }}
+                          initial={{ width: 0 }}
+  animate={{ width: `${safeScore}%` }}
+  transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
                         />
                       </div>
-                    </div>
+                    </motion.div>
                   );
                 })}
               </div>
             )}
-          </section>
-        </div>
+          </motion.section>
+        </motion.div>
       </main>
     </div>
   );

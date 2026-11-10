@@ -4,6 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import { ArrowRight, Menu } from "lucide-react";
 import { useUser } from "@clerk/clerk-react";
 import { useNavigate } from "react-router-dom";
+import { motion } from "motion/react";
 
 import Button from "../components/ui/Button";
 import DashboardStats from "../components/ui/DashboardStats";
@@ -30,6 +31,29 @@ type DashboardData = {
   attempts: RecentAttemptData[];
   challengesDone: number;
   totalPoints: number;
+};
+
+const pageVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.12,
+      delayChildren: 0.1,
+    },
+  },
+};
+
+const sectionVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.55,
+      ease: [0.22, 1, 0.36, 1] as const,
+    },
+  },
 };
 
 export default function Dashboard() {
@@ -124,8 +148,13 @@ export default function Dashboard() {
           </span>
         </div>
 
-        <div className="mx-auto max-w-295 px-5 py-10 md:px-8 lg:px-12 lg:py-14">
-          <header className="mb-6">
+        <motion.div
+  className="mx-auto max-w-295 px-5 py-10 md:px-8 lg:px-12 lg:py-14"
+  variants={pageVariants}
+  initial="hidden"
+  animate="visible"
+>
+          <motion.header variants={sectionVariants} className="mb-6">
             <h1 className="font-serif text-4xl tracking-tight text-forest">
               Good evening, {displayName}.
             </h1>
@@ -133,14 +162,17 @@ export default function Dashboard() {
             <p className="mt-2 text-sm text-forest/55">
               Keep showing up. Every explanation makes you better.
             </p>
-          </header>
+          </motion.header>
 
           {loadError && (
-            <div
-              role="alert"
-              className="mb-6 flex flex-wrap items-center justify-between gap-3 border border-rust/30 bg-[#FBEEDC] p-4"
-            >
-              <p className="text-sm text-forest">
+           
+            <motion.div
+  role="alert"
+  variants={sectionVariants}
+  className="mb-6 flex flex-wrap items-center justify-between gap-3 border border-rust/30 bg-[#FBEEDC] p-4"
+>
+
+  <p className="text-sm text-forest">
                 We couldn't load your latest statistics.
               </p>
 
@@ -151,8 +183,11 @@ export default function Dashboard() {
               >
                 Try again
               </button>
-            </div>
+
+  </motion.div>
           )}
+
+          <motion.div variants={sectionVariants}>
 
           <DashboardStats
             totalPoints={totalPoints}
@@ -161,7 +196,14 @@ export default function Dashboard() {
             loading={loading || streakLoading}
           />
 
-          <section className="mb-8 overflow-hidden rounded-2xl border border-forest bg-forest shadow-[5px_5px_0_var(--color-amber)]">
+          </motion.div>
+
+          <motion.section
+  variants={sectionVariants}
+  whileHover={{ y: -3 }}
+  transition={{ duration: 0.25 }}
+  className="mb-8 overflow-hidden rounded-2xl border border-forest bg-forest shadow-[5px_5px_0_var(--color-amber)]"
+>
             <div className="flex min-h-40 items-center justify-between gap-6 px-7 py-7">
               <div>
                 <p className="mb-2 text-xs font-bold uppercase tracking-[0.18em] text-cream/70">
@@ -186,25 +228,32 @@ export default function Dashboard() {
                 <ArrowRight size={17} />
               </Button>
             </div>
-          </section>
+         </motion.section>
 
-          <section className="grid items-stretch gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.85fr)]">
-            <ProgressSnapshot
-              evaluation={latestAttempt?.evaluation ?? null}
-              loading={loading}
-              onViewProgress={() => navigate("/progress")}
-            />
+          <motion.section
+  variants={sectionVariants}
+  className="grid items-stretch gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.85fr)]"
+>
+  <motion.div variants={sectionVariants}>
+    <ProgressSnapshot
+      evaluation={latestAttempt?.evaluation ?? null}
+      loading={loading}
+      onViewProgress={() => navigate("/progress")}
+    />
+  </motion.div>
 
-            <RecentAttempt
-              attempt={latestAttempt}
-              loading={loading}
-              onViewResults={(id) =>
-                navigate(`/challenge/${id}/results`)
-              }
-              onViewAll={() => navigate("/history")}
-            />
-          </section>
-        </div>
+  <motion.div variants={sectionVariants}>
+    <RecentAttempt
+      attempt={latestAttempt}
+      loading={loading}
+      onViewResults={(id) =>
+        navigate(`/challenge/${id}/results`)
+      }
+      onViewAll={() => navigate("/history")}
+    />
+  </motion.div>
+</motion.section>
+        </motion.div>
       </main>
     </div>
   );

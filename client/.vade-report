@@ -1,0 +1,50 @@
+## Vercel Speed Insights Installation
+
+Successfully installed and configured Vercel Speed Insights for this React + Vite project.
+
+### Changes Made:
+
+**1. Package Installation:**
+- Installed `@vercel/speed-insights` version ^2.1.0
+- Used npm with `--legacy-peer-deps` flag due to TypeScript version conflict with typescript-eslint
+- Package added to dependencies in package.json
+
+**2. Code Configuration:**
+- **Modified: `client/src/App.tsx`**
+  - Added import: `import { SpeedInsights } from "@vercel/speed-insights/react";`
+  - Added `<SpeedInsights />` component inside a React Fragment wrapper alongside the Routes component
+  - Wrapped the Routes component in a Fragment (`<>...</>`) to allow multiple root elements
+
+**3. Lock File Updates:**
+- Updated `client/package-lock.json` to reflect new dependencies
+
+### Implementation Details:
+
+Following the official Vercel Speed Insights quickstart documentation (retrieved from https://vercel.com/docs/speed-insights/quickstart), the implementation uses the React-specific integration method:
+
+- The `<SpeedInsights />` component is placed at the root level of the application
+- It sits alongside the Routes component to ensure it tracks all page navigations
+- This provides automatic performance metrics collection for the entire application
+
+### Framework-Specific Notes:
+
+This is a **React 19 + Vite 8** project using:
+- React Router v7 for routing
+- Clerk for authentication
+- TanStack Query for data fetching
+- Tailwind CSS for styling
+
+The SpeedInsights component will automatically track Core Web Vitals and other performance metrics once deployed to Vercel.
+
+### Post-Installation:
+
+The implementation is complete and ready for deployment. When deployed to Vercel:
+1. Speed Insights will automatically collect performance metrics
+2. Metrics will appear in the Vercel dashboard under Speed Insights section
+3. The component tracks navigation and user interactions across all routes
+
+### Notes:
+
+- Pre-existing build errors related to recharts/react-is dependency were noted but are unrelated to this change
+- Pre-existing linting errors in the codebase were not addressed as they are outside the scope of this task
+- The Speed Insights integration does not introduce any new errors or warnings

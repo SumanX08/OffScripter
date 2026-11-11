@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useAuth } from "@clerk/clerk-react";
 import { Navigate, Route, Routes } from "react-router-dom";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 import LandingPage from "./pages/LandingPage";
 import Dashboard from "./pages/Dashboard";
@@ -86,140 +87,143 @@ function App() {
   }
 
   return (
-    <Routes>
-      {/* Public */}
-      <Route path="/" element={<LandingPage />} />
+    <>
+      <Routes>
+        {/* Public */}
+        <Route path="/" element={<LandingPage />} />
 
-      {/* Onboarding */}
-      <Route
-        path="/onboarding"
-        element={
-          !isSignedIn ? (
-            <Navigate to="/" replace />
-          ) : profileStatus === "missing" ? (
-            <Onboarding />
-          ) : (
-            <Navigate to="/dashboard" replace />
-          )
-        }
-      />
+        {/* Onboarding */}
+        <Route
+          path="/onboarding"
+          element={
+            !isSignedIn ? (
+              <Navigate to="/" replace />
+            ) : profileStatus === "missing" ? (
+              <Onboarding />
+            ) : (
+              <Navigate to="/dashboard" replace />
+            )
+          }
+        />
 
-      {/* Dashboard */}
-     
-{/* Shared authenticated layout */}
-<Route element={<AppLayout />}>
-  <Route
-    path="/dashboard"
-    element={
-      !isSignedIn ? (
-        <Navigate to="/" replace />
-      ) : profileStatus === "missing" ? (
-        <Navigate to="/onboarding" replace />
-      ) : (
-        <Dashboard />
-      )
-    }
-  />
+        {/* Dashboard */}
+       
+  {/* Shared authenticated layout */}
+  <Route element={<AppLayout />}>
+    <Route
+      path="/dashboard"
+      element={
+        !isSignedIn ? (
+          <Navigate to="/" replace />
+        ) : profileStatus === "missing" ? (
+          <Navigate to="/onboarding" replace />
+        ) : (
+          <Dashboard />
+        )
+      }
+    />
 
-  <Route
-    path="/challenge"
-    element={
-      !isSignedIn ? (
-        <Navigate to="/" replace />
-      ) : profileStatus === "missing" ? (
-        <Navigate to="/onboarding" replace />
-      ) : (
-        <Challenge />
-      )
-    }
-  />
+    <Route
+      path="/challenge"
+      element={
+        !isSignedIn ? (
+          <Navigate to="/" replace />
+        ) : profileStatus === "missing" ? (
+          <Navigate to="/onboarding" replace />
+        ) : (
+          <Challenge />
+        )
+      }
+    />
 
-  <Route
-    path="/challenge/:attemptId/research"
-    element={
-      !isSignedIn ? (
-        <Navigate to="/" replace />
-      ) : profileStatus === "missing" ? (
-        <Navigate to="/onboarding" replace />
-      ) : (
-        <Research />
-      )
-    }
-  />
+    <Route
+      path="/challenge/:attemptId/research"
+      element={
+        !isSignedIn ? (
+          <Navigate to="/" replace />
+        ) : profileStatus === "missing" ? (
+          <Navigate to="/onboarding" replace />
+        ) : (
+          <Research />
+        )
+      }
+    />
 
-  <Route
-    path="/challenge/:attemptId/speaking"
-    element={
-      !isSignedIn ? (
-        <Navigate to="/" replace />
-      ) : profileStatus === "missing" ? (
-        <Navigate to="/onboarding" replace />
-      ) : (
-        <Speaking />
-      )
-    }
-  />
+    <Route
+      path="/challenge/:attemptId/speaking"
+      element={
+        !isSignedIn ? (
+          <Navigate to="/" replace />
+        ) : profileStatus === "missing" ? (
+          <Navigate to="/onboarding" replace />
+        ) : (
+          <Speaking />
+        )
+      }
+    />
 
-  <Route
-    path="/challenge/:attemptId/results"
-    element={
-      !isSignedIn ? (
-        <Navigate to="/" replace />
-      ) : profileStatus === "missing" ? (
-        <Navigate to="/onboarding" replace />
-      ) : (
-        <Results />
-      )
-    }
-  />
+    <Route
+      path="/challenge/:attemptId/results"
+      element={
+        !isSignedIn ? (
+          <Navigate to="/" replace />
+        ) : profileStatus === "missing" ? (
+          <Navigate to="/onboarding" replace />
+        ) : (
+          <Results />
+        )
+      }
+    />
 
-  <Route
-    path="/history"
-    element={
-      !isSignedIn ? (
-        <Navigate to="/" replace />
-      ) : profileStatus === "missing" ? (
-        <Navigate to="/onboarding" replace />
-      ) : (
-        <History />
-      )
-    }
-  />
+    <Route
+      path="/history"
+      element={
+        !isSignedIn ? (
+          <Navigate to="/" replace />
+        ) : profileStatus === "missing" ? (
+          <Navigate to="/onboarding" replace />
+        ) : (
+          <History />
+        )
+      }
+    />
 
-  <Route
-    path="/leaderboard"
-    element={
-      !isSignedIn ? (
-        <Navigate to="/" replace />
-      ) : (
-        <div className="min-h-screen bg-[#FCF9EC]" />
-      )
-    }
-  />
+    <Route
+      path="/leaderboard"
+      element={
+        !isSignedIn ? (
+          <Navigate to="/" replace />
+        ) : (
+          <div className="min-h-screen bg-[#FCF9EC]" />
+        )
+      }
+    />
 
-  <Route
-    path="/upgrade"
-    element={<Upgrade />}
-  />
+    <Route
+      path="/upgrade"
+      element={<Upgrade />}
+    />
 
-  <Route
-    path="/progress"
-    element={<Progress />}
-  />
+    <Route
+      path="/progress"
+      element={<Progress />}
+    />
 
-  <Route
-    path="/settings"
-    element={<Settings />}
-  />
-</Route>
+    <Route
+      path="/settings"
+      element={<Settings />}
+    />
+  </Route>
 
 
-      {/* Fallback */}
-      <Route
-        path="*"
-        element={<Navigate to="/" replace />}
-      />
-    </Routes>
+        {/* Fallback */}
+        <Route
+          path="*"
+          element={<Navigate to="/" replace />}
+        />
+      </Routes>
+      <SpeedInsights />
+    </>
   );
 }
 

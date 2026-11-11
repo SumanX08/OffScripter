@@ -1,8 +1,12 @@
+
 import OpenAI from "openai";
 
 import { prisma } from "../config/prisma.js";
 import { env } from "../config/env.js";
 import { evaluationSchema } from "../validator/evaluation.validator.js";
+
+import { detectFillerWords } from "../utils/speech-analytics.js";
+import { calculateSpeakingPace } from "../utils/speech-analytics.js";
 
 const openai = new OpenAI({
   apiKey: env.OPENAI_API_KEY,
@@ -35,10 +39,35 @@ export const evaluateAttempt = async (
     throw new Error("Attempt has no transcript");
   }
 
-  // Don't evaluate the same attempt twice.
+  // Avoid evaluating the same attempt twice.
   if (attempt.evaluation) {
     return attempt.evaluation;
   }
+
+  // Calculate filler words on the backend.
+  const fillerAnalytics = detectFillerWords(
+    attempt.transcript
+  );
+
+  // Calculate speaking pace using attempt timestamps.
+  const speakingAnalytics = calculateSpeakingPace(
+    attempt.transcript,
+    attempt.speakingStartedAt,
+    attempt.speakingEndedAt
+  );
+
+  const {
+    total: fillerWordsCount,
+  } = fillerAnalytics;
+
+  const {
+    totalWords,
+    speakingDurationSeconds,
+    wordsPerMinute,
+  } = speakingAnalytics;
+
+  const hasValidDuration =
+    speakingDurationSeconds > 0;
 
   const response = await openai.responses.create({
     model: "gpt-4.1-mini",
@@ -65,16 +94,34 @@ Score each category from 0 to 100:
 - examples
 - conciseness
 
-Also count obvious filler words such as:
-"um", "uh", "like", "you know", "basically", "actually", etc.
+Also evaluate speaking delivery using the provided backend measurements.
 
-Identify:
+PACE GUIDELINES:
+- Below 100 WPM: potentially slow.
+- 100–180 WPM: generally balanced.
+- Above 180 WPM: potentially fast.
+
+These are guidelines, not strict rules.
+Consider the technical complexity and clarity of the explanation.
+Do not automatically penalize a speaker for a slightly slower or faster pace.
+
+For paceFeedback:
+- Suggest increasing speed if the pace is unnecessarily slow.
+- Suggest reducing speed if the pace is too fast.
+- Encourage maintaining the current pace if it is appropriate.
+- If speaking duration is unavailable, explain that pace could not be assessed.
+
+For fillerWordFeedback:
+- Use the backend-provided filler word count.
+- If no filler words were detected, acknowledge that.
+- If filler words were detected, suggest replacing unnecessary fillers with short pauses.
+- Never invent additional filler words or counts.
+
+Also identify:
 1. Important concepts that should have been mentioned but were missing.
 2. Technically incorrect claims made by the user.
 
-Feedback should be concise and practical.
-
-Focus on helping the user improve their technical speaking ability.
+Feedback should be concise, practical, and encouraging.
 
 Do not be overly harsh for minor wording mistakes.
 
@@ -84,17 +131,37 @@ Return ONLY the requested structured output.
       {
         role: "user",
         content: `
-Topic:
+TOPIC:
 ${attempt.topic.title}
 
-Category:
+CATEGORY:
 ${attempt.topic.category}
 
-Difficulty:
+DIFFICULTY:
 ${attempt.topic.difficulty}
 
-User explanation:
+USER EXPLANATION:
 ${attempt.transcript}
+
+SPEAKING ANALYTICS:
+
+Total words: ${totalWords}
+Speaking duration: ${
+          hasValidDuration
+            ? `${speakingDurationSeconds} seconds`
+            : "Unavailable"
+        }
+Speaking pace: ${
+          hasValidDuration
+            ? `${wordsPerMinute} WPM`
+            : "Unavailable"
+        }
+
+FILLER WORD ANALYSIS:
+
+Total detected filler words: ${fillerWordsCount}
+Detected filler word breakdown:
+${JSON.stringify(fillerAnalytics.counts)}
         `,
       },
     ],
@@ -104,6 +171,7 @@ ${attempt.transcript}
         type: "json_schema",
         name: "technical_evaluation",
         strict: true,
+
         schema: {
           type: "object",
 
@@ -150,9 +218,12 @@ ${attempt.transcript}
               maximum: 100,
             },
 
-            fillerWordsCount: {
-              type: "integer",
-              minimum: 0,
+            paceFeedback: {
+              type: "string",
+            },
+
+            fillerWordFeedback: {
+              type: "string",
             },
 
             missingConcepts: {
@@ -182,7 +253,8 @@ ${attempt.transcript}
             "depth",
             "examples",
             "conciseness",
-            "fillerWordsCount",
+            "paceFeedback",
+            "fillerWordFeedback",
             "missingConcepts",
             "incorrectClaims",
             "feedback",
@@ -193,6 +265,10 @@ ${attempt.transcript}
       },
     },
   });
+
+  if (!response.output_text) {
+    throw new Error("AI evaluation returned an empty response");
+  }
 
   const parsed = evaluationSchema.parse(
     JSON.parse(response.output_text)
@@ -210,7 +286,18 @@ ${attempt.transcript}
       examples: parsed.examples,
       conciseness: parsed.conciseness,
 
-      fillerWordsCount: parsed.fillerWordsCount,
+      // Backend-calculated metrics.
+      fillerWordsCount,
+      wordsPerMinute: hasValidDuration
+        ? wordsPerMinute
+        : null,
+      speakingDurationSeconds: hasValidDuration
+        ? speakingDurationSeconds
+        : null,
+
+      // AI-generated coaching suggestions.
+      paceFeedback: parsed.paceFeedback,
+      fillerWordFeedback: parsed.fillerWordFeedback,
 
       missingConcepts: parsed.missingConcepts,
       incorrectClaims: parsed.incorrectClaims,
@@ -218,7 +305,7 @@ ${attempt.transcript}
       feedback: parsed.feedback,
 
       model: "gpt-4.1-mini",
-      promptVersion: "v1",
+      promptVersion: "v2",
     },
   });
 };

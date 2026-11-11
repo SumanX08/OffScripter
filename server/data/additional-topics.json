@@ -1,0 +1,1442 @@
+[
+  {
+    "slug": "how-does-the-internet-work-from-end-to-end",
+    "title": "How does the internet work from end to end?",
+    "category": "web",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-happens-when-a-browser-requests-a-web-page",
+    "title": "What happens when a browser requests a web page?",
+    "category": "web",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-the-difference-between-http-and-https",
+    "title": "What is the difference between HTTP and HTTPS?",
+    "category": "web",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-does-the-domain-name-system-resolve-a-domain-name",
+    "title": "How does the Domain Name System resolve a domain name?",
+    "category": "web",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-happens-during-a-secure-connection-handshake",
+    "title": "What happens during a secure connection handshake?",
+    "category": "web",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-are-cookies-and-how-are-they-used-on-the-web",
+    "title": "What are cookies, and how are they used on the web?",
+    "category": "web",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-the-difference-between-cookies-local-storage-and-session-storage",
+    "title": "What is the difference between cookies, local storage, and session storage?",
+    "category": "web",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-browsers-enforce-the-same-origin-policy",
+    "title": "How do browsers enforce the same-origin policy?",
+    "category": "web",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-cross-origin-resource-sharing-and-why-is-it-needed",
+    "title": "What is Cross-Origin Resource Sharing, and why is it needed?",
+    "category": "web",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-content-delivery-networks-improve-website-performance",
+    "title": "How do content delivery networks improve website performance?",
+    "category": "web",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-the-role-of-a-reverse-proxy-in-web-architecture",
+    "title": "What is the role of a reverse proxy in web architecture?",
+    "category": "web",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-web-caches-work-and-what-can-go-wrong-when-invalidating-them",
+    "title": "How do web caches work, and what can go wrong when invalidating them?",
+    "category": "web",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-investigate-a-website-that-loads-slowly-for-users-in-different-regions",
+    "title": "How would you investigate a website that loads slowly for users in different regions?",
+    "category": "web",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-design-a-reliable-file-upload-flow-for-a-web-application",
+    "title": "How would you design a reliable file upload flow for a web application?",
+    "category": "web",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-streaming-responses-differ-from-traditional-request-response-interactions",
+    "title": "How do streaming responses differ from traditional request-response interactions?",
+    "category": "web",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-responsibilities-does-a-backend-application-typically-handle",
+    "title": "What responsibilities does a backend application typically handle?",
+    "category": "backend",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-makes-an-api-well-designed-and-predictable",
+    "title": "What makes an API well-designed and predictable?",
+    "category": "backend",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-the-difference-between-authentication-and-authorization",
+    "title": "What is the difference between authentication and authorization?",
+    "category": "backend",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-stateless-and-stateful-services-differ",
+    "title": "How do stateless and stateful services differ?",
+    "category": "backend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-does-session-management-work-in-a-distributed-application",
+    "title": "How does session management work in a distributed application?",
+    "category": "backend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-are-middleware-and-request-interceptors-and-when-are-they-useful",
+    "title": "What are middleware and request interceptors, and when are they useful?",
+    "category": "backend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-should-an-api-validate-and-handle-untrusted-input",
+    "title": "How should an API validate and handle untrusted input?",
+    "category": "backend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-idempotency-and-why-is-it-important-for-api-design",
+    "title": "What is idempotency, and why is it important for API design?",
+    "category": "backend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-background-jobs-and-task-queues-work",
+    "title": "How do background jobs and task queues work?",
+    "category": "backend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-should-an-application-handle-retries-without-duplicating-operations",
+    "title": "How should an application handle retries without duplicating operations?",
+    "category": "backend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-are-rate-limits-and-how-can-an-api-enforce-them",
+    "title": "What are rate limits, and how can an API enforce them?",
+    "category": "backend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-synchronous-and-asynchronous-apis-differ",
+    "title": "How do synchronous and asynchronous APIs differ?",
+    "category": "backend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-design-an-api-to-handle-a-sudden-tenfold-increase-in-traffic",
+    "title": "How would you design an API to handle a sudden tenfold increase in traffic?",
+    "category": "backend",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-make-a-backend-service-resilient-to-dependency-failures",
+    "title": "How would you make a backend service resilient to dependency failures?",
+    "category": "backend",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-you-safely-deploy-a-breaking-api-change",
+    "title": "How do you safely deploy a breaking API change?",
+    "category": "backend",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-design-a-notification-service-for-millions-of-users",
+    "title": "How would you design a notification service for millions of users?",
+    "category": "backend",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-investigate-memory-growth-in-a-long-running-service",
+    "title": "How would you investigate memory growth in a long-running service?",
+    "category": "backend",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-prevent-duplicate-processing-in-a-distributed-job-system",
+    "title": "How would you prevent duplicate processing in a distributed job system?",
+    "category": "backend",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-should-secrets-and-configuration-be-managed-across-environments",
+    "title": "How should secrets and configuration be managed across environments?",
+    "category": "backend",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-design-graceful-shutdown-for-a-production-service",
+    "title": "How would you design graceful shutdown for a production service?",
+    "category": "backend",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-does-a-browser-turn-html-css-and-javascript-into-a-page",
+    "title": "How does a browser turn HTML, CSS, and JavaScript into a page?",
+    "category": "frontend",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-the-dom-and-how-does-an-application-interact-with-it",
+    "title": "What is the DOM, and how does an application interact with it?",
+    "category": "frontend",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-responsive-web-design-and-why-does-it-matter",
+    "title": "What is responsive web design, and why does it matter?",
+    "category": "frontend",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-accessibility-in-web-applications",
+    "title": "What is accessibility in web applications?",
+    "category": "frontend",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-does-a-component-based-ui-architecture-work",
+    "title": "How does a component-based UI architecture work?",
+    "category": "frontend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-causes-unnecessary-ui-re-renders-and-how-can-they-be-reduced",
+    "title": "What causes unnecessary UI re-renders, and how can they be reduced?",
+    "category": "frontend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-should-an-application-manage-complex-client-side-state",
+    "title": "How should an application manage complex client-side state?",
+    "category": "frontend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-are-the-trade-offs-between-client-side-and-server-side-rendering",
+    "title": "What are the trade-offs between client-side and server-side rendering?",
+    "category": "frontend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-hydration-and-why-can-hydration-mismatches-occur",
+    "title": "What is hydration, and why can hydration mismatches occur?",
+    "category": "frontend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-lazy-loading-and-code-splitting-improve-application-performance",
+    "title": "How do lazy loading and code splitting improve application performance?",
+    "category": "frontend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-should-a-frontend-application-handle-loading-empty-and-error-states",
+    "title": "How should a frontend application handle loading, empty, and error states?",
+    "category": "frontend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-can-frontend-forms-provide-accessible-and-reliable-validation",
+    "title": "How can frontend forms provide accessible and reliable validation?",
+    "category": "frontend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-diagnose-and-improve-poor-core-web-vitals",
+    "title": "How would you diagnose and improve poor Core Web Vitals?",
+    "category": "frontend",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-architect-a-large-frontend-application-used-by-multiple-teams",
+    "title": "How would you architect a large frontend application used by multiple teams?",
+    "category": "frontend",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-make-a-web-interface-usable-on-slow-networks-and-low-powered-devices",
+    "title": "How would you make a web interface usable on slow networks and low-powered devices?",
+    "category": "frontend",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-the-difference-between-relational-and-non-relational-databases",
+    "title": "What is the difference between relational and non-relational databases?",
+    "category": "databases",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-a-primary-key-and-why-is-it-important",
+    "title": "What is a primary key, and why is it important?",
+    "category": "databases",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-a-database-index-and-what-are-its-trade-offs",
+    "title": "What is a database index, and what are its trade-offs?",
+    "category": "databases",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-database-normalization-and-what-problem-does-it-solve",
+    "title": "What is database normalization, and what problem does it solve?",
+    "category": "databases",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-are-acid-properties-and-why-do-they-matter",
+    "title": "What are ACID properties, and why do they matter?",
+    "category": "databases",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-database-transactions-maintain-consistency",
+    "title": "How do database transactions maintain consistency?",
+    "category": "databases",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-are-isolation-levels-and-what-anomalies-can-occur",
+    "title": "What are isolation levels, and what anomalies can occur?",
+    "category": "databases",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-joins-work-and-when-can-they-become-expensive",
+    "title": "How do joins work, and when can they become expensive?",
+    "category": "databases",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-the-difference-between-optimistic-and-pessimistic-locking",
+    "title": "What is the difference between optimistic and pessimistic locking?",
+    "category": "databases",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-database-replication-and-read-replicas-work",
+    "title": "How do database replication and read replicas work?",
+    "category": "databases",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-database-sharding-and-when-might-it-be-necessary",
+    "title": "What is database sharding, and when might it be necessary?",
+    "category": "databases",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-should-schema-migrations-be-handled-in-a-live-application",
+    "title": "How should schema migrations be handled in a live application?",
+    "category": "databases",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-causes-slow-database-queries-and-how-would-you-investigate-them",
+    "title": "What causes slow database queries, and how would you investigate them?",
+    "category": "databases",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-choose-indexes-for-a-high-traffic-transactional-workload",
+    "title": "How would you choose indexes for a high-traffic transactional workload?",
+    "category": "databases",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-design-a-data-model-for-a-multi-tenant-application",
+    "title": "How would you design a data model for a multi-tenant application?",
+    "category": "databases",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-you-maintain-consistency-across-multiple-data-stores",
+    "title": "How do you maintain consistency across multiple data stores?",
+    "category": "databases",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-migrate-a-large-database-with-minimal-downtime",
+    "title": "How would you migrate a large database with minimal downtime?",
+    "category": "databases",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-design-a-database-backup-and-recovery-strategy",
+    "title": "How would you design a database backup and recovery strategy?",
+    "category": "databases",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-are-the-trade-offs-between-strong-consistency-and-eventual-consistency",
+    "title": "What are the trade-offs between strong consistency and eventual consistency?",
+    "category": "databases",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-troubleshoot-connection-pool-exhaustion-in-production",
+    "title": "How would you troubleshoot connection pool exhaustion in production?",
+    "category": "databases",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-system-design-and-why-is-it-important",
+    "title": "What is system design, and why is it important?",
+    "category": "system-design",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-the-difference-between-vertical-and-horizontal-scaling",
+    "title": "What is the difference between vertical and horizontal scaling?",
+    "category": "system-design",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-load-balancers-distribute-traffic-across-servers",
+    "title": "How do load balancers distribute traffic across servers?",
+    "category": "system-design",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-are-the-main-trade-offs-between-monolithic-and-microservice-architectures",
+    "title": "What are the main trade-offs between monolithic and microservice architectures?",
+    "category": "system-design",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-message-queues-help-decouple-system-components",
+    "title": "How do message queues help decouple system components?",
+    "category": "system-design",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-eventual-consistency-and-where-is-it-useful",
+    "title": "What is eventual consistency, and where is it useful?",
+    "category": "system-design",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-you-identify-and-remove-a-bottleneck-in-a-distributed-system",
+    "title": "How do you identify and remove a bottleneck in a distributed system?",
+    "category": "system-design",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-design-a-url-shortening-service",
+    "title": "How would you design a URL shortening service?",
+    "category": "system-design",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-design-a-real-time-chat-application",
+    "title": "How would you design a real-time chat application?",
+    "category": "system-design",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-design-a-notification-delivery-platform",
+    "title": "How would you design a notification delivery platform?",
+    "category": "system-design",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-design-a-file-storage-and-sharing-service",
+    "title": "How would you design a file storage and sharing service?",
+    "category": "system-design",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-design-a-search-autocomplete-service",
+    "title": "How would you design a search autocomplete service?",
+    "category": "system-design",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-design-an-audit-logging-system",
+    "title": "How would you design an audit logging system?",
+    "category": "system-design",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-design-a-rate-limiter-for-a-distributed-environment",
+    "title": "How would you design a rate limiter for a distributed environment?",
+    "category": "system-design",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-design-a-feed-or-timeline-for-millions-of-users",
+    "title": "How would you design a feed or timeline for millions of users?",
+    "category": "system-design",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-design-a-multi-region-application-with-high-availability",
+    "title": "How would you design a multi-region application with high availability?",
+    "category": "system-design",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-design-a-distributed-job-scheduler",
+    "title": "How would you design a distributed job scheduler?",
+    "category": "system-design",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-design-a-metrics-and-monitoring-platform",
+    "title": "How would you design a metrics and monitoring platform?",
+    "category": "system-design",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-design-a-payment-processing-system-with-reliable-state-transitions",
+    "title": "How would you design a payment processing system with reliable state transitions?",
+    "category": "system-design",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-design-a-ticket-booking-system-that-prevents-overselling",
+    "title": "How would you design a ticket booking system that prevents overselling?",
+    "category": "system-design",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-design-a-feature-flag-service-for-many-applications",
+    "title": "How would you design a feature flag service for many applications?",
+    "category": "system-design",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-design-a-system-that-processes-large-volumes-of-events",
+    "title": "How would you design a system that processes large volumes of events?",
+    "category": "system-design",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-design-a-globally-available-api-with-strict-latency-targets",
+    "title": "How would you design a globally available API with strict latency targets?",
+    "category": "system-design",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-handle-distributed-transactions-across-independent-services",
+    "title": "How would you handle distributed transactions across independent services?",
+    "category": "system-design",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-evolve-a-monolith-into-services-without-disrupting-users",
+    "title": "How would you evolve a monolith into services without disrupting users?",
+    "category": "system-design",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-an-operating-system-and-what-responsibilities-does-it-have",
+    "title": "What is an operating system, and what responsibilities does it have?",
+    "category": "computer-science",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-the-difference-between-a-process-and-a-thread",
+    "title": "What is the difference between a process and a thread?",
+    "category": "computer-science",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-memory-management-and-why-is-it-needed",
+    "title": "What is memory management, and why is it needed?",
+    "category": "computer-science",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-the-difference-between-stack-and-heap-memory",
+    "title": "What is the difference between stack and heap memory?",
+    "category": "computer-science",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-are-compiled-and-interpreted-execution-models",
+    "title": "What are compiled and interpreted execution models?",
+    "category": "computer-science",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-does-virtual-memory-work",
+    "title": "How does virtual memory work?",
+    "category": "computer-science",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-a-context-switch-and-what-does-it-cost",
+    "title": "What is a context switch, and what does it cost?",
+    "category": "computer-science",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-concurrency-and-parallelism-differ",
+    "title": "How do concurrency and parallelism differ?",
+    "category": "computer-science",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-a-race-condition-and-how-can-it-be-prevented",
+    "title": "What is a race condition, and how can it be prevented?",
+    "category": "computer-science",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-are-deadlocks-and-what-conditions-can-cause-them",
+    "title": "What are deadlocks, and what conditions can cause them?",
+    "category": "computer-science",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-garbage-collectors-reclaim-memory",
+    "title": "How do garbage collectors reclaim memory?",
+    "category": "computer-science",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-the-difference-between-a-mutex-semaphore-and-read-write-lock",
+    "title": "What is the difference between a mutex, semaphore, and read-write lock?",
+    "category": "computer-science",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-cpu-caches-affect-program-performance",
+    "title": "How do CPU caches affect program performance?",
+    "category": "computer-science",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-the-role-of-a-compiler-in-program-execution",
+    "title": "What is the role of a compiler in program execution?",
+    "category": "computer-science",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-investigate-a-thread-contention-problem",
+    "title": "How would you investigate a thread contention problem?",
+    "category": "computer-science",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-lock-free-data-structures-differ-from-lock-based-approaches",
+    "title": "How do lock-free data structures differ from lock-based approaches?",
+    "category": "computer-science",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-can-memory-leaks-occur-in-managed-and-unmanaged-runtimes",
+    "title": "How can memory leaks occur in managed and unmanaged runtimes?",
+    "category": "computer-science",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-reason-about-performance-across-cpu-memory-and-i-o-bottlenecks",
+    "title": "How would you reason about performance across CPU, memory, and I/O bottlenecks?",
+    "category": "computer-science",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-are-the-trade-offs-of-different-garbage-collection-strategies",
+    "title": "What are the trade-offs of different garbage collection strategies?",
+    "category": "computer-science",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-operating-systems-isolate-processes-and-protect-resources",
+    "title": "How do operating systems isolate processes and protect resources?",
+    "category": "computer-science",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-arrays-and-linked-lists-differ",
+    "title": "How do arrays and linked lists differ?",
+    "category": "data-structures-algorithms",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-the-difference-between-a-stack-and-a-queue",
+    "title": "What is the difference between a stack and a queue?",
+    "category": "data-structures-algorithms",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-big-o-notation-and-how-should-it-be-interpreted",
+    "title": "What is Big O notation, and how should it be interpreted?",
+    "category": "data-structures-algorithms",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-does-binary-search-work-and-when-can-it-be-used",
+    "title": "How does binary search work, and when can it be used?",
+    "category": "data-structures-algorithms",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-hash-tables-work-and-how-are-collisions-handled",
+    "title": "How do hash tables work, and how are collisions handled?",
+    "category": "data-structures-algorithms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-trees-represent-hierarchical-data",
+    "title": "How do trees represent hierarchical data?",
+    "category": "data-structures-algorithms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-the-difference-between-depth-first-and-breadth-first-search",
+    "title": "What is the difference between depth-first and breadth-first search?",
+    "category": "data-structures-algorithms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-sorting-algorithms-differ-in-time-and-space-complexity",
+    "title": "How do sorting algorithms differ in time and space complexity?",
+    "category": "data-structures-algorithms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "when-would-you-use-a-heap-or-priority-queue",
+    "title": "When would you use a heap or priority queue?",
+    "category": "data-structures-algorithms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-graphs-model-relationships-between-entities",
+    "title": "How do graphs model relationships between entities?",
+    "category": "data-structures-algorithms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-dynamic-programming-and-how-do-you-recognize-suitable-problems",
+    "title": "What is dynamic programming, and how do you recognize suitable problems?",
+    "category": "data-structures-algorithms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-the-two-pointer-technique-and-when-is-it-useful",
+    "title": "What is the two-pointer technique, and when is it useful?",
+    "category": "data-structures-algorithms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-choose-a-data-structure-for-a-high-throughput-lookup-service",
+    "title": "How would you choose a data structure for a high-throughput lookup service?",
+    "category": "data-structures-algorithms",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-shortest-path-algorithms-differ-and-when-would-you-use-each",
+    "title": "How do shortest-path algorithms differ, and when would you use each?",
+    "category": "data-structures-algorithms",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-analyze-the-time-and-space-complexity-of-a-complex-algorithm",
+    "title": "How would you analyze the time and space complexity of a complex algorithm?",
+    "category": "data-structures-algorithms",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-makes-code-maintainable",
+    "title": "What makes code maintainable?",
+    "category": "software-engineering",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "why-are-version-control-systems-important-in-team-development",
+    "title": "Why are version control systems important in team development?",
+    "category": "software-engineering",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-the-purpose-of-code-reviews",
+    "title": "What is the purpose of code reviews?",
+    "category": "software-engineering",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-the-difference-between-unit-integration-and-end-to-end-testing",
+    "title": "What is the difference between unit, integration, and end-to-end testing?",
+    "category": "software-engineering",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-solid-principles-influence-software-design",
+    "title": "How do SOLID principles influence software design?",
+    "category": "software-engineering",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-are-design-patterns-and-when-can-they-become-harmful",
+    "title": "What are design patterns, and when can they become harmful?",
+    "category": "software-engineering",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-should-a-team-structure-automated-testing-for-a-large-application",
+    "title": "How should a team structure automated testing for a large application?",
+    "category": "software-engineering",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-technical-debt-and-how-should-teams-manage-it",
+    "title": "What is technical debt, and how should teams manage it?",
+    "category": "software-engineering",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-continuous-integration-and-continuous-delivery-work",
+    "title": "How do continuous integration and continuous delivery work?",
+    "category": "software-engineering",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-should-logging-metrics-and-tracing-be-used-together",
+    "title": "How should logging, metrics, and tracing be used together?",
+    "category": "software-engineering",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-you-design-software-for-testability",
+    "title": "How do you design software for testability?",
+    "category": "software-engineering",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-makes-a-good-pull-request-description",
+    "title": "What makes a good pull request description?",
+    "category": "software-engineering",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-safely-refactor-a-critical-legacy-system",
+    "title": "How would you safely refactor a critical legacy system?",
+    "category": "software-engineering",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-introduce-engineering-standards-across-multiple-teams",
+    "title": "How would you introduce engineering standards across multiple teams?",
+    "category": "software-engineering",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-investigate-and-reduce-a-rising-production-error-rate",
+    "title": "How would you investigate and reduce a rising production error rate?",
+    "category": "software-engineering",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-are-the-core-principles-of-application-security",
+    "title": "What are the core principles of application security?",
+    "category": "security",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-the-principle-of-least-privilege",
+    "title": "What is the principle of least privilege?",
+    "category": "security",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "why-should-passwords-never-be-stored-in-plain-text",
+    "title": "Why should passwords never be stored in plain text?",
+    "category": "security",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-common-injection-vulnerabilities-happen",
+    "title": "How do common injection vulnerabilities happen?",
+    "category": "security",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-cross-site-scripting-and-how-can-it-be-prevented",
+    "title": "What is cross-site scripting, and how can it be prevented?",
+    "category": "security",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-cross-site-request-forgery-and-how-can-applications-defend-against-it",
+    "title": "What is cross-site request forgery, and how can applications defend against it?",
+    "category": "security",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-should-an-application-store-and-rotate-secrets",
+    "title": "How should an application store and rotate secrets?",
+    "category": "security",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-encryption-at-rest-and-encryption-in-transit-differ",
+    "title": "How do encryption at rest and encryption in transit differ?",
+    "category": "security",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-threat-model-a-new-web-application",
+    "title": "How would you threat-model a new web application?",
+    "category": "security",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-design-secure-authentication-for-a-multi-device-application",
+    "title": "How would you design secure authentication for a multi-device application?",
+    "category": "security",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-cloud-computing-and-what-problems-does-it-solve",
+    "title": "What is cloud computing, and what problems does it solve?",
+    "category": "cloud-devops",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-the-difference-between-containers-and-virtual-machines",
+    "title": "What is the difference between containers and virtual machines?",
+    "category": "cloud-devops",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-infrastructure-as-code",
+    "title": "What is infrastructure as code?",
+    "category": "cloud-devops",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-container-orchestration-platforms-manage-workloads",
+    "title": "How do container orchestration platforms manage workloads?",
+    "category": "cloud-devops",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-should-applications-manage-configuration-across-environments",
+    "title": "How should applications manage configuration across environments?",
+    "category": "cloud-devops",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-autoscaling-and-what-signals-should-trigger-it",
+    "title": "What is autoscaling, and what signals should trigger it?",
+    "category": "cloud-devops",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-blue-green-and-canary-deployments-reduce-release-risk",
+    "title": "How do blue-green and canary deployments reduce release risk?",
+    "category": "cloud-devops",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-design-health-checks-for-a-production-service",
+    "title": "How would you design health checks for a production service?",
+    "category": "cloud-devops",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-build-a-deployment-pipeline-with-rollback-capability",
+    "title": "How would you build a deployment pipeline with rollback capability?",
+    "category": "cloud-devops",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-investigate-intermittent-failures-in-a-cloud-environment",
+    "title": "How would you investigate intermittent failures in a cloud environment?",
+    "category": "cloud-devops",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-the-difference-between-artificial-intelligence-machine-learning-and-deep-learning",
+    "title": "What is the difference between artificial intelligence, machine learning, and deep learning?",
+    "category": "ai-ml",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-a-large-language-model-and-how-does-it-generate-text",
+    "title": "What is a large language model, and how does it generate text?",
+    "category": "ai-ml",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-are-training-data-and-inference-in-machine-learning",
+    "title": "What are training data and inference in machine learning?",
+    "category": "ai-ml",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-the-difference-between-supervised-unsupervised-and-reinforcement-learning",
+    "title": "What is the difference between supervised, unsupervised, and reinforcement learning?",
+    "category": "ai-ml",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-are-embeddings-and-how-are-they-used-to-represent-information",
+    "title": "What are embeddings, and how are they used to represent information?",
+    "category": "ai-ml",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-does-semantic-search-differ-from-keyword-search",
+    "title": "How does semantic search differ from keyword search?",
+    "category": "ai-ml",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-retrieval-augmented-generation-and-what-problem-does-it-solve",
+    "title": "What is retrieval-augmented generation, and what problem does it solve?",
+    "category": "ai-ml",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-prompt-engineering-and-what-are-its-limitations",
+    "title": "What is prompt engineering, and what are its limitations?",
+    "category": "ai-ml",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-can-an-ai-application-reduce-hallucinations",
+    "title": "How can an AI application reduce hallucinations?",
+    "category": "ai-ml",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-you-evaluate-the-quality-of-an-ai-generated-answer",
+    "title": "How do you evaluate the quality of an AI-generated answer?",
+    "category": "ai-ml",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "what-is-the-difference-between-fine-tuning-and-retrieval-augmented-generation",
+    "title": "What is the difference between fine-tuning and retrieval-augmented generation?",
+    "category": "ai-ml",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-do-vector-databases-support-similarity-search",
+    "title": "How do vector databases support similarity search?",
+    "category": "ai-ml",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-design-an-evaluation-pipeline-for-a-generative-ai-application",
+    "title": "How would you design an evaluation pipeline for a generative AI application?",
+    "category": "ai-ml",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-control-latency-and-cost-in-a-production-llm-application",
+    "title": "How would you control latency and cost in a production LLM application?",
+    "category": "ai-ml",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "how-would-you-design-safeguards-for-an-ai-agent-that-can-call-external-tools",
+    "title": "How would you design safeguards for an AI agent that can call external tools?",
+    "category": "ai-ml",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  }
+]

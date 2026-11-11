@@ -27,28 +27,31 @@ function getUtcDayBounds() {
   return { start, end };
 }
 
+
 export const spinChallenge = async (
   filters: SpinFilters,
   userId: string
 ) => {
+
   for (let retry = 0; retry < MAX_TRANSACTION_RETRIES; retry++) {
     try {
+
       return await prisma.$transaction(
         async (tx) => {
           const now = new Date();
 
+
           const activeSubscription = await tx.subscription.findFirst({
-  where: {
-    userId,
-    status: "active",
-    currentPeriodEnd: {
-      gt: now,
-    },
-  },
-  select: {
-    id: true,
-  },
-});
+            where: {
+              userId,
+              status: "active",
+              currentPeriodEnd: {
+                gt: now,
+              },
+            },
+            select: { id: true },
+          });
+
 
           const dailyLimit = activeSubscription
             ? PRO_DAILY_LIMIT
@@ -56,8 +59,7 @@ export const spinChallenge = async (
 
           const { start, end } = getUtcDayBounds();
 
-          // Count every attempt created today, including abandoned
-          // or unfinished attempts, so users cannot bypass the quota.
+
           const usedToday = await tx.attempt.count({
             where: {
               userId,
@@ -68,9 +70,14 @@ export const spinChallenge = async (
             },
           });
 
+
           if (usedToday >= dailyLimit) {
-            throw new Error("DAILY_TOPIC_LIMIT_REACHED");
-          }
+  throw new Error(
+    activeSubscription
+      ? "PRO_DAILY_LIMIT_REACHED"
+      : "FREE_DAILY_LIMIT_REACHED"
+  );
+}
 
           const where = {
             ...(filters.category !== undefined && {
@@ -81,7 +88,9 @@ export const spinChallenge = async (
             }),
           };
 
+
           const topicCount = await tx.topic.count({ where });
+
 
           if (topicCount === 0) {
             throw new Error(
@@ -93,6 +102,7 @@ export const spinChallenge = async (
             Math.random() * topicCount
           );
 
+
           const topic = await tx.topic.findFirst({
             where,
             skip: randomIndex,
@@ -102,6 +112,7 @@ export const spinChallenge = async (
             throw new Error("Failed to select a topic");
           }
 
+
           const attempt = await tx.attempt.create({
             data: {
               topicId: topic.id,
@@ -109,12 +120,13 @@ export const spinChallenge = async (
             },
           });
 
+
           return { attempt, topic };
         },
         {
           isolationLevel: Prisma.TransactionIsolationLevel.Serializable,
           maxWait: 10000,
-  timeout: 15000,
+          timeout: 15000,
         }
       );
     } catch (error) {
@@ -122,7 +134,13 @@ export const spinChallenge = async (
         error instanceof Prisma.PrismaClientKnownRequestError &&
         error.code === "P2034";
 
-      if (isSerializationConflict && retry < MAX_TRANSACTION_RETRIES - 1) {
+      console.error("[SPIN SERVICE] Transaction failed:", error);
+
+      if (
+        isSerializationConflict &&
+        retry < MAX_TRANSACTION_RETRIES - 1
+      ) {
+        console.log("[SPIN SERVICE] Retrying transaction");
         continue;
       }
 
@@ -132,3 +150,4 @@ export const spinChallenge = async (
 
   throw new Error("DAILY_TOPIC_LIMIT_CHECK_FAILED");
 };
+

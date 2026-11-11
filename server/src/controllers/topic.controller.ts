@@ -9,6 +9,7 @@ export const spin = async (req: Request, res: Response) => {
     const filters = spinTopicSchema.parse(req.body ?? {});
     const user = res.locals.user;
 
+   
     if (!user?.id) {
       res.status(401).json({
         success: false,
@@ -25,6 +26,7 @@ export const spin = async (req: Request, res: Response) => {
       user.id
     );
 
+
     res.status(201).json({
       success: true,
       data: {
@@ -33,20 +35,31 @@ export const spin = async (req: Request, res: Response) => {
       },
     });
   } catch (error) {
-    if (
-      error instanceof Error &&
-      error.message === "DAILY_TOPIC_LIMIT_REACHED"
-    ) {
-      res.status(429).json({
-        success: false,
-        error: {
-          code: "DAILY_TOPIC_LIMIT_REACHED",
-          message:
-            "You've reached your daily topic limit. Upgrade to Pro for more daily topics.",
-        },
-      });
-      return;
-    }
+    if (error instanceof Error) {
+  if (error.message === "FREE_DAILY_LIMIT_REACHED") {
+    res.status(429).json({
+      success: false,
+      error: {
+        code: "FREE_DAILY_LIMIT_REACHED",
+        message:
+          "You've exhausted your free daily topics. Upgrade to Pro for more topics.",
+      },
+    });
+    return;
+  }
+
+  if (error.message === "PRO_DAILY_LIMIT_REACHED") {
+    res.status(429).json({
+      success: false,
+      error: {
+        code: "PRO_DAILY_LIMIT_REACHED",
+        message:
+          "You've used all your daily topics. Your limit resets tomorrow. Come back tomorrow!",
+      },
+    });
+    return;
+  }
+}
 
     if (error instanceof ZodError) {
       res.status(400).json({

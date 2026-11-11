@@ -76,7 +76,14 @@ model Evaluation {
   examples          Float
   conciseness       Float
 
-  fillerWordsCount Int @default(0)
+  // Internal speaking analytics
+  fillerWordsCount       Int     @default(0)
+  wordsPerMinute         Float?
+  speakingDurationSeconds Int?
+
+  // User-facing coaching suggestions
+  paceFeedback        String?
+  fillerWordFeedback  String?
 
   missingConcepts String[]
   incorrectClaims String[]

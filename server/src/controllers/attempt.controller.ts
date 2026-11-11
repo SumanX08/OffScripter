@@ -249,11 +249,14 @@ export const getHistory = async (
 };
 
 
+
 export const getStreakController = async (
   _req: Request,
   res: Response
 ) => {
   try {
+    res.setHeader("Cache-Control", "no-store");
+
     const user = res.locals.user;
 
     if (!user?.id) {

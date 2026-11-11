@@ -11,13 +11,11 @@ import Results from "./pages/Results";
 import History from "./pages/History";
 import Upgrade from "./pages/Upgrade";
 import AppLayout from "./components/ui/AppLayout";
-
-import { Analytics } from "@vercel/analytics/next"
-
 import Onboarding from "./components/ui/Onboarding";
 import { useAuthenticatedApi } from "./hooks/useAuthApi";
 import Progress from "./pages/Progress";
 import Settings from "./pages/Settings";
+import { Analytics } from "@vercel/analytics/react";
 
 type ProfileStatus = "checking" | "exists" | "missing";
 
@@ -87,7 +85,9 @@ function App() {
   }
 
   return (
-    <Routes>
+    <>
+      <Analytics />
+      <Routes>
       {/* Public */}
       <Route path="/" element={<LandingPage />} />
 
@@ -220,8 +220,8 @@ function App() {
         path="*"
         element={<Navigate to="/" replace />}
       />
-      <Analytics/>
     </Routes>
+    </>
   );
 }
 

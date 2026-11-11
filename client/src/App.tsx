@@ -13,6 +13,7 @@ import Upgrade from "./pages/Upgrade";
 import AppLayout from "./components/ui/AppLayout";
 
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import Onboarding from "./components/ui/Onboarding";
 import { useAuthenticatedApi } from "./hooks/useAuthApi";
 import Progress from "./pages/Progress";
@@ -88,6 +89,7 @@ function App() {
   return (
     <>
     <Analytics/>
+    <SpeedInsights/>
     
     <Routes>
       {/* Public */}

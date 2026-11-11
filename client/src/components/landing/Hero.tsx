@@ -3,7 +3,7 @@ import { ArrowRight, Play } from "lucide-react";
 
 import Button from "../ui/Button";
 import HeroTopicReel from "./HeroTopicReel";
-
+import { SignInButton } from "@clerk/clerk-react";
 
 export default function Hero() {
   return (
@@ -28,7 +28,7 @@ export default function Hero() {
             </span>
           </h1>
 
-         
+
 
           <p className="mt-3 max-w-lg text-base leading-7 text-forest/65">
             OffScripter helps developers improve technical
@@ -38,13 +38,16 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Button onClick={() => {}} href="#challenge">
-              Start a Challenge
-              <ArrowRight size={17} />
-            </Button>
+            <SignInButton>
+              <Button onClick={() => { }} href="#challenge">
+                Start a Challenge
+                <ArrowRight size={17} />
+              </Button>
+
+            </SignInButton>
 
             <Button
-              onClick={() => {}}
+              onClick={() => { }}
               href="#product"
               variant="secondary"
             >
@@ -53,12 +56,12 @@ export default function Hero() {
             </Button>
           </div>
 
-          
+
         </div>
 
         {/* Topic spinner */}
         <div aria-label="Random technical topic generator">
-          <HeroTopicReel/>
+          <HeroTopicReel />
         </div>
       </section>
     </main>

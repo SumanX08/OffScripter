@@ -75,13 +75,10 @@ export default function Sidebar({ open, onClose }: SidebarProps) {
     await signOut({ redirectUrl: "/" });
   };
 
-  const displayName =
-    user?.fullName || user?.firstName || "Your account";
+  const username =
+    user?.username || user?.firstName || "Your account";
 
-  const username = user?.username
-    ? `@${user.username}`
-    : user?.primaryEmailAddress?.emailAddress || "";
-
+  const userEmail = user?.emailAddresses[0].emailAddress|| "";
   return (
     <>
       {/* Mobile overlay */}
@@ -231,10 +228,10 @@ export default function Sidebar({ open, onClose }: SidebarProps) {
 
               <div className="min-w-0 flex-1">
                 <p className="truncate font-sans text-sm font-bold text-forest">
-                  {displayName}
+                  {username}
                 </p>
                 <p className="mt-0.5 truncate font-sans text-xs text-forest/50">
-                  {username}
+                  {userEmail}
                 </p>
               </div>
 
@@ -272,10 +269,10 @@ export default function Sidebar({ open, onClose }: SidebarProps) {
               >
                 <div className="px-3 py-2">
                   <p className="truncate font-sans text-sm font-semibold text-forest">
-                    {displayName}
+                    {user?.username}
                   </p>
                   <p className="truncate font-sans text-xs text-forest/50">
-                    {user?.primaryEmailAddress?.emailAddress || username}
+                    {userEmail }
                   </p>
                 </div>
 

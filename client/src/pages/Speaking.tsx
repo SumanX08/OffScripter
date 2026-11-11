@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-
+import { motion } from "motion/react";
 import {
   Pause,
   Play,
@@ -642,19 +642,40 @@ navigate(
 
   return (
     <main className="min-h-screen overflow-hidden bg-[#FCF9EC] text-[#263911]">
-      <div className="mx-auto flex min-h-screen w-full max-w-[900px] flex-col items-center px-6 py-10 sm:px-10 sm:py-12">
-
+<motion.div
+  className="mx-auto flex min-h-screen w-full max-w-[900px] flex-col items-center px-6 py-10 sm:px-10 sm:py-12"
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{
+    duration: 0.65,
+    ease: [0.22, 1, 0.36, 1],
+  }}
+>
         {/* Topic */}
 
-        <section className="w-full text-center">
+        <motion.section
+  className="w-full text-center"
+  initial={{ opacity: 0, y: 15 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5, delay: 0.15 }}
+>
           <h1 className="mx-auto max-w-[800px] font-serif text-4xl leading-[1.02] tracking-[-0.045em] text-[#263911] sm:text-[45px] lg:text-[58px]">
             {attempt.topic.title}
           </h1>
-        </section>
+        </motion.section>
 
         {/* Timer */}
 
-        <section className="mt-10 text-center sm:mt-12">
+       <motion.section
+  className="mt-10 text-center sm:mt-12"
+  initial={{ opacity: 0, scale: 0.92 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{
+    duration: 0.55,
+    delay: 0.25,
+    ease: "easeOut",
+  }}
+>
           <div
             className={[
               "font-serif text-[82px] leading-none tracking-[-0.07em]",
@@ -680,28 +701,35 @@ navigate(
               ].join(" ")}
             />
 
-            <span className="text-[16px] font-medium text-[#263911]/55">
-              {ending
-                ? "Processing..."
-                : paused
-                  ? "Paused"
-                  : "Recording"}
-            </span>
+           <motion.span
+  key={ending ? "processing" : paused ? "paused" : "recording"}
+  initial={{ opacity: 0, y: 5 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.2 }}
+  className="text-[16px] font-medium text-[#263911]/55"
+>
+  {ending
+    ? "Processing..."
+    : paused
+      ? "Paused"
+      : "Recording"}
+</motion.span>
           </div>
-        </section>
+       </motion.section>
 
         {/* Waveform */}
 
-        <div
-          className={[
-            "mt-12 flex h-[90px] items-center justify-center gap-[5px]",
-            "sm:mt-14",
-            paused || ending
-              ? "opacity-30"
-              : "",
-          ].join(" ")}
-          aria-hidden="true"
-        >
+        <motion.div
+  initial={{ opacity: 0, y: 15 }}
+  animate={{ opacity: paused || ending ? 0.3 : 1, y: 0 }}
+  transition={{ duration: 0.4, delay: 0.35 }}
+  className={[
+    "mt-12 flex h-[90px] items-center justify-center gap-[5px]",
+    "sm:mt-14",
+    paused || ending ? "opacity-30" : "",
+  ].join(" ")}
+  aria-hidden="true"
+>
           {waveformHeights.map(
             (height, index) => (
               <span
@@ -721,15 +749,21 @@ navigate(
               />
             ),
           )}
-        </div>
+        </motion.div>
 
         {/* Controls */}
 
-        <div className="mt-12 flex items-center justify-center gap-5 sm:mt-14 sm:gap-6">
-
+<motion.div
+  className="mt-12 flex items-center justify-center gap-5 sm:mt-14 sm:gap-6"
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5, delay: 0.45 }}
+>
           {/* Pause */}
 
-          <button
+          <motion.button
+            whileHover={{ scale: 1.07 }}
+  whileTap={{ scale: 0.94 }}
             type="button"
             onClick={
               handlePauseToggle
@@ -757,11 +791,13 @@ navigate(
                 fill="currentColor"
               />
             )}
-          </button>
+          </motion.button>
 
           {/* Stop */}
 
-          <button
+          <motion.button
+          whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.94 }}
             type="button"
             onClick={
               handleEndSession
@@ -780,23 +816,27 @@ navigate(
                 strokeWidth={0}
               />
             </span>
-          </button>
+          </motion.button>
 
           {/* Elapsed */}
 
           <span className="min-w-[48px] text-left font-mono text-[14px] text-[#263911]/35">
             {formatTime(elapsedTime)}
           </span>
-        </div>
+        </motion.div>
 
         {/* Error */}
 
         {error && (
-          <p className="mt-8 max-w-md text-center text-xs font-medium text-red-600">
-            {error}
-          </p>
-        )}
-      </div>
+  <motion.p
+    initial={{ opacity: 0, y: 8 }}
+    animate={{ opacity: 1, y: 0 }}
+    className="mt-8 max-w-md text-center text-xs font-medium text-red-600"
+  >
+    {error}
+  </motion.p>
+)}
+      </motion.div>
     </main>
   );
 }

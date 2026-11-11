@@ -135,7 +135,7 @@ export default function Settings() {
   const daysLeft = remainingDays(subscription?.currentPeriodEnd);
 
   const displayName =
-    user?.fullName || user?.firstName || "Your account";
+    user?.username || user?.firstName || "Your account";
   const email =
     user?.primaryEmailAddress?.emailAddress || "No email available";
 

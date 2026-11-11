@@ -11,7 +11,7 @@ export default function Logo({
 }: LogoProps) {
   return (
     <a
-      href="#top"
+      href="https://offscripter.in/"
       aria-label="OffScripter home"
       className={`group inline-flex items-center gap-2 ${
         inverted ? "text-cream" : "text-forest"

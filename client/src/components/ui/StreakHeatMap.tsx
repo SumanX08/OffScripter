@@ -189,7 +189,7 @@ export default function StreakHeatmap({
         </div>
       </div>
 
-      <div className="mt-3 flex items-center justify-between">
+      <div className="  flex items-center justify-between">
         <span className="text-xs text-forest/50">
           Less
         </span>

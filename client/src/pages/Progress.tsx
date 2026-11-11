@@ -165,8 +165,8 @@ export default function Progress() {
         <motion.div variants={pageVariants}
   initial="hidden"
   animate="visible"
- className="mx-auto max-w-295 px-5 py-10 md:px-8 lg:px-12 lg:py-14">
-          <motion.header variants={sectionVariants} className="mb-9">
+ className="mx-auto max-w-295 px-5 py-10 md:px-8 lg:px-12 lg:py-10">
+          <motion.header variants={sectionVariants} className="mb-4">
             <p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-olive">
               Your growth
             </p>

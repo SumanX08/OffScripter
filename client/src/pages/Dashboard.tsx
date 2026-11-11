@@ -119,8 +119,7 @@ export default function Dashboard() {
   const latestAttempt = attempts[0] ?? null;
 
   const displayName =
-    profile?.username ||
-    user?.firstName ||
+  
     user?.username ||
     "there";
 

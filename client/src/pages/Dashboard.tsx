@@ -105,7 +105,6 @@ export default function Dashboard() {
   });
 
   // Extract cached data
-  const profile = dashboardQuery.data?.profile ?? null;
   const attempts = dashboardQuery.data?.attempts ?? [];
   const challengesDone =
     dashboardQuery.data?.challengesDone ?? 0;

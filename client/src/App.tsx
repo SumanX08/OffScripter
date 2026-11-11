@@ -12,6 +12,7 @@ import History from "./pages/History";
 import Upgrade from "./pages/Upgrade";
 import AppLayout from "./components/ui/AppLayout";
 
+import { Analytics } from "@vercel/analytics/next"
 
 import Onboarding from "./components/ui/Onboarding";
 import { useAuthenticatedApi } from "./hooks/useAuthApi";
@@ -219,6 +220,7 @@ function App() {
         path="*"
         element={<Navigate to="/" replace />}
       />
+      <Analytics/>
     </Routes>
   );
 }

@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { ArrowRight, Menu } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useUser } from "@clerk/clerk-react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "motion/react";
@@ -62,7 +62,6 @@ export default function Dashboard() {
   const navigate = useNavigate();
   const { streak, loading: streakLoading } = useStreak();
 
-  const [, setSidebarOpen] = useState(false);
   const [spinning, setSpinning] = useState(false);
 
   // Fetch and cache dashboard data

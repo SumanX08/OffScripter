@@ -6,8 +6,8 @@ import { spinTopicSchema } from "../validator/topic.validator.js";
 
 type SpinFilters = z.infer<typeof spinTopicSchema>;
 
-const FREE_DAILY_LIMIT = 1;
-const PRO_DAILY_LIMIT = 3;
+const FREE_DAILY_LIMIT = 2;
+const PRO_DAILY_LIMIT = 5;
 const MAX_TRANSACTION_RETRIES = 3;
 
 function getUtcDayBounds() {

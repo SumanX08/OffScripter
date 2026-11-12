@@ -462,9 +462,11 @@ navigate(
    * --------------------------------------------------
    */
 
-  useEffect(() => {
+ /*
+ * Speaking timer
+ */
+useEffect(() => {
   if (
-    !attempt ||
     loading ||
     !recordingReady ||
     paused ||
@@ -474,35 +476,30 @@ navigate(
     return;
   }
 
-    const interval =
-      window.setInterval(() => {
-        setTimeLeft((current) =>
-          Math.max(0, current - 1),
-        );
+  const interval = window.setInterval(() => {
+    setTimeLeft((prev) => Math.max(prev - 1, 0));
+    setElapsedTime((prev) => prev + 1);
+  }, 1000);
 
-        setElapsedTime((current) =>
-          current + 1,
-        );
-      }, 1000);
-
-    return () => {
-      window.clearInterval(interval);
-    };
-  }, [
-    attempt,
-    paused,
-    ending,
-    timeLeft,
-  ]);
-
+  return () => {
+    window.clearInterval(interval);
+  };
+}, [
+  loading,
+  recordingReady,
+  paused,
+  ending,
+  timeLeft,
+]);
   /*
    * --------------------------------------------------
    * Auto-submit when timer reaches zero
    * --------------------------------------------------
    */
 
-  useEffect(() => {
+useEffect(() => {
   if (
+    !loading &&
     timeLeft === 0 &&
     attempt &&
     !ending &&
@@ -523,7 +520,6 @@ navigate(
   handleEndSession,
   loading,
 ]);
-
   /*
    * --------------------------------------------------
    * Pause / Resume

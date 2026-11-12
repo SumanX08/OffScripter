@@ -171,7 +171,7 @@ export default function Sidebar({ open, onClose }: SidebarProps) {
         </nav>
 
         {/* Bottom section */}
-        <div className="px-5 pb-5">
+        <div className="px-5 pb-5 mb-3">
           {/* Streak */}
           
 {/* Streak */}
@@ -213,7 +213,7 @@ export default function Sidebar({ open, onClose }: SidebarProps) {
 </Link>
 
 
-          <div className="my-4 border-t border-forest/10" />
+          <div className="my-4 mb-2 border-t border-forest/10" />
 
           {/* User profile and dropdown */}
           <div className="relative" ref={menuRef}>

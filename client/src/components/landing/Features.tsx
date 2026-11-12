@@ -1,4 +1,5 @@
 
+import { motion } from "motion/react";
 import {
   RefreshCw,
   Timer,
@@ -34,6 +35,18 @@ const features = [
   },
 ];
 
+const reveal = {
+  hidden: { opacity: 0, y: 24 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.65,
+      ease: [0.22, 1, 0.36, 1] as const,
+    },
+  },
+};
+
 export default function Features() {
   return (
     <section
@@ -43,9 +56,27 @@ export default function Features() {
     >
       <div className="mx-auto grid max-w-7xl gap-16 lg:grid-cols-2 lg:items-center lg:gap-24">
         {/* Left Content */}
-        <div>
-          {/* Eyebrow */}
-          <div className="mb-7 flex items-center gap-3">
+        <motion.div
+          variants={{
+            hidden: { opacity: 0, x: -25 },
+            visible: {
+              opacity: 1,
+              x: 0,
+              transition: {
+                duration: 0.75,
+                ease: [0.22, 1, 0.36, 1] as const,
+                staggerChildren: 0.12,
+              },
+            },
+          }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          <motion.div
+            variants={reveal}
+            className="mb-7 flex items-center gap-3"
+          >
             <span
               className="h-2 w-2 rounded-full bg-rust"
               aria-hidden="true"
@@ -54,11 +85,11 @@ export default function Features() {
             <span className="text-xs font-bold uppercase tracking-[0.18em] text-forest">
               A different kind of practice
             </span>
-          </div>
+          </motion.div>
 
-          {/* Heading */}
-          <h2
+          <motion.h2
             id="features-heading"
+            variants={reveal}
             className="max-w-xl font-serif text-4xl leading-[0.95] text-forest md:text-5xl"
           >
             Knowing something
@@ -66,19 +97,22 @@ export default function Features() {
             isn't the same as
             <br />
             <span className="text-rust">explaining it.</span>
-          </h2>
+          </motion.h2>
 
-          {/* Description */}
-          <p className="mt-8 max-w-lg text-base leading-7 text-olive md:text-md">
+          <motion.p
+            variants={reveal}
+            className="mt-8 max-w-lg text-base leading-7 text-olive md:text-md"
+          >
             OffScripter turns passive technical knowledge into active
             communication practice. Practice explaining technical concepts
             clearly, build confidence, and become a better technical
             communicator.
-          </p>
+          </motion.p>
 
-          {/* CTA */}
-          <a
+          <motion.a
+            variants={reveal}
             href="#how-it-works"
+            whileHover={{ x: 5 }}
             className="group mt-8 inline-flex items-center gap-3 text-sm font-bold text-forest transition-colors hover:text-rust"
           >
             Meet your new practice ground
@@ -89,22 +123,30 @@ export default function Features() {
               className="transition-transform duration-200 group-hover:translate-x-1 group-hover:-translate-y-1"
               aria-hidden="true"
             />
-          </a>
-        </div>
+          </motion.a>
+        </motion.div>
 
         {/* Right Features */}
-        <div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{ staggerChildren: 0.13 }}
+        >
           <div className="border-t border-olive/25">
             {features.map((feature) => {
               const Icon = feature.icon;
 
               return (
-                <div
+                <motion.div
                   key={feature.title}
+                  variants={reveal}
                   className="group flex items-center gap-5 border-b border-olive/25 py-3"
                 >
                   {/* Icon */}
-                  <div
+                  <motion.div
+                    whileHover={{ scale: 1.08, rotate: 5 }}
+                    transition={{ duration: 0.25 }}
                     className="flex h-11 w-11 shrink-0 items-center justify-center border border-olive/25 bg-cream transition-colors duration-200 group-hover:bg-mist"
                     aria-hidden="true"
                   >
@@ -113,7 +155,7 @@ export default function Features() {
                       strokeWidth={1.7}
                       className="text-olive"
                     />
-                  </div>
+                  </motion.div>
 
                   {/* Text */}
                   <div className="min-w-0 flex-1">
@@ -121,23 +163,28 @@ export default function Features() {
                       {feature.title}
                     </h3>
 
-                    <p className=" text-xs leading-5 text-olive md:text-sm">
+                    <p className="text-xs leading-5 text-olive md:text-sm">
                       {feature.description}
                     </p>
                   </div>
 
                   {/* Arrow */}
-                  <ArrowUpRight
-                    size={19}
-                    strokeWidth={1.7}
-                    className="shrink-0 text-rust transition-transform duration-200 group-hover:translate-x-1 group-hover:-translate-y-1"
-                    aria-hidden="true"
-                  />
-                </div>
+                  <motion.div
+                    whileHover={{ x: 4, y: -4 }}
+                    transition={{ duration: 0.2 }}
+                    className="shrink-0 text-rust"
+                  >
+                    <ArrowUpRight
+                      size={19}
+                      strokeWidth={1.7}
+                      aria-hidden="true"
+                    />
+                  </motion.div>
+                </motion.div>
               );
             })}
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

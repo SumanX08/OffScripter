@@ -83,6 +83,8 @@ export default function Dashboard() {
       const profile: UserProfile =
         profileResponse.data.data;
 
+        console.log(profile)
+
       const history: HistoryResponse =
         historyResponse.data.data;
 
@@ -122,6 +124,8 @@ export default function Dashboard() {
     user?.username ||
     "there";
 
+    console.log(user)
+
   const handleSpin = () => {
     if (spinning) return;
     setSpinning(true);
@@ -131,20 +135,7 @@ export default function Dashboard() {
   return (
     <div className="flex min-h-screen bg-[#FCF9EC] text-forest">
       <main className="min-w-0 flex-1">
-        <div className="flex items-center border-b border-forest/10 px-5 py-4 lg:hidden">
-          <button
-            type="button"
-            onClick={() => setSidebarOpen(true)}
-            className="grid size-10 place-items-center rounded-lg border border-forest/10"
-            aria-label="Open menu"
-          >
-            <Menu size={20} />
-          </button>
-
-          <span className="ml-4 font-serif text-xl font-bold">
-            OffScripter
-          </span>
-        </div>
+       
 
         <motion.div
   className="mx-auto max-w-295 px-5 py-10 md:px-8 lg:px-12 lg:py-14"

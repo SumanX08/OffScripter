@@ -1,4 +1,5 @@
 
+import { motion } from "motion/react";
 import {
   Target,
   Search,
@@ -37,6 +38,15 @@ const steps = [
   },
 ];
 
+const reveal = {
+  hidden: { opacity: 0, y: 25 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.65, ease: [0.22, 1, 0.36, 1] as const },
+  },
+};
+
 export default function HowItWorks() {
   return (
     <section
@@ -45,10 +55,14 @@ export default function HowItWorks() {
       className="bg-cream px-6 py-20 md:px-10 lg:px-16"
     >
       <div className="mx-auto max-w-7xl">
-        {/* Header */}
-        <div className="mb-16 grid items-end gap-10 md:grid-cols-2">
-          {/* Left */}
-          <div>
+        <motion.div
+          className="mb-16 grid items-end gap-10 md:grid-cols-2"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ staggerChildren: 0.15 }}
+        >
+          <motion.div variants={reveal}>
             <p className="mb-6 text-xs font-bold uppercase tracking-[0.25em] text-rust">
               Four steps. One better speaker.
             </p>
@@ -61,26 +75,33 @@ export default function HowItWorks() {
               <br />
               explaining.
             </h2>
-          </div>
+          </motion.div>
 
-          {/* Right */}
-          <div className="max-w-lg md:justify-self-end">
+          <motion.div variants={reveal} className="max-w-lg md:justify-self-end">
             <p className="text-base leading-7 text-olive md:text-lg">
               No courses to finish. No scripts to memorize. Just deliberate
               practice that helps developers turn technical knowledge into
               clear communication and confidence.
             </p>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
-        {/* Steps */}
-        <div className="grid overflow-hidden  bg-forest md:grid-cols-2 lg:grid-cols-4">
+        <motion.div
+          className="grid overflow-hidden bg-forest md:grid-cols-2 lg:grid-cols-4"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{ staggerChildren: 0.12 }}
+        >
           {steps.map((step, index) => {
             const Icon = step.icon;
 
             return (
-              <div
+              <motion.div
                 key={step.number}
+                variants={reveal}
+                whileHover={{ y: -5 }}
+                transition={{ duration: 0.25 }}
                 className={`
                   group relative min-h-[270px] p-7 transition-colors
                   hover:bg-olive/20
@@ -89,17 +110,13 @@ export default function HowItWorks() {
                       ? "border-b border-cream/20 lg:border-b-0 lg:border-r"
                       : ""
                   }
-                  ${
-                    index === 1
-                      ? "md:border-r-0 lg:border-r"
-                      : ""
-                  }
+                  ${index === 1 ? "md:border-r-0 lg:border-r" : ""}
                 `}
               >
-                {/* Top row */}
                 <div className="flex items-start justify-between">
-                  {/* Icon */}
-                  <div
+                  <motion.div
+                    whileHover={{ rotate: 8, scale: 1.08 }}
+                    transition={{ duration: 0.25 }}
                     className="flex h-14 w-14 items-center justify-center rounded-full bg-olive/50"
                     aria-hidden="true"
                   >
@@ -108,9 +125,8 @@ export default function HowItWorks() {
                       strokeWidth={1.7}
                       className="text-cream"
                     />
-                  </div>
+                  </motion.div>
 
-                  {/* Number */}
                   <span
                     className="text-sm font-medium text-amber"
                     aria-hidden="true"
@@ -119,7 +135,6 @@ export default function HowItWorks() {
                   </span>
                 </div>
 
-                {/* Content */}
                 <div className="mt-8">
                   <h3 className="font-serif text-xl text-cream md:text-2xl">
                     {step.title}
@@ -129,10 +144,10 @@ export default function HowItWorks() {
                     {step.description}
                   </p>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

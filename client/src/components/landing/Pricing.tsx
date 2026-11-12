@@ -18,7 +18,7 @@ const plans = [
   {
     name: "PRO",
     subtitle: "Serious daily practice",
-    price: "₹299",
+    price: "₹199",
     period: "/month",
     features: [
       "Unlimited technical speaking challenges",

@@ -22,15 +22,14 @@ export async function createSubscription(userId: string) {
     throw new Error("USER_NOT_FOUND");
   }
 
-  const existing = await prisma.subscription.findFirst({
-    where: {
-      userId,
-      status: {
-        in: ["created", "authenticated", "active", "pending"],
-      },
-    },
-    orderBy: { createdAt: "desc" },
-  });
+ const existing = await prisma.subscription.findFirst({
+  where: {
+    userId,
+    razorpayPlanId: planId,
+    status: { in: ["created", "authenticated", "active", "pending"] },
+  },
+  orderBy: { createdAt: "desc" },
+});
 
   if (existing) {
     if (["active", "authenticated"].includes(existing.status)) {

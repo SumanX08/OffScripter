@@ -132,7 +132,7 @@ export const spinChallenge = async (
     } catch (error) {
       const isSerializationConflict =
         error instanceof Prisma.PrismaClientKnownRequestError &&
-        error.code === "P2034";
+        
 
       console.error("[SPIN SERVICE] Transaction failed:", error);
 

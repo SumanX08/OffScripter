@@ -174,8 +174,8 @@ export const updateMe = async (req: Request, res: Response) => {
     }
 
     if (
-      error instanceof Prisma.PrismaClientKnownRequestError &&
-      error.code === "P2002"
+      error instanceof Prisma.PrismaClientKnownRequestError 
+      
     ) {
       res.status(409).json({
         success: false,

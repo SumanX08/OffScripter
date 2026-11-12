@@ -14,9 +14,15 @@ model User {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
+  dailyReminderEnabled  Boolean @default(false)
+  streakReminderEnabled Boolean @default(false)
+  reminderTime          String  @default("18:00")
+  timezone              String  @default("Asia/Kolkata")
+
   attempts      Attempt[]
   subscriptions Subscription[]
   feedbacks     Feedback[]
+  reminderLogs ReminderLog[]
 }
 
 model Topic {
@@ -116,6 +122,24 @@ model Feedback {
   @@index([status, createdAt])
   @@index([userId, createdAt])
   @@index([type, createdAt])
+}
+
+model ReminderLog {
+  id        String       @id @default(cuid())
+  userId    String
+  type      ReminderType
+  localDate String
+  sentAt    DateTime     @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, type, localDate])
+  @@index([userId, sentAt])
+}
+
+enum ReminderType {
+  DAILY_PRACTICE
+  STREAK
 }
 
 enum FeedbackType {

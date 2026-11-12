@@ -1,16 +1,10 @@
 
 import Razorpay from "razorpay";
+import { env } from "./env.js";
 
-const keyId = process.env.RAZORPAY_KEY_ID;
-const keySecret = process.env.RAZORPAY_KEY_SECRET;
-
-if (!keyId || !keySecret) {
-  throw new Error("Razorpay API credentials are missing");
-}
-
-export const razorpayKeyId = keyId;
+export const razorpayKeyId = env.RAZORPAY_KEY_ID;
 
 export const razorpay = new Razorpay({
-  key_id: keyId,
-  key_secret: keySecret,
+  key_id: env.RAZORPAY_KEY_ID,
+  key_secret: env.RAZORPAY_KEY_SECRET,
 });

@@ -1,11 +1,12 @@
 import app from "./app.js";
 import { env } from "./config/env.js";
 import { prisma } from "./config/prisma.js";
+import { startReminderScheduler } from "./services/reminder.service.js";
 
 const startServer = async () => {
   try {
     await prisma.$connect();
-
+    const reminderTask = startReminderScheduler();
     console.log("Database connected");
 
     const server = app.listen(
@@ -23,6 +24,13 @@ const startServer = async () => {
       console.log(
         `${signal} received. Shutting down...`
       );
+      reminderTask.stop();
+
+server.close(async () => {
+  await prisma.$disconnect();
+  console.log("Database disconnected");
+  process.exit(0);
+});
 
       server.close(async () => {
         await prisma.$disconnect();

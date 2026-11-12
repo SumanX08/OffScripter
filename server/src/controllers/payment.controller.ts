@@ -6,6 +6,7 @@ import {
   getSubscriptionStatus,
   verifyCheckout,
 } from "../services/payment.service.js";
+import { env } from "../config/env.js";
 
 export async function subscribe(req: Request, res: Response) {
   try {
@@ -94,7 +95,7 @@ export async function subscriptionStatus(
 
 
 export async function razorpayWebhook(req: Request, res: Response) {
-  const webhookSecret = process.env.RAZORPAY_WEBHOOK_SECRET;
+  const webhookSecret = env.RAZORPAY_WEBHOOK_SECRET;
   const signature = req.headers["x-razorpay-signature"];
   const eventId = req.headers["x-razorpay-event-id"];
 

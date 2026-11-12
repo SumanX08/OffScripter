@@ -269,7 +269,7 @@ export default function Upgrade() {
             </div>
 
             <div className="mt-7 flex items-baseline gap-2">
-              <span className="font-serif text-5xl">₹299</span>
+              <span className="font-serif text-5xl">₹199</span>
               <span className="text-sm text-olive">/ month</span>
             </div>
 

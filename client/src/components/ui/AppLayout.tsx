@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Menu } from "lucide-react";
 import { Outlet , useLocation } from "react-router-dom";
 
+import FeedbackWidget from "./FeedbackWidget";
 
 import Sidebar from "../ui/Sidebar";
 
@@ -51,6 +52,7 @@ const hideSidebar =
     <div className="min-h-0 flex-1 overflow-y-auto">
       <Outlet />
     </div>
+     <FeedbackWidget />
   </main>
 </div>
   );

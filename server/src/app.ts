@@ -13,6 +13,7 @@ import attemptRoutes from "./routes/attempt.route.js";
 import userRoutes from "./routes/user.route.js";
 import evaluationRoutes from "./routes/evaluation.routes.js";
 import paymentRoutes from "./routes/payment.route.js";
+import feedbackRoutes from "./routes/feedback.routes.js"
 
 import { razorpayWebhook } from "./controllers/payment.controller.js";
 import { prisma } from "./config/prisma.js";
@@ -92,6 +93,13 @@ app.use(
   requireAuthentication,
   attachCurrentUser,
   paymentRoutes
+);
+
+app.use(
+  "/api/feedback",
+  requireAuthentication,
+  attachCurrentUser,
+  feedbackRoutes
 );
 
 app.use(notFoundHandler);

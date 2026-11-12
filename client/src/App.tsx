@@ -10,6 +10,8 @@ import Speaking from "./pages/Speaking";
 import Results from "./pages/Results";
 import History from "./pages/History";
 import Upgrade from "./pages/Upgrade";
+import AdminFeedback from "./pages/AdminFeedback";
+
 import AppLayout from "./components/ui/AppLayout";
 
 import { Analytics } from "@vercel/analytics/react"
@@ -113,6 +115,19 @@ function App() {
      
 {/* Shared authenticated layout */}
 <Route element={<AppLayout />}>
+<Route
+  path="/admin/feedback"
+  element={
+    !isSignedIn ? (
+      <Navigate to="/" replace />
+    ) : profileStatus === "missing" ? (
+      <Navigate to="/onboarding" replace />
+    ) : (
+      <AdminFeedback />
+    )
+  }
+/>
+
   <Route
     path="/dashboard"
     element={

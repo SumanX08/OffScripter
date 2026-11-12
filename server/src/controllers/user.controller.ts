@@ -7,8 +7,7 @@ import {
   getUserByUsername,
 } from "../services/user.service.js";
 import { prisma } from "../config/prisma.js";
-import { Prisma } from "@prisma/client";
-
+import { Prisma } from "../generated/prisma/client.js";
 export const createMe = async (req: Request, res: Response) => {
   const { userId: clerkId } = getAuth(req);
 

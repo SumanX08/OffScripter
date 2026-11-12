@@ -1,5 +1,5 @@
 
-import { Prisma } from "@prisma/client";
+import { Prisma } from "../generated/prisma/client.js";
 import { prisma } from "../config/prisma.js";
 import type { z } from "zod";
 import { spinTopicSchema } from "../validator/topic.validator.js";

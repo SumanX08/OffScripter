@@ -22,10 +22,10 @@ const plans = [
     price: "₹199",
     period: "/month",
     features: [
-      "Unlimited technical speaking challenges",
+      "5 technical speaking challenges/day",
       "Detailed AI feedback",
       "Streaks & leaderboards",
-      "Advanced speaking analytics",
+     
     ],
     button: "Choose Pro",
     href: "#top",

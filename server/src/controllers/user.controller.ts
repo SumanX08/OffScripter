@@ -8,6 +8,7 @@ import {
 } from "../services/user.service.js";
 import { prisma } from "../config/prisma.js";
 import { Prisma } from "../generated/prisma/client.js";
+import { sendWelcomeEmail } from "../services/email.service.js";
 export const createMe = async (req: Request, res: Response) => {
   const { userId: clerkId } = getAuth(req);
 
@@ -68,6 +69,16 @@ export const createMe = async (req: Request, res: Response) => {
     email: email.toLowerCase(),
     username: normalizedUsername,
   });
+
+  try {
+  await sendWelcomeEmail({
+    to: user.email,
+    username: user.username,
+  });
+} catch (error) {
+  console.error("Failed to send welcome email:", error);
+}
+
 
   res.status(201).json({
     success: true,

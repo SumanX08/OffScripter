@@ -16,6 +16,8 @@ import {
 import { Link, useLocation } from "react-router-dom";
 import { UserButton, useClerk, useUser } from "@clerk/clerk-react";
 import { useStreak } from "../../hooks/useStreak";
+import { useQuery } from "@tanstack/react-query";
+import { useAuthenticatedApi } from "../../hooks/useAuthApi";
 
 import Logo from "./Logo";
 
@@ -35,7 +37,17 @@ const navigation = [
 export default function Sidebar({ open, onClose }: SidebarProps) {
   const location = useLocation();
   const { signOut } = useClerk();
-  const { user } = useUser();
+  const { user, isLoaded } = useUser();
+const api = useAuthenticatedApi();
+
+const { data: profile } = useQuery({
+  queryKey: ["profile", user?.id],
+  enabled: isLoaded && !!user?.id,
+  queryFn: async () => {
+    const response = await api.get("/users/me");
+    return response.data.data;
+  },
+});
 
   const { streak, loading: streakLoading } = useStreak();
 
@@ -75,8 +87,8 @@ export default function Sidebar({ open, onClose }: SidebarProps) {
     await signOut({ redirectUrl: "/" });
   };
 
-  const username =
-    user?.username || user?.firstName || "Your account";
+ const username =
+  profile?.username || "Your account";
 
   const userEmail = user?.emailAddresses[0].emailAddress|| "";
   return (

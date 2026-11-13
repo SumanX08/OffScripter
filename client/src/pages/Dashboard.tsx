@@ -119,11 +119,9 @@ export default function Dashboard() {
   const latestAttempt = attempts[0] ?? null;
 
   const displayName =
-  
-    user?.username ||
-    "there";
+  dashboardQuery.data?.profile.username ||
+  "there";
 
-    console.log(user)
 
   const handleSpin = () => {
     if (spinning) return;

@@ -2,8 +2,10 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { ArrowRight, Menu, X } from "lucide-react";
-import { SignInButton } from "@clerk/clerk-react";
-
+import {
+  SignInButton,
+  SignUpButton,
+} from "@clerk/clerk-react";
 import Logo from "../ui/Logo";
 import Button from "../ui/Button";
 
@@ -71,12 +73,12 @@ export default function Navbar() {
             </Button>
           </SignInButton>
 
-          <SignInButton forceRedirectUrl="/dashboard">
-            <Button>
-              Get Started
-              <ArrowRight size={16} aria-hidden="true" />
-            </Button>
-          </SignInButton>
+          <SignUpButton forceRedirectUrl="/onboarding">
+  <Button>
+    Get Started
+    <ArrowRight size={16} aria-hidden="true" />
+  </Button>
+</SignUpButton>
         </motion.div>
 
         {/* Mobile menu button */}

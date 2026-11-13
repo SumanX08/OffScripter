@@ -27,7 +27,11 @@ if (!clerkPubKey) {
 }
 
 createRoot(document.getElementById("root")!).render(
-  <ClerkProvider publishableKey={clerkPubKey}>
+ <ClerkProvider
+  publishableKey={clerkPubKey}
+  signInFallbackRedirectUrl="/dashboard"
+  signUpFallbackRedirectUrl="/onboarding"
+>
     <BrowserRouter>
     <QueryClientProvider client={queryClient}>
        <PostHogProvider

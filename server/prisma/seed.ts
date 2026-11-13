@@ -1,20 +1,29 @@
+
 import "dotenv/config";
-import { PrismaClient } from "@prisma/client";
+
+import { PrismaPg } from "@prisma/adapter-pg";
+import { PrismaClient } from "../src/generated/prisma/client.js";
+
 import webTopics from "../data/web.json" with { type: "json" };
 import backendTopics from "../data/backend.json" with { type: "json" };
 import frontendTopics from "../data/frontend.json" with { type: "json" };
 import databaseTopics from "../data/databases.json" with { type: "json" };
-import addtionalTopics from "../data/additional-topics.json" with {type:"json"}
-const prisma = new PrismaClient();
+import additionalTopics from "../data/additional-topics.json" with { type: "json" };
 
 
+const adapter = new PrismaPg({
+  connectionString: process.env.DATABASE_URL!,
+});
+
+const prisma = new PrismaClient({ adapter });
 
 const topics = [
   ...webTopics,
   ...backendTopics,
   ...frontendTopics,
   ...databaseTopics,
-  ...addtionalTopics
+  ...additionalTopics,
+
 ];
 
 async function main() {
@@ -46,10 +55,10 @@ async function main() {
   console.log(`Total topics in database: ${count}`);
 }
 
-
 main()
   .catch((error) => {
-    console.error(error);
+    console.error("Seeding failed:", error);
+    process.exitCode = 1;
   })
   .finally(async () => {
     await prisma.$disconnect();

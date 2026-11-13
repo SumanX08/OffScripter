@@ -209,3 +209,77 @@ export const updateMe = async (req: Request, res: Response) => {
     });
   }
 };
+
+
+export const updateReminderSettings = async (
+  req: Request,
+  res: Response
+) => {
+  const user = res.locals.user;
+
+  if (!user) {
+    res.status(401).json({
+      success: false,
+      error: {
+        code: "UNAUTHORIZED",
+        message: "Authentication required",
+      },
+    });
+    return;
+  }
+
+  const { dailyReminderEnabled, reminderTime, timezone } = req.body;
+
+  if (
+    typeof dailyReminderEnabled !== "boolean" ||
+    typeof reminderTime !== "string" ||
+    !/^([01]\d|2[0-3]):[0-5]\d$/.test(reminderTime) ||
+    typeof timezone !== "string" ||
+    !timezone.trim()
+  ) {
+    res.status(400).json({
+      success: false,
+      error: {
+        code: "INVALID_REMINDER_SETTINGS",
+        message: "Invalid reminder settings.",
+      },
+    });
+    return;
+  }
+
+  // Validate the IANA timezone.
+  try {
+    Intl.DateTimeFormat("en-US", {
+      timeZone: timezone,
+    });
+  } catch {
+    res.status(400).json({
+      success: false,
+      error: {
+        code: "INVALID_TIMEZONE",
+        message: "Please provide a valid timezone.",
+      },
+    });
+    return;
+  }
+
+  const updatedUser = await prisma.user.update({
+    where: { id: user.id },
+    data: {
+      dailyReminderEnabled,
+      reminderTime,
+      timezone,
+    },
+    select: {
+      dailyReminderEnabled: true,
+      reminderTime: true,
+      timezone: true,
+    },
+  });
+
+  res.status(200).json({
+    success: true,
+    data: updatedUser,
+  });
+};
+

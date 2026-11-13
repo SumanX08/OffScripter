@@ -2,9 +2,11 @@ import type { Request, Response } from "express";
 import crypto from "node:crypto";
 import { prisma } from "../config/prisma.js";
 import {
-  createSubscription,
+createSubscription,
   getSubscriptionStatus,
   verifyCheckout,
+  updateSubscriptionAndQueueProEmail,
+
 } from "../services/payment.service.js";
 import { env } from "../config/env.js";
 
@@ -167,12 +169,15 @@ export async function razorpayWebhook(req: Request, res: Response) {
         return;
       }
 
-      const existing = await tx.subscription.findUnique({
-        where: {
-          razorpaySubscriptionId: subscriptionId,
-        },
-        select: { id: true },
-      });
+     const existing = await tx.subscription.findUnique({
+  where: {
+    razorpaySubscriptionId: subscriptionId,
+  },
+  select: {
+    id: true,
+    userId: true,
+  },
+});
 
       if (!existing) {
         // Throwing rolls back the event record, allowing a retry.
@@ -223,10 +228,12 @@ export async function razorpayWebhook(req: Request, res: Response) {
           entity.cancel_at_cycle_end === true;
       }
 
-      await tx.subscription.update({
-        where: { id: existing.id },
-        data: updates,
-      });
+      await updateSubscriptionAndQueueProEmail(
+  tx,
+  existing.id,
+  existing.userId,
+  updates
+);
     });
 
     res.status(200).json({ received: true });

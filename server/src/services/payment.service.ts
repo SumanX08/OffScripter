@@ -5,6 +5,7 @@ import {
   razorpayKeyId,
 } from "../config/razorpay.js";
 import  {env} from '../config/env.js'
+import { Prisma } from "../generated/prisma/client.js";
 
 const planId = env.RAZORPAY_PRO_PLAN_ID;
 const keySecret = env.RAZORPAY_KEY_SECRET;
@@ -12,6 +13,63 @@ const keySecret = env.RAZORPAY_KEY_SECRET;
 if (!planId || !keySecret) {
   throw new Error("Razorpay plan ID or secret is missing");
 }
+
+
+
+type SubscriptionUpdates = {
+  status?: string;
+  currentPeriodStart?: Date | null;
+  currentPeriodEnd?: Date | null;
+  cancelAtCycleEnd?: boolean;
+};
+
+export async function updateSubscriptionAndQueueProEmail(
+  tx: Prisma.TransactionClient,
+  subscriptionId: string,
+  userId: string,
+  updates: SubscriptionUpdates
+) {
+  if (updates.status === "active") {
+    // Atomically claim the first transition to active.
+    const activation = await tx.subscription.updateMany({
+      where: {
+        id: subscriptionId,
+        status: { not: "active" },
+      },
+      data: updates,
+    });
+
+    if (activation.count === 1) {
+      const user = await tx.user.findUnique({
+        where: { id: userId },
+        select: { email: true },
+      });
+
+      if (!user) {
+        throw new Error("USER_NOT_FOUND");
+      }
+
+      await tx.emailOutbox.create({
+        data: {
+          type: "PRO_ACTIVATION",
+          subscriptionId,
+          userId,
+          recipient: user.email,
+        },
+      });
+
+      return;
+    }
+  }
+
+  // Update other subscription details, or handle an already-active
+  // subscription without creating another email.
+  await tx.subscription.update({
+    where: { id: subscriptionId },
+    data: updates,
+  });
+}
+
 
 export async function createSubscription(userId: string) {
   const user = await prisma.user.findUnique({
@@ -134,22 +192,26 @@ export async function verifyCheckout(
       ? new Date(Number(providerSubscription.current_end) * 1000)
       : null;
 
-  await prisma.subscription.update({
-    where: { id: subscription.id },
-    data: {
-  status: providerSubscription.status,
+  await prisma.$transaction(async (tx) => {
+  await updateSubscriptionAndQueueProEmail(
+    tx,
+    subscription.id,
+    subscription.userId,
+    {
+      status: providerSubscription.status,
 
-  ...(currentPeriodStart &&
-    !Number.isNaN(currentPeriodStart.getTime()) && {
-      currentPeriodStart,
-    }),
+      ...(currentPeriodStart &&
+        !Number.isNaN(currentPeriodStart.getTime()) && {
+          currentPeriodStart,
+        }),
 
-  ...(currentPeriodEnd &&
-    !Number.isNaN(currentPeriodEnd.getTime()) && {
-      currentPeriodEnd,
-    }),
-},
-  });
+      ...(currentPeriodEnd &&
+        !Number.isNaN(currentPeriodEnd.getTime()) && {
+          currentPeriodEnd,
+        }),
+    }
+  );
+});
 
   return {
     verified: true,

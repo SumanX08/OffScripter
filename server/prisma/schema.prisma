@@ -190,3 +190,20 @@ model ProcessedWebhook {
   eventType   String
   processedAt DateTime @default(now())
 }
+
+
+model EmailOutbox {
+  id             String    @id @default(cuid())
+  type           String
+  subscriptionId String
+  userId         String
+  recipient      String
+  status         String    @default("PENDING")
+  attempts       Int       @default(0)
+  lastError      String?
+  createdAt      DateTime  @default(now())
+  sentAt         DateTime?
+
+  @@unique([type, subscriptionId])
+  @@index([status, createdAt])
+}

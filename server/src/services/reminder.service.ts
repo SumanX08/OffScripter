@@ -5,19 +5,14 @@ import { DateTime } from "luxon";
 import { prisma } from "../config/prisma.js";
 import { sendEmail } from "./email.service.js";
 
-type ReminderType = "DAILY_PRACTICE" | "STREAK";
-
 type ReminderUser = {
   id: string;
   email: string;
   username: string;
   timezone: string;
   reminderTime: string;
-  dailyReminderEnabled: boolean;
-  streakReminderEnabled: boolean;
 };
 
-// Check whether the user has completed a practice today.
 const hasPractisedToday = async (
   userId: string,
   timezone: string
@@ -47,78 +42,15 @@ const hasPractisedToday = async (
   return count > 0;
 };
 
-// Calculate the user's current consecutive-day streak.
-// The user must have practised yesterday to have an active
-// streak when they have not practised today.
-const getActiveStreak = async (
-  userId: string,
-  timezone: string
-): Promise<number> => {
-  const now = DateTime.now().setZone(timezone);
-
-  if (!now.isValid) return 0;
-
-  const attempts = await prisma.attempt.findMany({
-    where: {
-      userId,
-      status: "COMPLETED",
-      submittedAt: {
-        gte: now
-          .startOf("day")
-          .minus({ days: 365 })
-          .toUTC()
-          .toJSDate(),
-        lt: now
-          .plus({ days: 1 })
-          .startOf("day")
-          .toUTC()
-          .toJSDate(),
-      },
-    },
-    select: {
-      submittedAt: true,
-    },
-  });
-
-  const practiceDates = new Set(
-    attempts
-      .filter((attempt) => attempt.submittedAt !== null)
-      .map((attempt) =>
-        DateTime.fromJSDate(attempt.submittedAt!)
-          .setZone(timezone)
-          .toISODate()
-      )
-  );
-
-  let streak = 0;
-
-  for (let daysAgo = 1; daysAgo <= 365; daysAgo++) {
-    const date = now.minus({ days: daysAgo }).toISODate();
-
-    if (!date || !practiceDates.has(date)) {
-      break;
-    }
-
-    streak++;
-  }
-
-  return streak;
-};
-
-// Send a reminder and prevent duplicate emails.
-const sendReminder = async (
+const sendDailyReminder = async (
   user: ReminderUser,
-  type: ReminderType,
-  localDate: string,
-  streak = 0
+  localDate: string
 ): Promise<void> => {
-  // Create a log first. The unique constraint prevents
-  // multiple scheduler executions from sending duplicates.
   try {
     await prisma.reminderLog.create({
       data: {
         userId: user.id,
-        type,
+        type: "DAILY_PRACTICE",
         localDate,
       },
     });
@@ -136,27 +68,9 @@ const sendReminder = async (
   }
 
   try {
-    const isStreakReminder = type === "STREAK";
-
-    const subject = isStreakReminder
-      ? `Your ${streak}-day OffScripter streak is at risk! 🔥`
-      : "Time for your daily speaking practice!";
-
-    const content = isStreakReminder
-      ? `
-          <h2>Your ${streak}-day streak is waiting for you 🔥</h2>
-          <p>You haven't completed today's speaking challenge yet.</p>
-          <p>Take a few minutes to practise and keep your streak alive!</p>
-        `
-      : `
-          <h2>Ready for today's speaking challenge?</h2>
-          <p>Consistency is the key to becoming a better communicator.</p>
-          <p>Pick a topic, research it and practise speaking for two minutes.</p>
-        `;
-
     await sendEmail({
       to: user.email,
-      subject,
+      subject: "Time for your daily speaking practice!",
       html: `
         <div style="
           font-family: Arial, sans-serif;
@@ -169,10 +83,18 @@ const sendReminder = async (
         ">
           <h1>Hey ${user.username}!</h1>
 
-          ${content}
+          <h2>Ready for today's speaking challenge?</h2>
+
+          <p>
+            Consistency is the key to becoming a better communicator.
+          </p>
+
+          <p>
+            Pick a topic, research it and practise speaking for two minutes.
+          </p>
 
           <a
-            href="https://offscripter.in"
+            href="https://offscripter.in/dashboard"
             style="
               display: inline-block;
               margin-top: 20px;
@@ -191,22 +113,19 @@ const sendReminder = async (
             font-size: 12px;
             color: #777;
           ">
-            You're receiving this because you enabled reminders
-            in your OffScripter account.
+            You're receiving this because you enabled daily
+            practice reminders in your OffScripter account.
           </p>
         </div>
       `,
     });
 
-    console.log(
-      `${type} reminder sent to ${user.email}`
-    );
+    console.log(`Daily reminder sent to ${user.email}`);
   } catch (error) {
-    // Remove the log if sending failed, allowing a retry.
     await prisma.reminderLog.deleteMany({
       where: {
         userId: user.id,
-        type,
+        type: "DAILY_PRACTICE",
         localDate,
       },
     });
@@ -215,7 +134,6 @@ const sendReminder = async (
   }
 };
 
-// Prevent overlapping scheduler executions.
 let isRunning = false;
 
 export const startReminderScheduler = () => {
@@ -229,10 +147,7 @@ export const startReminderScheduler = () => {
     try {
       const users = await prisma.user.findMany({
         where: {
-          OR: [
-            { dailyReminderEnabled: true },
-            { streakReminderEnabled: true },
-          ],
+          dailyReminderEnabled: true,
         },
         select: {
           id: true,
@@ -240,8 +155,6 @@ export const startReminderScheduler = () => {
           username: true,
           timezone: true,
           reminderTime: true,
-          dailyReminderEnabled: true,
-          streakReminderEnabled: true,
         },
       });
 
@@ -258,7 +171,6 @@ export const startReminderScheduler = () => {
             continue;
           }
 
-          // Only run at the user's selected reminder time.
           if (localNow.toFormat("HH:mm") !== user.reminderTime) {
             continue;
           }
@@ -267,7 +179,6 @@ export const startReminderScheduler = () => {
 
           if (!localDate) continue;
 
-          // Never remind someone who already practised today.
           const practicedToday = await hasPractisedToday(
             user.id,
             user.timezone
@@ -275,35 +186,10 @@ export const startReminderScheduler = () => {
 
           if (practicedToday) continue;
 
-          // Prioritize streak reminders over daily reminders.
-          if (user.streakReminderEnabled) {
-            const streak = await getActiveStreak(
-              user.id,
-              user.timezone
-            );
-
-            if (streak > 0) {
-              await sendReminder(
-                user,
-                "STREAK",
-                localDate,
-                streak
-              );
-
-              continue;
-            }
-          }
-
-          if (user.dailyReminderEnabled) {
-            await sendReminder(
-              user,
-              "DAILY_PRACTICE",
-              localDate
-            );
-          }
+          await sendDailyReminder(user, localDate);
         } catch (error) {
           console.error(
-            `Reminder failed for ${user.email}:`,
+            `Daily reminder failed for ${user.email}:`,
             error
           );
         }

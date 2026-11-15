@@ -5,6 +5,7 @@ import { ArrowRight, Menu, X } from "lucide-react";
 import {
   SignInButton,
   SignUpButton,
+  useAuth,
 } from "@clerk/clerk-react";
 import Logo from "../ui/Logo";
 import Button from "../ui/Button";
@@ -17,7 +18,7 @@ const navItems = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-
+  const { isLoaded, isSignedIn } = useAuth();
   const closeMenu = () => {
     setOpen(false);
   };
@@ -61,25 +62,31 @@ export default function Navbar() {
         </nav>
 
         {/* Desktop actions */}
-        <motion.div
-          className="hidden items-center gap-3 lg:flex"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4 }}
-        >
-          <SignInButton forceRedirectUrl="/dashboard">
-            <Button variant="secondary">
-              Log in
-            </Button>
-          </SignInButton>
+       <motion.div className="hidden items-center gap-3 lg:flex">
+  {!isLoaded ? null : isSignedIn ? (
+    <Button
+      onClick={() => {
+        window.location.href = "/dashboard";
+      }}
+    >
+      Go to Dashboard
+      <ArrowRight size={16} />
+    </Button>
+  ) : (
+    <>
+      <SignInButton>
+        <Button variant="secondary">Log in</Button>
+      </SignInButton>
 
-          <SignUpButton forceRedirectUrl="/onboarding">
-  <Button>
-    Get Started
-    <ArrowRight size={16} aria-hidden="true" />
-  </Button>
-</SignUpButton>
-        </motion.div>
+      <SignUpButton>
+        <Button>
+          Get Started
+          <ArrowRight size={16} />
+        </Button>
+      </SignUpButton>
+    </>
+  )}
+</motion.div>
 
         {/* Mobile menu button */}
         <motion.button
@@ -137,15 +144,27 @@ export default function Navbar() {
                 </motion.a>
               ))}
 
-              <SignInButton forceRedirectUrl="/dashboard">
-                <Button
-                  className="mt-5 w-full justify-center"
-                  onClick={closeMenu}
-                >
-                  Start a Challenge
-                  <ArrowRight size={16} aria-hidden="true" />
-                </Button>
-              </SignInButton>
+              {isSignedIn ? (
+  <Button
+    className="mt-5 w-full justify-center"
+    onClick={() => {
+      closeMenu();
+      window.location.href = "/dashboard";
+    }}
+  >
+    Go to Dashboard
+  </Button>
+) : (
+  <SignUpButton>
+    <Button
+      className="mt-5 w-full justify-center"
+      onClick={closeMenu}
+    >
+      Start a Challenge
+      <ArrowRight size={16} />
+    </Button>
+  </SignUpButton>
+)}
             </div>
           </motion.nav>
         )}

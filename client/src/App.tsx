@@ -22,8 +22,7 @@ import { useAuthenticatedApi } from "./hooks/useAuthApi";
 import Progress from "./pages/Progress";
 import Settings from "./pages/Settings";
 
-type ProfileStatus = "checking" | "exists" | "missing";
-
+type ProfileStatus = "checking" | "exists" | "missing" | "error";
 function App() {
   const { isLoaded, isSignedIn } = useAuth();
   const api = useAuthenticatedApi();
@@ -42,28 +41,24 @@ function App() {
         await api.get("/users/me");
         setProfileStatus("exists");
       } catch (error: unknown) {
-        if (
-          typeof error === "object" &&
-          error !== null &&
-          "response" in error
-        ) {
-          const axiosError = error as {
-            response?: {
-              status?: number;
-            };
-          };
+  if (
+    typeof error === "object" &&
+    error !== null &&
+    "response" in error
+  ) {
+    const axiosError = error as {
+      response?: { status?: number };
+    };
 
-          if (axiosError.response?.status === 404) {
-            setProfileStatus("missing");
-            return;
-          }
-        }
+    if (axiosError.response?.status === 404) {
+      setProfileStatus("missing");
+      return;
+    }
+  }
 
-        console.error(
-          "Failed to check user profile:",
-          error,
-        );
-      }
+  console.error("Failed to check user profile:", error);
+  setProfileStatus("error");
+}
     };
 
     void checkProfile();
@@ -89,13 +84,33 @@ function App() {
     );
   }
 
+  if (isSignedIn && profileStatus === "error") {
+  return (
+    <div className="grid min-h-screen place-items-center">
+      <p>Unable to load your profile. Please refresh and try again.</p>
+    </div>
+  );
+}
+
   return (
     <>
+    
     <Analytics/>
     <SpeedInsights/>
     <Routes>
       {/* Public */}
-      <Route path="/" element={<LandingPage />} />
+      <Route
+  path="/"
+  element={
+    !isSignedIn ? (
+      <LandingPage />
+    ) : profileStatus === "missing" ? (
+      <Navigate to="/onboarding" replace />
+    ) : (
+      <Navigate to="/dashboard" replace />
+    )
+  }
+/>
 
       {/* Onboarding */}
       <Route

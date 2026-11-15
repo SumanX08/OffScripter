@@ -3,7 +3,11 @@ import { motion } from "motion/react";
 import { ArrowRight, Play } from "lucide-react";
 import Button from "../ui/Button";
 import HeroTopicReel from "./HeroTopicReel";
-import { SignInButton } from "@clerk/clerk-react";
+import {
+  SignUpButton,
+  useAuth,
+} from "@clerk/clerk-react";
+import { useNavigate } from "react-router-dom";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -23,6 +27,9 @@ const itemVariants = {
 };
 
 export default function Hero() {
+  const { isLoaded, isSignedIn } = useAuth();
+const navigate = useNavigate();
+
   return (
     <main id="top" className="overflow-hidden">
       <section
@@ -67,12 +74,21 @@ export default function Hero() {
             variants={itemVariants}
             className="mt-8 flex flex-col gap-3 sm:flex-row"
           >
-            <SignInButton>
-              <Button onClick={() => {}} href="#challenge">
-                Start a Challenge
-                <ArrowRight size={17} />
-              </Button>
-            </SignInButton>
+            {isLoaded && (
+  isSignedIn ? (
+    <Button onClick={() => navigate("/challenge")}>
+      Start a Challenge
+      <ArrowRight size={17} />
+    </Button>
+  ) : (
+    <SignUpButton forceRedirectUrl="/onboarding">
+      <Button>
+        Start a Challenge
+        <ArrowRight size={17} />
+      </Button>
+    </SignUpButton>
+  )
+)}
 
             <Button
               onClick={() => {}}

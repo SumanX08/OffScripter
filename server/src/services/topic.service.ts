@@ -4,7 +4,13 @@ import { prisma } from "../config/prisma.js";
 import type { z } from "zod";
 import { spinTopicSchema } from "../validator/topic.validator.js";
 
-type SpinFilters = z.infer<typeof spinTopicSchema>;
+
+export type SpinFilters = {
+  categories?: {
+    name: string;
+    subcategories?: string[];
+  }[];
+};
 
 const FREE_DAILY_LIMIT = 2;
 const PRO_DAILY_LIMIT = 5;
@@ -79,14 +85,24 @@ export const spinChallenge = async (
   );
 }
 
-          const where = {
-            ...(filters.category !== undefined && {
-              category: filters.category,
-            }),
-            ...(filters.difficulty !== undefined && {
-              difficulty: filters.difficulty,
-            }),
-          };
+      const categoryFilters = filters.categories?.map(
+  ({ name, subcategories }) => ({
+    category: name,
+    ...(subcategories?.length
+      ? {
+          subcategory: {
+            in: subcategories,
+          },
+        }
+      : {}),
+  })
+);
+
+const where = categoryFilters?.length
+  ? {
+      OR: categoryFilters,
+    }
+  : {};
 
 
           const topicCount = await tx.topic.count({ where });

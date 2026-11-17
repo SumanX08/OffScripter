@@ -8,7 +8,7 @@ Knowing a concept is one thing. Explaining it under pressure is another.
 
 OffScripter helps you practise spontaneous technical speaking through random topics, focused research sessions, voice recordings, and AI-powered feedback.
 
-**Website:** https://offscripter.in
+**Website:** https://offscripter.in/
 
 ---
 

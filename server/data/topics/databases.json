@@ -1,0 +1,902 @@
+[
+  {
+    "slug": "databases-relational-databases-relational-model-1",
+    "title": "Explain relational model in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "databases",
+    "subcategory": "relational-databases",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-relational-databases-relational-model-2",
+    "title": "Imagine you are introducing relational model to a classmate. How does it work, and where would someone encounter it?",
+    "category": "databases",
+    "subcategory": "relational-databases",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-relational-databases-relational-model-3",
+    "title": "Compare relational model with documents and graphs. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "databases",
+    "subcategory": "relational-databases",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-relational-databases-relational-model-4",
+    "title": "Consider this scenario: a product catalog needs consistent relationships. Explain how you would apply your understanding of relational model, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "databases",
+    "subcategory": "relational-databases",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-sql-joins-1",
+    "title": "Explain joins in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "databases",
+    "subcategory": "sql",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-sql-joins-2",
+    "title": "Imagine you are introducing joins to a classmate. How does it work, and where would someone encounter it?",
+    "category": "databases",
+    "subcategory": "sql",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-sql-joins-3",
+    "title": "Compare joins with inner and outer joins. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "databases",
+    "subcategory": "sql",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-sql-joins-4",
+    "title": "Consider this scenario: a report must include customers with no orders. Explain how you would apply your understanding of joins, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "databases",
+    "subcategory": "sql",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-sql-aggregation-and-grouping-1",
+    "title": "Explain aggregation and grouping in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "databases",
+    "subcategory": "sql",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-sql-aggregation-and-grouping-2",
+    "title": "Imagine you are introducing aggregation and grouping to a classmate. How does it work, and where would someone encounter it?",
+    "category": "databases",
+    "subcategory": "sql",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-sql-aggregation-and-grouping-3",
+    "title": "Compare aggregation and grouping with GROUP BY and HAVING. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "databases",
+    "subcategory": "sql",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-sql-aggregation-and-grouping-4",
+    "title": "Consider this scenario: a dashboard reports monthly totals. Explain how you would apply your understanding of aggregation and grouping, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "databases",
+    "subcategory": "sql",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-sql-indexes-1",
+    "title": "Explain indexes in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "databases",
+    "subcategory": "sql",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-sql-indexes-2",
+    "title": "Imagine you are introducing indexes to a classmate. How does it work, and where would someone encounter it?",
+    "category": "databases",
+    "subcategory": "sql",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-sql-indexes-3",
+    "title": "Compare indexes with B-trees and hash indexes. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "databases",
+    "subcategory": "sql",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-sql-indexes-4",
+    "title": "Consider this scenario: a query becomes slow as a table grows. Explain how you would apply your understanding of indexes, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "databases",
+    "subcategory": "sql",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-database-design-normalization-1",
+    "title": "Explain normalization in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "databases",
+    "subcategory": "database-design",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-database-design-normalization-2",
+    "title": "Imagine you are introducing normalization to a classmate. How does it work, and where would someone encounter it?",
+    "category": "databases",
+    "subcategory": "database-design",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-database-design-normalization-3",
+    "title": "Compare normalization with denormalization. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "databases",
+    "subcategory": "database-design",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-database-design-normalization-4",
+    "title": "Consider this scenario: customer information appears inconsistently. Explain how you would apply your understanding of normalization, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "databases",
+    "subcategory": "database-design",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-transactions-acid-properties-1",
+    "title": "Explain ACID properties in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "databases",
+    "subcategory": "transactions",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-transactions-acid-properties-2",
+    "title": "Imagine you are introducing ACID properties to a classmate. How does it work, and where would someone encounter it?",
+    "category": "databases",
+    "subcategory": "transactions",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-transactions-acid-properties-3",
+    "title": "Compare ACID properties with atomicity and isolation. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "databases",
+    "subcategory": "transactions",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-transactions-acid-properties-4",
+    "title": "Consider this scenario: a bank transfer updates two accounts. Explain how you would apply your understanding of ACID properties, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "databases",
+    "subcategory": "transactions",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-transactions-isolation-levels-1",
+    "title": "Explain isolation levels in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "databases",
+    "subcategory": "transactions",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-transactions-isolation-levels-2",
+    "title": "Imagine you are introducing isolation levels to a classmate. How does it work, and where would someone encounter it?",
+    "category": "databases",
+    "subcategory": "transactions",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-transactions-isolation-levels-3",
+    "title": "Compare isolation levels with dirty and phantom reads. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "databases",
+    "subcategory": "transactions",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-transactions-isolation-levels-4",
+    "title": "Consider this scenario: two users update the same inventory. Explain how you would apply your understanding of isolation levels, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "databases",
+    "subcategory": "transactions",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-transactions-locking-and-mvcc-1",
+    "title": "Explain locking and MVCC in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "databases",
+    "subcategory": "transactions",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-transactions-locking-and-mvcc-2",
+    "title": "Imagine you are introducing locking and MVCC to a classmate. How does it work, and where would someone encounter it?",
+    "category": "databases",
+    "subcategory": "transactions",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-transactions-locking-and-mvcc-3",
+    "title": "Compare locking and MVCC with pessimistic and optimistic concurrency. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "databases",
+    "subcategory": "transactions",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-transactions-locking-and-mvcc-4",
+    "title": "Consider this scenario: a high-traffic table experiences contention. Explain how you would apply your understanding of locking and MVCC, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "databases",
+    "subcategory": "transactions",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-postgresql-query-planning-1",
+    "title": "Explain query planning in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "databases",
+    "subcategory": "postgresql",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-postgresql-query-planning-2",
+    "title": "Imagine you are introducing query planning to a classmate. How does it work, and where would someone encounter it?",
+    "category": "databases",
+    "subcategory": "postgresql",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-postgresql-query-planning-3",
+    "title": "Compare query planning with statistics and EXPLAIN. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "databases",
+    "subcategory": "postgresql",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-postgresql-query-planning-4",
+    "title": "Consider this scenario: an index exists but is not selected. Explain how you would apply your understanding of query planning, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "databases",
+    "subcategory": "postgresql",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-postgresql-json-and-relational-data-1",
+    "title": "Explain JSON and relational data in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "databases",
+    "subcategory": "postgresql",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-postgresql-json-and-relational-data-2",
+    "title": "Imagine you are introducing JSON and relational data to a classmate. How does it work, and where would someone encounter it?",
+    "category": "databases",
+    "subcategory": "postgresql",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-postgresql-json-and-relational-data-3",
+    "title": "Compare JSON and relational data with JSONB and normalization. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "databases",
+    "subcategory": "postgresql",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-postgresql-json-and-relational-data-4",
+    "title": "Consider this scenario: a product has flexible attributes. Explain how you would apply your understanding of JSON and relational data, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "databases",
+    "subcategory": "postgresql",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-mysql-storage-engines-1",
+    "title": "Explain storage engines in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "databases",
+    "subcategory": "mysql",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-mysql-storage-engines-2",
+    "title": "Imagine you are introducing storage engines to a classmate. How does it work, and where would someone encounter it?",
+    "category": "databases",
+    "subcategory": "mysql",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-mysql-storage-engines-3",
+    "title": "Compare storage engines with InnoDB and MyISAM. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "databases",
+    "subcategory": "mysql",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-mysql-storage-engines-4",
+    "title": "Consider this scenario: a workload needs reliable transactions. Explain how you would apply your understanding of storage engines, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "databases",
+    "subcategory": "mysql",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-mongodb-document-data-modeling-1",
+    "title": "Explain document data modeling in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "databases",
+    "subcategory": "mongodb",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-mongodb-document-data-modeling-2",
+    "title": "Imagine you are introducing document data modeling to a classmate. How does it work, and where would someone encounter it?",
+    "category": "databases",
+    "subcategory": "mongodb",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-mongodb-document-data-modeling-3",
+    "title": "Compare document data modeling with referencing and embedding. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "databases",
+    "subcategory": "mongodb",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-mongodb-document-data-modeling-4",
+    "title": "Consider this scenario: an order contains multiple line items. Explain how you would apply your understanding of document data modeling, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "databases",
+    "subcategory": "mongodb",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-mongodb-replica-sets-1",
+    "title": "Explain replica sets in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "databases",
+    "subcategory": "mongodb",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-mongodb-replica-sets-2",
+    "title": "Imagine you are introducing replica sets to a classmate. How does it work, and where would someone encounter it?",
+    "category": "databases",
+    "subcategory": "mongodb",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-mongodb-replica-sets-3",
+    "title": "Compare replica sets with primary election and replication lag. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "databases",
+    "subcategory": "mongodb",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-mongodb-replica-sets-4",
+    "title": "Consider this scenario: a database node fails. Explain how you would apply your understanding of replica sets, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "databases",
+    "subcategory": "mongodb",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-mongodb-sharding-1",
+    "title": "Explain sharding in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "databases",
+    "subcategory": "mongodb",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-mongodb-sharding-2",
+    "title": "Imagine you are introducing sharding to a classmate. How does it work, and where would someone encounter it?",
+    "category": "databases",
+    "subcategory": "mongodb",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-mongodb-sharding-3",
+    "title": "Compare sharding with shard keys and hotspots. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "databases",
+    "subcategory": "mongodb",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-mongodb-sharding-4",
+    "title": "Consider this scenario: a collection grows beyond one server. Explain how you would apply your understanding of sharding, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "databases",
+    "subcategory": "mongodb",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-redis-caching-patterns-1",
+    "title": "Explain caching patterns in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "databases",
+    "subcategory": "redis",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-redis-caching-patterns-2",
+    "title": "Imagine you are introducing caching patterns to a classmate. How does it work, and where would someone encounter it?",
+    "category": "databases",
+    "subcategory": "redis",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-redis-caching-patterns-3",
+    "title": "Compare caching patterns with cache-aside and write-through. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "databases",
+    "subcategory": "redis",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-redis-caching-patterns-4",
+    "title": "Consider this scenario: a popular product page receives heavy traffic. Explain how you would apply your understanding of caching patterns, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "databases",
+    "subcategory": "redis",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-redis-expiration-and-eviction-1",
+    "title": "Explain expiration and eviction in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "databases",
+    "subcategory": "redis",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-redis-expiration-and-eviction-2",
+    "title": "Imagine you are introducing expiration and eviction to a classmate. How does it work, and where would someone encounter it?",
+    "category": "databases",
+    "subcategory": "redis",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-redis-expiration-and-eviction-3",
+    "title": "Compare expiration and eviction with TTL and eviction policies. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "databases",
+    "subcategory": "redis",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-redis-expiration-and-eviction-4",
+    "title": "Consider this scenario: a cache reaches its memory limit. Explain how you would apply your understanding of expiration and eviction, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "databases",
+    "subcategory": "redis",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-database-design-constraints-and-keys-1",
+    "title": "Explain constraints and keys in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "databases",
+    "subcategory": "database-design",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-database-design-constraints-and-keys-2",
+    "title": "Imagine you are introducing constraints and keys to a classmate. How does it work, and where would someone encounter it?",
+    "category": "databases",
+    "subcategory": "database-design",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-database-design-constraints-and-keys-3",
+    "title": "Compare constraints and keys with referential integrity. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "databases",
+    "subcategory": "database-design",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-database-design-constraints-and-keys-4",
+    "title": "Consider this scenario: duplicate or orphan records appear. Explain how you would apply your understanding of constraints and keys, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "databases",
+    "subcategory": "database-design",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-database-performance-connection-pooling-1",
+    "title": "Explain connection pooling in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "databases",
+    "subcategory": "database-performance",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-database-performance-connection-pooling-2",
+    "title": "Imagine you are introducing connection pooling to a classmate. How does it work, and where would someone encounter it?",
+    "category": "databases",
+    "subcategory": "database-performance",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-database-performance-connection-pooling-3",
+    "title": "Compare connection pooling with pool sizing and timeouts. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "databases",
+    "subcategory": "database-performance",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-database-performance-connection-pooling-4",
+    "title": "Consider this scenario: traffic spikes exhaust available connections. Explain how you would apply your understanding of connection pooling, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "databases",
+    "subcategory": "database-performance",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-database-performance-query-optimization-1",
+    "title": "Explain query optimization in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "databases",
+    "subcategory": "database-performance",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-database-performance-query-optimization-2",
+    "title": "Imagine you are introducing query optimization to a classmate. How does it work, and where would someone encounter it?",
+    "category": "databases",
+    "subcategory": "database-performance",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-database-performance-query-optimization-3",
+    "title": "Compare query optimization with indexes and execution plans. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "databases",
+    "subcategory": "database-performance",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-database-performance-query-optimization-4",
+    "title": "Consider this scenario: a query scans millions of rows. Explain how you would apply your understanding of query optimization, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "databases",
+    "subcategory": "database-performance",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-distributed-databases-replication-and-consistency-1",
+    "title": "Explain replication and consistency in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "databases",
+    "subcategory": "distributed-databases",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-distributed-databases-replication-and-consistency-2",
+    "title": "Imagine you are introducing replication and consistency to a classmate. How does it work, and where would someone encounter it?",
+    "category": "databases",
+    "subcategory": "distributed-databases",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-distributed-databases-replication-and-consistency-3",
+    "title": "Compare replication and consistency with strong and eventual consistency. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "databases",
+    "subcategory": "distributed-databases",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-distributed-databases-replication-and-consistency-4",
+    "title": "Consider this scenario: a user reads stale data after an update. Explain how you would apply your understanding of replication and consistency, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "databases",
+    "subcategory": "distributed-databases",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-distributed-databases-cap-theorem-1",
+    "title": "Explain CAP theorem in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "databases",
+    "subcategory": "distributed-databases",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-distributed-databases-cap-theorem-2",
+    "title": "Imagine you are introducing CAP theorem to a classmate. How does it work, and where would someone encounter it?",
+    "category": "databases",
+    "subcategory": "distributed-databases",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-distributed-databases-cap-theorem-3",
+    "title": "Compare CAP theorem with availability and consistency. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "databases",
+    "subcategory": "distributed-databases",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-distributed-databases-cap-theorem-4",
+    "title": "Consider this scenario: a distributed database loses communication between regions. Explain how you would apply your understanding of CAP theorem, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "databases",
+    "subcategory": "distributed-databases",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-database-operations-backup-and-recovery-1",
+    "title": "Explain backup and recovery in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "databases",
+    "subcategory": "database-operations",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-database-operations-backup-and-recovery-2",
+    "title": "Imagine you are introducing backup and recovery to a classmate. How does it work, and where would someone encounter it?",
+    "category": "databases",
+    "subcategory": "database-operations",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-database-operations-backup-and-recovery-3",
+    "title": "Compare backup and recovery with PITR and snapshots. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "databases",
+    "subcategory": "database-operations",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-database-operations-backup-and-recovery-4",
+    "title": "Consider this scenario: an operator accidentally deletes records. Explain how you would apply your understanding of backup and recovery, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "databases",
+    "subcategory": "database-operations",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-database-operations-migrations-1",
+    "title": "Explain migrations in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "databases",
+    "subcategory": "database-operations",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-database-operations-migrations-2",
+    "title": "Imagine you are introducing migrations to a classmate. How does it work, and where would someone encounter it?",
+    "category": "databases",
+    "subcategory": "database-operations",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-database-operations-migrations-3",
+    "title": "Compare migrations with expand-and-contract patterns. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "databases",
+    "subcategory": "database-operations",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-database-operations-migrations-4",
+    "title": "Consider this scenario: a live application must add a required column. Explain how you would apply your understanding of migrations, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "databases",
+    "subcategory": "database-operations",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-nosql-choosing-a-database-model-1",
+    "title": "Explain choosing a database model in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "databases",
+    "subcategory": "nosql",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-nosql-choosing-a-database-model-2",
+    "title": "Imagine you are introducing choosing a database model to a classmate. How does it work, and where would someone encounter it?",
+    "category": "databases",
+    "subcategory": "nosql",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-nosql-choosing-a-database-model-3",
+    "title": "Compare choosing a database model with query patterns and consistency. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "databases",
+    "subcategory": "nosql",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-nosql-choosing-a-database-model-4",
+    "title": "Consider this scenario: a new product needs a storage technology. Explain how you would apply your understanding of choosing a database model, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "databases",
+    "subcategory": "nosql",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-database-security-database-access-control-1",
+    "title": "Explain database access control in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "databases",
+    "subcategory": "database-security",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-database-security-database-access-control-2",
+    "title": "Imagine you are introducing database access control to a classmate. How does it work, and where would someone encounter it?",
+    "category": "databases",
+    "subcategory": "database-security",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-database-security-database-access-control-3",
+    "title": "Compare database access control with encryption and auditing. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "databases",
+    "subcategory": "database-security",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "databases-database-security-database-access-control-4",
+    "title": "Consider this scenario: an application account has excessive permissions. Explain how you would apply your understanding of database access control, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "databases",
+    "subcategory": "database-security",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  }
+]

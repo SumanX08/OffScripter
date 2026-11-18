@@ -1,16 +1,10 @@
 
 import { Prisma } from "../generated/prisma/client.js";
 import { prisma } from "../config/prisma.js";
-import type { z } from "zod";
-import { spinTopicSchema } from "../validator/topic.validator.js";
+import type { SpinFilters } from "../validator/topic.validator.js";
 
 
-export type SpinFilters = {
-  categories?: {
-    name: string;
-    subcategories?: string[];
-  }[];
-};
+
 
 const FREE_DAILY_LIMIT = 2;
 const PRO_DAILY_LIMIT = 5;
@@ -85,9 +79,9 @@ export const spinChallenge = async (
   );
 }
 
-      const categoryFilters = filters.categories?.map(
-  ({ name, subcategories }) => ({
-    category: name,
+const categoryFilters = filters.categories?.map(
+  ({ id, subcategories }) => ({
+    category: id,
     ...(subcategories?.length
       ? {
           subcategory: {
@@ -98,14 +92,19 @@ export const spinChallenge = async (
   })
 );
 
-const where = categoryFilters?.length
-  ? {
-      OR: categoryFilters,
-    }
+const where: Prisma.TopicWhereInput = categoryFilters?.length
+  ? { OR: categoryFilters }
   : {};
 
+console.log(
+  "[SPIN] Prisma where:",
+  JSON.stringify(where, null, 2)
+);
 
-          const topicCount = await tx.topic.count({ where });
+const topicCount = await tx.topic.count({ where });
+
+console.log("[SPIN] Matching topics:", topicCount);
+
 
 
           if (topicCount === 0) {

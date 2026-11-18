@@ -1,0 +1,902 @@
+[
+  {
+    "slug": "languages-javascript-variables-and-scope-1",
+    "title": "Explain variables and scope in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-variables-and-scope-2",
+    "title": "Imagine you are introducing variables and scope to a classmate. How does it work, and where would someone encounter it?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-variables-and-scope-3",
+    "title": "Compare variables and scope with block scope and function scope. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-variables-and-scope-4",
+    "title": "Consider this scenario: a variable unexpectedly retains an old value. Explain how you would apply your understanding of variables and scope, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-closures-1",
+    "title": "Explain closures in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-closures-2",
+    "title": "Imagine you are introducing closures to a classmate. How does it work, and where would someone encounter it?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-closures-3",
+    "title": "Compare closures with callbacks and modules. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-closures-4",
+    "title": "Consider this scenario: a function is returned and called much later. Explain how you would apply your understanding of closures, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-the-event-loop-1",
+    "title": "Explain the event loop in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-the-event-loop-2",
+    "title": "Imagine you are introducing the event loop to a classmate. How does it work, and where would someone encounter it?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-the-event-loop-3",
+    "title": "Compare the event loop with call stack and promise jobs. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-the-event-loop-4",
+    "title": "Consider this scenario: a timer and several promises complete in a surprising order. Explain how you would apply your understanding of the event loop, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-promises-1",
+    "title": "Explain promises in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-promises-2",
+    "title": "Imagine you are introducing promises to a classmate. How does it work, and where would someone encounter it?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-promises-3",
+    "title": "Compare promises with async and await. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-promises-4",
+    "title": "Consider this scenario: several independent API calls must be coordinated. Explain how you would apply your understanding of promises, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-prototypes-1",
+    "title": "Explain prototypes in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-prototypes-2",
+    "title": "Imagine you are introducing prototypes to a classmate. How does it work, and where would someone encounter it?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-prototypes-3",
+    "title": "Compare prototypes with classes and inheritance. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-prototypes-4",
+    "title": "Consider this scenario: two objects share behavior without duplicating methods. Explain how you would apply your understanding of prototypes, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-this-binding-1",
+    "title": "Explain this binding in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-this-binding-2",
+    "title": "Imagine you are introducing this binding to a classmate. How does it work, and where would someone encounter it?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-this-binding-3",
+    "title": "Compare this binding with arrow functions and bind. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-this-binding-4",
+    "title": "Consider this scenario: a method is passed as a callback and loses its expected context. Explain how you would apply your understanding of this binding, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-garbage-collection-1",
+    "title": "Explain garbage collection in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-garbage-collection-2",
+    "title": "Imagine you are introducing garbage collection to a classmate. How does it work, and where would someone encounter it?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-garbage-collection-3",
+    "title": "Compare garbage collection with references and memory leaks. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-garbage-collection-4",
+    "title": "Consider this scenario: a long-running page gradually consumes more memory. Explain how you would apply your understanding of garbage collection, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-modules-1",
+    "title": "Explain modules in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-modules-2",
+    "title": "Imagine you are introducing modules to a classmate. How does it work, and where would someone encounter it?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-modules-3",
+    "title": "Compare modules with CommonJS and ES modules. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-javascript-modules-4",
+    "title": "Consider this scenario: a project mixes default and named imports. Explain how you would apply your understanding of modules, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-typescript-static-typing-1",
+    "title": "Explain static typing in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-typescript-static-typing-2",
+    "title": "Imagine you are introducing static typing to a classmate. How does it work, and where would someone encounter it?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-typescript-static-typing-3",
+    "title": "Compare static typing with JavaScript runtime behavior. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-typescript-static-typing-4",
+    "title": "Consider this scenario: an API response has an unexpected shape. Explain how you would apply your understanding of static typing, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-typescript-interfaces-and-type-aliases-1",
+    "title": "Explain interfaces and type aliases in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-typescript-interfaces-and-type-aliases-2",
+    "title": "Imagine you are introducing interfaces and type aliases to a classmate. How does it work, and where would someone encounter it?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-typescript-interfaces-and-type-aliases-3",
+    "title": "Compare interfaces and type aliases with union and intersection types. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-typescript-interfaces-and-type-aliases-4",
+    "title": "Consider this scenario: a team needs reusable contracts across modules. Explain how you would apply your understanding of interfaces and type aliases, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-typescript-generics-1",
+    "title": "Explain generics in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-typescript-generics-2",
+    "title": "Imagine you are introducing generics to a classmate. How does it work, and where would someone encounter it?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-typescript-generics-3",
+    "title": "Compare generics with unknown and any. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-typescript-generics-4",
+    "title": "Consider this scenario: a data utility must work with several item types. Explain how you would apply your understanding of generics, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-typescript-type-narrowing-1",
+    "title": "Explain type narrowing in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-typescript-type-narrowing-2",
+    "title": "Imagine you are introducing type narrowing to a classmate. How does it work, and where would someone encounter it?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-typescript-type-narrowing-3",
+    "title": "Compare type narrowing with discriminated unions. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-typescript-type-narrowing-4",
+    "title": "Consider this scenario: an API returns several possible result variants. Explain how you would apply your understanding of type narrowing, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-python-mutable-and-immutable-objects-1",
+    "title": "Explain mutable and immutable objects in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-python-mutable-and-immutable-objects-2",
+    "title": "Imagine you are introducing mutable and immutable objects to a classmate. How does it work, and where would someone encounter it?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-python-mutable-and-immutable-objects-3",
+    "title": "Compare mutable and immutable objects with references and copying. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-python-mutable-and-immutable-objects-4",
+    "title": "Consider this scenario: a list changes after being passed to a helper. Explain how you would apply your understanding of mutable and immutable objects, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-python-decorators-1",
+    "title": "Explain decorators in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-python-decorators-2",
+    "title": "Imagine you are introducing decorators to a classmate. How does it work, and where would someone encounter it?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-python-decorators-3",
+    "title": "Compare decorators with closures and higher-order functions. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-python-decorators-4",
+    "title": "Consider this scenario: several endpoints need the same logging behavior. Explain how you would apply your understanding of decorators, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-python-generators-1",
+    "title": "Explain generators in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-python-generators-2",
+    "title": "Imagine you are introducing generators to a classmate. How does it work, and where would someone encounter it?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-python-generators-3",
+    "title": "Compare generators with iterators and lists. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-python-generators-4",
+    "title": "Consider this scenario: a program processes a very large file. Explain how you would apply your understanding of generators, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-python-the-gil-1",
+    "title": "Explain the GIL in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-python-the-gil-2",
+    "title": "Imagine you are introducing the GIL to a classmate. How does it work, and where would someone encounter it?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-python-the-gil-3",
+    "title": "Compare the GIL with processes and async I/O. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-python-the-gil-4",
+    "title": "Consider this scenario: a workload mixes CPU-heavy and network-heavy tasks. Explain how you would apply your understanding of the GIL, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-java-jvm-and-bytecode-1",
+    "title": "Explain JVM and bytecode in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-java-jvm-and-bytecode-2",
+    "title": "Imagine you are introducing JVM and bytecode to a classmate. How does it work, and where would someone encounter it?",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-java-jvm-and-bytecode-3",
+    "title": "Compare JVM and bytecode with JIT compilation and garbage collection. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-java-jvm-and-bytecode-4",
+    "title": "Consider this scenario: a Java service behaves differently after warming up. Explain how you would apply your understanding of JVM and bytecode, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-java-collections-framework-1",
+    "title": "Explain collections framework in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-java-collections-framework-2",
+    "title": "Imagine you are introducing collections framework to a classmate. How does it work, and where would someone encounter it?",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-java-collections-framework-3",
+    "title": "Compare collections framework with lists sets and maps. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-java-collections-framework-4",
+    "title": "Consider this scenario: an application needs fast lookup and predictable ordering. Explain how you would apply your understanding of collections framework, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-java-exception-handling-1",
+    "title": "Explain exception handling in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-java-exception-handling-2",
+    "title": "Imagine you are introducing exception handling to a classmate. How does it work, and where would someone encounter it?",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-java-exception-handling-3",
+    "title": "Compare exception handling with error propagation and resource cleanup. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-java-exception-handling-4",
+    "title": "Consider this scenario: a file operation fails halfway through. Explain how you would apply your understanding of exception handling, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-c-and-c-pointers-and-references-1",
+    "title": "Explain pointers and references in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "languages",
+    "subcategory": "c-and-c",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-c-and-c-pointers-and-references-2",
+    "title": "Imagine you are introducing pointers and references to a classmate. How does it work, and where would someone encounter it?",
+    "category": "languages",
+    "subcategory": "c-and-c",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-c-and-c-pointers-and-references-3",
+    "title": "Compare pointers and references with stack and heap memory. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "languages",
+    "subcategory": "c-and-c",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-c-and-c-pointers-and-references-4",
+    "title": "Consider this scenario: a function needs to modify a caller's data. Explain how you would apply your understanding of pointers and references, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "languages",
+    "subcategory": "c-and-c",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-c-raii-and-smart-pointers-1",
+    "title": "Explain RAII and smart pointers in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "languages",
+    "subcategory": "c",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-c-raii-and-smart-pointers-2",
+    "title": "Imagine you are introducing RAII and smart pointers to a classmate. How does it work, and where would someone encounter it?",
+    "category": "languages",
+    "subcategory": "c",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-c-raii-and-smart-pointers-3",
+    "title": "Compare RAII and smart pointers with manual memory management. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "languages",
+    "subcategory": "c",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-c-raii-and-smart-pointers-4",
+    "title": "Consider this scenario: a program must safely manage file and memory resources. Explain how you would apply your understanding of RAII and smart pointers, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "languages",
+    "subcategory": "c",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-go-goroutines-and-channels-1",
+    "title": "Explain goroutines and channels in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "languages",
+    "subcategory": "go",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-go-goroutines-and-channels-2",
+    "title": "Imagine you are introducing goroutines and channels to a classmate. How does it work, and where would someone encounter it?",
+    "category": "languages",
+    "subcategory": "go",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-go-goroutines-and-channels-3",
+    "title": "Compare goroutines and channels with threads and message passing. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "languages",
+    "subcategory": "go",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-go-goroutines-and-channels-4",
+    "title": "Consider this scenario: many independent jobs need bounded concurrency. Explain how you would apply your understanding of goroutines and channels, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "languages",
+    "subcategory": "go",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-rust-ownership-and-borrowing-1",
+    "title": "Explain ownership and borrowing in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "languages",
+    "subcategory": "rust",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-rust-ownership-and-borrowing-2",
+    "title": "Imagine you are introducing ownership and borrowing to a classmate. How does it work, and where would someone encounter it?",
+    "category": "languages",
+    "subcategory": "rust",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-rust-ownership-and-borrowing-3",
+    "title": "Compare ownership and borrowing with lifetimes and references. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "languages",
+    "subcategory": "rust",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-rust-ownership-and-borrowing-4",
+    "title": "Consider this scenario: two parts of a program need to access the same data. Explain how you would apply your understanding of ownership and borrowing, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "languages",
+    "subcategory": "rust",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-oop-encapsulation-and-abstraction-1",
+    "title": "Explain encapsulation and abstraction in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "languages",
+    "subcategory": "oop",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-oop-encapsulation-and-abstraction-2",
+    "title": "Imagine you are introducing encapsulation and abstraction to a classmate. How does it work, and where would someone encounter it?",
+    "category": "languages",
+    "subcategory": "oop",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-oop-encapsulation-and-abstraction-3",
+    "title": "Compare encapsulation and abstraction with inheritance and composition. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "languages",
+    "subcategory": "oop",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-oop-encapsulation-and-abstraction-4",
+    "title": "Consider this scenario: a domain model must evolve without breaking callers. Explain how you would apply your understanding of encapsulation and abstraction, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "languages",
+    "subcategory": "oop",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-programming-paradigms-functional-programming-1",
+    "title": "Explain functional programming in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "languages",
+    "subcategory": "programming-paradigms",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-programming-paradigms-functional-programming-2",
+    "title": "Imagine you are introducing functional programming to a classmate. How does it work, and where would someone encounter it?",
+    "category": "languages",
+    "subcategory": "programming-paradigms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-programming-paradigms-functional-programming-3",
+    "title": "Compare functional programming with imperative programming. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "languages",
+    "subcategory": "programming-paradigms",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "languages-programming-paradigms-functional-programming-4",
+    "title": "Consider this scenario: a transformation pipeline becomes difficult to test. Explain how you would apply your understanding of functional programming, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "languages",
+    "subcategory": "programming-paradigms",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  }
+]

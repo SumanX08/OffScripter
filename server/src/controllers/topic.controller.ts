@@ -9,7 +9,6 @@ export const spin = async (req: Request, res: Response) => {
     const filters = spinTopicSchema.parse(req.body ?? {});
     const user = res.locals.user;
 
-   
     if (!user?.id) {
       res.status(401).json({
         success: false,
@@ -21,11 +20,15 @@ export const spin = async (req: Request, res: Response) => {
       return;
     }
 
+    console.log(
+      "[SPIN] Received filters:",
+      JSON.stringify(filters, null, 2)
+    );
+
     const { attempt, topic } = await spinChallenge(
       filters,
       user.id
     );
-
 
     res.status(201).json({
       success: true,
@@ -36,30 +39,43 @@ export const spin = async (req: Request, res: Response) => {
     });
   } catch (error) {
     if (error instanceof Error) {
-  if (error.message === "FREE_DAILY_LIMIT_REACHED") {
-    res.status(429).json({
-      success: false,
-      error: {
-        code: "FREE_DAILY_LIMIT_REACHED",
-        message:
-          "You've exhausted your free daily topics. Upgrade to Pro for more topics.",
-      },
-    });
-    return;
-  }
+      if (error.message === "FREE_DAILY_LIMIT_REACHED") {
+        res.status(429).json({
+          success: false,
+          error: {
+            code: "FREE_DAILY_LIMIT_REACHED",
+            message:
+              "You've exhausted your free daily topics. Upgrade to Pro for more topics.",
+          },
+        });
+        return;
+      }
 
-  if (error.message === "PRO_DAILY_LIMIT_REACHED") {
-    res.status(429).json({
-      success: false,
-      error: {
-        code: "PRO_DAILY_LIMIT_REACHED",
-        message:
-          "You've used all your daily topics. Your limit resets tomorrow. Come back tomorrow!",
-      },
-    });
-    return;
-  }
-}
+      if (error.message === "PRO_DAILY_LIMIT_REACHED") {
+        res.status(429).json({
+          success: false,
+          error: {
+            code: "PRO_DAILY_LIMIT_REACHED",
+            message:
+              "You've used all your daily topics. Your limit resets tomorrow. Come back tomorrow!",
+          },
+        });
+        return;
+      }
+
+      if (
+        error.message === "No topics available for the selected filters"
+      ) {
+        res.status(404).json({
+          success: false,
+          error: {
+            code: "NO_TOPICS_AVAILABLE",
+            message: error.message,
+          },
+        });
+        return;
+      }
+    }
 
     if (error instanceof ZodError) {
       res.status(400).json({
@@ -68,21 +84,6 @@ export const spin = async (req: Request, res: Response) => {
           code: "INVALID_FILTERS",
           message: "The topic filters provided are invalid.",
           details: error.issues,
-        },
-      });
-      return;
-    }
-
-    if (
-      error instanceof Error &&
-      error.message ===
-        "No topics available for the selected filters"
-    ) {
-      res.status(404).json({
-        success: false,
-        error: {
-          code: "NO_TOPICS_AVAILABLE",
-          message: error.message,
         },
       });
       return;

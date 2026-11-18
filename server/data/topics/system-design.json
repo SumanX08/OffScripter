@@ -1,0 +1,902 @@
+[
+  {
+    "slug": "system-design-scalability-vertical-and-horizontal-scaling-1",
+    "title": "Explain vertical and horizontal scaling in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "system-design",
+    "subcategory": "scalability",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-scalability-vertical-and-horizontal-scaling-2",
+    "title": "Imagine you are introducing vertical and horizontal scaling to a classmate. How does it work, and where would someone encounter it?",
+    "category": "system-design",
+    "subcategory": "scalability",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-scalability-vertical-and-horizontal-scaling-3",
+    "title": "Compare vertical and horizontal scaling with stateful and stateless services. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "system-design",
+    "subcategory": "scalability",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-scalability-vertical-and-horizontal-scaling-4",
+    "title": "Consider this scenario: traffic grows tenfold. Explain how you would apply your understanding of vertical and horizontal scaling, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "system-design",
+    "subcategory": "scalability",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-scalability-load-balancing-1",
+    "title": "Explain load balancing in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "system-design",
+    "subcategory": "scalability",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-scalability-load-balancing-2",
+    "title": "Imagine you are introducing load balancing to a classmate. How does it work, and where would someone encounter it?",
+    "category": "system-design",
+    "subcategory": "scalability",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-scalability-load-balancing-3",
+    "title": "Compare load balancing with health checks and algorithms. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "system-design",
+    "subcategory": "scalability",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-scalability-load-balancing-4",
+    "title": "Consider this scenario: one server receives more requests than others. Explain how you would apply your understanding of load balancing, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "system-design",
+    "subcategory": "scalability",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-caching-cache-design-1",
+    "title": "Explain cache design in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "system-design",
+    "subcategory": "caching",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-caching-cache-design-2",
+    "title": "Imagine you are introducing cache design to a classmate. How does it work, and where would someone encounter it?",
+    "category": "system-design",
+    "subcategory": "caching",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-caching-cache-design-3",
+    "title": "Compare cache design with CDN and application caches. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "system-design",
+    "subcategory": "caching",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-caching-cache-design-4",
+    "title": "Consider this scenario: a read-heavy service has high database load. Explain how you would apply your understanding of cache design, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "system-design",
+    "subcategory": "caching",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-distributed-systems-cap-theorem-1",
+    "title": "Explain CAP theorem in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "system-design",
+    "subcategory": "distributed-systems",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-distributed-systems-cap-theorem-2",
+    "title": "Imagine you are introducing CAP theorem to a classmate. How does it work, and where would someone encounter it?",
+    "category": "system-design",
+    "subcategory": "distributed-systems",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-distributed-systems-cap-theorem-3",
+    "title": "Compare CAP theorem with consensus. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "system-design",
+    "subcategory": "distributed-systems",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-distributed-systems-cap-theorem-4",
+    "title": "Consider this scenario: a region becomes unreachable. Explain how you would apply your understanding of CAP theorem, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "system-design",
+    "subcategory": "distributed-systems",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-distributed-systems-consensus-algorithms-1",
+    "title": "Explain consensus algorithms in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "system-design",
+    "subcategory": "distributed-systems",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-distributed-systems-consensus-algorithms-2",
+    "title": "Imagine you are introducing consensus algorithms to a classmate. How does it work, and where would someone encounter it?",
+    "category": "system-design",
+    "subcategory": "distributed-systems",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-distributed-systems-consensus-algorithms-3",
+    "title": "Compare consensus algorithms with Raft and leader election. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "system-design",
+    "subcategory": "distributed-systems",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-distributed-systems-consensus-algorithms-4",
+    "title": "Consider this scenario: a distributed configuration service needs reliable updates. Explain how you would apply your understanding of consensus algorithms, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "system-design",
+    "subcategory": "distributed-systems",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-microservices-service-decomposition-1",
+    "title": "Explain service decomposition in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "system-design",
+    "subcategory": "microservices",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-microservices-service-decomposition-2",
+    "title": "Imagine you are introducing service decomposition to a classmate. How does it work, and where would someone encounter it?",
+    "category": "system-design",
+    "subcategory": "microservices",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-microservices-service-decomposition-3",
+    "title": "Compare service decomposition with bounded contexts. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "system-design",
+    "subcategory": "microservices",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-microservices-service-decomposition-4",
+    "title": "Consider this scenario: a monolith is difficult to deploy. Explain how you would apply your understanding of service decomposition, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "system-design",
+    "subcategory": "microservices",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-microservices-api-gateway-1",
+    "title": "Explain API gateway in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "system-design",
+    "subcategory": "microservices",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-microservices-api-gateway-2",
+    "title": "Imagine you are introducing API gateway to a classmate. How does it work, and where would someone encounter it?",
+    "category": "system-design",
+    "subcategory": "microservices",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-microservices-api-gateway-3",
+    "title": "Compare API gateway with routing and aggregation. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "system-design",
+    "subcategory": "microservices",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-microservices-api-gateway-4",
+    "title": "Consider this scenario: a mobile app needs a unified API. Explain how you would apply your understanding of API gateway, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "system-design",
+    "subcategory": "microservices",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-microservices-service-discovery-1",
+    "title": "Explain service discovery in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "system-design",
+    "subcategory": "microservices",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-microservices-service-discovery-2",
+    "title": "Imagine you are introducing service discovery to a classmate. How does it work, and where would someone encounter it?",
+    "category": "system-design",
+    "subcategory": "microservices",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-microservices-service-discovery-3",
+    "title": "Compare service discovery with DNS and registries. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "system-design",
+    "subcategory": "microservices",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-microservices-service-discovery-4",
+    "title": "Consider this scenario: instances scale up and down frequently. Explain how you would apply your understanding of service discovery, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "system-design",
+    "subcategory": "microservices",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-messaging-message-queues-1",
+    "title": "Explain message queues in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "system-design",
+    "subcategory": "messaging",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-messaging-message-queues-2",
+    "title": "Imagine you are introducing message queues to a classmate. How does it work, and where would someone encounter it?",
+    "category": "system-design",
+    "subcategory": "messaging",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-messaging-message-queues-3",
+    "title": "Compare message queues with pub-sub and work queues. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "system-design",
+    "subcategory": "messaging",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-messaging-message-queues-4",
+    "title": "Consider this scenario: email delivery should not block checkout. Explain how you would apply your understanding of message queues, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "system-design",
+    "subcategory": "messaging",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-messaging-event-driven-architecture-1",
+    "title": "Explain event-driven architecture in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "system-design",
+    "subcategory": "messaging",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-messaging-event-driven-architecture-2",
+    "title": "Imagine you are introducing event-driven architecture to a classmate. How does it work, and where would someone encounter it?",
+    "category": "system-design",
+    "subcategory": "messaging",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-messaging-event-driven-architecture-3",
+    "title": "Compare event-driven architecture with eventual consistency. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "system-design",
+    "subcategory": "messaging",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-messaging-event-driven-architecture-4",
+    "title": "Consider this scenario: an order triggers inventory and notification workflows. Explain how you would apply your understanding of event-driven architecture, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "system-design",
+    "subcategory": "messaging",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-reliability-circuit-breakers-1",
+    "title": "Explain circuit breakers in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "system-design",
+    "subcategory": "reliability",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-reliability-circuit-breakers-2",
+    "title": "Imagine you are introducing circuit breakers to a classmate. How does it work, and where would someone encounter it?",
+    "category": "system-design",
+    "subcategory": "reliability",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-reliability-circuit-breakers-3",
+    "title": "Compare circuit breakers with timeouts and retries. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "system-design",
+    "subcategory": "reliability",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-reliability-circuit-breakers-4",
+    "title": "Consider this scenario: a payment provider becomes unavailable. Explain how you would apply your understanding of circuit breakers, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "system-design",
+    "subcategory": "reliability",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-reliability-idempotency-1",
+    "title": "Explain idempotency in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "system-design",
+    "subcategory": "reliability",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-reliability-idempotency-2",
+    "title": "Imagine you are introducing idempotency to a classmate. How does it work, and where would someone encounter it?",
+    "category": "system-design",
+    "subcategory": "reliability",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-reliability-idempotency-3",
+    "title": "Compare idempotency with idempotency keys. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "system-design",
+    "subcategory": "reliability",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-reliability-idempotency-4",
+    "title": "Consider this scenario: a client retries a payment after a timeout. Explain how you would apply your understanding of idempotency, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "system-design",
+    "subcategory": "reliability",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-reliability-rate-limiting-1",
+    "title": "Explain rate limiting in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "system-design",
+    "subcategory": "reliability",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-reliability-rate-limiting-2",
+    "title": "Imagine you are introducing rate limiting to a classmate. How does it work, and where would someone encounter it?",
+    "category": "system-design",
+    "subcategory": "reliability",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-reliability-rate-limiting-3",
+    "title": "Compare rate limiting with token bucket and leaky bucket. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "system-design",
+    "subcategory": "reliability",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-reliability-rate-limiting-4",
+    "title": "Consider this scenario: one customer overwhelms a shared API. Explain how you would apply your understanding of rate limiting, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "system-design",
+    "subcategory": "reliability",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-data-architecture-database-partitioning-1",
+    "title": "Explain database partitioning in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "system-design",
+    "subcategory": "data-architecture",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-data-architecture-database-partitioning-2",
+    "title": "Imagine you are introducing database partitioning to a classmate. How does it work, and where would someone encounter it?",
+    "category": "system-design",
+    "subcategory": "data-architecture",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-data-architecture-database-partitioning-3",
+    "title": "Compare database partitioning with sharding and partition keys. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "system-design",
+    "subcategory": "data-architecture",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-data-architecture-database-partitioning-4",
+    "title": "Consider this scenario: a single database cannot handle growth. Explain how you would apply your understanding of database partitioning, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "system-design",
+    "subcategory": "data-architecture",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-data-architecture-replication-1",
+    "title": "Explain replication in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "system-design",
+    "subcategory": "data-architecture",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-data-architecture-replication-2",
+    "title": "Imagine you are introducing replication to a classmate. How does it work, and where would someone encounter it?",
+    "category": "system-design",
+    "subcategory": "data-architecture",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-data-architecture-replication-3",
+    "title": "Compare replication with leader-follower replication. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "system-design",
+    "subcategory": "data-architecture",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-data-architecture-replication-4",
+    "title": "Consider this scenario: a read replica falls behind. Explain how you would apply your understanding of replication, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "system-design",
+    "subcategory": "data-architecture",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-data-architecture-cqrs-1",
+    "title": "Explain CQRS in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "system-design",
+    "subcategory": "data-architecture",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-data-architecture-cqrs-2",
+    "title": "Imagine you are introducing CQRS to a classmate. How does it work, and where would someone encounter it?",
+    "category": "system-design",
+    "subcategory": "data-architecture",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-data-architecture-cqrs-3",
+    "title": "Compare CQRS with event sourcing. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "system-design",
+    "subcategory": "data-architecture",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-data-architecture-cqrs-4",
+    "title": "Consider this scenario: a system has very different read and write workloads. Explain how you would apply your understanding of CQRS, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "system-design",
+    "subcategory": "data-architecture",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-data-architecture-event-sourcing-1",
+    "title": "Explain event sourcing in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "system-design",
+    "subcategory": "data-architecture",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-data-architecture-event-sourcing-2",
+    "title": "Imagine you are introducing event sourcing to a classmate. How does it work, and where would someone encounter it?",
+    "category": "system-design",
+    "subcategory": "data-architecture",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-data-architecture-event-sourcing-3",
+    "title": "Compare event sourcing with snapshots and projections. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "system-design",
+    "subcategory": "data-architecture",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-data-architecture-event-sourcing-4",
+    "title": "Consider this scenario: an audit trail must reconstruct historical state. Explain how you would apply your understanding of event sourcing, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "system-design",
+    "subcategory": "data-architecture",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-system-design-url-shortener-design-1",
+    "title": "Explain URL shortener design in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "system-design",
+    "subcategory": "system-design",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-system-design-url-shortener-design-2",
+    "title": "Imagine you are introducing URL shortener design to a classmate. How does it work, and where would someone encounter it?",
+    "category": "system-design",
+    "subcategory": "system-design",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-system-design-url-shortener-design-3",
+    "title": "Compare URL shortener design with key generation and redirects. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "system-design",
+    "subcategory": "system-design",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-system-design-url-shortener-design-4",
+    "title": "Consider this scenario: a service must handle billions of redirects. Explain how you would apply your understanding of URL shortener design, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "system-design",
+    "subcategory": "system-design",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-system-design-notification-system-design-1",
+    "title": "Explain notification system design in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "system-design",
+    "subcategory": "system-design",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-system-design-notification-system-design-2",
+    "title": "Imagine you are introducing notification system design to a classmate. How does it work, and where would someone encounter it?",
+    "category": "system-design",
+    "subcategory": "system-design",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-system-design-notification-system-design-3",
+    "title": "Compare notification system design with queues and preferences. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "system-design",
+    "subcategory": "system-design",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-system-design-notification-system-design-4",
+    "title": "Consider this scenario: notifications must be reliable at high volume. Explain how you would apply your understanding of notification system design, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "system-design",
+    "subcategory": "system-design",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-system-design-news-feed-design-1",
+    "title": "Explain news feed design in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "system-design",
+    "subcategory": "system-design",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-system-design-news-feed-design-2",
+    "title": "Imagine you are introducing news feed design to a classmate. How does it work, and where would someone encounter it?",
+    "category": "system-design",
+    "subcategory": "system-design",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-system-design-news-feed-design-3",
+    "title": "Compare news feed design with fan-out on write and read. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "system-design",
+    "subcategory": "system-design",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-system-design-news-feed-design-4",
+    "title": "Consider this scenario: a social product has users with very different follower counts. Explain how you would apply your understanding of news feed design, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "system-design",
+    "subcategory": "system-design",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-system-design-file-storage-design-1",
+    "title": "Explain file storage design in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "system-design",
+    "subcategory": "system-design",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-system-design-file-storage-design-2",
+    "title": "Imagine you are introducing file storage design to a classmate. How does it work, and where would someone encounter it?",
+    "category": "system-design",
+    "subcategory": "system-design",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-system-design-file-storage-design-3",
+    "title": "Compare file storage design with object storage and CDN. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "system-design",
+    "subcategory": "system-design",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-system-design-file-storage-design-4",
+    "title": "Consider this scenario: users upload large files from mobile devices. Explain how you would apply your understanding of file storage design, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "system-design",
+    "subcategory": "system-design",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-system-design-chat-system-design-1",
+    "title": "Explain chat system design in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "system-design",
+    "subcategory": "system-design",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-system-design-chat-system-design-2",
+    "title": "Imagine you are introducing chat system design to a classmate. How does it work, and where would someone encounter it?",
+    "category": "system-design",
+    "subcategory": "system-design",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-system-design-chat-system-design-3",
+    "title": "Compare chat system design with WebSockets and presence. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "system-design",
+    "subcategory": "system-design",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-system-design-chat-system-design-4",
+    "title": "Consider this scenario: a chat app must support multiple devices. Explain how you would apply your understanding of chat system design, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "system-design",
+    "subcategory": "system-design",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-observability-distributed-tracing-1",
+    "title": "Explain distributed tracing in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "system-design",
+    "subcategory": "observability",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-observability-distributed-tracing-2",
+    "title": "Imagine you are introducing distributed tracing to a classmate. How does it work, and where would someone encounter it?",
+    "category": "system-design",
+    "subcategory": "observability",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-observability-distributed-tracing-3",
+    "title": "Compare distributed tracing with trace and span IDs. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "system-design",
+    "subcategory": "observability",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-observability-distributed-tracing-4",
+    "title": "Consider this scenario: one slow request crosses six services. Explain how you would apply your understanding of distributed tracing, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "system-design",
+    "subcategory": "observability",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-security-system-threat-modeling-1",
+    "title": "Explain system threat modeling in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "system-design",
+    "subcategory": "security",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-security-system-threat-modeling-2",
+    "title": "Imagine you are introducing system threat modeling to a classmate. How does it work, and where would someone encounter it?",
+    "category": "system-design",
+    "subcategory": "security",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-security-system-threat-modeling-3",
+    "title": "Compare system threat modeling with trust boundaries. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "system-design",
+    "subcategory": "security",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-security-system-threat-modeling-4",
+    "title": "Consider this scenario: a new service handles sensitive customer data. Explain how you would apply your understanding of system threat modeling, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "system-design",
+    "subcategory": "security",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-trade-offs-consistency-versus-latency-1",
+    "title": "Explain consistency versus latency in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "system-design",
+    "subcategory": "trade-offs",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-trade-offs-consistency-versus-latency-2",
+    "title": "Imagine you are introducing consistency versus latency to a classmate. How does it work, and where would someone encounter it?",
+    "category": "system-design",
+    "subcategory": "trade-offs",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-trade-offs-consistency-versus-latency-3",
+    "title": "Compare consistency versus latency with quorums and stale reads. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "system-design",
+    "subcategory": "trade-offs",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "system-design-trade-offs-consistency-versus-latency-4",
+    "title": "Consider this scenario: a global application serves users across regions. Explain how you would apply your understanding of consistency versus latency, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "system-design",
+    "subcategory": "trade-offs",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  }
+]

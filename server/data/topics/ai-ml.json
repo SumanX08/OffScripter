@@ -1,0 +1,902 @@
+[
+  {
+    "slug": "ai-ml-machine-learning-fundamentals-supervised-and-unsupervised-learning-1",
+    "title": "Explain supervised and unsupervised learning in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "ai-ml",
+    "subcategory": "machine-learning-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-machine-learning-fundamentals-supervised-and-unsupervised-learning-2",
+    "title": "Imagine you are introducing supervised and unsupervised learning to a classmate. How does it work, and where would someone encounter it?",
+    "category": "ai-ml",
+    "subcategory": "machine-learning-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-machine-learning-fundamentals-supervised-and-unsupervised-learning-3",
+    "title": "Compare supervised and unsupervised learning with classification and clustering. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "ai-ml",
+    "subcategory": "machine-learning-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-machine-learning-fundamentals-supervised-and-unsupervised-learning-4",
+    "title": "Consider this scenario: a team has customer records but few labels. Explain how you would apply your understanding of supervised and unsupervised learning, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "ai-ml",
+    "subcategory": "machine-learning-fundamentals",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-machine-learning-fundamentals-training-validation-and-test-sets-1",
+    "title": "Explain training validation and test sets in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "ai-ml",
+    "subcategory": "machine-learning-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-machine-learning-fundamentals-training-validation-and-test-sets-2",
+    "title": "Imagine you are introducing training validation and test sets to a classmate. How does it work, and where would someone encounter it?",
+    "category": "ai-ml",
+    "subcategory": "machine-learning-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-machine-learning-fundamentals-training-validation-and-test-sets-3",
+    "title": "Compare training validation and test sets with data leakage. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "ai-ml",
+    "subcategory": "machine-learning-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-machine-learning-fundamentals-training-validation-and-test-sets-4",
+    "title": "Consider this scenario: a model performs well in development but poorly in production. Explain how you would apply your understanding of training validation and test sets, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "ai-ml",
+    "subcategory": "machine-learning-fundamentals",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-machine-learning-fundamentals-overfitting-and-underfitting-1",
+    "title": "Explain overfitting and underfitting in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "ai-ml",
+    "subcategory": "machine-learning-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-machine-learning-fundamentals-overfitting-and-underfitting-2",
+    "title": "Imagine you are introducing overfitting and underfitting to a classmate. How does it work, and where would someone encounter it?",
+    "category": "ai-ml",
+    "subcategory": "machine-learning-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-machine-learning-fundamentals-overfitting-and-underfitting-3",
+    "title": "Compare overfitting and underfitting with regularization and model capacity. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "ai-ml",
+    "subcategory": "machine-learning-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-machine-learning-fundamentals-overfitting-and-underfitting-4",
+    "title": "Consider this scenario: training accuracy is high but test accuracy is low. Explain how you would apply your understanding of overfitting and underfitting, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "ai-ml",
+    "subcategory": "machine-learning-fundamentals",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-machine-learning-fundamentals-bias-variance-trade-off-1",
+    "title": "Explain bias variance trade-off in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "ai-ml",
+    "subcategory": "machine-learning-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-machine-learning-fundamentals-bias-variance-trade-off-2",
+    "title": "Imagine you are introducing bias variance trade-off to a classmate. How does it work, and where would someone encounter it?",
+    "category": "ai-ml",
+    "subcategory": "machine-learning-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-machine-learning-fundamentals-bias-variance-trade-off-3",
+    "title": "Compare bias variance trade-off with ensemble methods. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "ai-ml",
+    "subcategory": "machine-learning-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-machine-learning-fundamentals-bias-variance-trade-off-4",
+    "title": "Consider this scenario: a model is consistently wrong on new samples. Explain how you would apply your understanding of bias variance trade-off, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "ai-ml",
+    "subcategory": "machine-learning-fundamentals",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-machine-learning-fundamentals-feature-engineering-1",
+    "title": "Explain feature engineering in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "ai-ml",
+    "subcategory": "machine-learning-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-machine-learning-fundamentals-feature-engineering-2",
+    "title": "Imagine you are introducing feature engineering to a classmate. How does it work, and where would someone encounter it?",
+    "category": "ai-ml",
+    "subcategory": "machine-learning-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-machine-learning-fundamentals-feature-engineering-3",
+    "title": "Compare feature engineering with scaling and encoding. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "ai-ml",
+    "subcategory": "machine-learning-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-machine-learning-fundamentals-feature-engineering-4",
+    "title": "Consider this scenario: a model cannot use categorical fields directly. Explain how you would apply your understanding of feature engineering, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "ai-ml",
+    "subcategory": "machine-learning-fundamentals",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-model-evaluation-precision-and-recall-1",
+    "title": "Explain precision and recall in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "ai-ml",
+    "subcategory": "model-evaluation",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-model-evaluation-precision-and-recall-2",
+    "title": "Imagine you are introducing precision and recall to a classmate. How does it work, and where would someone encounter it?",
+    "category": "ai-ml",
+    "subcategory": "model-evaluation",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-model-evaluation-precision-and-recall-3",
+    "title": "Compare precision and recall with F1 score and accuracy. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "ai-ml",
+    "subcategory": "model-evaluation",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-model-evaluation-precision-and-recall-4",
+    "title": "Consider this scenario: a fraud detector must balance missed fraud and false alarms. Explain how you would apply your understanding of precision and recall, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "ai-ml",
+    "subcategory": "model-evaluation",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-model-evaluation-roc-and-precision-recall-curves-1",
+    "title": "Explain ROC and precision-recall curves in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "ai-ml",
+    "subcategory": "model-evaluation",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-model-evaluation-roc-and-precision-recall-curves-2",
+    "title": "Imagine you are introducing ROC and precision-recall curves to a classmate. How does it work, and where would someone encounter it?",
+    "category": "ai-ml",
+    "subcategory": "model-evaluation",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-model-evaluation-roc-and-precision-recall-curves-3",
+    "title": "Compare ROC and precision-recall curves with class imbalance. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "ai-ml",
+    "subcategory": "model-evaluation",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-model-evaluation-roc-and-precision-recall-curves-4",
+    "title": "Consider this scenario: a rare-event classifier looks accurate but is ineffective. Explain how you would apply your understanding of ROC and precision-recall curves, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "ai-ml",
+    "subcategory": "model-evaluation",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-algorithms-linear-regression-1",
+    "title": "Explain linear regression in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "ai-ml",
+    "subcategory": "algorithms",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-algorithms-linear-regression-2",
+    "title": "Imagine you are introducing linear regression to a classmate. How does it work, and where would someone encounter it?",
+    "category": "ai-ml",
+    "subcategory": "algorithms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-algorithms-linear-regression-3",
+    "title": "Compare linear regression with loss functions and assumptions. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "ai-ml",
+    "subcategory": "algorithms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-algorithms-linear-regression-4",
+    "title": "Consider this scenario: a business forecasts monthly demand. Explain how you would apply your understanding of linear regression, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "ai-ml",
+    "subcategory": "algorithms",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-algorithms-decision-trees-1",
+    "title": "Explain decision trees in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "ai-ml",
+    "subcategory": "algorithms",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-algorithms-decision-trees-2",
+    "title": "Imagine you are introducing decision trees to a classmate. How does it work, and where would someone encounter it?",
+    "category": "ai-ml",
+    "subcategory": "algorithms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-algorithms-decision-trees-3",
+    "title": "Compare decision trees with pruning and tree depth. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "ai-ml",
+    "subcategory": "algorithms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-algorithms-decision-trees-4",
+    "title": "Consider this scenario: a model is easy to explain but overfits. Explain how you would apply your understanding of decision trees, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "ai-ml",
+    "subcategory": "algorithms",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-algorithms-random-forests-1",
+    "title": "Explain random forests in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "ai-ml",
+    "subcategory": "algorithms",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-algorithms-random-forests-2",
+    "title": "Imagine you are introducing random forests to a classmate. How does it work, and where would someone encounter it?",
+    "category": "ai-ml",
+    "subcategory": "algorithms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-algorithms-random-forests-3",
+    "title": "Compare random forests with bagging and feature randomness. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "ai-ml",
+    "subcategory": "algorithms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-algorithms-random-forests-4",
+    "title": "Consider this scenario: a single decision tree is unstable. Explain how you would apply your understanding of random forests, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "ai-ml",
+    "subcategory": "algorithms",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-algorithms-gradient-boosting-1",
+    "title": "Explain gradient boosting in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "ai-ml",
+    "subcategory": "algorithms",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-algorithms-gradient-boosting-2",
+    "title": "Imagine you are introducing gradient boosting to a classmate. How does it work, and where would someone encounter it?",
+    "category": "ai-ml",
+    "subcategory": "algorithms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-algorithms-gradient-boosting-3",
+    "title": "Compare gradient boosting with XGBoost and learning rate. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "ai-ml",
+    "subcategory": "algorithms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-algorithms-gradient-boosting-4",
+    "title": "Consider this scenario: a tabular prediction task needs strong performance. Explain how you would apply your understanding of gradient boosting, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "ai-ml",
+    "subcategory": "algorithms",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-algorithms-support-vector-machines-1",
+    "title": "Explain support vector machines in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "ai-ml",
+    "subcategory": "algorithms",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-algorithms-support-vector-machines-2",
+    "title": "Imagine you are introducing support vector machines to a classmate. How does it work, and where would someone encounter it?",
+    "category": "ai-ml",
+    "subcategory": "algorithms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-algorithms-support-vector-machines-3",
+    "title": "Compare support vector machines with kernels and feature scaling. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "ai-ml",
+    "subcategory": "algorithms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-algorithms-support-vector-machines-4",
+    "title": "Consider this scenario: classes are not linearly separable. Explain how you would apply your understanding of support vector machines, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "ai-ml",
+    "subcategory": "algorithms",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-unsupervised-learning-k-means-clustering-1",
+    "title": "Explain K-means clustering in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "ai-ml",
+    "subcategory": "unsupervised-learning",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-unsupervised-learning-k-means-clustering-2",
+    "title": "Imagine you are introducing K-means clustering to a classmate. How does it work, and where would someone encounter it?",
+    "category": "ai-ml",
+    "subcategory": "unsupervised-learning",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-unsupervised-learning-k-means-clustering-3",
+    "title": "Compare K-means clustering with distance metrics and choosing K. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "ai-ml",
+    "subcategory": "unsupervised-learning",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-unsupervised-learning-k-means-clustering-4",
+    "title": "Consider this scenario: a retailer segments customers. Explain how you would apply your understanding of K-means clustering, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "ai-ml",
+    "subcategory": "unsupervised-learning",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-unsupervised-learning-pca-1",
+    "title": "Explain PCA in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "ai-ml",
+    "subcategory": "unsupervised-learning",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-unsupervised-learning-pca-2",
+    "title": "Imagine you are introducing PCA to a classmate. How does it work, and where would someone encounter it?",
+    "category": "ai-ml",
+    "subcategory": "unsupervised-learning",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-unsupervised-learning-pca-3",
+    "title": "Compare PCA with eigenvectors and feature scaling. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "ai-ml",
+    "subcategory": "unsupervised-learning",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-unsupervised-learning-pca-4",
+    "title": "Consider this scenario: a dataset has hundreds of correlated features. Explain how you would apply your understanding of PCA, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "ai-ml",
+    "subcategory": "unsupervised-learning",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-deep-learning-neural-network-fundamentals-1",
+    "title": "Explain neural network fundamentals in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "ai-ml",
+    "subcategory": "deep-learning",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-deep-learning-neural-network-fundamentals-2",
+    "title": "Imagine you are introducing neural network fundamentals to a classmate. How does it work, and where would someone encounter it?",
+    "category": "ai-ml",
+    "subcategory": "deep-learning",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-deep-learning-neural-network-fundamentals-3",
+    "title": "Compare neural network fundamentals with activation functions. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "ai-ml",
+    "subcategory": "deep-learning",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-deep-learning-neural-network-fundamentals-4",
+    "title": "Consider this scenario: a model learns patterns from images. Explain how you would apply your understanding of neural network fundamentals, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "ai-ml",
+    "subcategory": "deep-learning",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-deep-learning-backpropagation-1",
+    "title": "Explain backpropagation in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "ai-ml",
+    "subcategory": "deep-learning",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-deep-learning-backpropagation-2",
+    "title": "Imagine you are introducing backpropagation to a classmate. How does it work, and where would someone encounter it?",
+    "category": "ai-ml",
+    "subcategory": "deep-learning",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-deep-learning-backpropagation-3",
+    "title": "Compare backpropagation with chain rule and gradient descent. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "ai-ml",
+    "subcategory": "deep-learning",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-deep-learning-backpropagation-4",
+    "title": "Consider this scenario: a network's loss is not decreasing. Explain how you would apply your understanding of backpropagation, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "ai-ml",
+    "subcategory": "deep-learning",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-deep-learning-convolutional-neural-networks-1",
+    "title": "Explain convolutional neural networks in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "ai-ml",
+    "subcategory": "deep-learning",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-deep-learning-convolutional-neural-networks-2",
+    "title": "Imagine you are introducing convolutional neural networks to a classmate. How does it work, and where would someone encounter it?",
+    "category": "ai-ml",
+    "subcategory": "deep-learning",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-deep-learning-convolutional-neural-networks-3",
+    "title": "Compare convolutional neural networks with filters and pooling. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "ai-ml",
+    "subcategory": "deep-learning",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-deep-learning-convolutional-neural-networks-4",
+    "title": "Consider this scenario: a model classifies images. Explain how you would apply your understanding of convolutional neural networks, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "ai-ml",
+    "subcategory": "deep-learning",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-deep-learning-recurrent-networks-and-lstms-1",
+    "title": "Explain recurrent networks and LSTMs in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "ai-ml",
+    "subcategory": "deep-learning",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-deep-learning-recurrent-networks-and-lstms-2",
+    "title": "Imagine you are introducing recurrent networks and LSTMs to a classmate. How does it work, and where would someone encounter it?",
+    "category": "ai-ml",
+    "subcategory": "deep-learning",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-deep-learning-recurrent-networks-and-lstms-3",
+    "title": "Compare recurrent networks and LSTMs with vanishing gradients. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "ai-ml",
+    "subcategory": "deep-learning",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-deep-learning-recurrent-networks-and-lstms-4",
+    "title": "Consider this scenario: a model processes time-series data. Explain how you would apply your understanding of recurrent networks and LSTMs, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "ai-ml",
+    "subcategory": "deep-learning",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-nlp-tokenization-and-embeddings-1",
+    "title": "Explain tokenization and embeddings in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "ai-ml",
+    "subcategory": "nlp",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-nlp-tokenization-and-embeddings-2",
+    "title": "Imagine you are introducing tokenization and embeddings to a classmate. How does it work, and where would someone encounter it?",
+    "category": "ai-ml",
+    "subcategory": "nlp",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-nlp-tokenization-and-embeddings-3",
+    "title": "Compare tokenization and embeddings with vocabulary and vector spaces. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "ai-ml",
+    "subcategory": "nlp",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-nlp-tokenization-and-embeddings-4",
+    "title": "Consider this scenario: a text classifier needs semantic features. Explain how you would apply your understanding of tokenization and embeddings, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "ai-ml",
+    "subcategory": "nlp",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-nlp-attention-mechanisms-1",
+    "title": "Explain attention mechanisms in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "ai-ml",
+    "subcategory": "nlp",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-nlp-attention-mechanisms-2",
+    "title": "Imagine you are introducing attention mechanisms to a classmate. How does it work, and where would someone encounter it?",
+    "category": "ai-ml",
+    "subcategory": "nlp",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-nlp-attention-mechanisms-3",
+    "title": "Compare attention mechanisms with self-attention and context. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "ai-ml",
+    "subcategory": "nlp",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-nlp-attention-mechanisms-4",
+    "title": "Consider this scenario: a sentence contains long-distance dependencies. Explain how you would apply your understanding of attention mechanisms, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "ai-ml",
+    "subcategory": "nlp",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-reinforcement-learning-reward-and-policy-1",
+    "title": "Explain reward and policy in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "ai-ml",
+    "subcategory": "reinforcement-learning",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-reinforcement-learning-reward-and-policy-2",
+    "title": "Imagine you are introducing reward and policy to a classmate. How does it work, and where would someone encounter it?",
+    "category": "ai-ml",
+    "subcategory": "reinforcement-learning",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-reinforcement-learning-reward-and-policy-3",
+    "title": "Compare reward and policy with state and action spaces. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "ai-ml",
+    "subcategory": "reinforcement-learning",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-reinforcement-learning-reward-and-policy-4",
+    "title": "Consider this scenario: a robot learns to navigate. Explain how you would apply your understanding of reward and policy, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "ai-ml",
+    "subcategory": "reinforcement-learning",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-model-operations-model-drift-1",
+    "title": "Explain model drift in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "ai-ml",
+    "subcategory": "model-operations",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-model-operations-model-drift-2",
+    "title": "Imagine you are introducing model drift to a classmate. How does it work, and where would someone encounter it?",
+    "category": "ai-ml",
+    "subcategory": "model-operations",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-model-operations-model-drift-3",
+    "title": "Compare model drift with data and concept drift. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "ai-ml",
+    "subcategory": "model-operations",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-model-operations-model-drift-4",
+    "title": "Consider this scenario: a deployed model degrades over several months. Explain how you would apply your understanding of model drift, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "ai-ml",
+    "subcategory": "model-operations",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-model-operations-experiment-tracking-1",
+    "title": "Explain experiment tracking in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "ai-ml",
+    "subcategory": "model-operations",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-model-operations-experiment-tracking-2",
+    "title": "Imagine you are introducing experiment tracking to a classmate. How does it work, and where would someone encounter it?",
+    "category": "ai-ml",
+    "subcategory": "model-operations",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-model-operations-experiment-tracking-3",
+    "title": "Compare experiment tracking with reproducibility. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "ai-ml",
+    "subcategory": "model-operations",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-model-operations-experiment-tracking-4",
+    "title": "Consider this scenario: two training runs produce different results. Explain how you would apply your understanding of experiment tracking, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "ai-ml",
+    "subcategory": "model-operations",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-responsible-ai-fairness-and-bias-1",
+    "title": "Explain fairness and bias in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "ai-ml",
+    "subcategory": "responsible-ai",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-responsible-ai-fairness-and-bias-2",
+    "title": "Imagine you are introducing fairness and bias to a classmate. How does it work, and where would someone encounter it?",
+    "category": "ai-ml",
+    "subcategory": "responsible-ai",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-responsible-ai-fairness-and-bias-3",
+    "title": "Compare fairness and bias with evaluation across cohorts. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "ai-ml",
+    "subcategory": "responsible-ai",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-responsible-ai-fairness-and-bias-4",
+    "title": "Consider this scenario: a hiring model produces uneven outcomes. Explain how you would apply your understanding of fairness and bias, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "ai-ml",
+    "subcategory": "responsible-ai",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-responsible-ai-explainability-1",
+    "title": "Explain explainability in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "ai-ml",
+    "subcategory": "responsible-ai",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-responsible-ai-explainability-2",
+    "title": "Imagine you are introducing explainability to a classmate. How does it work, and where would someone encounter it?",
+    "category": "ai-ml",
+    "subcategory": "responsible-ai",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-responsible-ai-explainability-3",
+    "title": "Compare explainability with feature importance and local explanations. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "ai-ml",
+    "subcategory": "responsible-ai",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "ai-ml-responsible-ai-explainability-4",
+    "title": "Consider this scenario: a regulated team must justify predictions. Explain how you would apply your understanding of explainability, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "ai-ml",
+    "subcategory": "responsible-ai",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  }
+]

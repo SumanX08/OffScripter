@@ -1,0 +1,902 @@
+[
+  {
+    "slug": "testing-testing-fundamentals-testing-pyramid-1",
+    "title": "Explain testing pyramid in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "testing",
+    "subcategory": "testing-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-testing-fundamentals-testing-pyramid-2",
+    "title": "Imagine you are introducing testing pyramid to a classmate. How does it work, and where would someone encounter it?",
+    "category": "testing",
+    "subcategory": "testing-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-testing-fundamentals-testing-pyramid-3",
+    "title": "Compare testing pyramid with feedback speed and confidence. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "testing",
+    "subcategory": "testing-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-testing-fundamentals-testing-pyramid-4",
+    "title": "Consider this scenario: a team has a slow fragile test suite. Explain how you would apply your understanding of testing pyramid, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "testing",
+    "subcategory": "testing-fundamentals",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-testing-fundamentals-unit-testing-1",
+    "title": "Explain unit testing in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "testing",
+    "subcategory": "testing-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-testing-fundamentals-unit-testing-2",
+    "title": "Imagine you are introducing unit testing to a classmate. How does it work, and where would someone encounter it?",
+    "category": "testing",
+    "subcategory": "testing-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-testing-fundamentals-unit-testing-3",
+    "title": "Compare unit testing with mocks and test boundaries. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "testing",
+    "subcategory": "testing-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-testing-fundamentals-unit-testing-4",
+    "title": "Consider this scenario: a function has several edge cases. Explain how you would apply your understanding of unit testing, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "testing",
+    "subcategory": "testing-fundamentals",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-testing-fundamentals-integration-testing-1",
+    "title": "Explain integration testing in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "testing",
+    "subcategory": "testing-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-testing-fundamentals-integration-testing-2",
+    "title": "Imagine you are introducing integration testing to a classmate. How does it work, and where would someone encounter it?",
+    "category": "testing",
+    "subcategory": "testing-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-testing-fundamentals-integration-testing-3",
+    "title": "Compare integration testing with test doubles and real dependencies. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "testing",
+    "subcategory": "testing-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-testing-fundamentals-integration-testing-4",
+    "title": "Consider this scenario: an API must be tested with a database. Explain how you would apply your understanding of integration testing, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "testing",
+    "subcategory": "testing-fundamentals",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-testing-fundamentals-end-to-end-testing-1",
+    "title": "Explain end-to-end testing in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "testing",
+    "subcategory": "testing-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-testing-fundamentals-end-to-end-testing-2",
+    "title": "Imagine you are introducing end-to-end testing to a classmate. How does it work, and where would someone encounter it?",
+    "category": "testing",
+    "subcategory": "testing-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-testing-fundamentals-end-to-end-testing-3",
+    "title": "Compare end-to-end testing with browser automation. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "testing",
+    "subcategory": "testing-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-testing-fundamentals-end-to-end-testing-4",
+    "title": "Consider this scenario: a checkout flow must work across the application. Explain how you would apply your understanding of end-to-end testing, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "testing",
+    "subcategory": "testing-fundamentals",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-design-boundary-value-analysis-1",
+    "title": "Explain boundary value analysis in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "testing",
+    "subcategory": "test-design",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-design-boundary-value-analysis-2",
+    "title": "Imagine you are introducing boundary value analysis to a classmate. How does it work, and where would someone encounter it?",
+    "category": "testing",
+    "subcategory": "test-design",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-design-boundary-value-analysis-3",
+    "title": "Compare boundary value analysis with equivalence partitioning. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "testing",
+    "subcategory": "test-design",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-design-boundary-value-analysis-4",
+    "title": "Consider this scenario: a form accepts numbers within a range. Explain how you would apply your understanding of boundary value analysis, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "testing",
+    "subcategory": "test-design",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-design-decision-table-testing-1",
+    "title": "Explain decision table testing in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "testing",
+    "subcategory": "test-design",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-design-decision-table-testing-2",
+    "title": "Imagine you are introducing decision table testing to a classmate. How does it work, and where would someone encounter it?",
+    "category": "testing",
+    "subcategory": "test-design",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-design-decision-table-testing-3",
+    "title": "Compare decision table testing with state transition testing. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "testing",
+    "subcategory": "test-design",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-design-decision-table-testing-4",
+    "title": "Consider this scenario: a subscription has several plan and renewal states. Explain how you would apply your understanding of decision table testing, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "testing",
+    "subcategory": "test-design",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-design-exploratory-testing-1",
+    "title": "Explain exploratory testing in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "testing",
+    "subcategory": "test-design",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-design-exploratory-testing-2",
+    "title": "Imagine you are introducing exploratory testing to a classmate. How does it work, and where would someone encounter it?",
+    "category": "testing",
+    "subcategory": "test-design",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-design-exploratory-testing-3",
+    "title": "Compare exploratory testing with test charters. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "testing",
+    "subcategory": "test-design",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-design-exploratory-testing-4",
+    "title": "Consider this scenario: a new feature has unclear edge cases. Explain how you would apply your understanding of exploratory testing, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "testing",
+    "subcategory": "test-design",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-javascript-testing-jest-and-vitest-1",
+    "title": "Explain Jest and Vitest in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "testing",
+    "subcategory": "javascript-testing",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-javascript-testing-jest-and-vitest-2",
+    "title": "Imagine you are introducing Jest and Vitest to a classmate. How does it work, and where would someone encounter it?",
+    "category": "testing",
+    "subcategory": "javascript-testing",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-javascript-testing-jest-and-vitest-3",
+    "title": "Compare Jest and Vitest with mocking and assertions. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "testing",
+    "subcategory": "javascript-testing",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-javascript-testing-jest-and-vitest-4",
+    "title": "Consider this scenario: a frontend project needs fast component tests. Explain how you would apply your understanding of Jest and Vitest, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "testing",
+    "subcategory": "javascript-testing",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-browser-testing-playwright-1",
+    "title": "Explain Playwright in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "testing",
+    "subcategory": "browser-testing",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-browser-testing-playwright-2",
+    "title": "Imagine you are introducing Playwright to a classmate. How does it work, and where would someone encounter it?",
+    "category": "testing",
+    "subcategory": "browser-testing",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-browser-testing-playwright-3",
+    "title": "Compare Playwright with locators and fixtures. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "testing",
+    "subcategory": "browser-testing",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-browser-testing-playwright-4",
+    "title": "Consider this scenario: a multi-step signup journey must be tested. Explain how you would apply your understanding of Playwright, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "testing",
+    "subcategory": "browser-testing",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-browser-testing-cypress-1",
+    "title": "Explain Cypress in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "testing",
+    "subcategory": "browser-testing",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-browser-testing-cypress-2",
+    "title": "Imagine you are introducing Cypress to a classmate. How does it work, and where would someone encounter it?",
+    "category": "testing",
+    "subcategory": "browser-testing",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-browser-testing-cypress-3",
+    "title": "Compare Cypress with network interception. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "testing",
+    "subcategory": "browser-testing",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-browser-testing-cypress-4",
+    "title": "Consider this scenario: a form depends on unreliable API responses. Explain how you would apply your understanding of Cypress, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "testing",
+    "subcategory": "browser-testing",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-api-testing-api-contract-testing-1",
+    "title": "Explain API contract testing in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "testing",
+    "subcategory": "api-testing",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-api-testing-api-contract-testing-2",
+    "title": "Imagine you are introducing API contract testing to a classmate. How does it work, and where would someone encounter it?",
+    "category": "testing",
+    "subcategory": "api-testing",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-api-testing-api-contract-testing-3",
+    "title": "Compare API contract testing with schema validation. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "testing",
+    "subcategory": "api-testing",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-api-testing-api-contract-testing-4",
+    "title": "Consider this scenario: a backend change might break a mobile client. Explain how you would apply your understanding of API contract testing, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "testing",
+    "subcategory": "api-testing",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-api-testing-mocking-external-services-1",
+    "title": "Explain mocking external services in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "testing",
+    "subcategory": "api-testing",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-api-testing-mocking-external-services-2",
+    "title": "Imagine you are introducing mocking external services to a classmate. How does it work, and where would someone encounter it?",
+    "category": "testing",
+    "subcategory": "api-testing",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-api-testing-mocking-external-services-3",
+    "title": "Compare mocking external services with fakes and stubs. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "testing",
+    "subcategory": "api-testing",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-api-testing-mocking-external-services-4",
+    "title": "Consider this scenario: tests must not charge a real payment method. Explain how you would apply your understanding of mocking external services, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "testing",
+    "subcategory": "api-testing",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-performance-testing-load-and-stress-testing-1",
+    "title": "Explain load and stress testing in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "testing",
+    "subcategory": "performance-testing",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-performance-testing-load-and-stress-testing-2",
+    "title": "Imagine you are introducing load and stress testing to a classmate. How does it work, and where would someone encounter it?",
+    "category": "testing",
+    "subcategory": "performance-testing",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-performance-testing-load-and-stress-testing-3",
+    "title": "Compare load and stress testing with throughput and latency. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "testing",
+    "subcategory": "performance-testing",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-performance-testing-load-and-stress-testing-4",
+    "title": "Consider this scenario: an API must handle a launch-day traffic spike. Explain how you would apply your understanding of load and stress testing, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "testing",
+    "subcategory": "performance-testing",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-performance-testing-soak-testing-1",
+    "title": "Explain soak testing in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "testing",
+    "subcategory": "performance-testing",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-performance-testing-soak-testing-2",
+    "title": "Imagine you are introducing soak testing to a classmate. How does it work, and where would someone encounter it?",
+    "category": "testing",
+    "subcategory": "performance-testing",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-performance-testing-soak-testing-3",
+    "title": "Compare soak testing with memory leaks and resource exhaustion. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "testing",
+    "subcategory": "performance-testing",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-performance-testing-soak-testing-4",
+    "title": "Consider this scenario: a service runs continuously for days. Explain how you would apply your understanding of soak testing, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "testing",
+    "subcategory": "performance-testing",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-security-testing-security-testing-basics-1",
+    "title": "Explain security testing basics in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "testing",
+    "subcategory": "security-testing",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-security-testing-security-testing-basics-2",
+    "title": "Imagine you are introducing security testing basics to a classmate. How does it work, and where would someone encounter it?",
+    "category": "testing",
+    "subcategory": "security-testing",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-security-testing-security-testing-basics-3",
+    "title": "Compare security testing basics with SAST DAST and dependency scanning. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "testing",
+    "subcategory": "security-testing",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-security-testing-security-testing-basics-4",
+    "title": "Consider this scenario: a release introduces a new authentication flow. Explain how you would apply your understanding of security testing basics, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "testing",
+    "subcategory": "security-testing",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-accessibility-testing-accessibility-testing-1",
+    "title": "Explain accessibility testing in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "testing",
+    "subcategory": "accessibility-testing",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-accessibility-testing-accessibility-testing-2",
+    "title": "Imagine you are introducing accessibility testing to a classmate. How does it work, and where would someone encounter it?",
+    "category": "testing",
+    "subcategory": "accessibility-testing",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-accessibility-testing-accessibility-testing-3",
+    "title": "Compare accessibility testing with keyboard and screen-reader testing. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "testing",
+    "subcategory": "accessibility-testing",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-accessibility-testing-accessibility-testing-4",
+    "title": "Consider this scenario: a modal cannot be operated by keyboard. Explain how you would apply your understanding of accessibility testing, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "testing",
+    "subcategory": "accessibility-testing",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-automation-test-flakiness-1",
+    "title": "Explain test flakiness in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "testing",
+    "subcategory": "test-automation",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-automation-test-flakiness-2",
+    "title": "Imagine you are introducing test flakiness to a classmate. How does it work, and where would someone encounter it?",
+    "category": "testing",
+    "subcategory": "test-automation",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-automation-test-flakiness-3",
+    "title": "Compare test flakiness with timing and shared state. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "testing",
+    "subcategory": "test-automation",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-automation-test-flakiness-4",
+    "title": "Consider this scenario: a CI pipeline fails only occasionally. Explain how you would apply your understanding of test flakiness, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "testing",
+    "subcategory": "test-automation",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-automation-test-data-management-1",
+    "title": "Explain test data management in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "testing",
+    "subcategory": "test-automation",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-automation-test-data-management-2",
+    "title": "Imagine you are introducing test data management to a classmate. How does it work, and where would someone encounter it?",
+    "category": "testing",
+    "subcategory": "test-automation",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-automation-test-data-management-3",
+    "title": "Compare test data management with fixtures and factories. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "testing",
+    "subcategory": "test-automation",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-automation-test-data-management-4",
+    "title": "Consider this scenario: parallel tests interfere with one another. Explain how you would apply your understanding of test data management, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "testing",
+    "subcategory": "test-automation",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-strategy-risk-based-testing-1",
+    "title": "Explain risk-based testing in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "testing",
+    "subcategory": "test-strategy",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-strategy-risk-based-testing-2",
+    "title": "Imagine you are introducing risk-based testing to a classmate. How does it work, and where would someone encounter it?",
+    "category": "testing",
+    "subcategory": "test-strategy",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-strategy-risk-based-testing-3",
+    "title": "Compare risk-based testing with coverage and critical paths. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "testing",
+    "subcategory": "test-strategy",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-strategy-risk-based-testing-4",
+    "title": "Consider this scenario: a deadline prevents exhaustive testing. Explain how you would apply your understanding of risk-based testing, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "testing",
+    "subcategory": "test-strategy",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-strategy-regression-testing-1",
+    "title": "Explain regression testing in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "testing",
+    "subcategory": "test-strategy",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-strategy-regression-testing-2",
+    "title": "Imagine you are introducing regression testing to a classmate. How does it work, and where would someone encounter it?",
+    "category": "testing",
+    "subcategory": "test-strategy",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-strategy-regression-testing-3",
+    "title": "Compare regression testing with smoke and sanity tests. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "testing",
+    "subcategory": "test-strategy",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-strategy-regression-testing-4",
+    "title": "Consider this scenario: a small code change breaks an unrelated feature. Explain how you would apply your understanding of regression testing, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "testing",
+    "subcategory": "test-strategy",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-testing-in-ci-continuous-testing-1",
+    "title": "Explain continuous testing in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "testing",
+    "subcategory": "testing-in-ci",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-testing-in-ci-continuous-testing-2",
+    "title": "Imagine you are introducing continuous testing to a classmate. How does it work, and where would someone encounter it?",
+    "category": "testing",
+    "subcategory": "testing-in-ci",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-testing-in-ci-continuous-testing-3",
+    "title": "Compare continuous testing with quality gates. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "testing",
+    "subcategory": "testing-in-ci",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-testing-in-ci-continuous-testing-4",
+    "title": "Consider this scenario: a team wants defects caught before merge. Explain how you would apply your understanding of continuous testing, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "testing",
+    "subcategory": "testing-in-ci",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-mobile-testing-mobile-device-testing-1",
+    "title": "Explain mobile device testing in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "testing",
+    "subcategory": "mobile-testing",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-mobile-testing-mobile-device-testing-2",
+    "title": "Imagine you are introducing mobile device testing to a classmate. How does it work, and where would someone encounter it?",
+    "category": "testing",
+    "subcategory": "mobile-testing",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-mobile-testing-mobile-device-testing-3",
+    "title": "Compare mobile device testing with emulators and real devices. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "testing",
+    "subcategory": "mobile-testing",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-mobile-testing-mobile-device-testing-4",
+    "title": "Consider this scenario: an app behaves differently across phone models. Explain how you would apply your understanding of mobile device testing, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "testing",
+    "subcategory": "mobile-testing",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-reliability-testing-fault-injection-1",
+    "title": "Explain fault injection in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "testing",
+    "subcategory": "reliability-testing",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-reliability-testing-fault-injection-2",
+    "title": "Imagine you are introducing fault injection to a classmate. How does it work, and where would someone encounter it?",
+    "category": "testing",
+    "subcategory": "reliability-testing",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-reliability-testing-fault-injection-3",
+    "title": "Compare fault injection with chaos engineering. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "testing",
+    "subcategory": "reliability-testing",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-reliability-testing-fault-injection-4",
+    "title": "Consider this scenario: a service must tolerate dependency outages. Explain how you would apply your understanding of fault injection, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "testing",
+    "subcategory": "reliability-testing",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-architecture-testability-1",
+    "title": "Explain testability in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "testing",
+    "subcategory": "test-architecture",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-architecture-testability-2",
+    "title": "Imagine you are introducing testability to a classmate. How does it work, and where would someone encounter it?",
+    "category": "testing",
+    "subcategory": "test-architecture",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-architecture-testability-3",
+    "title": "Compare testability with dependency injection. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "testing",
+    "subcategory": "test-architecture",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-architecture-testability-4",
+    "title": "Consider this scenario: a component is difficult to test in isolation. Explain how you would apply your understanding of testability, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "testing",
+    "subcategory": "test-architecture",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-reporting-defect-reporting-1",
+    "title": "Explain defect reporting in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "testing",
+    "subcategory": "test-reporting",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-reporting-defect-reporting-2",
+    "title": "Imagine you are introducing defect reporting to a classmate. How does it work, and where would someone encounter it?",
+    "category": "testing",
+    "subcategory": "test-reporting",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-reporting-defect-reporting-3",
+    "title": "Compare defect reporting with severity and priority. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "testing",
+    "subcategory": "test-reporting",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "testing-test-reporting-defect-reporting-4",
+    "title": "Consider this scenario: a tester finds an intermittent production issue. Explain how you would apply your understanding of defect reporting, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "testing",
+    "subcategory": "test-reporting",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  }
+]

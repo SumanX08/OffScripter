@@ -30,6 +30,7 @@ model Topic {
   slug         String @unique
   title        String
   category     String
+  subcategory  String?
   difficulty   String
   researchTime Int
   speakingTime Int
@@ -38,8 +39,9 @@ model Topic {
   updatedAt DateTime @updatedAt
 
   attempts Attempt[]
-}
 
+  @@index([category, subcategory])
+}
 model Attempt {
   id      String        @id @default(cuid())
   userId  String

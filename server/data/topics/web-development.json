@@ -1,0 +1,902 @@
+[
+  {
+    "slug": "web-development-web-fundamentals-http-request-and-response-1",
+    "title": "Explain HTTP request and response in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "web-development",
+    "subcategory": "web-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-web-fundamentals-http-request-and-response-2",
+    "title": "Imagine you are introducing HTTP request and response to a classmate. How does it work, and where would someone encounter it?",
+    "category": "web-development",
+    "subcategory": "web-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-web-fundamentals-http-request-and-response-3",
+    "title": "Compare HTTP request and response with headers and status codes. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "web-development",
+    "subcategory": "web-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-web-fundamentals-http-request-and-response-4",
+    "title": "Consider this scenario: a page loads data from several endpoints. Explain how you would apply your understanding of HTTP request and response, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "web-development",
+    "subcategory": "web-fundamentals",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-networking-dns-resolution-1",
+    "title": "Explain DNS resolution in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "web-development",
+    "subcategory": "networking",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-networking-dns-resolution-2",
+    "title": "Imagine you are introducing DNS resolution to a classmate. How does it work, and where would someone encounter it?",
+    "category": "web-development",
+    "subcategory": "networking",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-networking-dns-resolution-3",
+    "title": "Compare DNS resolution with recursive and authoritative DNS. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "web-development",
+    "subcategory": "networking",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-networking-dns-resolution-4",
+    "title": "Consider this scenario: a site works by IP but not by domain. Explain how you would apply your understanding of DNS resolution, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "web-development",
+    "subcategory": "networking",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-networking-tls-handshake-1",
+    "title": "Explain TLS handshake in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "web-development",
+    "subcategory": "networking",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-networking-tls-handshake-2",
+    "title": "Imagine you are introducing TLS handshake to a classmate. How does it work, and where would someone encounter it?",
+    "category": "web-development",
+    "subcategory": "networking",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-networking-tls-handshake-3",
+    "title": "Compare TLS handshake with certificates and HTTPS. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "web-development",
+    "subcategory": "networking",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-networking-tls-handshake-4",
+    "title": "Consider this scenario: a browser reports a certificate error. Explain how you would apply your understanding of TLS handshake, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "web-development",
+    "subcategory": "networking",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-networking-browser-navigation-lifecycle-1",
+    "title": "Explain browser navigation lifecycle in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "web-development",
+    "subcategory": "networking",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-networking-browser-navigation-lifecycle-2",
+    "title": "Imagine you are introducing browser navigation lifecycle to a classmate. How does it work, and where would someone encounter it?",
+    "category": "web-development",
+    "subcategory": "networking",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-networking-browser-navigation-lifecycle-3",
+    "title": "Compare browser navigation lifecycle with DNS TCP TLS and rendering. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "web-development",
+    "subcategory": "networking",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-networking-browser-navigation-lifecycle-4",
+    "title": "Consider this scenario: a page appears slowly despite a fast server. Explain how you would apply your understanding of browser navigation lifecycle, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "web-development",
+    "subcategory": "networking",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-html-semantic-html-1",
+    "title": "Explain semantic HTML in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "web-development",
+    "subcategory": "html",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-html-semantic-html-2",
+    "title": "Imagine you are introducing semantic HTML to a classmate. How does it work, and where would someone encounter it?",
+    "category": "web-development",
+    "subcategory": "html",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-html-semantic-html-3",
+    "title": "Compare semantic HTML with generic div elements and accessibility. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "web-development",
+    "subcategory": "html",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-html-semantic-html-4",
+    "title": "Consider this scenario: a screen reader navigates an unfamiliar page. Explain how you would apply your understanding of semantic HTML, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "web-development",
+    "subcategory": "html",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-css-box-model-1",
+    "title": "Explain box model in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "web-development",
+    "subcategory": "css",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-css-box-model-2",
+    "title": "Imagine you are introducing box model to a classmate. How does it work, and where would someone encounter it?",
+    "category": "web-development",
+    "subcategory": "css",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-css-box-model-3",
+    "title": "Compare box model with box sizing and layout. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "web-development",
+    "subcategory": "css",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-css-box-model-4",
+    "title": "Consider this scenario: a component is wider than its parent. Explain how you would apply your understanding of box model, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "web-development",
+    "subcategory": "css",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-css-flexbox-and-grid-1",
+    "title": "Explain Flexbox and Grid in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "web-development",
+    "subcategory": "css",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-css-flexbox-and-grid-2",
+    "title": "Imagine you are introducing Flexbox and Grid to a classmate. How does it work, and where would someone encounter it?",
+    "category": "web-development",
+    "subcategory": "css",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-css-flexbox-and-grid-3",
+    "title": "Compare Flexbox and Grid with responsive design. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "web-development",
+    "subcategory": "css",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-css-flexbox-and-grid-4",
+    "title": "Consider this scenario: a dashboard must adapt to phone and desktop widths. Explain how you would apply your understanding of Flexbox and Grid, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "web-development",
+    "subcategory": "css",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-css-specificity-and-cascade-1",
+    "title": "Explain specificity and cascade in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "web-development",
+    "subcategory": "css",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-css-specificity-and-cascade-2",
+    "title": "Imagine you are introducing specificity and cascade to a classmate. How does it work, and where would someone encounter it?",
+    "category": "web-development",
+    "subcategory": "css",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-css-specificity-and-cascade-3",
+    "title": "Compare specificity and cascade with inheritance and source order. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "web-development",
+    "subcategory": "css",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-css-specificity-and-cascade-4",
+    "title": "Consider this scenario: a component style is unexpectedly overridden. Explain how you would apply your understanding of specificity and cascade, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "web-development",
+    "subcategory": "css",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-frontend-browser-rendering-1",
+    "title": "Explain browser rendering in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "web-development",
+    "subcategory": "frontend",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-frontend-browser-rendering-2",
+    "title": "Imagine you are introducing browser rendering to a classmate. How does it work, and where would someone encounter it?",
+    "category": "web-development",
+    "subcategory": "frontend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-frontend-browser-rendering-3",
+    "title": "Compare browser rendering with reflow and repaint. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "web-development",
+    "subcategory": "frontend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-frontend-browser-rendering-4",
+    "title": "Consider this scenario: an animation causes visible jank. Explain how you would apply your understanding of browser rendering, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "web-development",
+    "subcategory": "frontend",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-frontend-web-accessibility-1",
+    "title": "Explain web accessibility in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "web-development",
+    "subcategory": "frontend",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-frontend-web-accessibility-2",
+    "title": "Imagine you are introducing web accessibility to a classmate. How does it work, and where would someone encounter it?",
+    "category": "web-development",
+    "subcategory": "frontend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-frontend-web-accessibility-3",
+    "title": "Compare web accessibility with semantic markup and ARIA. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "web-development",
+    "subcategory": "frontend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-frontend-web-accessibility-4",
+    "title": "Consider this scenario: a form cannot be completed without a mouse. Explain how you would apply your understanding of web accessibility, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "web-development",
+    "subcategory": "frontend",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-react-component-rendering-1",
+    "title": "Explain component rendering in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-react-component-rendering-2",
+    "title": "Imagine you are introducing component rendering to a classmate. How does it work, and where would someone encounter it?",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-react-component-rendering-3",
+    "title": "Compare component rendering with state props and reconciliation. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-react-component-rendering-4",
+    "title": "Consider this scenario: typing in one field refreshes a large page. Explain how you would apply your understanding of component rendering, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-react-state-management-1",
+    "title": "Explain state management in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-react-state-management-2",
+    "title": "Imagine you are introducing state management to a classmate. How does it work, and where would someone encounter it?",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-react-state-management-3",
+    "title": "Compare state management with Context and external stores. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-react-state-management-4",
+    "title": "Consider this scenario: several distant components need the same data. Explain how you would apply your understanding of state management, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-react-effects-and-lifecycle-1",
+    "title": "Explain effects and lifecycle in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-react-effects-and-lifecycle-2",
+    "title": "Imagine you are introducing effects and lifecycle to a classmate. How does it work, and where would someone encounter it?",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-react-effects-and-lifecycle-3",
+    "title": "Compare effects and lifecycle with rendering and cleanup. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-react-effects-and-lifecycle-4",
+    "title": "Consider this scenario: a subscription is registered more than once. Explain how you would apply your understanding of effects and lifecycle, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-react-reconciliation-and-keys-1",
+    "title": "Explain reconciliation and keys in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-react-reconciliation-and-keys-2",
+    "title": "Imagine you are introducing reconciliation and keys to a classmate. How does it work, and where would someone encounter it?",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-react-reconciliation-and-keys-3",
+    "title": "Compare reconciliation and keys with virtual DOM and stable identity. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-react-reconciliation-and-keys-4",
+    "title": "Consider this scenario: list items show the wrong input values after sorting. Explain how you would apply your understanding of reconciliation and keys, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-react-server-side-rendering-1",
+    "title": "Explain server-side rendering in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-react-server-side-rendering-2",
+    "title": "Imagine you are introducing server-side rendering to a classmate. How does it work, and where would someone encounter it?",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-react-server-side-rendering-3",
+    "title": "Compare server-side rendering with hydration and client rendering. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-react-server-side-rendering-4",
+    "title": "Consider this scenario: a page displays content before becoming interactive. Explain how you would apply your understanding of server-side rendering, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-angular-dependency-injection-1",
+    "title": "Explain dependency injection in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "web-development",
+    "subcategory": "angular",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-angular-dependency-injection-2",
+    "title": "Imagine you are introducing dependency injection to a classmate. How does it work, and where would someone encounter it?",
+    "category": "web-development",
+    "subcategory": "angular",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-angular-dependency-injection-3",
+    "title": "Compare dependency injection with providers and injectors. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "web-development",
+    "subcategory": "angular",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-angular-dependency-injection-4",
+    "title": "Consider this scenario: a service unexpectedly has two instances. Explain how you would apply your understanding of dependency injection, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "web-development",
+    "subcategory": "angular",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-vue-reactivity-1",
+    "title": "Explain reactivity in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "web-development",
+    "subcategory": "vue",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-vue-reactivity-2",
+    "title": "Imagine you are introducing reactivity to a classmate. How does it work, and where would someone encounter it?",
+    "category": "web-development",
+    "subcategory": "vue",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-vue-reactivity-3",
+    "title": "Compare reactivity with computed values and watchers. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "web-development",
+    "subcategory": "vue",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-vue-reactivity-4",
+    "title": "Consider this scenario: a derived value becomes stale. Explain how you would apply your understanding of reactivity, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "web-development",
+    "subcategory": "vue",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-node-js-event-loop-1",
+    "title": "Explain event loop in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-node-js-event-loop-2",
+    "title": "Imagine you are introducing event loop to a classmate. How does it work, and where would someone encounter it?",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-node-js-event-loop-3",
+    "title": "Compare event loop with libuv and worker threads. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-node-js-event-loop-4",
+    "title": "Consider this scenario: a CPU-heavy operation blocks API responses. Explain how you would apply your understanding of event loop, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-node-js-streams-and-backpressure-1",
+    "title": "Explain streams and backpressure in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-node-js-streams-and-backpressure-2",
+    "title": "Imagine you are introducing streams and backpressure to a classmate. How does it work, and where would someone encounter it?",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-node-js-streams-and-backpressure-3",
+    "title": "Compare streams and backpressure with buffers and event emitters. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-node-js-streams-and-backpressure-4",
+    "title": "Consider this scenario: a large upload overwhelms a service. Explain how you would apply your understanding of streams and backpressure, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-backend-middleware-1",
+    "title": "Explain middleware in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "web-development",
+    "subcategory": "backend",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-backend-middleware-2",
+    "title": "Imagine you are introducing middleware to a classmate. How does it work, and where would someone encounter it?",
+    "category": "web-development",
+    "subcategory": "backend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-backend-middleware-3",
+    "title": "Compare middleware with routing and error handlers. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "web-development",
+    "subcategory": "backend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-backend-middleware-4",
+    "title": "Consider this scenario: authentication must run before protected routes. Explain how you would apply your understanding of middleware, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "web-development",
+    "subcategory": "backend",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-apis-rest-api-design-1",
+    "title": "Explain REST API design in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "web-development",
+    "subcategory": "apis",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-apis-rest-api-design-2",
+    "title": "Imagine you are introducing REST API design to a classmate. How does it work, and where would someone encounter it?",
+    "category": "web-development",
+    "subcategory": "apis",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-apis-rest-api-design-3",
+    "title": "Compare REST API design with RPC and GraphQL. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "web-development",
+    "subcategory": "apis",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-apis-rest-api-design-4",
+    "title": "Consider this scenario: a mobile app needs a stable public API. Explain how you would apply your understanding of REST API design, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "web-development",
+    "subcategory": "apis",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-apis-graphql-1",
+    "title": "Explain GraphQL in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "web-development",
+    "subcategory": "apis",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-apis-graphql-2",
+    "title": "Imagine you are introducing GraphQL to a classmate. How does it work, and where would someone encounter it?",
+    "category": "web-development",
+    "subcategory": "apis",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-apis-graphql-3",
+    "title": "Compare GraphQL with REST and resolver execution. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "web-development",
+    "subcategory": "apis",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-apis-graphql-4",
+    "title": "Consider this scenario: a page needs related data from multiple resources. Explain how you would apply your understanding of GraphQL, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "web-development",
+    "subcategory": "apis",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-web-security-cors-1",
+    "title": "Explain CORS in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "web-development",
+    "subcategory": "web-security",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-web-security-cors-2",
+    "title": "Imagine you are introducing CORS to a classmate. How does it work, and where would someone encounter it?",
+    "category": "web-development",
+    "subcategory": "web-security",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-web-security-cors-3",
+    "title": "Compare CORS with same-origin policy and preflight. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "web-development",
+    "subcategory": "web-security",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-web-security-cors-4",
+    "title": "Consider this scenario: a frontend request fails while direct API calls work. Explain how you would apply your understanding of CORS, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "web-development",
+    "subcategory": "web-security",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-web-performance-caching-1",
+    "title": "Explain caching in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "web-development",
+    "subcategory": "web-performance",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-web-performance-caching-2",
+    "title": "Imagine you are introducing caching to a classmate. How does it work, and where would someone encounter it?",
+    "category": "web-development",
+    "subcategory": "web-performance",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-web-performance-caching-3",
+    "title": "Compare caching with cache invalidation and validators. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "web-development",
+    "subcategory": "web-performance",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-web-performance-caching-4",
+    "title": "Consider this scenario: users see stale data after a deployment. Explain how you would apply your understanding of caching, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "web-development",
+    "subcategory": "web-performance",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-web-performance-core-web-vitals-1",
+    "title": "Explain Core Web Vitals in your own words. What problem does it solve, and can you give a simple example?",
+    "category": "web-development",
+    "subcategory": "web-performance",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-web-performance-core-web-vitals-2",
+    "title": "Imagine you are introducing Core Web Vitals to a classmate. How does it work, and where would someone encounter it?",
+    "category": "web-development",
+    "subcategory": "web-performance",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-web-performance-core-web-vitals-3",
+    "title": "Compare Core Web Vitals with LCP INP and CLS. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "category": "web-development",
+    "subcategory": "web-performance",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "web-development-web-performance-core-web-vitals-4",
+    "title": "Consider this scenario: a landing page feels slow despite a good server response. Explain how you would apply your understanding of Core Web Vitals, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "category": "web-development",
+    "subcategory": "web-performance",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  }
+]

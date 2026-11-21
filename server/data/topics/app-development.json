@@ -1,7 +1,7 @@
 [
   {
-    "slug": "app-development-mobile-fundamentals-native-versus-cross-platform-development-1",
-    "title": "Explain native versus cross-platform development in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-app-development-mobile-fundamentals-what-is-a-native-mobile-app",
+    "title": "What is a native mobile app?",
     "category": "app-development",
     "subcategory": "mobile-fundamentals",
     "difficulty": "beginner",
@@ -9,8 +9,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "app-development-mobile-fundamentals-native-versus-cross-platform-development-2",
-    "title": "Imagine you are introducing native versus cross-platform development to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-app-development-mobile-fundamentals-what-is-a-hybrid-app",
+    "title": "What is a hybrid app?",
     "category": "app-development",
     "subcategory": "mobile-fundamentals",
     "difficulty": "beginner",
@@ -18,8 +18,44 @@
     "speakingTime": 120
   },
   {
-    "slug": "app-development-mobile-fundamentals-native-versus-cross-platform-development-3",
-    "title": "Compare native versus cross-platform development with performance and development cost. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-app-development-mobile-fundamentals-what-is-responsive-mobile-design",
+    "title": "What is responsive mobile design?",
+    "category": "app-development",
+    "subcategory": "mobile-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-mobile-fundamentals-what-are-push-notifications",
+    "title": "What are push notifications?",
+    "category": "app-development",
+    "subcategory": "mobile-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-mobile-fundamentals-what-is-offline-storage",
+    "title": "What is offline storage?",
+    "category": "app-development",
+    "subcategory": "mobile-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-mobile-fundamentals-what-are-mobile-app-permissions",
+    "title": "What are mobile app permissions?",
+    "category": "app-development",
+    "subcategory": "mobile-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-mobile-fundamentals-how-does-offline-first-synchronization-work",
+    "title": "How does offline-first synchronization work?",
     "category": "app-development",
     "subcategory": "mobile-fundamentals",
     "difficulty": "intermediate",
@@ -27,8 +63,71 @@
     "speakingTime": 120
   },
   {
-    "slug": "app-development-mobile-fundamentals-native-versus-cross-platform-development-4",
-    "title": "Consider this scenario: a startup must choose a mobile technology. Explain how you would apply your understanding of native versus cross-platform development, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-app-development-mobile-fundamentals-how-would-you-handle-unreliable-mobile-connectivity",
+    "title": "How would you handle unreliable mobile connectivity?",
+    "category": "app-development",
+    "subcategory": "mobile-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-mobile-fundamentals-what-is-deep-linking",
+    "title": "What is deep linking?",
+    "category": "app-development",
+    "subcategory": "mobile-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-mobile-fundamentals-how-does-gps-affect-battery-consumption",
+    "title": "How does GPS affect battery consumption?",
+    "category": "app-development",
+    "subcategory": "mobile-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-mobile-fundamentals-how-do-mobile-apps-handle-background-tasks",
+    "title": "How do mobile apps handle background tasks?",
+    "category": "app-development",
+    "subcategory": "mobile-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-mobile-fundamentals-how-would-you-cache-images-on-mobile",
+    "title": "How would you cache images on mobile?",
+    "category": "app-development",
+    "subcategory": "mobile-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-mobile-fundamentals-how-do-mobile-apps-store-credentials-securely",
+    "title": "How do mobile apps store credentials securely?",
+    "category": "app-development",
+    "subcategory": "mobile-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-mobile-fundamentals-what-is-an-app-signing-certificate",
+    "title": "What is an app signing certificate?",
+    "category": "app-development",
+    "subcategory": "mobile-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-mobile-fundamentals-how-would-you-resolve-offline-synchronization-conflicts",
+    "title": "How would you resolve offline synchronization conflicts?",
     "category": "app-development",
     "subcategory": "mobile-fundamentals",
     "difficulty": "advanced",
@@ -36,116 +135,53 @@
     "speakingTime": 120
   },
   {
-    "slug": "app-development-react-native-bridge-and-native-modules-1",
-    "title": "Explain bridge and native modules in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-app-development-mobile-fundamentals-how-would-you-diagnose-mobile-memory-leaks",
+    "title": "How would you diagnose mobile memory leaks?",
     "category": "app-development",
-    "subcategory": "react-native",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-react-native-bridge-and-native-modules-2",
-    "title": "Imagine you are introducing bridge and native modules to a classmate. How does it work, and where would someone encounter it?",
-    "category": "app-development",
-    "subcategory": "react-native",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-react-native-bridge-and-native-modules-3",
-    "title": "Compare bridge and native modules with JSI and native APIs. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "app-development",
-    "subcategory": "react-native",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-react-native-bridge-and-native-modules-4",
-    "title": "Consider this scenario: an app needs access to a device sensor. Explain how you would apply your understanding of bridge and native modules, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "app-development",
-    "subcategory": "react-native",
+    "subcategory": "mobile-fundamentals",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-flutter-widget-tree-and-rendering-1",
-    "title": "Explain widget tree and rendering in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-app-development-mobile-fundamentals-how-would-you-optimize-cold-startup-time",
+    "title": "How would you optimize cold startup time?",
     "category": "app-development",
-    "subcategory": "flutter",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-flutter-widget-tree-and-rendering-2",
-    "title": "Imagine you are introducing widget tree and rendering to a classmate. How does it work, and where would someone encounter it?",
-    "category": "app-development",
-    "subcategory": "flutter",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-flutter-widget-tree-and-rendering-3",
-    "title": "Compare widget tree and rendering with native UI toolkits. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "app-development",
-    "subcategory": "flutter",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-flutter-widget-tree-and-rendering-4",
-    "title": "Consider this scenario: a complex screen rebuilds more often than expected. Explain how you would apply your understanding of widget tree and rendering, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "app-development",
-    "subcategory": "flutter",
+    "subcategory": "mobile-fundamentals",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-android-activity-lifecycle-1",
-    "title": "Explain Activity lifecycle in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-app-development-mobile-fundamentals-how-would-you-implement-resumable-media-uploads",
+    "title": "How would you implement resumable media uploads?",
     "category": "app-development",
-    "subcategory": "android",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-android-activity-lifecycle-2",
-    "title": "Imagine you are introducing Activity lifecycle to a classmate. How does it work, and where would someone encounter it?",
-    "category": "app-development",
-    "subcategory": "android",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-android-activity-lifecycle-3",
-    "title": "Compare Activity lifecycle with configuration changes and process death. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "app-development",
-    "subcategory": "android",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-android-activity-lifecycle-4",
-    "title": "Consider this scenario: a user rotates the device during a form. Explain how you would apply your understanding of Activity lifecycle, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "app-development",
-    "subcategory": "android",
+    "subcategory": "mobile-fundamentals",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-android-services-and-background-work-1",
-    "title": "Explain services and background work in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-app-development-mobile-fundamentals-how-would-you-protect-sensitive-local-data-on-compromised-devices",
+    "title": "How would you protect sensitive local data on compromised devices?",
+    "category": "app-development",
+    "subcategory": "mobile-fundamentals",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-mobile-fundamentals-how-would-you-design-a-reliable-mobile-release-rollout",
+    "title": "How would you design a reliable mobile release rollout?",
+    "category": "app-development",
+    "subcategory": "mobile-fundamentals",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-android-what-is-an-android-activity",
+    "title": "What is an Android Activity?",
     "category": "app-development",
     "subcategory": "android",
     "difficulty": "beginner",
@@ -153,8 +189,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "app-development-android-services-and-background-work-2",
-    "title": "Imagine you are introducing services and background work to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-app-development-android-what-is-an-android-fragment",
+    "title": "What is an Android Fragment?",
     "category": "app-development",
     "subcategory": "android",
     "difficulty": "beginner",
@@ -162,8 +198,44 @@
     "speakingTime": 120
   },
   {
-    "slug": "app-development-android-services-and-background-work-3",
-    "title": "Compare services and background work with WorkManager and foreground services. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-app-development-android-what-is-an-intent",
+    "title": "What is an Intent?",
+    "category": "app-development",
+    "subcategory": "android",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-android-what-is-jetpack-compose",
+    "title": "What is Jetpack Compose?",
+    "category": "app-development",
+    "subcategory": "android",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-android-what-is-a-kotlin-data-class",
+    "title": "What is a Kotlin data class?",
+    "category": "app-development",
+    "subcategory": "android",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-android-what-is-androidmanifest-xml",
+    "title": "What is AndroidManifest.xml?",
+    "category": "app-development",
+    "subcategory": "android",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-android-how-does-the-activity-lifecycle-work",
+    "title": "How does the Activity lifecycle work?",
     "category": "app-development",
     "subcategory": "android",
     "difficulty": "intermediate",
@@ -171,8 +243,71 @@
     "speakingTime": 120
   },
   {
-    "slug": "app-development-android-services-and-background-work-4",
-    "title": "Consider this scenario: an upload must continue reliably. Explain how you would apply your understanding of services and background work, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-app-development-android-how-does-room-manage-local-persistence",
+    "title": "How does Room manage local persistence?",
+    "category": "app-development",
+    "subcategory": "android",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-android-what-is-an-android-viewmodel",
+    "title": "What is an Android ViewModel?",
+    "category": "app-development",
+    "subcategory": "android",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-android-how-do-kotlin-coroutines-work",
+    "title": "How do Kotlin coroutines work?",
+    "category": "app-development",
+    "subcategory": "android",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-android-how-does-workmanager-schedule-background-tasks",
+    "title": "How does WorkManager schedule background tasks?",
+    "category": "app-development",
+    "subcategory": "android",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-android-how-does-compose-recomposition-work",
+    "title": "How does Compose recomposition work?",
+    "category": "app-development",
+    "subcategory": "android",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-android-what-is-android-dependency-injection",
+    "title": "What is Android dependency injection?",
+    "category": "app-development",
+    "subcategory": "android",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-android-how-do-android-notification-channels-work",
+    "title": "How do Android notification channels work?",
+    "category": "app-development",
+    "subcategory": "android",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-android-how-would-you-diagnose-an-android-anr",
+    "title": "How would you diagnose an Android ANR?",
     "category": "app-development",
     "subcategory": "android",
     "difficulty": "advanced",
@@ -180,8 +315,53 @@
     "speakingTime": 120
   },
   {
-    "slug": "app-development-ios-view-controller-lifecycle-1",
-    "title": "Explain view controller lifecycle in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-app-development-android-how-do-you-preserve-state-after-process-death",
+    "title": "How do you preserve state after process death?",
+    "category": "app-development",
+    "subcategory": "android",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-android-how-would-you-optimize-compose-recomposition",
+    "title": "How would you optimize Compose recomposition?",
+    "category": "app-development",
+    "subcategory": "android",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-android-how-does-scoped-storage-protect-user-files",
+    "title": "How does scoped storage protect user files?",
+    "category": "app-development",
+    "subcategory": "android",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-android-how-would-you-test-coroutine-cancellation",
+    "title": "How would you test coroutine cancellation?",
+    "category": "app-development",
+    "subcategory": "android",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-android-how-would-you-handle-android-background-execution-limits",
+    "title": "How would you handle Android background execution limits?",
+    "category": "app-development",
+    "subcategory": "android",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-ios-what-is-swiftui",
+    "title": "What is SwiftUI?",
     "category": "app-development",
     "subcategory": "ios",
     "difficulty": "beginner",
@@ -189,8 +369,53 @@
     "speakingTime": 120
   },
   {
-    "slug": "app-development-ios-view-controller-lifecycle-2",
-    "title": "Imagine you are introducing view controller lifecycle to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-app-development-ios-what-is-a-swift-optional",
+    "title": "What is a Swift optional?",
+    "category": "app-development",
+    "subcategory": "ios",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-ios-what-is-uikit",
+    "title": "What is UIKit?",
+    "category": "app-development",
+    "subcategory": "ios",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-ios-what-is-an-ios-view-controller",
+    "title": "What is an iOS view controller?",
+    "category": "app-development",
+    "subcategory": "ios",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-ios-what-is-the-ios-keychain",
+    "title": "What is the iOS Keychain?",
+    "category": "app-development",
+    "subcategory": "ios",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-ios-what-is-a-swift-protocol",
+    "title": "What is a Swift protocol?",
+    "category": "app-development",
+    "subcategory": "ios",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-ios-how-does-swift-arc-manage-memory",
+    "title": "How does Swift ARC manage memory?",
     "category": "app-development",
     "subcategory": "ios",
     "difficulty": "intermediate",
@@ -198,8 +423,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "app-development-ios-view-controller-lifecycle-3",
-    "title": "Compare view controller lifecycle with SwiftUI view lifecycle. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-app-development-ios-how-does-swiftui-state-management-work",
+    "title": "How does SwiftUI state management work?",
     "category": "app-development",
     "subcategory": "ios",
     "difficulty": "intermediate",
@@ -207,8 +432,62 @@
     "speakingTime": 120
   },
   {
-    "slug": "app-development-ios-view-controller-lifecycle-4",
-    "title": "Consider this scenario: a screen needs to manage subscriptions safely. Explain how you would apply your understanding of view controller lifecycle, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-app-development-ios-what-is-a-swift-closure",
+    "title": "What is a Swift closure?",
+    "category": "app-development",
+    "subcategory": "ios",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-ios-how-does-urlsession-handle-networking",
+    "title": "How does URLSession handle networking?",
+    "category": "app-development",
+    "subcategory": "ios",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-ios-how-does-core-data-work",
+    "title": "How does Core Data work?",
+    "category": "app-development",
+    "subcategory": "ios",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-ios-what-is-the-ios-app-lifecycle",
+    "title": "What is the iOS app lifecycle?",
+    "category": "app-development",
+    "subcategory": "ios",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-ios-how-do-swift-actors-isolate-state",
+    "title": "How do Swift actors isolate state?",
+    "category": "app-development",
+    "subcategory": "ios",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-ios-how-do-ios-universal-links-work",
+    "title": "How do iOS universal links work?",
+    "category": "app-development",
+    "subcategory": "ios",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-ios-how-would-you-prevent-retain-cycles-in-swift",
+    "title": "How would you prevent retain cycles in Swift?",
     "category": "app-development",
     "subcategory": "ios",
     "difficulty": "advanced",
@@ -216,685 +495,406 @@
     "speakingTime": 120
   },
   {
-    "slug": "app-development-kotlin-coroutines-1",
-    "title": "Explain coroutines in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-app-development-ios-how-would-you-debug-swiftui-view-identity-issues",
+    "title": "How would you debug SwiftUI view identity issues?",
     "category": "app-development",
-    "subcategory": "kotlin",
+    "subcategory": "ios",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-ios-how-does-structured-concurrency-handle-cancellation-in-swift",
+    "title": "How does structured concurrency handle cancellation in Swift?",
+    "category": "app-development",
+    "subcategory": "ios",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-ios-how-would-you-optimize-ios-scrolling-performance",
+    "title": "How would you optimize iOS scrolling performance?",
+    "category": "app-development",
+    "subcategory": "ios",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-ios-how-would-you-handle-core-data-migration",
+    "title": "How would you handle Core Data migration?",
+    "category": "app-development",
+    "subcategory": "ios",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-ios-how-would-you-investigate-ios-background-task-failures",
+    "title": "How would you investigate iOS background task failures?",
+    "category": "app-development",
+    "subcategory": "ios",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-react-native-what-is-react-native",
+    "title": "What is React Native?",
+    "category": "app-development",
+    "subcategory": "react-native",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-kotlin-coroutines-2",
-    "title": "Imagine you are introducing coroutines to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-app-development-react-native-what-is-a-native-component",
+    "title": "What is a native component?",
     "category": "app-development",
-    "subcategory": "kotlin",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-kotlin-coroutines-3",
-    "title": "Compare coroutines with threads and callbacks. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "app-development",
-    "subcategory": "kotlin",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-kotlin-coroutines-4",
-    "title": "Consider this scenario: several network requests must run concurrently. Explain how you would apply your understanding of coroutines, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "app-development",
-    "subcategory": "kotlin",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-swift-optionals-and-error-handling-1",
-    "title": "Explain optionals and error handling in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "app-development",
-    "subcategory": "swift",
+    "subcategory": "react-native",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-swift-optionals-and-error-handling-2",
-    "title": "Imagine you are introducing optionals and error handling to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-app-development-react-native-what-is-expo",
+    "title": "What is Expo?",
     "category": "app-development",
-    "subcategory": "swift",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-swift-optionals-and-error-handling-3",
-    "title": "Compare optionals and error handling with force unwrapping and Result. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "app-development",
-    "subcategory": "swift",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-swift-optionals-and-error-handling-4",
-    "title": "Consider this scenario: an API may omit a field. Explain how you would apply your understanding of optionals and error handling, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "app-development",
-    "subcategory": "swift",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-architecture-navigation-1",
-    "title": "Explain navigation in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "app-development",
-    "subcategory": "mobile-architecture",
+    "subcategory": "react-native",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-mobile-architecture-navigation-2",
-    "title": "Imagine you are introducing navigation to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-app-development-react-native-what-is-a-react-native-flatlist",
+    "title": "What is a React Native FlatList?",
     "category": "app-development",
-    "subcategory": "mobile-architecture",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-architecture-navigation-3",
-    "title": "Compare navigation with deep links and back stacks. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "app-development",
-    "subcategory": "mobile-architecture",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-architecture-navigation-4",
-    "title": "Consider this scenario: a notification should open a nested screen. Explain how you would apply your understanding of navigation, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "app-development",
-    "subcategory": "mobile-architecture",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-architecture-offline-first-design-1",
-    "title": "Explain offline-first design in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "app-development",
-    "subcategory": "mobile-architecture",
+    "subcategory": "react-native",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-mobile-architecture-offline-first-design-2",
-    "title": "Imagine you are introducing offline-first design to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-app-development-react-native-what-is-react-navigation",
+    "title": "What is React Navigation?",
     "category": "app-development",
-    "subcategory": "mobile-architecture",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-architecture-offline-first-design-3",
-    "title": "Compare offline-first design with local persistence and synchronization. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "app-development",
-    "subcategory": "mobile-architecture",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-architecture-offline-first-design-4",
-    "title": "Consider this scenario: a field worker loses network access. Explain how you would apply your understanding of offline-first design, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "app-development",
-    "subcategory": "mobile-architecture",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-storage-local-databases-1",
-    "title": "Explain local databases in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "app-development",
-    "subcategory": "mobile-storage",
+    "subcategory": "react-native",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-mobile-storage-local-databases-2",
-    "title": "Imagine you are introducing local databases to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-app-development-react-native-what-is-react-native-stylesheet",
+    "title": "What is React Native StyleSheet?",
     "category": "app-development",
-    "subcategory": "mobile-storage",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-storage-local-databases-3",
-    "title": "Compare local databases with files and key-value storage. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "app-development",
-    "subcategory": "mobile-storage",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-storage-local-databases-4",
-    "title": "Consider this scenario: an app must retain drafts between sessions. Explain how you would apply your understanding of local databases, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "app-development",
-    "subcategory": "mobile-storage",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-security-secure-storage-1",
-    "title": "Explain secure storage in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "app-development",
-    "subcategory": "mobile-security",
+    "subcategory": "react-native",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-mobile-security-secure-storage-2",
-    "title": "Imagine you are introducing secure storage to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-app-development-react-native-how-does-react-native-handle-gestures",
+    "title": "How does React Native handle gestures?",
     "category": "app-development",
-    "subcategory": "mobile-security",
+    "subcategory": "react-native",
     "difficulty": "intermediate",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-mobile-security-secure-storage-3",
-    "title": "Compare secure storage with Keychain and Keystore. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-app-development-react-native-how-do-you-manage-navigation-state",
+    "title": "How do you manage navigation state?",
     "category": "app-development",
-    "subcategory": "mobile-security",
+    "subcategory": "react-native",
     "difficulty": "intermediate",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-mobile-security-secure-storage-4",
-    "title": "Consider this scenario: a user remains signed in safely. Explain how you would apply your understanding of secure storage, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-app-development-react-native-how-does-metro-bundle-javascript",
+    "title": "How does Metro bundle JavaScript?",
     "category": "app-development",
-    "subcategory": "mobile-security",
+    "subcategory": "react-native",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-react-native-how-do-react-native-native-modules-work",
+    "title": "How do React Native native modules work?",
+    "category": "app-development",
+    "subcategory": "react-native",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-react-native-how-does-hermes-improve-startup",
+    "title": "How does Hermes improve startup?",
+    "category": "app-development",
+    "subcategory": "react-native",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-react-native-how-do-react-native-permissions-work",
+    "title": "How do React Native permissions work?",
+    "category": "app-development",
+    "subcategory": "react-native",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-react-native-how-would-you-persist-react-native-app-state",
+    "title": "How would you persist React Native app state?",
+    "category": "app-development",
+    "subcategory": "react-native",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-react-native-how-does-safeareaview-handle-screen-insets",
+    "title": "How does SafeAreaView handle screen insets?",
+    "category": "app-development",
+    "subcategory": "react-native",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-react-native-how-does-the-fabric-renderer-work",
+    "title": "How does the Fabric renderer work?",
+    "category": "app-development",
+    "subcategory": "react-native",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-mobile-networking-api-communication-1",
-    "title": "Explain API communication in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-app-development-react-native-how-does-jsi-change-native-interoperability",
+    "title": "How does JSI change native interoperability?",
     "category": "app-development",
-    "subcategory": "mobile-networking",
+    "subcategory": "react-native",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-react-native-how-would-you-optimize-flatlist-rendering",
+    "title": "How would you optimize FlatList rendering?",
+    "category": "app-development",
+    "subcategory": "react-native",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-react-native-how-would-you-diagnose-javascript-thread-stalls",
+    "title": "How would you diagnose JavaScript thread stalls?",
+    "category": "app-development",
+    "subcategory": "react-native",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-react-native-how-would-you-implement-native-file-transfers-in-react-native",
+    "title": "How would you implement native file transfers in React Native?",
+    "category": "app-development",
+    "subcategory": "react-native",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-react-native-how-would-you-handle-incompatible-over-the-air-updates",
+    "title": "How would you handle incompatible over-the-air updates?",
+    "category": "app-development",
+    "subcategory": "react-native",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-app-development-flutter-what-is-a-flutter-widget",
+    "title": "What is a Flutter widget?",
+    "category": "app-development",
+    "subcategory": "flutter",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-mobile-networking-api-communication-2",
-    "title": "Imagine you are introducing API communication to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-app-development-flutter-statelesswidget-vs-statefulwidget",
+    "title": "StatelessWidget vs StatefulWidget.",
     "category": "app-development",
-    "subcategory": "mobile-networking",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-networking-api-communication-3",
-    "title": "Compare API communication with timeouts retries and cancellation. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "app-development",
-    "subcategory": "mobile-networking",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-networking-api-communication-4",
-    "title": "Consider this scenario: a request fails on a slow cellular connection. Explain how you would apply your understanding of API communication, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "app-development",
-    "subcategory": "mobile-networking",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-performance-memory-and-battery-optimization-1",
-    "title": "Explain memory and battery optimization in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "app-development",
-    "subcategory": "mobile-performance",
+    "subcategory": "flutter",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-mobile-performance-memory-and-battery-optimization-2",
-    "title": "Imagine you are introducing memory and battery optimization to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-app-development-flutter-what-is-dart",
+    "title": "What is Dart?",
     "category": "app-development",
-    "subcategory": "mobile-performance",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-performance-memory-and-battery-optimization-3",
-    "title": "Compare memory and battery optimization with profiling and lifecycle management. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "app-development",
-    "subcategory": "mobile-performance",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-performance-memory-and-battery-optimization-4",
-    "title": "Consider this scenario: an app drains battery in the background. Explain how you would apply your understanding of memory and battery optimization, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "app-development",
-    "subcategory": "mobile-performance",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-ux-responsive-layouts-1",
-    "title": "Explain responsive layouts in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "app-development",
-    "subcategory": "mobile-ux",
+    "subcategory": "flutter",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-mobile-ux-responsive-layouts-2",
-    "title": "Imagine you are introducing responsive layouts to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-app-development-flutter-what-is-a-flutter-build-method",
+    "title": "What is a Flutter build method?",
     "category": "app-development",
-    "subcategory": "mobile-ux",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-ux-responsive-layouts-3",
-    "title": "Compare responsive layouts with constraints and adaptive UI. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "app-development",
-    "subcategory": "mobile-ux",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-ux-responsive-layouts-4",
-    "title": "Consider this scenario: the same app runs on phones and tablets. Explain how you would apply your understanding of responsive layouts, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "app-development",
-    "subcategory": "mobile-ux",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-ux-accessibility-1",
-    "title": "Explain accessibility in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "app-development",
-    "subcategory": "mobile-ux",
+    "subcategory": "flutter",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-mobile-ux-accessibility-2",
-    "title": "Imagine you are introducing accessibility to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-app-development-flutter-what-is-a-flutter-scaffold",
+    "title": "What is a Flutter Scaffold?",
     "category": "app-development",
-    "subcategory": "mobile-ux",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-ux-accessibility-3",
-    "title": "Compare accessibility with labels focus order and dynamic type. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "app-development",
-    "subcategory": "mobile-ux",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-ux-accessibility-4",
-    "title": "Consider this scenario: a user navigates using a screen reader. Explain how you would apply your understanding of accessibility, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "app-development",
-    "subcategory": "mobile-ux",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-testing-unit-and-ui-testing-1",
-    "title": "Explain unit and UI testing in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "app-development",
-    "subcategory": "mobile-testing",
+    "subcategory": "flutter",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-mobile-testing-unit-and-ui-testing-2",
-    "title": "Imagine you are introducing unit and UI testing to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-app-development-flutter-what-is-hot-reload-in-flutter",
+    "title": "What is hot reload in Flutter?",
     "category": "app-development",
-    "subcategory": "mobile-testing",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-testing-unit-and-ui-testing-3",
-    "title": "Compare unit and UI testing with integration and end-to-end tests. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "app-development",
-    "subcategory": "mobile-testing",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-testing-unit-and-ui-testing-4",
-    "title": "Consider this scenario: a release introduces a navigation regression. Explain how you would apply your understanding of unit and UI testing, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "app-development",
-    "subcategory": "mobile-testing",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-delivery-app-signing-and-release-1",
-    "title": "Explain app signing and release in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "app-development",
-    "subcategory": "mobile-delivery",
+    "subcategory": "flutter",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-mobile-delivery-app-signing-and-release-2",
-    "title": "Imagine you are introducing app signing and release to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-app-development-flutter-how-does-flutter-manage-widget-state",
+    "title": "How does Flutter manage widget state?",
     "category": "app-development",
-    "subcategory": "mobile-delivery",
+    "subcategory": "flutter",
     "difficulty": "intermediate",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-mobile-delivery-app-signing-and-release-3",
-    "title": "Compare app signing and release with provisioning and store review. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-app-development-flutter-how-do-dart-futures-work",
+    "title": "How do Dart Futures work?",
     "category": "app-development",
-    "subcategory": "mobile-delivery",
+    "subcategory": "flutter",
     "difficulty": "intermediate",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-mobile-delivery-app-signing-and-release-4",
-    "title": "Consider this scenario: a release works locally but cannot be installed. Explain how you would apply your understanding of app signing and release, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-app-development-flutter-how-do-dart-streams-work",
+    "title": "How do Dart Streams work?",
     "category": "app-development",
-    "subcategory": "mobile-delivery",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-architecture-state-management-1",
-    "title": "Explain state management in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "app-development",
-    "subcategory": "mobile-architecture",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-architecture-state-management-2",
-    "title": "Imagine you are introducing state management to a classmate. How does it work, and where would someone encounter it?",
-    "category": "app-development",
-    "subcategory": "mobile-architecture",
+    "subcategory": "flutter",
     "difficulty": "intermediate",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-mobile-architecture-state-management-3",
-    "title": "Compare state management with unidirectional data flow. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-app-development-flutter-how-does-flutter-navigation-work",
+    "title": "How does Flutter navigation work?",
     "category": "app-development",
-    "subcategory": "mobile-architecture",
+    "subcategory": "flutter",
     "difficulty": "intermediate",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-mobile-architecture-state-management-4",
-    "title": "Consider this scenario: several screens depend on a shared session. Explain how you would apply your understanding of state management, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-app-development-flutter-what-is-buildcontext",
+    "title": "What is BuildContext?",
     "category": "app-development",
-    "subcategory": "mobile-architecture",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-notifications-push-notifications-1",
-    "title": "Explain push notifications in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "app-development",
-    "subcategory": "mobile-notifications",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-notifications-push-notifications-2",
-    "title": "Imagine you are introducing push notifications to a classmate. How does it work, and where would someone encounter it?",
-    "category": "app-development",
-    "subcategory": "mobile-notifications",
+    "subcategory": "flutter",
     "difficulty": "intermediate",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-mobile-notifications-push-notifications-3",
-    "title": "Compare push notifications with tokens and notification services. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-app-development-flutter-how-do-platform-channels-work",
+    "title": "How do platform channels work?",
     "category": "app-development",
-    "subcategory": "mobile-notifications",
+    "subcategory": "flutter",
     "difficulty": "intermediate",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-mobile-notifications-push-notifications-4",
-    "title": "Consider this scenario: a notification arrives late or not at all. Explain how you would apply your understanding of push notifications, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-app-development-flutter-how-does-flutter-handle-responsive-layouts",
+    "title": "How does Flutter handle responsive layouts?",
     "category": "app-development",
-    "subcategory": "mobile-notifications",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-media-camera-and-media-permissions-1",
-    "title": "Explain camera and media permissions in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "app-development",
-    "subcategory": "mobile-media",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-media-camera-and-media-permissions-2",
-    "title": "Imagine you are introducing camera and media permissions to a classmate. How does it work, and where would someone encounter it?",
-    "category": "app-development",
-    "subcategory": "mobile-media",
+    "subcategory": "flutter",
     "difficulty": "intermediate",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-mobile-media-camera-and-media-permissions-3",
-    "title": "Compare camera and media permissions with runtime permissions and privacy. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-app-development-flutter-how-do-keys-preserve-flutter-widget-identity",
+    "title": "How do keys preserve Flutter widget identity?",
     "category": "app-development",
-    "subcategory": "mobile-media",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-media-camera-and-media-permissions-4",
-    "title": "Consider this scenario: a camera feature must handle denied permission. Explain how you would apply your understanding of camera and media permissions, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "app-development",
-    "subcategory": "mobile-media",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-maps-location-services-1",
-    "title": "Explain location services in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "app-development",
-    "subcategory": "mobile-maps",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-maps-location-services-2",
-    "title": "Imagine you are introducing location services to a classmate. How does it work, and where would someone encounter it?",
-    "category": "app-development",
-    "subcategory": "mobile-maps",
+    "subcategory": "flutter",
     "difficulty": "intermediate",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-mobile-maps-location-services-3",
-    "title": "Compare location services with GPS and fused location providers. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-app-development-flutter-how-would-you-diagnose-flutter-frame-jank",
+    "title": "How would you diagnose Flutter frame jank?",
     "category": "app-development",
-    "subcategory": "mobile-maps",
+    "subcategory": "flutter",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-mobile-maps-location-services-4",
-    "title": "Consider this scenario: a navigation feature needs location updates. Explain how you would apply your understanding of location services, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-app-development-flutter-how-do-flutter-isolates-communicate",
+    "title": "How do Flutter isolates communicate?",
     "category": "app-development",
-    "subcategory": "mobile-maps",
+    "subcategory": "flutter",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-mobile-background-work-task-scheduling-1",
-    "title": "Explain task scheduling in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-app-development-flutter-how-does-flutter-reconcile-its-element-tree",
+    "title": "How does Flutter reconcile its element tree?",
     "category": "app-development",
-    "subcategory": "mobile-background-work",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-background-work-task-scheduling-2",
-    "title": "Imagine you are introducing task scheduling to a classmate. How does it work, and where would someone encounter it?",
-    "category": "app-development",
-    "subcategory": "mobile-background-work",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-background-work-task-scheduling-3",
-    "title": "Compare task scheduling with battery optimization. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "app-development",
-    "subcategory": "mobile-background-work",
+    "subcategory": "flutter",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-mobile-background-work-task-scheduling-4",
-    "title": "Consider this scenario: a reminder must run at an appropriate time. Explain how you would apply your understanding of task scheduling, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-app-development-flutter-how-would-you-optimize-expensive-widget-rebuilds",
+    "title": "How would you optimize expensive widget rebuilds?",
     "category": "app-development",
-    "subcategory": "mobile-background-work",
+    "subcategory": "flutter",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-mobile-architecture-dependency-injection-1",
-    "title": "Explain dependency injection in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-app-development-flutter-how-would-you-implement-a-custom-flutter-render-object",
+    "title": "How would you implement a custom Flutter render object?",
     "category": "app-development",
-    "subcategory": "mobile-architecture",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-architecture-dependency-injection-2",
-    "title": "Imagine you are introducing dependency injection to a classmate. How does it work, and where would someone encounter it?",
-    "category": "app-development",
-    "subcategory": "mobile-architecture",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-architecture-dependency-injection-3",
-    "title": "Compare dependency injection with service locators and constructors. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "app-development",
-    "subcategory": "mobile-architecture",
+    "subcategory": "flutter",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "app-development-mobile-architecture-dependency-injection-4",
-    "title": "Consider this scenario: tests need to replace a live network client. Explain how you would apply your understanding of dependency injection, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-app-development-flutter-how-would-you-debug-platform-channel-serialization-failures",
+    "title": "How would you debug platform channel serialization failures?",
     "category": "app-development",
-    "subcategory": "mobile-architecture",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-release-crash-reporting-and-observability-1",
-    "title": "Explain crash reporting and observability in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "app-development",
-    "subcategory": "mobile-release",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-release-crash-reporting-and-observability-2",
-    "title": "Imagine you are introducing crash reporting and observability to a classmate. How does it work, and where would someone encounter it?",
-    "category": "app-development",
-    "subcategory": "mobile-release",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-release-crash-reporting-and-observability-3",
-    "title": "Compare crash reporting and observability with logs metrics and symbolication. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "app-development",
-    "subcategory": "mobile-release",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "app-development-mobile-release-crash-reporting-and-observability-4",
-    "title": "Consider this scenario: a crash occurs only on certain devices. Explain how you would apply your understanding of crash reporting and observability, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "app-development",
-    "subcategory": "mobile-release",
+    "subcategory": "flutter",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120

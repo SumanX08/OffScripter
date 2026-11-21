@@ -1,7 +1,7 @@
 [
   {
-    "slug": "web-development-web-fundamentals-http-request-and-response-1",
-    "title": "Explain HTTP request and response in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-web-development-web-fundamentals-what-is-http",
+    "title": "What is HTTP?",
     "category": "web-development",
     "subcategory": "web-fundamentals",
     "difficulty": "beginner",
@@ -9,8 +9,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "web-development-web-fundamentals-http-request-and-response-2",
-    "title": "Imagine you are introducing HTTP request and response to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-web-development-web-fundamentals-how-does-dns-work",
+    "title": "How does DNS work?",
     "category": "web-development",
     "subcategory": "web-fundamentals",
     "difficulty": "beginner",
@@ -18,8 +18,35 @@
     "speakingTime": 120
   },
   {
-    "slug": "web-development-web-fundamentals-http-request-and-response-3",
-    "title": "Compare HTTP request and response with headers and status codes. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-web-development-web-fundamentals-http-vs-https",
+    "title": "HTTP vs HTTPS.",
+    "category": "web-development",
+    "subcategory": "web-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-web-fundamentals-what-are-http-status-codes",
+    "title": "What are HTTP status codes?",
+    "category": "web-development",
+    "subcategory": "web-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-web-fundamentals-what-is-a-url",
+    "title": "What is a URL?",
+    "category": "web-development",
+    "subcategory": "web-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-web-fundamentals-how-does-a-tls-handshake-work",
+    "title": "How does a TLS handshake work?",
     "category": "web-development",
     "subcategory": "web-fundamentals",
     "difficulty": "intermediate",
@@ -27,8 +54,53 @@
     "speakingTime": 120
   },
   {
-    "slug": "web-development-web-fundamentals-http-request-and-response-4",
-    "title": "Consider this scenario: a page loads data from several endpoints. Explain how you would apply your understanding of HTTP request and response, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-web-development-web-fundamentals-explain-the-http-request-response-cycle",
+    "title": "Explain the HTTP request-response cycle.",
+    "category": "web-development",
+    "subcategory": "web-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-web-fundamentals-how-does-browser-caching-work",
+    "title": "How does browser caching work?",
+    "category": "web-development",
+    "subcategory": "web-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-web-fundamentals-what-is-cors",
+    "title": "What is CORS?",
+    "category": "web-development",
+    "subcategory": "web-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-web-fundamentals-how-does-a-cdn-work",
+    "title": "How does a CDN work?",
+    "category": "web-development",
+    "subcategory": "web-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-web-fundamentals-what-are-http-cookies",
+    "title": "What are HTTP cookies?",
+    "category": "web-development",
+    "subcategory": "web-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-web-fundamentals-how-does-http-2-multiplexing-work",
+    "title": "How does HTTP/2 multiplexing work?",
     "category": "web-development",
     "subcategory": "web-fundamentals",
     "difficulty": "advanced",
@@ -36,260 +108,35 @@
     "speakingTime": 120
   },
   {
-    "slug": "web-development-networking-dns-resolution-1",
-    "title": "Explain DNS resolution in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-web-development-web-fundamentals-how-does-http-3-reduce-head-of-line-blocking-across-streams",
+    "title": "How does HTTP/3 reduce head-of-line blocking across streams?",
     "category": "web-development",
-    "subcategory": "networking",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-networking-dns-resolution-2",
-    "title": "Imagine you are introducing DNS resolution to a classmate. How does it work, and where would someone encounter it?",
-    "category": "web-development",
-    "subcategory": "networking",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-networking-dns-resolution-3",
-    "title": "Compare DNS resolution with recursive and authoritative DNS. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "web-development",
-    "subcategory": "networking",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-networking-dns-resolution-4",
-    "title": "Consider this scenario: a site works by IP but not by domain. Explain how you would apply your understanding of DNS resolution, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "web-development",
-    "subcategory": "networking",
+    "subcategory": "web-fundamentals",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "web-development-networking-tls-handshake-1",
-    "title": "Explain TLS handshake in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-web-development-web-fundamentals-how-does-dns-caching-affect-failover",
+    "title": "How does DNS caching affect failover?",
     "category": "web-development",
-    "subcategory": "networking",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-networking-tls-handshake-2",
-    "title": "Imagine you are introducing TLS handshake to a classmate. How does it work, and where would someone encounter it?",
-    "category": "web-development",
-    "subcategory": "networking",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-networking-tls-handshake-3",
-    "title": "Compare TLS handshake with certificates and HTTPS. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "web-development",
-    "subcategory": "networking",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-networking-tls-handshake-4",
-    "title": "Consider this scenario: a browser reports a certificate error. Explain how you would apply your understanding of TLS handshake, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "web-development",
-    "subcategory": "networking",
+    "subcategory": "web-fundamentals",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "web-development-networking-browser-navigation-lifecycle-1",
-    "title": "Explain browser navigation lifecycle in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-web-development-web-fundamentals-how-does-tls-session-resumption-work",
+    "title": "How does TLS session resumption work?",
     "category": "web-development",
-    "subcategory": "networking",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-networking-browser-navigation-lifecycle-2",
-    "title": "Imagine you are introducing browser navigation lifecycle to a classmate. How does it work, and where would someone encounter it?",
-    "category": "web-development",
-    "subcategory": "networking",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-networking-browser-navigation-lifecycle-3",
-    "title": "Compare browser navigation lifecycle with DNS TCP TLS and rendering. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "web-development",
-    "subcategory": "networking",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-networking-browser-navigation-lifecycle-4",
-    "title": "Consider this scenario: a page appears slowly despite a fast server. Explain how you would apply your understanding of browser navigation lifecycle, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "web-development",
-    "subcategory": "networking",
+    "subcategory": "web-fundamentals",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "web-development-html-semantic-html-1",
-    "title": "Explain semantic HTML in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "web-development",
-    "subcategory": "html",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-html-semantic-html-2",
-    "title": "Imagine you are introducing semantic HTML to a classmate. How does it work, and where would someone encounter it?",
-    "category": "web-development",
-    "subcategory": "html",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-html-semantic-html-3",
-    "title": "Compare semantic HTML with generic div elements and accessibility. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "web-development",
-    "subcategory": "html",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-html-semantic-html-4",
-    "title": "Consider this scenario: a screen reader navigates an unfamiliar page. Explain how you would apply your understanding of semantic HTML, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "web-development",
-    "subcategory": "html",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-css-box-model-1",
-    "title": "Explain box model in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "web-development",
-    "subcategory": "css",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-css-box-model-2",
-    "title": "Imagine you are introducing box model to a classmate. How does it work, and where would someone encounter it?",
-    "category": "web-development",
-    "subcategory": "css",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-css-box-model-3",
-    "title": "Compare box model with box sizing and layout. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "web-development",
-    "subcategory": "css",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-css-box-model-4",
-    "title": "Consider this scenario: a component is wider than its parent. Explain how you would apply your understanding of box model, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "web-development",
-    "subcategory": "css",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-css-flexbox-and-grid-1",
-    "title": "Explain Flexbox and Grid in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "web-development",
-    "subcategory": "css",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-css-flexbox-and-grid-2",
-    "title": "Imagine you are introducing Flexbox and Grid to a classmate. How does it work, and where would someone encounter it?",
-    "category": "web-development",
-    "subcategory": "css",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-css-flexbox-and-grid-3",
-    "title": "Compare Flexbox and Grid with responsive design. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "web-development",
-    "subcategory": "css",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-css-flexbox-and-grid-4",
-    "title": "Consider this scenario: a dashboard must adapt to phone and desktop widths. Explain how you would apply your understanding of Flexbox and Grid, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "web-development",
-    "subcategory": "css",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-css-specificity-and-cascade-1",
-    "title": "Explain specificity and cascade in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "web-development",
-    "subcategory": "css",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-css-specificity-and-cascade-2",
-    "title": "Imagine you are introducing specificity and cascade to a classmate. How does it work, and where would someone encounter it?",
-    "category": "web-development",
-    "subcategory": "css",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-css-specificity-and-cascade-3",
-    "title": "Compare specificity and cascade with inheritance and source order. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "web-development",
-    "subcategory": "css",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-css-specificity-and-cascade-4",
-    "title": "Consider this scenario: a component style is unexpectedly overridden. Explain how you would apply your understanding of specificity and cascade, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "web-development",
-    "subcategory": "css",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-frontend-browser-rendering-1",
-    "title": "Explain browser rendering in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-web-development-frontend-what-is-semantic-html",
+    "title": "What is semantic HTML?",
     "category": "web-development",
     "subcategory": "frontend",
     "difficulty": "beginner",
@@ -297,35 +144,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "web-development-frontend-browser-rendering-2",
-    "title": "Imagine you are introducing browser rendering to a classmate. How does it work, and where would someone encounter it?",
-    "category": "web-development",
-    "subcategory": "frontend",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-frontend-browser-rendering-3",
-    "title": "Compare browser rendering with reflow and repaint. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "web-development",
-    "subcategory": "frontend",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-frontend-browser-rendering-4",
-    "title": "Consider this scenario: an animation causes visible jank. Explain how you would apply your understanding of browser rendering, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "web-development",
-    "subcategory": "frontend",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-frontend-web-accessibility-1",
-    "title": "Explain web accessibility in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-web-development-frontend-explain-the-css-box-model",
+    "title": "Explain the CSS box model.",
     "category": "web-development",
     "subcategory": "frontend",
     "difficulty": "beginner",
@@ -333,8 +153,44 @@
     "speakingTime": 120
   },
   {
-    "slug": "web-development-frontend-web-accessibility-2",
-    "title": "Imagine you are introducing web accessibility to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-web-development-frontend-flexbox-vs-css-grid",
+    "title": "Flexbox vs CSS Grid.",
+    "category": "web-development",
+    "subcategory": "frontend",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-frontend-what-is-the-dom",
+    "title": "What is the DOM?",
+    "category": "web-development",
+    "subcategory": "frontend",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-frontend-what-is-responsive-web-design",
+    "title": "What is responsive web design?",
+    "category": "web-development",
+    "subcategory": "frontend",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-frontend-what-is-css-specificity",
+    "title": "What is CSS specificity?",
+    "category": "web-development",
+    "subcategory": "frontend",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-frontend-how-does-event-delegation-work-in-the-browser",
+    "title": "How does event delegation work in the browser?",
     "category": "web-development",
     "subcategory": "frontend",
     "difficulty": "intermediate",
@@ -342,8 +198,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "web-development-frontend-web-accessibility-3",
-    "title": "Compare web accessibility with semantic markup and ARIA. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-web-development-frontend-explain-event-bubbling-and-capturing",
+    "title": "Explain event bubbling and capturing.",
     "category": "web-development",
     "subcategory": "frontend",
     "difficulty": "intermediate",
@@ -351,8 +207,62 @@
     "speakingTime": 120
   },
   {
-    "slug": "web-development-frontend-web-accessibility-4",
-    "title": "Consider this scenario: a form cannot be completed without a mouse. Explain how you would apply your understanding of web accessibility, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-web-development-frontend-how-does-the-browser-render-a-webpage",
+    "title": "How does the browser render a webpage?",
+    "category": "web-development",
+    "subcategory": "frontend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-frontend-what-is-lazy-loading",
+    "title": "What is lazy loading?",
+    "category": "web-development",
+    "subcategory": "frontend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-frontend-debouncing-vs-throttling",
+    "title": "Debouncing vs throttling.",
+    "category": "web-development",
+    "subcategory": "frontend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-frontend-how-do-aria-attributes-improve-accessibility",
+    "title": "How do ARIA attributes improve accessibility?",
+    "category": "web-development",
+    "subcategory": "frontend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-frontend-how-does-css-positioning-work",
+    "title": "How does CSS positioning work?",
+    "category": "web-development",
+    "subcategory": "frontend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-frontend-what-is-the-purpose-of-web-workers",
+    "title": "What is the purpose of Web Workers?",
+    "category": "web-development",
+    "subcategory": "frontend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-frontend-how-would-you-prevent-layout-thrashing",
+    "title": "How would you prevent layout thrashing?",
     "category": "web-development",
     "subcategory": "frontend",
     "difficulty": "advanced",
@@ -360,332 +270,53 @@
     "speakingTime": 120
   },
   {
-    "slug": "web-development-react-component-rendering-1",
-    "title": "Explain component rendering in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-web-development-frontend-how-would-you-improve-largest-contentful-paint",
+    "title": "How would you improve Largest Contentful Paint?",
     "category": "web-development",
-    "subcategory": "react",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-react-component-rendering-2",
-    "title": "Imagine you are introducing component rendering to a classmate. How does it work, and where would someone encounter it?",
-    "category": "web-development",
-    "subcategory": "react",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-react-component-rendering-3",
-    "title": "Compare component rendering with state props and reconciliation. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "web-development",
-    "subcategory": "react",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-react-component-rendering-4",
-    "title": "Consider this scenario: typing in one field refreshes a large page. Explain how you would apply your understanding of component rendering, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "web-development",
-    "subcategory": "react",
+    "subcategory": "frontend",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "web-development-react-state-management-1",
-    "title": "Explain state management in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-web-development-frontend-how-does-the-browser-compositor-optimize-animations",
+    "title": "How does the browser compositor optimize animations?",
     "category": "web-development",
-    "subcategory": "react",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-react-state-management-2",
-    "title": "Imagine you are introducing state management to a classmate. How does it work, and where would someone encounter it?",
-    "category": "web-development",
-    "subcategory": "react",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-react-state-management-3",
-    "title": "Compare state management with Context and external stores. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "web-development",
-    "subcategory": "react",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-react-state-management-4",
-    "title": "Consider this scenario: several distant components need the same data. Explain how you would apply your understanding of state management, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "web-development",
-    "subcategory": "react",
+    "subcategory": "frontend",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "web-development-react-effects-and-lifecycle-1",
-    "title": "Explain effects and lifecycle in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-web-development-frontend-how-would-you-reduce-javascript-main-thread-blocking",
+    "title": "How would you reduce JavaScript main-thread blocking?",
     "category": "web-development",
-    "subcategory": "react",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-react-effects-and-lifecycle-2",
-    "title": "Imagine you are introducing effects and lifecycle to a classmate. How does it work, and where would someone encounter it?",
-    "category": "web-development",
-    "subcategory": "react",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-react-effects-and-lifecycle-3",
-    "title": "Compare effects and lifecycle with rendering and cleanup. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "web-development",
-    "subcategory": "react",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-react-effects-and-lifecycle-4",
-    "title": "Consider this scenario: a subscription is registered more than once. Explain how you would apply your understanding of effects and lifecycle, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "web-development",
-    "subcategory": "react",
+    "subcategory": "frontend",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "web-development-react-reconciliation-and-keys-1",
-    "title": "Explain reconciliation and keys in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-web-development-frontend-how-would-you-diagnose-a-browser-memory-leak",
+    "title": "How would you diagnose a browser memory leak?",
     "category": "web-development",
-    "subcategory": "react",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-react-reconciliation-and-keys-2",
-    "title": "Imagine you are introducing reconciliation and keys to a classmate. How does it work, and where would someone encounter it?",
-    "category": "web-development",
-    "subcategory": "react",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-react-reconciliation-and-keys-3",
-    "title": "Compare reconciliation and keys with virtual DOM and stable identity. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "web-development",
-    "subcategory": "react",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-react-reconciliation-and-keys-4",
-    "title": "Consider this scenario: list items show the wrong input values after sorting. Explain how you would apply your understanding of reconciliation and keys, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "web-development",
-    "subcategory": "react",
+    "subcategory": "frontend",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "web-development-react-server-side-rendering-1",
-    "title": "Explain server-side rendering in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-web-development-frontend-how-would-you-improve-interaction-to-next-paint",
+    "title": "How would you improve Interaction to Next Paint?",
     "category": "web-development",
-    "subcategory": "react",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-react-server-side-rendering-2",
-    "title": "Imagine you are introducing server-side rendering to a classmate. How does it work, and where would someone encounter it?",
-    "category": "web-development",
-    "subcategory": "react",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-react-server-side-rendering-3",
-    "title": "Compare server-side rendering with hydration and client rendering. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "web-development",
-    "subcategory": "react",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-react-server-side-rendering-4",
-    "title": "Consider this scenario: a page displays content before becoming interactive. Explain how you would apply your understanding of server-side rendering, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "web-development",
-    "subcategory": "react",
+    "subcategory": "frontend",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "web-development-angular-dependency-injection-1",
-    "title": "Explain dependency injection in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "web-development",
-    "subcategory": "angular",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-angular-dependency-injection-2",
-    "title": "Imagine you are introducing dependency injection to a classmate. How does it work, and where would someone encounter it?",
-    "category": "web-development",
-    "subcategory": "angular",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-angular-dependency-injection-3",
-    "title": "Compare dependency injection with providers and injectors. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "web-development",
-    "subcategory": "angular",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-angular-dependency-injection-4",
-    "title": "Consider this scenario: a service unexpectedly has two instances. Explain how you would apply your understanding of dependency injection, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "web-development",
-    "subcategory": "angular",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-vue-reactivity-1",
-    "title": "Explain reactivity in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "web-development",
-    "subcategory": "vue",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-vue-reactivity-2",
-    "title": "Imagine you are introducing reactivity to a classmate. How does it work, and where would someone encounter it?",
-    "category": "web-development",
-    "subcategory": "vue",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-vue-reactivity-3",
-    "title": "Compare reactivity with computed values and watchers. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "web-development",
-    "subcategory": "vue",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-vue-reactivity-4",
-    "title": "Consider this scenario: a derived value becomes stale. Explain how you would apply your understanding of reactivity, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "web-development",
-    "subcategory": "vue",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-node-js-event-loop-1",
-    "title": "Explain event loop in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "web-development",
-    "subcategory": "node-js",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-node-js-event-loop-2",
-    "title": "Imagine you are introducing event loop to a classmate. How does it work, and where would someone encounter it?",
-    "category": "web-development",
-    "subcategory": "node-js",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-node-js-event-loop-3",
-    "title": "Compare event loop with libuv and worker threads. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "web-development",
-    "subcategory": "node-js",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-node-js-event-loop-4",
-    "title": "Consider this scenario: a CPU-heavy operation blocks API responses. Explain how you would apply your understanding of event loop, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "web-development",
-    "subcategory": "node-js",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-node-js-streams-and-backpressure-1",
-    "title": "Explain streams and backpressure in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "web-development",
-    "subcategory": "node-js",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-node-js-streams-and-backpressure-2",
-    "title": "Imagine you are introducing streams and backpressure to a classmate. How does it work, and where would someone encounter it?",
-    "category": "web-development",
-    "subcategory": "node-js",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-node-js-streams-and-backpressure-3",
-    "title": "Compare streams and backpressure with buffers and event emitters. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "web-development",
-    "subcategory": "node-js",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-node-js-streams-and-backpressure-4",
-    "title": "Consider this scenario: a large upload overwhelms a service. Explain how you would apply your understanding of streams and backpressure, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "web-development",
-    "subcategory": "node-js",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-backend-middleware-1",
-    "title": "Explain middleware in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-web-development-backend-what-is-a-rest-api",
+    "title": "What is a REST API?",
     "category": "web-development",
     "subcategory": "backend",
     "difficulty": "beginner",
@@ -693,8 +324,71 @@
     "speakingTime": 120
   },
   {
-    "slug": "web-development-backend-middleware-2",
-    "title": "Imagine you are introducing middleware to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-web-development-backend-what-is-middleware",
+    "title": "What is middleware?",
+    "category": "web-development",
+    "subcategory": "backend",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-backend-authentication-vs-authorization",
+    "title": "Authentication vs authorization.",
+    "category": "web-development",
+    "subcategory": "backend",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-backend-what-is-api-pagination",
+    "title": "What is API pagination?",
+    "category": "web-development",
+    "subcategory": "backend",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-backend-what-is-a-webhook",
+    "title": "What is a webhook?",
+    "category": "web-development",
+    "subcategory": "backend",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-backend-what-is-a-reverse-proxy",
+    "title": "What is a reverse proxy?",
+    "category": "web-development",
+    "subcategory": "backend",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-backend-what-is-api-rate-limiting",
+    "title": "What is API rate limiting?",
+    "category": "web-development",
+    "subcategory": "backend",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-backend-what-is-input-validation",
+    "title": "What is input validation?",
+    "category": "web-development",
+    "subcategory": "backend",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-backend-jwt-vs-session-based-authentication",
+    "title": "JWT vs session-based authentication.",
     "category": "web-development",
     "subcategory": "backend",
     "difficulty": "intermediate",
@@ -702,8 +396,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "web-development-backend-middleware-3",
-    "title": "Compare middleware with routing and error handlers. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-web-development-backend-how-does-oauth-2-0-authorization-work",
+    "title": "How does OAuth 2.0 authorization work?",
     "category": "web-development",
     "subcategory": "backend",
     "difficulty": "intermediate",
@@ -711,8 +405,80 @@
     "speakingTime": 120
   },
   {
-    "slug": "web-development-backend-middleware-4",
-    "title": "Consider this scenario: authentication must run before protected routes. Explain how you would apply your understanding of middleware, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-web-development-backend-how-do-refresh-tokens-work",
+    "title": "How do refresh tokens work?",
+    "category": "web-development",
+    "subcategory": "backend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-backend-offset-pagination-vs-cursor-pagination",
+    "title": "Offset pagination vs cursor pagination.",
+    "category": "web-development",
+    "subcategory": "backend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-backend-how-does-websocket-communication-work",
+    "title": "How does WebSocket communication work?",
+    "category": "web-development",
+    "subcategory": "backend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-backend-rest-vs-graphql",
+    "title": "REST vs GraphQL.",
+    "category": "web-development",
+    "subcategory": "backend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-backend-how-does-server-sent-events-streaming-work",
+    "title": "How does server-sent events streaming work?",
+    "category": "web-development",
+    "subcategory": "backend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-backend-how-would-you-version-a-rest-api",
+    "title": "How would you version a REST API?",
+    "category": "web-development",
+    "subcategory": "backend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-backend-what-makes-an-api-operation-idempotent",
+    "title": "What makes an API operation idempotent?",
+    "category": "web-development",
+    "subcategory": "backend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-backend-how-does-password-hashing-work",
+    "title": "How does password hashing work?",
+    "category": "web-development",
+    "subcategory": "backend",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-backend-how-would-you-optimize-a-slow-api-endpoint",
+    "title": "How would you optimize a slow API endpoint?",
     "category": "web-development",
     "subcategory": "backend",
     "difficulty": "advanced",
@@ -720,181 +486,1315 @@
     "speakingTime": 120
   },
   {
-    "slug": "web-development-apis-rest-api-design-1",
-    "title": "Explain REST API design in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-web-development-backend-how-would-you-prevent-duplicate-payment-requests",
+    "title": "How would you prevent duplicate payment requests?",
     "category": "web-development",
-    "subcategory": "apis",
+    "subcategory": "backend",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-backend-how-would-you-handle-concurrent-inventory-updates",
+    "title": "How would you handle concurrent inventory updates?",
+    "category": "web-development",
+    "subcategory": "backend",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-backend-how-would-you-verify-incoming-webhook-authenticity",
+    "title": "How would you verify incoming webhook authenticity?",
+    "category": "web-development",
+    "subcategory": "backend",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-backend-how-would-you-implement-distributed-api-rate-limiting",
+    "title": "How would you implement distributed API rate limiting?",
+    "category": "web-development",
+    "subcategory": "backend",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-backend-how-would-you-prevent-refresh-token-replay-attacks",
+    "title": "How would you prevent refresh token replay attacks?",
+    "category": "web-development",
+    "subcategory": "backend",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-backend-how-would-you-handle-cascading-failures-between-backend-services",
+    "title": "How would you handle cascading failures between backend services?",
+    "category": "web-development",
+    "subcategory": "backend",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-react-what-are-react-components",
+    "title": "What are React components?",
+    "category": "web-development",
+    "subcategory": "react",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "web-development-apis-rest-api-design-2",
-    "title": "Imagine you are introducing REST API design to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-web-development-react-props-vs-state-in-react",
+    "title": "Props vs state in React.",
     "category": "web-development",
-    "subcategory": "apis",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-apis-rest-api-design-3",
-    "title": "Compare REST API design with RPC and GraphQL. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "web-development",
-    "subcategory": "apis",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-apis-rest-api-design-4",
-    "title": "Consider this scenario: a mobile app needs a stable public API. Explain how you would apply your understanding of REST API design, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "web-development",
-    "subcategory": "apis",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-apis-graphql-1",
-    "title": "Explain GraphQL in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "web-development",
-    "subcategory": "apis",
+    "subcategory": "react",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "web-development-apis-graphql-2",
-    "title": "Imagine you are introducing GraphQL to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-web-development-react-what-is-jsx",
+    "title": "What is JSX?",
     "category": "web-development",
-    "subcategory": "apis",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-apis-graphql-3",
-    "title": "Compare GraphQL with REST and resolver execution. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "web-development",
-    "subcategory": "apis",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-apis-graphql-4",
-    "title": "Consider this scenario: a page needs related data from multiple resources. Explain how you would apply your understanding of GraphQL, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "web-development",
-    "subcategory": "apis",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-web-security-cors-1",
-    "title": "Explain CORS in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "web-development",
-    "subcategory": "web-security",
+    "subcategory": "react",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "web-development-web-security-cors-2",
-    "title": "Imagine you are introducing CORS to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-web-development-react-what-is-the-virtual-dom",
+    "title": "What is the virtual DOM?",
     "category": "web-development",
-    "subcategory": "web-security",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-web-security-cors-3",
-    "title": "Compare CORS with same-origin policy and preflight. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "web-development",
-    "subcategory": "web-security",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-web-security-cors-4",
-    "title": "Consider this scenario: a frontend request fails while direct API calls work. Explain how you would apply your understanding of CORS, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "web-development",
-    "subcategory": "web-security",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-web-performance-caching-1",
-    "title": "Explain caching in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "web-development",
-    "subcategory": "web-performance",
+    "subcategory": "react",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "web-development-web-performance-caching-2",
-    "title": "Imagine you are introducing caching to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-web-development-react-how-does-usestate-work",
+    "title": "How does useState work?",
     "category": "web-development",
-    "subcategory": "web-performance",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-web-performance-caching-3",
-    "title": "Compare caching with cache invalidation and validators. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "web-development",
-    "subcategory": "web-performance",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-web-performance-caching-4",
-    "title": "Consider this scenario: users see stale data after a deployment. Explain how you would apply your understanding of caching, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "web-development",
-    "subcategory": "web-performance",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "web-development-web-performance-core-web-vitals-1",
-    "title": "Explain Core Web Vitals in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "web-development",
-    "subcategory": "web-performance",
+    "subcategory": "react",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "web-development-web-performance-core-web-vitals-2",
-    "title": "Imagine you are introducing Core Web Vitals to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-web-development-react-what-is-useeffect-used-for",
+    "title": "What is useEffect used for?",
     "category": "web-development",
-    "subcategory": "web-performance",
+    "subcategory": "react",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-react-controlled-vs-uncontrolled-components-in-react",
+    "title": "Controlled vs uncontrolled components in React.",
+    "category": "web-development",
+    "subcategory": "react",
     "difficulty": "intermediate",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "web-development-web-performance-core-web-vitals-3",
-    "title": "Compare Core Web Vitals with LCP INP and CLS. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-web-development-react-why-do-react-lists-need-keys",
+    "title": "Why do React lists need keys?",
     "category": "web-development",
-    "subcategory": "web-performance",
+    "subcategory": "react",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-react-how-does-react-reconciliation-work",
+    "title": "How does React reconciliation work?",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-react-what-is-the-react-context-api",
+    "title": "What is the React Context API?",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-react-usememo-vs-usecallback",
+    "title": "useMemo vs useCallback.",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-react-how-does-useref-work",
+    "title": "How does useRef work?",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-react-what-are-custom-react-hooks",
+    "title": "What are custom React hooks?",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-react-how-does-react-batch-state-updates",
+    "title": "How does React batch state updates?",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-react-what-are-react-error-boundaries",
+    "title": "What are React error boundaries?",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-react-how-does-react-suspense-work",
+    "title": "How does React Suspense work?",
+    "category": "web-development",
+    "subcategory": "react",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "web-development-web-performance-core-web-vitals-4",
-    "title": "Consider this scenario: a landing page feels slow despite a good server response. Explain how you would apply your understanding of Core Web Vitals, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-web-development-react-what-causes-a-react-component-to-re-render",
+    "title": "What causes a React component to re-render?",
     "category": "web-development",
-    "subcategory": "web-performance",
+    "subcategory": "react",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-react-how-does-usereducer-manage-state",
+    "title": "How does useReducer manage state?",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-react-how-does-react-fiber-support-interruptible-rendering",
+    "title": "How does React Fiber support interruptible rendering?",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-react-how-would-you-debug-unnecessary-react-re-renders",
+    "title": "How would you debug unnecessary React re-renders?",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-react-how-does-usetransition-prioritize-ui-updates",
+    "title": "How does useTransition prioritize UI updates?",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-react-how-would-you-avoid-stale-closures-in-react-hooks",
+    "title": "How would you avoid stale closures in React hooks?",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-react-how-does-usesyncexternalstore-prevent-tearing",
+    "title": "How does useSyncExternalStore prevent tearing?",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-react-how-would-you-prevent-race-conditions-in-react-effects",
+    "title": "How would you prevent race conditions in React effects?",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-react-how-would-you-optimize-rendering-a-large-react-list",
+    "title": "How would you optimize rendering a large React list?",
+    "category": "web-development",
+    "subcategory": "react",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-angular-what-are-angular-components",
+    "title": "What are Angular components?",
+    "category": "web-development",
+    "subcategory": "angular",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-angular-what-is-an-angular-directive",
+    "title": "What is an Angular directive?",
+    "category": "web-development",
+    "subcategory": "angular",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-angular-what-are-angular-services",
+    "title": "What are Angular services?",
+    "category": "web-development",
+    "subcategory": "angular",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-angular-how-does-angular-data-binding-work",
+    "title": "How does Angular data binding work?",
+    "category": "web-development",
+    "subcategory": "angular",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-angular-what-are-angular-pipes",
+    "title": "What are Angular pipes?",
+    "category": "web-development",
+    "subcategory": "angular",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-angular-how-does-dependency-injection-work-in-angular",
+    "title": "How does dependency injection work in Angular?",
+    "category": "web-development",
+    "subcategory": "angular",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-angular-reactive-forms-vs-template-driven-forms",
+    "title": "Reactive forms vs template-driven forms.",
+    "category": "web-development",
+    "subcategory": "angular",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-angular-how-do-angular-route-guards-work",
+    "title": "How do Angular route guards work?",
+    "category": "web-development",
+    "subcategory": "angular",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-angular-what-are-standalone-angular-components",
+    "title": "What are standalone Angular components?",
+    "category": "web-development",
+    "subcategory": "angular",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-angular-how-do-angular-signals-work",
+    "title": "How do Angular signals work?",
+    "category": "web-development",
+    "subcategory": "angular",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-angular-how-does-lazy-loading-work-in-angular-routing",
+    "title": "How does lazy loading work in Angular routing?",
+    "category": "web-development",
+    "subcategory": "angular",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-angular-how-does-onpush-change-detection-work",
+    "title": "How does OnPush change detection work?",
+    "category": "web-development",
+    "subcategory": "angular",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-angular-how-would-you-prevent-rxjs-subscription-leaks-in-angular",
+    "title": "How would you prevent RxJS subscription leaks in Angular?",
+    "category": "web-development",
+    "subcategory": "angular",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-angular-how-do-angular-hierarchical-injectors-resolve-dependencies",
+    "title": "How do Angular hierarchical injectors resolve dependencies?",
+    "category": "web-development",
+    "subcategory": "angular",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-angular-how-does-zoneless-change-detection-work-in-angular",
+    "title": "How does zoneless change detection work in Angular?",
+    "category": "web-development",
+    "subcategory": "angular",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-vue-what-are-vue-components",
+    "title": "What are Vue components?",
+    "category": "web-development",
+    "subcategory": "vue",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-vue-what-is-v-model-in-vue",
+    "title": "What is v-model in Vue?",
+    "category": "web-development",
+    "subcategory": "vue",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-vue-what-are-vue-directives",
+    "title": "What are Vue directives?",
+    "category": "web-development",
+    "subcategory": "vue",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-vue-computed-properties-vs-methods-in-vue",
+    "title": "Computed properties vs methods in Vue.",
+    "category": "web-development",
+    "subcategory": "vue",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-vue-what-is-a-vue-component-prop",
+    "title": "What is a Vue component prop?",
+    "category": "web-development",
+    "subcategory": "vue",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-vue-how-does-vue-s-reactivity-system-work",
+    "title": "How does Vue's reactivity system work?",
+    "category": "web-development",
+    "subcategory": "vue",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-vue-composition-api-vs-options-api",
+    "title": "Composition API vs Options API.",
+    "category": "web-development",
+    "subcategory": "vue",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-vue-ref-vs-reactive-in-vue",
+    "title": "ref vs reactive in Vue.",
+    "category": "web-development",
+    "subcategory": "vue",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-vue-watch-vs-watcheffect-in-vue",
+    "title": "watch vs watchEffect in Vue.",
+    "category": "web-development",
+    "subcategory": "vue",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-vue-how-do-vue-composables-work",
+    "title": "How do Vue composables work?",
+    "category": "web-development",
+    "subcategory": "vue",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-vue-how-does-pinia-manage-application-state",
+    "title": "How does Pinia manage application state?",
+    "category": "web-development",
+    "subcategory": "vue",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-vue-how-does-vue-schedule-reactive-updates",
+    "title": "How does Vue schedule reactive updates?",
+    "category": "web-development",
+    "subcategory": "vue",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-vue-how-would-you-optimize-a-large-reactive-dataset-in-vue",
+    "title": "How would you optimize a large reactive dataset in Vue?",
+    "category": "web-development",
+    "subcategory": "vue",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-vue-how-does-vue-s-effect-scope-manage-reactive-effects",
+    "title": "How does Vue's effect scope manage reactive effects?",
+    "category": "web-development",
+    "subcategory": "vue",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-vue-how-would-you-prevent-hydration-mismatches-in-vue-ssr",
+    "title": "How would you prevent hydration mismatches in Vue SSR?",
+    "category": "web-development",
+    "subcategory": "vue",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-next-js-what-is-next-js",
+    "title": "What is Next.js?",
+    "category": "web-development",
+    "subcategory": "next-js",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-next-js-how-does-file-based-routing-work-in-next-js",
+    "title": "How does file-based routing work in Next.js?",
+    "category": "web-development",
+    "subcategory": "next-js",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-next-js-what-are-next-js-layouts",
+    "title": "What are Next.js layouts?",
+    "category": "web-development",
+    "subcategory": "next-js",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-next-js-what-is-the-next-js-image-component",
+    "title": "What is the Next.js Image component?",
+    "category": "web-development",
+    "subcategory": "next-js",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-next-js-server-components-vs-client-components-in-next-js",
+    "title": "Server Components vs Client Components in Next.js.",
+    "category": "web-development",
+    "subcategory": "next-js",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-next-js-static-rendering-vs-dynamic-rendering-in-next-js",
+    "title": "Static rendering vs dynamic rendering in Next.js.",
+    "category": "web-development",
+    "subcategory": "next-js",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-next-js-what-are-next-js-route-handlers",
+    "title": "What are Next.js Route Handlers?",
+    "category": "web-development",
+    "subcategory": "next-js",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-next-js-how-do-server-actions-work-in-next-js",
+    "title": "How do Server Actions work in Next.js?",
+    "category": "web-development",
+    "subcategory": "next-js",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-next-js-how-does-next-js-handle-metadata",
+    "title": "How does Next.js handle metadata?",
+    "category": "web-development",
+    "subcategory": "next-js",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-next-js-how-does-incremental-static-regeneration-work",
+    "title": "How does incremental static regeneration work?",
+    "category": "web-development",
+    "subcategory": "next-js",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-next-js-how-would-you-avoid-leaking-secrets-through-client-components",
+    "title": "How would you avoid leaking secrets through Client Components?",
+    "category": "web-development",
+    "subcategory": "next-js",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-next-js-how-would-you-invalidate-cached-data-in-next-js",
+    "title": "How would you invalidate cached data in Next.js?",
+    "category": "web-development",
+    "subcategory": "next-js",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-next-js-how-does-streaming-rendering-work-in-the-next-js-app-router",
+    "title": "How does streaming rendering work in the Next.js App Router?",
+    "category": "web-development",
+    "subcategory": "next-js",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-next-js-how-would-you-diagnose-a-next-js-hydration-error",
+    "title": "How would you diagnose a Next.js hydration error?",
+    "category": "web-development",
+    "subcategory": "next-js",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-next-js-how-would-you-prevent-request-waterfalls-in-next-js-server-components",
+    "title": "How would you prevent request waterfalls in Next.js Server Components?",
+    "category": "web-development",
+    "subcategory": "next-js",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-node-js-what-is-node-js",
+    "title": "What is Node.js?",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-node-js-what-is-npm",
+    "title": "What is npm?",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-node-js-what-is-the-purpose-of-package-lock-json",
+    "title": "What is the purpose of package-lock.json?",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-node-js-what-is-express-js",
+    "title": "What is Express.js?",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-node-js-what-is-an-eventemitter-in-node-js",
+    "title": "What is an EventEmitter in Node.js?",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-node-js-what-are-buffers-in-node-js",
+    "title": "What are buffers in Node.js?",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-node-js-commonjs-vs-es-modules-in-node-js",
+    "title": "CommonJS vs ES modules in Node.js.",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-node-js-how-does-the-node-js-event-loop-work",
+    "title": "How does the Node.js event loop work?",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-node-js-how-do-node-js-streams-work",
+    "title": "How do Node.js streams work?",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-node-js-how-does-express-middleware-chaining-work",
+    "title": "How does Express middleware chaining work?",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-node-js-how-does-error-handling-work-in-express-5",
+    "title": "How does error handling work in Express 5?",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-node-js-what-is-libuv-s-role-in-node-js",
+    "title": "What is libuv's role in Node.js?",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-node-js-how-do-environment-variables-work-in-node-js",
+    "title": "How do environment variables work in Node.js?",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-node-js-how-do-worker-threads-work-in-node-js",
+    "title": "How do worker threads work in Node.js?",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-node-js-what-is-the-node-js-cluster-module",
+    "title": "What is the Node.js cluster module?",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-node-js-how-does-node-js-handle-file-system-operations-asynchronously",
+    "title": "How does Node.js handle file system operations asynchronously?",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-node-js-process-nexttick-vs-setimmediate",
+    "title": "process.nextTick vs setImmediate.",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-node-js-how-does-backpressure-work-in-node-js-streams",
+    "title": "How does backpressure work in Node.js streams?",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-node-js-how-would-you-identify-event-loop-blocking-in-node-js",
+    "title": "How would you identify event loop blocking in Node.js?",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-node-js-how-would-you-diagnose-a-node-js-heap-memory-leak",
+    "title": "How would you diagnose a Node.js heap memory leak?",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-node-js-how-does-libuv-s-thread-pool-affect-throughput",
+    "title": "How does libuv's thread pool affect throughput?",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-node-js-how-would-you-implement-graceful-shutdown-in-node-js",
+    "title": "How would you implement graceful shutdown in Node.js?",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-node-js-how-would-you-isolate-cpu-intensive-workloads-in-node-js",
+    "title": "How would you isolate CPU-intensive workloads in Node.js?",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-node-js-how-does-asynclocalstorage-maintain-request-context",
+    "title": "How does AsyncLocalStorage maintain request context?",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-node-js-how-would-you-prevent-unbounded-concurrency-in-node-js",
+    "title": "How would you prevent unbounded concurrency in Node.js?",
+    "category": "web-development",
+    "subcategory": "node-js",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-spring-boot-what-is-spring-boot",
+    "title": "What is Spring Boot?",
+    "category": "web-development",
+    "subcategory": "spring-boot",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-spring-boot-what-is-a-spring-bean",
+    "title": "What is a Spring bean?",
+    "category": "web-development",
+    "subcategory": "spring-boot",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-spring-boot-what-is-dependency-injection-in-spring",
+    "title": "What is dependency injection in Spring?",
+    "category": "web-development",
+    "subcategory": "spring-boot",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-spring-boot-what-is-the-purpose-of-restcontroller",
+    "title": "What is the purpose of @RestController?",
+    "category": "web-development",
+    "subcategory": "spring-boot",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-spring-boot-what-is-spring-initializr",
+    "title": "What is Spring Initializr?",
+    "category": "web-development",
+    "subcategory": "spring-boot",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-spring-boot-what-are-spring-boot-starters",
+    "title": "What are Spring Boot starters?",
+    "category": "web-development",
+    "subcategory": "spring-boot",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-spring-boot-how-does-spring-boot-auto-configuration-work",
+    "title": "How does Spring Boot auto-configuration work?",
+    "category": "web-development",
+    "subcategory": "spring-boot",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-spring-boot-how-does-spring-mvc-process-requests",
+    "title": "How does Spring MVC process requests?",
+    "category": "web-development",
+    "subcategory": "spring-boot",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-spring-boot-what-are-spring-bean-scopes",
+    "title": "What are Spring bean scopes?",
+    "category": "web-development",
+    "subcategory": "spring-boot",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-spring-boot-how-do-spring-profiles-work",
+    "title": "How do Spring profiles work?",
+    "category": "web-development",
+    "subcategory": "spring-boot",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-spring-boot-how-does-spring-data-jpa-simplify-persistence",
+    "title": "How does Spring Data JPA simplify persistence?",
+    "category": "web-development",
+    "subcategory": "spring-boot",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-spring-boot-how-does-controlleradvice-handle-exceptions",
+    "title": "How does @ControllerAdvice handle exceptions?",
+    "category": "web-development",
+    "subcategory": "spring-boot",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-spring-boot-what-is-spring-boot-actuator",
+    "title": "What is Spring Boot Actuator?",
+    "category": "web-development",
+    "subcategory": "spring-boot",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-spring-boot-how-does-spring-security-s-filter-chain-work",
+    "title": "How does Spring Security's filter chain work?",
+    "category": "web-development",
+    "subcategory": "spring-boot",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-spring-boot-how-does-spring-s-proxy-based-transactional-annotation-work",
+    "title": "How does Spring's proxy-based @Transactional annotation work?",
+    "category": "web-development",
+    "subcategory": "spring-boot",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-spring-boot-why-can-self-invocation-bypass-spring-aop-advice",
+    "title": "Why can self-invocation bypass Spring AOP advice?",
+    "category": "web-development",
+    "subcategory": "spring-boot",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-spring-boot-how-would-you-resolve-circular-bean-dependencies-in-spring",
+    "title": "How would you resolve circular bean dependencies in Spring?",
+    "category": "web-development",
+    "subcategory": "spring-boot",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-spring-boot-how-would-you-diagnose-connection-pool-exhaustion-in-spring-boot",
+    "title": "How would you diagnose connection pool exhaustion in Spring Boot?",
+    "category": "web-development",
+    "subcategory": "spring-boot",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-spring-boot-how-does-transaction-propagation-work-in-spring",
+    "title": "How does transaction propagation work in Spring?",
+    "category": "web-development",
+    "subcategory": "spring-boot",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-spring-boot-how-would-you-configure-multiple-data-sources-in-spring-boot",
+    "title": "How would you configure multiple data sources in Spring Boot?",
+    "category": "web-development",
+    "subcategory": "spring-boot",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-django-what-is-django",
+    "title": "What is Django?",
+    "category": "web-development",
+    "subcategory": "django",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-django-explain-django-s-mvt-architecture",
+    "title": "Explain Django's MVT architecture.",
+    "category": "web-development",
+    "subcategory": "django",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-django-what-are-django-models",
+    "title": "What are Django models?",
+    "category": "web-development",
+    "subcategory": "django",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-django-what-are-django-migrations",
+    "title": "What are Django migrations?",
+    "category": "web-development",
+    "subcategory": "django",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-django-how-does-the-django-orm-work",
+    "title": "How does the Django ORM work?",
+    "category": "web-development",
+    "subcategory": "django",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-django-how-does-django-middleware-work",
+    "title": "How does Django middleware work?",
+    "category": "web-development",
+    "subcategory": "django",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-django-how-does-django-protect-against-csrf",
+    "title": "How does Django protect against CSRF?",
+    "category": "web-development",
+    "subcategory": "django",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-django-what-are-django-querysets",
+    "title": "What are Django QuerySets?",
+    "category": "web-development",
+    "subcategory": "django",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-django-how-does-django-rest-framework-serialization-work",
+    "title": "How does Django REST Framework serialization work?",
+    "category": "web-development",
+    "subcategory": "django",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-django-how-do-django-signals-work",
+    "title": "How do Django signals work?",
+    "category": "web-development",
+    "subcategory": "django",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-django-how-would-you-resolve-n-1-queries-in-django",
+    "title": "How would you resolve N+1 queries in Django?",
+    "category": "web-development",
+    "subcategory": "django",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-django-how-does-transaction-atomic-work-in-django",
+    "title": "How does transaction.atomic work in Django?",
+    "category": "web-development",
+    "subcategory": "django",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-django-how-would-you-prevent-lost-updates-in-django",
+    "title": "How would you prevent lost updates in Django?",
+    "category": "web-development",
+    "subcategory": "django",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-django-how-would-you-optimize-a-large-django-data-migration",
+    "title": "How would you optimize a large Django data migration?",
+    "category": "web-development",
+    "subcategory": "django",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-django-how-would-you-safely-call-synchronous-orm-code-from-async-django-views",
+    "title": "How would you safely call synchronous ORM code from async Django views?",
+    "category": "web-development",
+    "subcategory": "django",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-fastapi-what-is-fastapi",
+    "title": "What is FastAPI?",
+    "category": "web-development",
+    "subcategory": "fastapi",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-fastapi-what-are-pydantic-models-used-for-in-fastapi",
+    "title": "What are Pydantic models used for in FastAPI?",
+    "category": "web-development",
+    "subcategory": "fastapi",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-fastapi-how-does-fastapi-generate-api-documentation",
+    "title": "How does FastAPI generate API documentation?",
+    "category": "web-development",
+    "subcategory": "fastapi",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-fastapi-how-does-dependency-injection-work-in-fastapi",
+    "title": "How does dependency injection work in FastAPI?",
+    "category": "web-development",
+    "subcategory": "fastapi",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-fastapi-how-does-fastapi-validate-request-data",
+    "title": "How does FastAPI validate request data?",
+    "category": "web-development",
+    "subcategory": "fastapi",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-fastapi-how-does-fastapi-handle-response-serialization",
+    "title": "How does FastAPI handle response serialization?",
+    "category": "web-development",
+    "subcategory": "fastapi",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-fastapi-how-do-fastapi-background-tasks-work",
+    "title": "How do FastAPI background tasks work?",
+    "category": "web-development",
+    "subcategory": "fastapi",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-fastapi-how-would-you-prevent-blocking-fastapi-s-event-loop",
+    "title": "How would you prevent blocking FastAPI's event loop?",
+    "category": "web-development",
+    "subcategory": "fastapi",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-fastapi-how-does-fastapi-manage-resources-using-yield-dependencies",
+    "title": "How does FastAPI manage resources using yield dependencies?",
+    "category": "web-development",
+    "subcategory": "fastapi",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-web-development-fastapi-how-would-you-manage-shared-resources-through-fastapi-lifespan-events",
+    "title": "How would you manage shared resources through FastAPI lifespan events?",
+    "category": "web-development",
+    "subcategory": "fastapi",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120

@@ -5,40 +5,24 @@
       "name": "AI / ML",
       "subcategories": [
         {
-          "id": "algorithms",
-          "name": "Algorithms"
+          "id": "machine-learning",
+          "name": "Machine Learning"
         },
         {
           "id": "deep-learning",
           "name": "Deep Learning"
         },
         {
-          "id": "machine-learning-fundamentals",
-          "name": "Machine Learning Fundamentals"
+          "id": "nlp",
+          "name": "NLP"
         },
         {
           "id": "model-evaluation",
           "name": "Model Evaluation"
         },
         {
-          "id": "model-operations",
-          "name": "Model Operations"
-        },
-        {
-          "id": "nlp",
-          "name": "Nlp"
-        },
-        {
-          "id": "reinforcement-learning",
-          "name": "Reinforcement Learning"
-        },
-        {
-          "id": "responsible-ai",
-          "name": "Responsible Ai"
-        },
-        {
-          "id": "unsupervised-learning",
-          "name": "Unsupervised Learning"
+          "id": "mlops",
+          "name": "MLOps"
         }
       ]
     },
@@ -47,84 +31,24 @@
       "name": "App Development",
       "subcategories": [
         {
-          "id": "android",
-          "name": "Android"
-        },
-        {
-          "id": "flutter",
-          "name": "Flutter"
-        },
-        {
-          "id": "ios",
-          "name": "Ios"
-        },
-        {
-          "id": "kotlin",
-          "name": "Kotlin"
-        },
-        {
-          "id": "mobile-architecture",
-          "name": "Mobile Architecture"
-        },
-        {
-          "id": "mobile-background-work",
-          "name": "Mobile Background Work"
-        },
-        {
-          "id": "mobile-delivery",
-          "name": "Mobile Delivery"
-        },
-        {
           "id": "mobile-fundamentals",
           "name": "Mobile Fundamentals"
         },
         {
-          "id": "mobile-maps",
-          "name": "Mobile Maps"
+          "id": "android",
+          "name": "Android"
         },
         {
-          "id": "mobile-media",
-          "name": "Mobile Media"
-        },
-        {
-          "id": "mobile-networking",
-          "name": "Mobile Networking"
-        },
-        {
-          "id": "mobile-notifications",
-          "name": "Mobile Notifications"
-        },
-        {
-          "id": "mobile-performance",
-          "name": "Mobile Performance"
-        },
-        {
-          "id": "mobile-release",
-          "name": "Mobile Release"
-        },
-        {
-          "id": "mobile-security",
-          "name": "Mobile Security"
-        },
-        {
-          "id": "mobile-storage",
-          "name": "Mobile Storage"
-        },
-        {
-          "id": "mobile-testing",
-          "name": "Mobile Testing"
-        },
-        {
-          "id": "mobile-ux",
-          "name": "Mobile Ux"
+          "id": "ios",
+          "name": "iOS"
         },
         {
           "id": "react-native",
           "name": "React Native"
         },
         {
-          "id": "swift",
-          "name": "Swift"
+          "id": "flutter",
+          "name": "Flutter"
         }
       ]
     },
@@ -133,68 +57,16 @@
       "name": "Cloud",
       "subcategories": [
         {
-          "id": "aws",
-          "name": "Aws"
-        },
-        {
-          "id": "azure",
-          "name": "Azure"
-        },
-        {
-          "id": "cloud-architecture",
-          "name": "Cloud Architecture"
-        },
-        {
-          "id": "cloud-containers",
-          "name": "Cloud Containers"
-        },
-        {
-          "id": "cloud-cost",
-          "name": "Cloud Cost"
-        },
-        {
-          "id": "cloud-databases",
-          "name": "Cloud Databases"
-        },
-        {
-          "id": "cloud-deployment",
-          "name": "Cloud Deployment"
-        },
-        {
           "id": "cloud-fundamentals",
           "name": "Cloud Fundamentals"
         },
         {
-          "id": "cloud-governance",
-          "name": "Cloud Governance"
+          "id": "aws",
+          "name": "AWS"
         },
         {
-          "id": "cloud-identity",
-          "name": "Cloud Identity"
-        },
-        {
-          "id": "cloud-migration",
-          "name": "Cloud Migration"
-        },
-        {
-          "id": "cloud-networking",
-          "name": "Cloud Networking"
-        },
-        {
-          "id": "cloud-operations",
-          "name": "Cloud Operations"
-        },
-        {
-          "id": "cloud-reliability",
-          "name": "Cloud Reliability"
-        },
-        {
-          "id": "cloud-security",
-          "name": "Cloud Security"
-        },
-        {
-          "id": "cloud-storage",
-          "name": "Cloud Storage"
+          "id": "azure",
+          "name": "Azure"
         },
         {
           "id": "google-cloud",
@@ -207,24 +79,20 @@
       "name": "Computer Fundamentals",
       "subcategories": [
         {
-          "id": "computer-architecture",
-          "name": "Computer Architecture"
+          "id": "operating-systems",
+          "name": "Operating Systems"
         },
         {
           "id": "computer-networks",
           "name": "Computer Networks"
         },
         {
-          "id": "fundamentals",
-          "name": "Fundamentals"
+          "id": "computer-architecture",
+          "name": "Computer Architecture"
         },
         {
           "id": "oop",
-          "name": "Oop"
-        },
-        {
-          "id": "operating-systems",
-          "name": "Operating Systems"
+          "name": "OOP"
         }
       ]
     },
@@ -233,52 +101,24 @@
       "name": "Cybersecurity",
       "subcategories": [
         {
-          "id": "api-security",
-          "name": "Api Security"
+          "id": "security-fundamentals",
+          "name": "Security Fundamentals"
         },
         {
           "id": "application-security",
           "name": "Application Security"
         },
         {
-          "id": "authentication",
-          "name": "Authentication"
-        },
-        {
-          "id": "cloud-security",
-          "name": "Cloud Security"
+          "id": "network-security",
+          "name": "Network Security"
         },
         {
           "id": "cryptography",
           "name": "Cryptography"
         },
         {
-          "id": "mobile-security",
-          "name": "Mobile Security"
-        },
-        {
-          "id": "network-security",
-          "name": "Network Security"
-        },
-        {
-          "id": "privacy",
-          "name": "Privacy"
-        },
-        {
-          "id": "security-architecture",
-          "name": "Security Architecture"
-        },
-        {
-          "id": "security-fundamentals",
-          "name": "Security Fundamentals"
-        },
-        {
-          "id": "security-operations",
-          "name": "Security Operations"
-        },
-        {
-          "id": "web-security",
-          "name": "Web Security"
+          "id": "cloud-security",
+          "name": "Cloud Security"
         }
       ]
     },
@@ -287,56 +127,28 @@
       "name": "Databases",
       "subcategories": [
         {
-          "id": "database-design",
-          "name": "Database Design"
-        },
-        {
-          "id": "database-operations",
-          "name": "Database Operations"
-        },
-        {
-          "id": "database-performance",
-          "name": "Database Performance"
-        },
-        {
-          "id": "database-security",
-          "name": "Database Security"
-        },
-        {
-          "id": "distributed-databases",
-          "name": "Distributed Databases"
-        },
-        {
-          "id": "mongodb",
-          "name": "Mongodb"
-        },
-        {
-          "id": "mysql",
-          "name": "Mysql"
-        },
-        {
-          "id": "nosql",
-          "name": "Nosql"
-        },
-        {
-          "id": "postgresql",
-          "name": "Postgresql"
-        },
-        {
-          "id": "redis",
-          "name": "Redis"
-        },
-        {
-          "id": "relational-databases",
-          "name": "Relational Databases"
+          "id": "database-fundamentals",
+          "name": "Database Fundamentals"
         },
         {
           "id": "sql",
           "name": "SQL"
         },
         {
-          "id": "transactions",
-          "name": "Transactions"
+          "id": "postgresql",
+          "name": "PostgreSQL"
+        },
+        {
+          "id": "mysql",
+          "name": "MySQL"
+        },
+        {
+          "id": "mongodb",
+          "name": "MongoDB"
+        },
+        {
+          "id": "redis",
+          "name": "Redis"
         }
       ]
     },
@@ -345,60 +157,32 @@
       "name": "DevOps",
       "subcategories": [
         {
-          "id": "ci-cd",
-          "name": "Ci Cd"
-        },
-        {
-          "id": "containers",
-          "name": "Containers"
-        },
-        {
-          "id": "devops-culture",
-          "name": "Devops Culture"
-        },
-        {
-          "id": "docker",
-          "name": "Docker"
+          "id": "linux",
+          "name": "Linux"
         },
         {
           "id": "git",
           "name": "Git"
         },
         {
-          "id": "infrastructure-as-code",
-          "name": "Infrastructure As Code"
+          "id": "ci-cd",
+          "name": "CI/CD"
+        },
+        {
+          "id": "docker",
+          "name": "Docker"
         },
         {
           "id": "kubernetes",
           "name": "Kubernetes"
         },
         {
-          "id": "linux",
-          "name": "Linux"
+          "id": "infrastructure-as-code",
+          "name": "Infrastructure as Code"
         },
         {
-          "id": "monitoring",
-          "name": "Monitoring"
-        },
-        {
-          "id": "networking",
-          "name": "Networking"
-        },
-        {
-          "id": "release-engineering",
-          "name": "Release Engineering"
-        },
-        {
-          "id": "reliability",
-          "name": "Reliability"
-        },
-        {
-          "id": "security",
-          "name": "Security"
-        },
-        {
-          "id": "troubleshooting",
-          "name": "Troubleshooting"
+          "id": "monitoring-reliability",
+          "name": "Monitoring & Reliability"
         }
       ]
     },
@@ -407,48 +191,20 @@
       "name": "DSA",
       "subcategories": [
         {
+          "id": "data-structures",
+          "name": "Data Structures"
+        },
+        {
           "id": "algorithms",
           "name": "Algorithms"
-        },
-        {
-          "id": "arrays",
-          "name": "Arrays"
-        },
-        {
-          "id": "complexity",
-          "name": "Complexity"
-        },
-        {
-          "id": "graphs",
-          "name": "Graphs"
-        },
-        {
-          "id": "hashing",
-          "name": "Hashing"
-        },
-        {
-          "id": "linked-lists",
-          "name": "Linked Lists"
         },
         {
           "id": "problem-solving",
           "name": "Problem Solving"
         },
         {
-          "id": "queues",
-          "name": "Queues"
-        },
-        {
-          "id": "stacks",
-          "name": "Stacks"
-        },
-        {
-          "id": "strings",
-          "name": "Strings"
-        },
-        {
-          "id": "trees",
-          "name": "Trees"
+          "id": "complexity",
+          "name": "Time & Space Complexity"
         }
       ]
     },
@@ -457,40 +213,8 @@
       "name": "Generative AI",
       "subcategories": [
         {
-          "id": "ai-agents",
-          "name": "Ai Agents"
-        },
-        {
-          "id": "embeddings",
-          "name": "Embeddings"
-        },
-        {
-          "id": "fine-tuning",
-          "name": "Fine Tuning"
-        },
-        {
-          "id": "llm-applications",
-          "name": "Llm Applications"
-        },
-        {
-          "id": "llm-operations",
-          "name": "Llm Operations"
-        },
-        {
-          "id": "llm-safety",
-          "name": "Llm Safety"
-        },
-        {
           "id": "llms",
           "name": "LLMs"
-        },
-        {
-          "id": "mcp",
-          "name": "MCP"
-        },
-        {
-          "id": "multimodal-ai",
-          "name": "Multimodal Ai"
         },
         {
           "id": "prompt-engineering",
@@ -501,8 +225,16 @@
           "name": "RAG"
         },
         {
-          "id": "vector-databases",
-          "name": "Vector Databases"
+          "id": "ai-agents",
+          "name": "AI Agents"
+        },
+        {
+          "id": "fine-tuning",
+          "name": "Fine-Tuning"
+        },
+        {
+          "id": "llm-engineering",
+          "name": "LLM Engineering"
         }
       ]
     },
@@ -511,44 +243,36 @@
       "name": "Languages",
       "subcategories": [
         {
-          "id": "c",
-          "name": "C"
-        },
-        {
-          "id": "c-and-c",
-          "name": "C And C"
-        },
-        {
-          "id": "go",
-          "name": "Go"
-        },
-        {
-          "id": "java",
-          "name": "Java"
-        },
-        {
           "id": "javascript",
-          "name": "Javascript"
+          "name": "JavaScript"
         },
         {
-          "id": "oop",
-          "name": "Oop"
-        },
-        {
-          "id": "programming-paradigms",
-          "name": "Programming Paradigms"
+          "id": "typescript",
+          "name": "TypeScript"
         },
         {
           "id": "python",
           "name": "Python"
         },
         {
-          "id": "rust",
-          "name": "Rust"
+          "id": "java",
+          "name": "Java"
         },
         {
-          "id": "typescript",
-          "name": "Typescript"
+          "id": "c",
+          "name": "C"
+        },
+        {
+          "id": "cpp",
+          "name": "C++"
+        },
+        {
+          "id": "go",
+          "name": "Go"
+        },
+        {
+          "id": "rust",
+          "name": "Rust"
         }
       ]
     },
@@ -557,48 +281,24 @@
       "name": "System Design",
       "subcategories": [
         {
-          "id": "caching",
-          "name": "Caching"
-        },
-        {
-          "id": "data-architecture",
-          "name": "Data Architecture"
-        },
-        {
-          "id": "distributed-systems",
-          "name": "Distributed Systems"
-        },
-        {
-          "id": "messaging",
-          "name": "Messaging"
-        },
-        {
-          "id": "microservices",
-          "name": "Microservices"
-        },
-        {
-          "id": "observability",
-          "name": "Observability"
-        },
-        {
-          "id": "reliability",
-          "name": "Reliability"
+          "id": "design-fundamentals",
+          "name": "Design Fundamentals"
         },
         {
           "id": "scalability",
           "name": "Scalability"
         },
         {
-          "id": "security",
-          "name": "Security"
+          "id": "distributed-systems",
+          "name": "Distributed Systems"
         },
         {
-          "id": "system-design",
-          "name": "System Design"
+          "id": "architecture-patterns",
+          "name": "Architecture Patterns"
         },
         {
-          "id": "trade-offs",
-          "name": "Trade Offs"
+          "id": "system-design-problems",
+          "name": "System Design Problems"
         }
       ]
     },
@@ -607,64 +307,24 @@
       "name": "Testing",
       "subcategories": [
         {
-          "id": "accessibility-testing",
-          "name": "Accessibility Testing"
-        },
-        {
-          "id": "api-testing",
-          "name": "Api Testing"
-        },
-        {
-          "id": "browser-testing",
-          "name": "Browser Testing"
-        },
-        {
-          "id": "javascript-testing",
-          "name": "Javascript Testing"
-        },
-        {
-          "id": "mobile-testing",
-          "name": "Mobile Testing"
-        },
-        {
-          "id": "performance-testing",
-          "name": "Performance Testing"
-        },
-        {
-          "id": "reliability-testing",
-          "name": "Reliability Testing"
-        },
-        {
-          "id": "security-testing",
-          "name": "Security Testing"
-        },
-        {
-          "id": "test-architecture",
-          "name": "Test Architecture"
+          "id": "testing-fundamentals",
+          "name": "Testing Fundamentals"
         },
         {
           "id": "test-automation",
           "name": "Test Automation"
         },
         {
-          "id": "test-design",
-          "name": "Test Design"
+          "id": "api-testing",
+          "name": "API Testing"
         },
         {
-          "id": "test-reporting",
-          "name": "Test Reporting"
+          "id": "performance-testing",
+          "name": "Performance Testing"
         },
         {
-          "id": "test-strategy",
-          "name": "Test Strategy"
-        },
-        {
-          "id": "testing-fundamentals",
-          "name": "Testing Fundamentals"
-        },
-        {
-          "id": "testing-in-ci",
-          "name": "Testing In Ci"
+          "id": "end-to-end-testing",
+          "name": "End-to-End Testing"
         }
       ]
     },
@@ -673,56 +333,48 @@
       "name": "Web Development",
       "subcategories": [
         {
-          "id": "angular",
-          "name": "Angular"
-        },
-        {
-          "id": "apis",
-          "name": "APIs"
-        },
-        {
-          "id": "backend",
-          "name": "Backend"
-        },
-        {
-          "id": "css",
-          "name": "CSS"
+          "id": "web-fundamentals",
+          "name": "Web Fundamentals"
         },
         {
           "id": "frontend",
           "name": "Frontend"
         },
         {
-          "id": "html",
-          "name": "HTML"
-        },
-        {
-          "id": "networking",
-          "name": "Networking"
-        },
-        {
-          "id": "node-js",
-          "name": "Node Js"
+          "id": "backend",
+          "name": "Backend"
         },
         {
           "id": "react",
           "name": "React"
         },
         {
+          "id": "angular",
+          "name": "Angular"
+        },
+        {
           "id": "vue",
-          "name": "Vue"
+          "name": "Vue.js"
         },
         {
-          "id": "web-fundamentals",
-          "name": "Web Fundamentals"
+          "id": "next-js",
+          "name": "Next.js"
         },
         {
-          "id": "web-performance",
-          "name": "Web Performance"
+          "id": "node-js",
+          "name": "Node.js"
         },
         {
-          "id": "web-security",
-          "name": "Web Security"
+          "id": "spring-boot",
+          "name": "Spring Boot"
+        },
+        {
+          "id": "django",
+          "name": "Django"
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI"
         }
       ]
     }

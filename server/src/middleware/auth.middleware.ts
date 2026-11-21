@@ -1,4 +1,9 @@
-import type { NextFunction, Request, Response } from "express";
+import type {
+  NextFunction,
+  Request,
+  Response,
+} from "express";
+
 import { getAuth } from "@clerk/express";
 
 export const requireAuthentication = (
@@ -6,7 +11,15 @@ export const requireAuthentication = (
   res: Response,
   next: NextFunction
 ) => {
+  const start = performance.now();
+
   const { isAuthenticated } = getAuth(req);
+
+  console.log(
+    "[PERF] Require authentication:",
+    (performance.now() - start).toFixed(2),
+    "ms"
+  );
 
   if (!isAuthenticated) {
     res.status(401).json({
@@ -16,6 +29,7 @@ export const requireAuthentication = (
         message: "Authentication required",
       },
     });
+
     return;
   }
 

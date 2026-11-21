@@ -1,7 +1,7 @@
 [
   {
-    "slug": "computer-fundamentals-operating-systems-processes-and-threads-1",
-    "title": "Explain processes and threads in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-computer-fundamentals-operating-systems-what-is-an-operating-system",
+    "title": "What is an operating system?",
     "category": "computer-fundamentals",
     "subcategory": "operating-systems",
     "difficulty": "beginner",
@@ -9,8 +9,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-operating-systems-processes-and-threads-2",
-    "title": "Imagine you are introducing processes and threads to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-computer-fundamentals-operating-systems-what-is-a-process",
+    "title": "What is a process?",
     "category": "computer-fundamentals",
     "subcategory": "operating-systems",
     "difficulty": "beginner",
@@ -18,8 +18,62 @@
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-operating-systems-processes-and-threads-3",
-    "title": "Compare processes and threads with context switching. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-computer-fundamentals-operating-systems-what-is-a-thread",
+    "title": "What is a thread?",
+    "category": "computer-fundamentals",
+    "subcategory": "operating-systems",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-operating-systems-what-is-virtual-memory",
+    "title": "What is virtual memory?",
+    "category": "computer-fundamentals",
+    "subcategory": "operating-systems",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-operating-systems-what-is-a-system-call",
+    "title": "What is a system call?",
+    "category": "computer-fundamentals",
+    "subcategory": "operating-systems",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-operating-systems-what-is-a-kernel",
+    "title": "What is a kernel?",
+    "category": "computer-fundamentals",
+    "subcategory": "operating-systems",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-operating-systems-what-is-multitasking",
+    "title": "What is multitasking?",
+    "category": "computer-fundamentals",
+    "subcategory": "operating-systems",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-operating-systems-what-is-a-file-system",
+    "title": "What is a file system?",
+    "category": "computer-fundamentals",
+    "subcategory": "operating-systems",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-operating-systems-process-vs-thread",
+    "title": "Process vs thread.",
     "category": "computer-fundamentals",
     "subcategory": "operating-systems",
     "difficulty": "intermediate",
@@ -27,8 +81,89 @@
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-operating-systems-processes-and-threads-4",
-    "title": "Consider this scenario: a server handles many simultaneous requests. Explain how you would apply your understanding of processes and threads, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-computer-fundamentals-operating-systems-how-does-cpu-scheduling-work",
+    "title": "How does CPU scheduling work?",
+    "category": "computer-fundamentals",
+    "subcategory": "operating-systems",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-operating-systems-what-causes-a-deadlock",
+    "title": "What causes a deadlock?",
+    "category": "computer-fundamentals",
+    "subcategory": "operating-systems",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-operating-systems-how-does-paging-work",
+    "title": "How does paging work?",
+    "category": "computer-fundamentals",
+    "subcategory": "operating-systems",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-operating-systems-what-is-a-context-switch",
+    "title": "What is a context switch?",
+    "category": "computer-fundamentals",
+    "subcategory": "operating-systems",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-operating-systems-what-is-a-semaphore",
+    "title": "What is a semaphore?",
+    "category": "computer-fundamentals",
+    "subcategory": "operating-systems",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-operating-systems-mutex-vs-semaphore",
+    "title": "Mutex vs semaphore.",
+    "category": "computer-fundamentals",
+    "subcategory": "operating-systems",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-operating-systems-what-is-demand-paging",
+    "title": "What is demand paging?",
+    "category": "computer-fundamentals",
+    "subcategory": "operating-systems",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-operating-systems-what-is-interprocess-communication",
+    "title": "What is interprocess communication?",
+    "category": "computer-fundamentals",
+    "subcategory": "operating-systems",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-operating-systems-how-does-copy-on-write-work",
+    "title": "How does copy-on-write work?",
+    "category": "computer-fundamentals",
+    "subcategory": "operating-systems",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-operating-systems-how-would-you-prevent-priority-inversion",
+    "title": "How would you prevent priority inversion?",
     "category": "computer-fundamentals",
     "subcategory": "operating-systems",
     "difficulty": "advanced",
@@ -36,35 +171,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-operating-systems-cpu-scheduling-1",
-    "title": "Explain CPU scheduling in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "computer-fundamentals",
-    "subcategory": "operating-systems",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-operating-systems-cpu-scheduling-2",
-    "title": "Imagine you are introducing CPU scheduling to a classmate. How does it work, and where would someone encounter it?",
-    "category": "computer-fundamentals",
-    "subcategory": "operating-systems",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-operating-systems-cpu-scheduling-3",
-    "title": "Compare CPU scheduling with preemptive and cooperative scheduling. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "computer-fundamentals",
-    "subcategory": "operating-systems",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-operating-systems-cpu-scheduling-4",
-    "title": "Consider this scenario: interactive tasks compete with batch jobs. Explain how you would apply your understanding of CPU scheduling, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-computer-fundamentals-operating-systems-what-causes-virtual-memory-thrashing",
+    "title": "What causes virtual memory thrashing?",
     "category": "computer-fundamentals",
     "subcategory": "operating-systems",
     "difficulty": "advanced",
@@ -72,35 +180,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-operating-systems-deadlocks-1",
-    "title": "Explain deadlocks in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "computer-fundamentals",
-    "subcategory": "operating-systems",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-operating-systems-deadlocks-2",
-    "title": "Imagine you are introducing deadlocks to a classmate. How does it work, and where would someone encounter it?",
-    "category": "computer-fundamentals",
-    "subcategory": "operating-systems",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-operating-systems-deadlocks-3",
-    "title": "Compare deadlocks with the four necessary conditions. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "computer-fundamentals",
-    "subcategory": "operating-systems",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-operating-systems-deadlocks-4",
-    "title": "Consider this scenario: two services wait on each other's locks. Explain how you would apply your understanding of deadlocks, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-computer-fundamentals-operating-systems-how-does-a-tlb-accelerate-address-translation",
+    "title": "How does a TLB accelerate address translation?",
     "category": "computer-fundamentals",
     "subcategory": "operating-systems",
     "difficulty": "advanced",
@@ -108,35 +189,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-operating-systems-virtual-memory-1",
-    "title": "Explain virtual memory in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "computer-fundamentals",
-    "subcategory": "operating-systems",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-operating-systems-virtual-memory-2",
-    "title": "Imagine you are introducing virtual memory to a classmate. How does it work, and where would someone encounter it?",
-    "category": "computer-fundamentals",
-    "subcategory": "operating-systems",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-operating-systems-virtual-memory-3",
-    "title": "Compare virtual memory with paging and page faults. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "computer-fundamentals",
-    "subcategory": "operating-systems",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-operating-systems-virtual-memory-4",
-    "title": "Consider this scenario: a process uses more memory than physical RAM. Explain how you would apply your understanding of virtual memory, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-computer-fundamentals-operating-systems-how-would-you-detect-a-resource-allocation-deadlock",
+    "title": "How would you detect a resource allocation deadlock?",
     "category": "computer-fundamentals",
     "subcategory": "operating-systems",
     "difficulty": "advanced",
@@ -144,35 +198,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-operating-systems-system-calls-1",
-    "title": "Explain system calls in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "computer-fundamentals",
-    "subcategory": "operating-systems",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-operating-systems-system-calls-2",
-    "title": "Imagine you are introducing system calls to a classmate. How does it work, and where would someone encounter it?",
-    "category": "computer-fundamentals",
-    "subcategory": "operating-systems",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-operating-systems-system-calls-3",
-    "title": "Compare system calls with user mode and kernel mode. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "computer-fundamentals",
-    "subcategory": "operating-systems",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-operating-systems-system-calls-4",
-    "title": "Consider this scenario: an application reads a file. Explain how you would apply your understanding of system calls, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-computer-fundamentals-operating-systems-how-does-preemptive-scheduling-affect-responsiveness",
+    "title": "How does preemptive scheduling affect responsiveness?",
     "category": "computer-fundamentals",
     "subcategory": "operating-systems",
     "difficulty": "advanced",
@@ -180,35 +207,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-operating-systems-synchronization-primitives-1",
-    "title": "Explain synchronization primitives in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "computer-fundamentals",
-    "subcategory": "operating-systems",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-operating-systems-synchronization-primitives-2",
-    "title": "Imagine you are introducing synchronization primitives to a classmate. How does it work, and where would someone encounter it?",
-    "category": "computer-fundamentals",
-    "subcategory": "operating-systems",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-operating-systems-synchronization-primitives-3",
-    "title": "Compare synchronization primitives with race conditions. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "computer-fundamentals",
-    "subcategory": "operating-systems",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-operating-systems-synchronization-primitives-4",
-    "title": "Consider this scenario: two threads update shared state. Explain how you would apply your understanding of synchronization primitives, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-computer-fundamentals-operating-systems-how-do-lock-free-algorithms-avoid-blocking",
+    "title": "How do lock-free algorithms avoid blocking?",
     "category": "computer-fundamentals",
     "subcategory": "operating-systems",
     "difficulty": "advanced",
@@ -216,8 +216,17 @@
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-computer-networks-osi-and-tcp-ip-models-1",
-    "title": "Explain OSI and TCP/IP models in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-computer-fundamentals-operating-systems-how-does-memory-mapped-i-o-differ-from-buffered-i-o",
+    "title": "How does memory-mapped I/O differ from buffered I/O?",
+    "category": "computer-fundamentals",
+    "subcategory": "operating-systems",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-networks-what-is-an-ip-address",
+    "title": "What is an IP address?",
     "category": "computer-fundamentals",
     "subcategory": "computer-networks",
     "difficulty": "beginner",
@@ -225,35 +234,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-computer-networks-osi-and-tcp-ip-models-2",
-    "title": "Imagine you are introducing OSI and TCP/IP models to a classmate. How does it work, and where would someone encounter it?",
-    "category": "computer-fundamentals",
-    "subcategory": "computer-networks",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-computer-networks-osi-and-tcp-ip-models-3",
-    "title": "Compare OSI and TCP/IP models with encapsulation. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "computer-fundamentals",
-    "subcategory": "computer-networks",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-computer-networks-osi-and-tcp-ip-models-4",
-    "title": "Consider this scenario: a packet fails somewhere between client and server. Explain how you would apply your understanding of OSI and TCP/IP models, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "computer-fundamentals",
-    "subcategory": "computer-networks",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-computer-networks-tcp-versus-udp-1",
-    "title": "Explain TCP versus UDP in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-computer-fundamentals-computer-networks-what-is-a-mac-address",
+    "title": "What is a MAC address?",
     "category": "computer-fundamentals",
     "subcategory": "computer-networks",
     "difficulty": "beginner",
@@ -261,35 +243,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-computer-networks-tcp-versus-udp-2",
-    "title": "Imagine you are introducing TCP versus UDP to a classmate. How does it work, and where would someone encounter it?",
-    "category": "computer-fundamentals",
-    "subcategory": "computer-networks",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-computer-networks-tcp-versus-udp-3",
-    "title": "Compare TCP versus UDP with latency and retransmission. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "computer-fundamentals",
-    "subcategory": "computer-networks",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-computer-networks-tcp-versus-udp-4",
-    "title": "Consider this scenario: a real-time voice app chooses a transport. Explain how you would apply your understanding of TCP versus UDP, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "computer-fundamentals",
-    "subcategory": "computer-networks",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-computer-networks-tcp-connection-establishment-1",
-    "title": "Explain TCP connection establishment in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-computer-fundamentals-computer-networks-what-is-a-subnet",
+    "title": "What is a subnet?",
     "category": "computer-fundamentals",
     "subcategory": "computer-networks",
     "difficulty": "beginner",
@@ -297,35 +252,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-computer-networks-tcp-connection-establishment-2",
-    "title": "Imagine you are introducing TCP connection establishment to a classmate. How does it work, and where would someone encounter it?",
-    "category": "computer-fundamentals",
-    "subcategory": "computer-networks",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-computer-networks-tcp-connection-establishment-3",
-    "title": "Compare TCP connection establishment with handshakes and sequence numbers. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "computer-fundamentals",
-    "subcategory": "computer-networks",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-computer-networks-tcp-connection-establishment-4",
-    "title": "Consider this scenario: a connection repeatedly times out. Explain how you would apply your understanding of TCP connection establishment, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "computer-fundamentals",
-    "subcategory": "computer-networks",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-computer-networks-ip-addressing-and-subnetting-1",
-    "title": "Explain IP addressing and subnetting in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-computer-fundamentals-computer-networks-what-is-a-router",
+    "title": "What is a router?",
     "category": "computer-fundamentals",
     "subcategory": "computer-networks",
     "difficulty": "beginner",
@@ -333,35 +261,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-computer-networks-ip-addressing-and-subnetting-2",
-    "title": "Imagine you are introducing IP addressing and subnetting to a classmate. How does it work, and where would someone encounter it?",
-    "category": "computer-fundamentals",
-    "subcategory": "computer-networks",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-computer-networks-ip-addressing-and-subnetting-3",
-    "title": "Compare IP addressing and subnetting with IPv4 and IPv6. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "computer-fundamentals",
-    "subcategory": "computer-networks",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-computer-networks-ip-addressing-and-subnetting-4",
-    "title": "Consider this scenario: an organization divides a network into segments. Explain how you would apply your understanding of IP addressing and subnetting, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "computer-fundamentals",
-    "subcategory": "computer-networks",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-computer-networks-routing-1",
-    "title": "Explain routing in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-computer-fundamentals-computer-networks-what-is-a-network-switch",
+    "title": "What is a network switch?",
     "category": "computer-fundamentals",
     "subcategory": "computer-networks",
     "difficulty": "beginner",
@@ -369,8 +270,26 @@
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-computer-networks-routing-2",
-    "title": "Imagine you are introducing routing to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-computer-fundamentals-computer-networks-what-is-the-osi-model",
+    "title": "What is the OSI model?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-networks",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-networks-what-is-a-network-port",
+    "title": "What is a network port?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-networks",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-networks-tcp-vs-udp",
+    "title": "TCP vs UDP.",
     "category": "computer-fundamentals",
     "subcategory": "computer-networks",
     "difficulty": "intermediate",
@@ -378,8 +297,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-computer-networks-routing-3",
-    "title": "Compare routing with routing tables and gateways. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-computer-fundamentals-computer-networks-how-does-tcp-establish-a-connection",
+    "title": "How does TCP establish a connection?",
     "category": "computer-fundamentals",
     "subcategory": "computer-networks",
     "difficulty": "intermediate",
@@ -387,8 +306,80 @@
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-computer-networks-routing-4",
-    "title": "Consider this scenario: a host can reach local devices but not the internet. Explain how you would apply your understanding of routing, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-computer-fundamentals-computer-networks-how-does-arp-resolve-addresses",
+    "title": "How does ARP resolve addresses?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-networks",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-networks-how-does-dhcp-assign-ip-addresses",
+    "title": "How does DHCP assign IP addresses?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-networks",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-networks-what-is-network-address-translation",
+    "title": "What is network address translation?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-networks",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-networks-how-does-cidr-notation-work",
+    "title": "How does CIDR notation work?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-networks",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-networks-what-is-tcp-flow-control",
+    "title": "What is TCP flow control?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-networks",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-networks-what-is-packet-switching",
+    "title": "What is packet switching?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-networks",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-networks-how-does-ipv6-addressing-work",
+    "title": "How does IPv6 addressing work?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-networks",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-networks-what-is-a-routing-table",
+    "title": "What is a routing table?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-networks",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-networks-how-does-tcp-congestion-control-work",
+    "title": "How does TCP congestion control work?",
     "category": "computer-fundamentals",
     "subcategory": "computer-networks",
     "difficulty": "advanced",
@@ -396,8 +387,71 @@
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-computer-architecture-cpu-cache-hierarchy-1",
-    "title": "Explain CPU cache hierarchy in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-computer-fundamentals-computer-networks-how-would-you-diagnose-packet-loss",
+    "title": "How would you diagnose packet loss?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-networks",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-networks-how-does-bgp-select-routes",
+    "title": "How does BGP select routes?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-networks",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-networks-how-does-network-fragmentation-affect-performance",
+    "title": "How does network fragmentation affect performance?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-networks",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-networks-how-would-you-diagnose-asymmetric-routing",
+    "title": "How would you diagnose asymmetric routing?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-networks",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-networks-what-causes-tcp-head-of-line-blocking",
+    "title": "What causes TCP head-of-line blocking?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-networks",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-networks-how-does-quic-avoid-cross-stream-head-of-line-blocking",
+    "title": "How does QUIC avoid cross-stream head-of-line blocking?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-networks",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-networks-how-would-you-troubleshoot-mtu-related-connectivity-failures",
+    "title": "How would you troubleshoot MTU-related connectivity failures?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-networks",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-architecture-what-is-a-cpu",
+    "title": "What is a CPU?",
     "category": "computer-fundamentals",
     "subcategory": "computer-architecture",
     "difficulty": "beginner",
@@ -405,35 +459,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-computer-architecture-cpu-cache-hierarchy-2",
-    "title": "Imagine you are introducing CPU cache hierarchy to a classmate. How does it work, and where would someone encounter it?",
-    "category": "computer-fundamentals",
-    "subcategory": "computer-architecture",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-computer-architecture-cpu-cache-hierarchy-3",
-    "title": "Compare CPU cache hierarchy with locality of reference. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "computer-fundamentals",
-    "subcategory": "computer-architecture",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-computer-architecture-cpu-cache-hierarchy-4",
-    "title": "Consider this scenario: a program has poor memory access patterns. Explain how you would apply your understanding of CPU cache hierarchy, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "computer-fundamentals",
-    "subcategory": "computer-architecture",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-computer-architecture-instruction-execution-1",
-    "title": "Explain instruction execution in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-computer-fundamentals-computer-architecture-what-is-ram",
+    "title": "What is RAM?",
     "category": "computer-fundamentals",
     "subcategory": "computer-architecture",
     "difficulty": "beginner",
@@ -441,35 +468,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-computer-architecture-instruction-execution-2",
-    "title": "Imagine you are introducing instruction execution to a classmate. How does it work, and where would someone encounter it?",
-    "category": "computer-fundamentals",
-    "subcategory": "computer-architecture",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-computer-architecture-instruction-execution-3",
-    "title": "Compare instruction execution with pipelines and branches. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "computer-fundamentals",
-    "subcategory": "computer-architecture",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-computer-architecture-instruction-execution-4",
-    "title": "Consider this scenario: branch-heavy code performs unexpectedly slowly. Explain how you would apply your understanding of instruction execution, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "computer-fundamentals",
-    "subcategory": "computer-architecture",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-computer-architecture-virtualization-1",
-    "title": "Explain virtualization in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-computer-fundamentals-computer-architecture-what-is-a-cpu-register",
+    "title": "What is a CPU register?",
     "category": "computer-fundamentals",
     "subcategory": "computer-architecture",
     "difficulty": "beginner",
@@ -477,8 +477,53 @@
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-computer-architecture-virtualization-2",
-    "title": "Imagine you are introducing virtualization to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-computer-fundamentals-computer-architecture-what-is-a-cpu-cache",
+    "title": "What is a CPU cache?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-architecture",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-architecture-what-is-an-instruction-set",
+    "title": "What is an instruction set?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-architecture",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-architecture-what-is-secondary-storage",
+    "title": "What is secondary storage?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-architecture",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-architecture-what-is-a-gpu",
+    "title": "What is a GPU?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-architecture",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-architecture-what-is-a-memory-bus",
+    "title": "What is a memory bus?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-architecture",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-architecture-how-does-instruction-pipelining-work",
+    "title": "How does instruction pipelining work?",
     "category": "computer-fundamentals",
     "subcategory": "computer-architecture",
     "difficulty": "intermediate",
@@ -486,8 +531,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-computer-architecture-virtualization-3",
-    "title": "Compare virtualization with containers. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-computer-fundamentals-computer-architecture-what-is-cache-locality",
+    "title": "What is cache locality?",
     "category": "computer-fundamentals",
     "subcategory": "computer-architecture",
     "difficulty": "intermediate",
@@ -495,8 +540,80 @@
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-computer-architecture-virtualization-4",
-    "title": "Consider this scenario: several isolated environments run on one machine. Explain how you would apply your understanding of virtualization, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-computer-fundamentals-computer-architecture-risc-vs-cisc-architectures",
+    "title": "RISC vs CISC architectures.",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-architecture",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-architecture-how-does-dma-transfer-data",
+    "title": "How does DMA transfer data?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-architecture",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-architecture-what-is-an-interrupt",
+    "title": "What is an interrupt?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-architecture",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-architecture-how-does-branch-prediction-work",
+    "title": "How does branch prediction work?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-architecture",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-architecture-what-is-simd",
+    "title": "What is SIMD?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-architecture",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-architecture-how-does-a-memory-hierarchy-work",
+    "title": "How does a memory hierarchy work?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-architecture",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-architecture-what-is-superscalar-execution",
+    "title": "What is superscalar execution?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-architecture",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-architecture-how-do-multicore-processors-execute-tasks",
+    "title": "How do multicore processors execute tasks?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-architecture",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-architecture-how-does-cache-coherence-work",
+    "title": "How does cache coherence work?",
     "category": "computer-fundamentals",
     "subcategory": "computer-architecture",
     "difficulty": "advanced",
@@ -504,8 +621,62 @@
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-oop-inheritance-and-polymorphism-1",
-    "title": "Explain inheritance and polymorphism in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-computer-fundamentals-computer-architecture-what-is-false-sharing-in-multicore-systems",
+    "title": "What is false sharing in multicore systems?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-architecture",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-architecture-how-does-out-of-order-execution-improve-throughput",
+    "title": "How does out-of-order execution improve throughput?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-architecture",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-architecture-how-does-speculative-execution-affect-security",
+    "title": "How does speculative execution affect security?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-architecture",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-architecture-how-does-numa-affect-memory-access-latency",
+    "title": "How does NUMA affect memory access latency?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-architecture",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-architecture-how-would-you-identify-memory-bandwidth-bottlenecks",
+    "title": "How would you identify memory bandwidth bottlenecks?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-architecture",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-computer-architecture-how-do-memory-barriers-enforce-ordering",
+    "title": "How do memory barriers enforce ordering?",
+    "category": "computer-fundamentals",
+    "subcategory": "computer-architecture",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-oop-what-is-a-class",
+    "title": "What is a class?",
     "category": "computer-fundamentals",
     "subcategory": "oop",
     "difficulty": "beginner",
@@ -513,35 +684,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-oop-inheritance-and-polymorphism-2",
-    "title": "Imagine you are introducing inheritance and polymorphism to a classmate. How does it work, and where would someone encounter it?",
-    "category": "computer-fundamentals",
-    "subcategory": "oop",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-oop-inheritance-and-polymorphism-3",
-    "title": "Compare inheritance and polymorphism with composition. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "computer-fundamentals",
-    "subcategory": "oop",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-oop-inheritance-and-polymorphism-4",
-    "title": "Consider this scenario: a design becomes difficult to extend. Explain how you would apply your understanding of inheritance and polymorphism, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "computer-fundamentals",
-    "subcategory": "oop",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-oop-solid-principles-1",
-    "title": "Explain SOLID principles in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-computer-fundamentals-oop-what-is-an-object",
+    "title": "What is an object?",
     "category": "computer-fundamentals",
     "subcategory": "oop",
     "difficulty": "beginner",
@@ -549,8 +693,53 @@
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-oop-solid-principles-2",
-    "title": "Imagine you are introducing SOLID principles to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-computer-fundamentals-oop-what-is-encapsulation",
+    "title": "What is encapsulation?",
+    "category": "computer-fundamentals",
+    "subcategory": "oop",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-oop-what-is-abstraction",
+    "title": "What is abstraction?",
+    "category": "computer-fundamentals",
+    "subcategory": "oop",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-oop-what-is-inheritance",
+    "title": "What is inheritance?",
+    "category": "computer-fundamentals",
+    "subcategory": "oop",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-oop-what-is-polymorphism",
+    "title": "What is polymorphism?",
+    "category": "computer-fundamentals",
+    "subcategory": "oop",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-oop-what-is-a-constructor",
+    "title": "What is a constructor?",
+    "category": "computer-fundamentals",
+    "subcategory": "oop",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-oop-composition-vs-inheritance",
+    "title": "Composition vs inheritance.",
     "category": "computer-fundamentals",
     "subcategory": "oop",
     "difficulty": "intermediate",
@@ -558,8 +747,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-oop-solid-principles-3",
-    "title": "Compare SOLID principles with coupling and cohesion. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-computer-fundamentals-oop-what-is-method-overriding",
+    "title": "What is method overriding?",
     "category": "computer-fundamentals",
     "subcategory": "oop",
     "difficulty": "intermediate",
@@ -567,8 +756,80 @@
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-oop-solid-principles-4",
-    "title": "Consider this scenario: a large class changes for unrelated reasons. Explain how you would apply your understanding of SOLID principles, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-computer-fundamentals-oop-what-is-method-overloading",
+    "title": "What is method overloading?",
+    "category": "computer-fundamentals",
+    "subcategory": "oop",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-oop-what-is-an-abstract-class",
+    "title": "What is an abstract class?",
+    "category": "computer-fundamentals",
+    "subcategory": "oop",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-oop-what-is-an-interface",
+    "title": "What is an interface?",
+    "category": "computer-fundamentals",
+    "subcategory": "oop",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-oop-what-is-dynamic-dispatch",
+    "title": "What is dynamic dispatch?",
+    "category": "computer-fundamentals",
+    "subcategory": "oop",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-oop-explain-the-single-responsibility-principle",
+    "title": "Explain the single responsibility principle.",
+    "category": "computer-fundamentals",
+    "subcategory": "oop",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-oop-what-is-dependency-inversion",
+    "title": "What is dependency inversion?",
+    "category": "computer-fundamentals",
+    "subcategory": "oop",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-oop-what-is-the-open-closed-principle",
+    "title": "What is the open-closed principle?",
+    "category": "computer-fundamentals",
+    "subcategory": "oop",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-oop-how-do-coupling-and-cohesion-differ",
+    "title": "How do coupling and cohesion differ?",
+    "category": "computer-fundamentals",
+    "subcategory": "oop",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-computer-fundamentals-oop-how-does-the-liskov-substitution-principle-preserve-contracts",
+    "title": "How does the Liskov substitution principle preserve contracts?",
     "category": "computer-fundamentals",
     "subcategory": "oop",
     "difficulty": "advanced",
@@ -576,325 +837,64 @@
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-fundamentals-compilers-and-interpreters-1",
-    "title": "Explain compilers and interpreters in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-computer-fundamentals-oop-how-would-you-refactor-a-fragile-inheritance-hierarchy",
+    "title": "How would you refactor a fragile inheritance hierarchy?",
     "category": "computer-fundamentals",
-    "subcategory": "fundamentals",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-fundamentals-compilers-and-interpreters-2",
-    "title": "Imagine you are introducing compilers and interpreters to a classmate. How does it work, and where would someone encounter it?",
-    "category": "computer-fundamentals",
-    "subcategory": "fundamentals",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-fundamentals-compilers-and-interpreters-3",
-    "title": "Compare compilers and interpreters with static and dynamic languages. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "computer-fundamentals",
-    "subcategory": "fundamentals",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-fundamentals-compilers-and-interpreters-4",
-    "title": "Consider this scenario: a program fails at build time versus runtime. Explain how you would apply your understanding of compilers and interpreters, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "computer-fundamentals",
-    "subcategory": "fundamentals",
+    "subcategory": "oop",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-fundamentals-binary-and-number-systems-1",
-    "title": "Explain binary and number systems in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-computer-fundamentals-oop-how-does-interface-segregation-reduce-coupling",
+    "title": "How does interface segregation reduce coupling?",
     "category": "computer-fundamentals",
-    "subcategory": "fundamentals",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-fundamentals-binary-and-number-systems-2",
-    "title": "Imagine you are introducing binary and number systems to a classmate. How does it work, and where would someone encounter it?",
-    "category": "computer-fundamentals",
-    "subcategory": "fundamentals",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-fundamentals-binary-and-number-systems-3",
-    "title": "Compare binary and number systems with signed integers and floating point. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "computer-fundamentals",
-    "subcategory": "fundamentals",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-fundamentals-binary-and-number-systems-4",
-    "title": "Consider this scenario: a calculation produces a precision surprise. Explain how you would apply your understanding of binary and number systems, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "computer-fundamentals",
-    "subcategory": "fundamentals",
+    "subcategory": "oop",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-fundamentals-memory-stack-and-heap-1",
-    "title": "Explain memory stack and heap in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-computer-fundamentals-oop-how-would-you-model-immutable-objects",
+    "title": "How would you model immutable objects?",
     "category": "computer-fundamentals",
-    "subcategory": "fundamentals",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-fundamentals-memory-stack-and-heap-2",
-    "title": "Imagine you are introducing memory stack and heap to a classmate. How does it work, and where would someone encounter it?",
-    "category": "computer-fundamentals",
-    "subcategory": "fundamentals",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-fundamentals-memory-stack-and-heap-3",
-    "title": "Compare memory stack and heap with allocation and lifetime. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "computer-fundamentals",
-    "subcategory": "fundamentals",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-fundamentals-memory-stack-and-heap-4",
-    "title": "Consider this scenario: a recursive function consumes too much memory. Explain how you would apply your understanding of memory stack and heap, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "computer-fundamentals",
-    "subcategory": "fundamentals",
+    "subcategory": "oop",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-fundamentals-concurrency-and-parallelism-1",
-    "title": "Explain concurrency and parallelism in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-computer-fundamentals-oop-how-would-you-avoid-an-anemic-domain-model",
+    "title": "How would you avoid an anemic domain model?",
     "category": "computer-fundamentals",
-    "subcategory": "fundamentals",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-fundamentals-concurrency-and-parallelism-2",
-    "title": "Imagine you are introducing concurrency and parallelism to a classmate. How does it work, and where would someone encounter it?",
-    "category": "computer-fundamentals",
-    "subcategory": "fundamentals",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-fundamentals-concurrency-and-parallelism-3",
-    "title": "Compare concurrency and parallelism with threads and cores. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "computer-fundamentals",
-    "subcategory": "fundamentals",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-fundamentals-concurrency-and-parallelism-4",
-    "title": "Consider this scenario: a workload is split across CPU cores. Explain how you would apply your understanding of concurrency and parallelism, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "computer-fundamentals",
-    "subcategory": "fundamentals",
+    "subcategory": "oop",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-fundamentals-endianness-1",
-    "title": "Explain endianness in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-computer-fundamentals-oop-how-can-composition-implement-the-strategy-pattern",
+    "title": "How can composition implement the strategy pattern?",
     "category": "computer-fundamentals",
-    "subcategory": "fundamentals",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-fundamentals-endianness-2",
-    "title": "Imagine you are introducing endianness to a classmate. How does it work, and where would someone encounter it?",
-    "category": "computer-fundamentals",
-    "subcategory": "fundamentals",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-fundamentals-endianness-3",
-    "title": "Compare endianness with network byte order. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "computer-fundamentals",
-    "subcategory": "fundamentals",
+    "subcategory": "oop",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-fundamentals-endianness-4",
-    "title": "Consider this scenario: binary data is interpreted differently across systems. Explain how you would apply your understanding of endianness, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-computer-fundamentals-oop-how-would-you-enforce-invariants-within-an-object",
+    "title": "How would you enforce invariants within an object?",
     "category": "computer-fundamentals",
-    "subcategory": "fundamentals",
+    "subcategory": "oop",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "computer-fundamentals-computer-networks-http-and-https-1",
-    "title": "Explain HTTP and HTTPS in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-computer-fundamentals-oop-how-would-you-design-extensible-behavior-without-subclass-proliferation",
+    "title": "How would you design extensible behavior without subclass proliferation?",
     "category": "computer-fundamentals",
-    "subcategory": "computer-networks",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-computer-networks-http-and-https-2",
-    "title": "Imagine you are introducing HTTP and HTTPS to a classmate. How does it work, and where would someone encounter it?",
-    "category": "computer-fundamentals",
-    "subcategory": "computer-networks",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-computer-networks-http-and-https-3",
-    "title": "Compare HTTP and HTTPS with TLS and certificates. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "computer-fundamentals",
-    "subcategory": "computer-networks",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-computer-networks-http-and-https-4",
-    "title": "Consider this scenario: a client must verify a server's identity. Explain how you would apply your understanding of HTTP and HTTPS, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "computer-fundamentals",
-    "subcategory": "computer-networks",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-operating-systems-file-systems-1",
-    "title": "Explain file systems in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "computer-fundamentals",
-    "subcategory": "operating-systems",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-operating-systems-file-systems-2",
-    "title": "Imagine you are introducing file systems to a classmate. How does it work, and where would someone encounter it?",
-    "category": "computer-fundamentals",
-    "subcategory": "operating-systems",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-operating-systems-file-systems-3",
-    "title": "Compare file systems with inodes and journaling. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "computer-fundamentals",
-    "subcategory": "operating-systems",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-operating-systems-file-systems-4",
-    "title": "Consider this scenario: a system loses power during a write. Explain how you would apply your understanding of file systems, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "computer-fundamentals",
-    "subcategory": "operating-systems",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-computer-architecture-interrupts-1",
-    "title": "Explain interrupts in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "computer-fundamentals",
-    "subcategory": "computer-architecture",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-computer-architecture-interrupts-2",
-    "title": "Imagine you are introducing interrupts to a classmate. How does it work, and where would someone encounter it?",
-    "category": "computer-fundamentals",
-    "subcategory": "computer-architecture",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-computer-architecture-interrupts-3",
-    "title": "Compare interrupts with polling and DMA. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "computer-fundamentals",
-    "subcategory": "computer-architecture",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-computer-architecture-interrupts-4",
-    "title": "Consider this scenario: a device needs attention without constant checking. Explain how you would apply your understanding of interrupts, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "computer-fundamentals",
-    "subcategory": "computer-architecture",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-fundamentals-distributed-computing-basics-1",
-    "title": "Explain distributed computing basics in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "computer-fundamentals",
-    "subcategory": "fundamentals",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-fundamentals-distributed-computing-basics-2",
-    "title": "Imagine you are introducing distributed computing basics to a classmate. How does it work, and where would someone encounter it?",
-    "category": "computer-fundamentals",
-    "subcategory": "fundamentals",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-fundamentals-distributed-computing-basics-3",
-    "title": "Compare distributed computing basics with latency and clock differences. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "computer-fundamentals",
-    "subcategory": "fundamentals",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "computer-fundamentals-fundamentals-distributed-computing-basics-4",
-    "title": "Consider this scenario: a service depends on several remote components. Explain how you would apply your understanding of distributed computing basics, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "computer-fundamentals",
-    "subcategory": "fundamentals",
+    "subcategory": "oop",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120

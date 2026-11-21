@@ -1,7 +1,7 @@
 [
   {
-    "slug": "cybersecurity-security-fundamentals-cia-triad-1",
-    "title": "Explain CIA triad in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-cybersecurity-security-fundamentals-explain-the-cia-triad",
+    "title": "Explain the CIA triad.",
     "category": "cybersecurity",
     "subcategory": "security-fundamentals",
     "difficulty": "beginner",
@@ -9,8 +9,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-security-fundamentals-cia-triad-2",
-    "title": "Imagine you are introducing CIA triad to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-cybersecurity-security-fundamentals-what-is-least-privilege",
+    "title": "What is least privilege?",
     "category": "cybersecurity",
     "subcategory": "security-fundamentals",
     "difficulty": "beginner",
@@ -18,8 +18,44 @@
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-security-fundamentals-cia-triad-3",
-    "title": "Compare CIA triad with threat modeling. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-cybersecurity-security-fundamentals-what-is-a-security-vulnerability",
+    "title": "What is a security vulnerability?",
+    "category": "cybersecurity",
+    "subcategory": "security-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-security-fundamentals-what-is-social-engineering",
+    "title": "What is social engineering?",
+    "category": "cybersecurity",
+    "subcategory": "security-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-security-fundamentals-what-is-multi-factor-authentication",
+    "title": "What is multi-factor authentication?",
+    "category": "cybersecurity",
+    "subcategory": "security-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-security-fundamentals-what-is-a-security-patch",
+    "title": "What is a security patch?",
+    "category": "cybersecurity",
+    "subcategory": "security-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-security-fundamentals-how-does-threat-modeling-work",
+    "title": "How does threat modeling work?",
     "category": "cybersecurity",
     "subcategory": "security-fundamentals",
     "difficulty": "intermediate",
@@ -27,8 +63,71 @@
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-security-fundamentals-cia-triad-4",
-    "title": "Consider this scenario: a service stores sensitive customer records. Explain how you would apply your understanding of CIA triad, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-cybersecurity-security-fundamentals-what-is-defense-in-depth",
+    "title": "What is defense in depth?",
+    "category": "cybersecurity",
+    "subcategory": "security-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-security-fundamentals-how-does-role-based-access-control-work",
+    "title": "How does role-based access control work?",
+    "category": "cybersecurity",
+    "subcategory": "security-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-security-fundamentals-what-is-a-zero-trust-architecture",
+    "title": "What is a zero-trust architecture?",
+    "category": "cybersecurity",
+    "subcategory": "security-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-security-fundamentals-what-is-security-risk-assessment",
+    "title": "What is security risk assessment?",
+    "category": "cybersecurity",
+    "subcategory": "security-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-security-fundamentals-what-is-a-software-supply-chain-attack",
+    "title": "What is a software supply chain attack?",
+    "category": "cybersecurity",
+    "subcategory": "security-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-security-fundamentals-what-is-security-incident-response",
+    "title": "What is security incident response?",
+    "category": "cybersecurity",
+    "subcategory": "security-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-security-fundamentals-how-does-vulnerability-management-work",
+    "title": "How does vulnerability management work?",
+    "category": "cybersecurity",
+    "subcategory": "security-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-security-fundamentals-how-would-you-prioritize-vulnerabilities-using-exploitability",
+    "title": "How would you prioritize vulnerabilities using exploitability?",
     "category": "cybersecurity",
     "subcategory": "security-fundamentals",
     "difficulty": "advanced",
@@ -36,296 +135,233 @@
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-web-security-cross-site-scripting-1",
-    "title": "Explain cross-site scripting in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-cybersecurity-security-fundamentals-how-would-you-design-a-privileged-access-management-strategy",
+    "title": "How would you design a privileged access management strategy?",
     "category": "cybersecurity",
-    "subcategory": "web-security",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-web-security-cross-site-scripting-2",
-    "title": "Imagine you are introducing cross-site scripting to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cybersecurity",
-    "subcategory": "web-security",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-web-security-cross-site-scripting-3",
-    "title": "Compare cross-site scripting with output encoding and CSP. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cybersecurity",
-    "subcategory": "web-security",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-web-security-cross-site-scripting-4",
-    "title": "Consider this scenario: a comment field displays user input. Explain how you would apply your understanding of cross-site scripting, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cybersecurity",
-    "subcategory": "web-security",
+    "subcategory": "security-fundamentals",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-web-security-sql-injection-1",
-    "title": "Explain SQL injection in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-cybersecurity-security-fundamentals-how-would-you-investigate-suspicious-account-activity",
+    "title": "How would you investigate suspicious account activity?",
     "category": "cybersecurity",
-    "subcategory": "web-security",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-web-security-sql-injection-2",
-    "title": "Imagine you are introducing SQL injection to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cybersecurity",
-    "subcategory": "web-security",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-web-security-sql-injection-3",
-    "title": "Compare SQL injection with parameterized queries. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cybersecurity",
-    "subcategory": "web-security",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-web-security-sql-injection-4",
-    "title": "Consider this scenario: a search endpoint accepts user-provided filters. Explain how you would apply your understanding of SQL injection, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cybersecurity",
-    "subcategory": "web-security",
+    "subcategory": "security-fundamentals",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-web-security-cross-site-request-forgery-1",
-    "title": "Explain cross-site request forgery in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-cybersecurity-security-fundamentals-how-would-you-assess-third-party-software-risk",
+    "title": "How would you assess third-party software risk?",
     "category": "cybersecurity",
-    "subcategory": "web-security",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-web-security-cross-site-request-forgery-2",
-    "title": "Imagine you are introducing cross-site request forgery to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cybersecurity",
-    "subcategory": "web-security",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-web-security-cross-site-request-forgery-3",
-    "title": "Compare cross-site request forgery with SameSite cookies and CSRF tokens. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cybersecurity",
-    "subcategory": "web-security",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-web-security-cross-site-request-forgery-4",
-    "title": "Consider this scenario: a logged-in user visits a malicious page. Explain how you would apply your understanding of cross-site request forgery, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cybersecurity",
-    "subcategory": "web-security",
+    "subcategory": "security-fundamentals",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-authentication-authentication-versus-authorization-1",
-    "title": "Explain authentication versus authorization in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-cybersecurity-security-fundamentals-how-would-you-design-a-security-control-audit",
+    "title": "How would you design a security control audit?",
     "category": "cybersecurity",
-    "subcategory": "authentication",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-authentication-authentication-versus-authorization-2",
-    "title": "Imagine you are introducing authentication versus authorization to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cybersecurity",
-    "subcategory": "authentication",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-authentication-authentication-versus-authorization-3",
-    "title": "Compare authentication versus authorization with roles and policies. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cybersecurity",
-    "subcategory": "authentication",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-authentication-authentication-versus-authorization-4",
-    "title": "Consider this scenario: a user can sign in but should not access admin data. Explain how you would apply your understanding of authentication versus authorization, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cybersecurity",
-    "subcategory": "authentication",
+    "subcategory": "security-fundamentals",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-authentication-oauth-2-0-and-openid-connect-1",
-    "title": "Explain OAuth 2.0 and OpenID Connect in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-cybersecurity-security-fundamentals-how-would-you-contain-a-compromised-service-account",
+    "title": "How would you contain a compromised service account?",
     "category": "cybersecurity",
-    "subcategory": "authentication",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-authentication-oauth-2-0-and-openid-connect-2",
-    "title": "Imagine you are introducing OAuth 2.0 and OpenID Connect to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cybersecurity",
-    "subcategory": "authentication",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-authentication-oauth-2-0-and-openid-connect-3",
-    "title": "Compare OAuth 2.0 and OpenID Connect with access and ID tokens. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cybersecurity",
-    "subcategory": "authentication",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-authentication-oauth-2-0-and-openid-connect-4",
-    "title": "Consider this scenario: an application offers social login. Explain how you would apply your understanding of OAuth 2.0 and OpenID Connect, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cybersecurity",
-    "subcategory": "authentication",
+    "subcategory": "security-fundamentals",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-authentication-jwt-security-1",
-    "title": "Explain JWT security in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-cybersecurity-application-security-what-is-sql-injection",
+    "title": "What is SQL injection?",
     "category": "cybersecurity",
-    "subcategory": "authentication",
+    "subcategory": "application-security",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-authentication-jwt-security-2",
-    "title": "Imagine you are introducing JWT security to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-cybersecurity-application-security-what-is-cross-site-scripting",
+    "title": "What is cross-site scripting?",
     "category": "cybersecurity",
-    "subcategory": "authentication",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-authentication-jwt-security-3",
-    "title": "Compare JWT security with claims expiration and revocation. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cybersecurity",
-    "subcategory": "authentication",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-authentication-jwt-security-4",
-    "title": "Consider this scenario: a stolen token remains usable. Explain how you would apply your understanding of JWT security, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cybersecurity",
-    "subcategory": "authentication",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-cryptography-symmetric-and-asymmetric-encryption-1",
-    "title": "Explain symmetric and asymmetric encryption in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "cybersecurity",
-    "subcategory": "cryptography",
+    "subcategory": "application-security",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-cryptography-symmetric-and-asymmetric-encryption-2",
-    "title": "Imagine you are introducing symmetric and asymmetric encryption to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-cybersecurity-application-security-what-is-csrf",
+    "title": "What is CSRF?",
     "category": "cybersecurity",
-    "subcategory": "cryptography",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-cryptography-symmetric-and-asymmetric-encryption-3",
-    "title": "Compare symmetric and asymmetric encryption with key exchange and signatures. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cybersecurity",
-    "subcategory": "cryptography",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-cryptography-symmetric-and-asymmetric-encryption-4",
-    "title": "Consider this scenario: two services need secure communication. Explain how you would apply your understanding of symmetric and asymmetric encryption, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cybersecurity",
-    "subcategory": "cryptography",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-cryptography-hashing-and-salting-passwords-1",
-    "title": "Explain hashing and salting passwords in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "cybersecurity",
-    "subcategory": "cryptography",
+    "subcategory": "application-security",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-cryptography-hashing-and-salting-passwords-2",
-    "title": "Imagine you are introducing hashing and salting passwords to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-cybersecurity-application-security-what-is-broken-access-control",
+    "title": "What is broken access control?",
     "category": "cybersecurity",
-    "subcategory": "cryptography",
+    "subcategory": "application-security",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-application-security-what-is-output-encoding",
+    "title": "What is output encoding?",
+    "category": "cybersecurity",
+    "subcategory": "application-security",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-application-security-what-is-secure-password-storage",
+    "title": "What is secure password storage?",
+    "category": "cybersecurity",
+    "subcategory": "application-security",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-application-security-how-do-parameterized-queries-prevent-sql-injection",
+    "title": "How do parameterized queries prevent SQL injection?",
+    "category": "cybersecurity",
+    "subcategory": "application-security",
     "difficulty": "intermediate",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-cryptography-hashing-and-salting-passwords-3",
-    "title": "Compare hashing and salting passwords with bcrypt and Argon2. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-cybersecurity-application-security-how-does-content-security-policy-mitigate-xss",
+    "title": "How does Content Security Policy mitigate XSS?",
     "category": "cybersecurity",
-    "subcategory": "cryptography",
+    "subcategory": "application-security",
     "difficulty": "intermediate",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-cryptography-hashing-and-salting-passwords-4",
-    "title": "Consider this scenario: a database leak exposes password hashes. Explain how you would apply your understanding of hashing and salting passwords, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-cybersecurity-application-security-what-is-server-side-request-forgery",
+    "title": "What is server-side request forgery?",
     "category": "cybersecurity",
-    "subcategory": "cryptography",
+    "subcategory": "application-security",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-application-security-how-do-secure-cookie-attributes-work",
+    "title": "How do secure cookie attributes work?",
+    "category": "cybersecurity",
+    "subcategory": "application-security",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-application-security-what-is-insecure-deserialization",
+    "title": "What is insecure deserialization?",
+    "category": "cybersecurity",
+    "subcategory": "application-security",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-application-security-how-do-you-prevent-path-traversal",
+    "title": "How do you prevent path traversal?",
+    "category": "cybersecurity",
+    "subcategory": "application-security",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-application-security-what-is-insecure-direct-object-reference",
+    "title": "What is insecure direct object reference?",
+    "category": "cybersecurity",
+    "subcategory": "application-security",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-application-security-how-does-oauth-authorization-differ-from-authentication",
+    "title": "How does OAuth authorization differ from authentication?",
+    "category": "cybersecurity",
+    "subcategory": "application-security",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-application-security-how-would-you-prevent-ssrf-in-url-fetching-services",
+    "title": "How would you prevent SSRF in URL fetching services?",
+    "category": "cybersecurity",
+    "subcategory": "application-security",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-network-security-firewalls-and-network-segmentation-1",
-    "title": "Explain firewalls and network segmentation in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-cybersecurity-application-security-how-would-you-enforce-tenant-isolation-in-apis",
+    "title": "How would you enforce tenant isolation in APIs?",
+    "category": "cybersecurity",
+    "subcategory": "application-security",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-application-security-how-would-you-design-refresh-token-rotation-securely",
+    "title": "How would you design refresh token rotation securely?",
+    "category": "cybersecurity",
+    "subcategory": "application-security",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-application-security-how-would-you-prevent-race-conditions-in-authorization-checks",
+    "title": "How would you prevent race conditions in authorization checks?",
+    "category": "cybersecurity",
+    "subcategory": "application-security",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-application-security-how-would-you-audit-authorization-across-microservices",
+    "title": "How would you audit authorization across microservices?",
+    "category": "cybersecurity",
+    "subcategory": "application-security",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-application-security-how-would-you-detect-dependency-confusion-risks",
+    "title": "How would you detect dependency confusion risks?",
+    "category": "cybersecurity",
+    "subcategory": "application-security",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-network-security-what-is-a-firewall",
+    "title": "What is a firewall?",
     "category": "cybersecurity",
     "subcategory": "network-security",
     "difficulty": "beginner",
@@ -333,35 +369,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-network-security-firewalls-and-network-segmentation-2",
-    "title": "Imagine you are introducing firewalls and network segmentation to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cybersecurity",
-    "subcategory": "network-security",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-network-security-firewalls-and-network-segmentation-3",
-    "title": "Compare firewalls and network segmentation with security groups and zero trust. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cybersecurity",
-    "subcategory": "network-security",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-network-security-firewalls-and-network-segmentation-4",
-    "title": "Consider this scenario: a public web server must not reach every internal host. Explain how you would apply your understanding of firewalls and network segmentation, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cybersecurity",
-    "subcategory": "network-security",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-network-security-tls-certificates-1",
-    "title": "Explain TLS certificates in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-cybersecurity-network-security-what-is-a-vpn",
+    "title": "What is a VPN?",
     "category": "cybersecurity",
     "subcategory": "network-security",
     "difficulty": "beginner",
@@ -369,8 +378,44 @@
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-network-security-tls-certificates-2",
-    "title": "Imagine you are introducing TLS certificates to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-cybersecurity-network-security-what-is-a-network-intrusion-detection-system",
+    "title": "What is a network intrusion detection system?",
+    "category": "cybersecurity",
+    "subcategory": "network-security",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-network-security-what-is-a-proxy-server",
+    "title": "What is a proxy server?",
+    "category": "cybersecurity",
+    "subcategory": "network-security",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-network-security-what-is-network-segmentation",
+    "title": "What is network segmentation?",
+    "category": "cybersecurity",
+    "subcategory": "network-security",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-network-security-what-is-a-denial-of-service-attack",
+    "title": "What is a denial-of-service attack?",
+    "category": "cybersecurity",
+    "subcategory": "network-security",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-network-security-stateful-vs-stateless-firewalls",
+    "title": "Stateful vs stateless firewalls.",
     "category": "cybersecurity",
     "subcategory": "network-security",
     "difficulty": "intermediate",
@@ -378,8 +423,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-network-security-tls-certificates-3",
-    "title": "Compare TLS certificates with certificate authorities and trust chains. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-cybersecurity-network-security-how-does-tls-protect-network-traffic",
+    "title": "How does TLS protect network traffic?",
     "category": "cybersecurity",
     "subcategory": "network-security",
     "difficulty": "intermediate",
@@ -387,8 +432,62 @@
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-network-security-tls-certificates-4",
-    "title": "Consider this scenario: a browser rejects a service certificate. Explain how you would apply your understanding of TLS certificates, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-cybersecurity-network-security-what-is-dns-spoofing",
+    "title": "What is DNS spoofing?",
+    "category": "cybersecurity",
+    "subcategory": "network-security",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-network-security-how-does-an-intrusion-prevention-system-work",
+    "title": "How does an intrusion prevention system work?",
+    "category": "cybersecurity",
+    "subcategory": "network-security",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-network-security-what-is-arp-spoofing",
+    "title": "What is ARP spoofing?",
+    "category": "cybersecurity",
+    "subcategory": "network-security",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-network-security-how-does-mutual-tls-authenticate-services",
+    "title": "How does mutual TLS authenticate services?",
+    "category": "cybersecurity",
+    "subcategory": "network-security",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-network-security-what-is-a-network-access-control-list",
+    "title": "What is a network access control list?",
+    "category": "cybersecurity",
+    "subcategory": "network-security",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-network-security-how-does-ddos-mitigation-work",
+    "title": "How does DDoS mitigation work?",
+    "category": "cybersecurity",
+    "subcategory": "network-security",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-network-security-how-would-you-design-network-segmentation-for-sensitive-workloads",
+    "title": "How would you design network segmentation for sensitive workloads?",
     "category": "cybersecurity",
     "subcategory": "network-security",
     "difficulty": "advanced",
@@ -396,116 +495,233 @@
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-application-security-owasp-top-10-1",
-    "title": "Explain OWASP Top 10 in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-cybersecurity-network-security-how-would-you-investigate-anomalous-outbound-traffic",
+    "title": "How would you investigate anomalous outbound traffic?",
     "category": "cybersecurity",
-    "subcategory": "application-security",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-application-security-owasp-top-10-2",
-    "title": "Imagine you are introducing OWASP Top 10 to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cybersecurity",
-    "subcategory": "application-security",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-application-security-owasp-top-10-3",
-    "title": "Compare OWASP Top 10 with secure development lifecycle. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cybersecurity",
-    "subcategory": "application-security",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-application-security-owasp-top-10-4",
-    "title": "Consider this scenario: a team reviews a new API for security risks. Explain how you would apply your understanding of OWASP Top 10, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cybersecurity",
-    "subcategory": "application-security",
+    "subcategory": "network-security",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-application-security-input-validation-1",
-    "title": "Explain input validation in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-cybersecurity-network-security-how-would-you-detect-lateral-movement-across-networks",
+    "title": "How would you detect lateral movement across networks?",
     "category": "cybersecurity",
-    "subcategory": "application-security",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-application-security-input-validation-2",
-    "title": "Imagine you are introducing input validation to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cybersecurity",
-    "subcategory": "application-security",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-application-security-input-validation-3",
-    "title": "Compare input validation with allowlists and output encoding. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cybersecurity",
-    "subcategory": "application-security",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-application-security-input-validation-4",
-    "title": "Consider this scenario: an API receives unexpected nested input. Explain how you would apply your understanding of input validation, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cybersecurity",
-    "subcategory": "application-security",
+    "subcategory": "network-security",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-application-security-secure-file-uploads-1",
-    "title": "Explain secure file uploads in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-cybersecurity-network-security-how-would-you-design-certificate-rotation-for-mutual-tls",
+    "title": "How would you design certificate rotation for mutual TLS?",
     "category": "cybersecurity",
-    "subcategory": "application-security",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-application-security-secure-file-uploads-2",
-    "title": "Imagine you are introducing secure file uploads to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cybersecurity",
-    "subcategory": "application-security",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-application-security-secure-file-uploads-3",
-    "title": "Compare secure file uploads with content type and malware scanning. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cybersecurity",
-    "subcategory": "application-security",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-application-security-secure-file-uploads-4",
-    "title": "Consider this scenario: users upload documents to a public application. Explain how you would apply your understanding of secure file uploads, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cybersecurity",
-    "subcategory": "application-security",
+    "subcategory": "network-security",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-cloud-security-iam-and-least-privilege-1",
-    "title": "Explain IAM and least privilege in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-cybersecurity-network-security-how-would-you-assess-encrypted-traffic-without-compromising-privacy",
+    "title": "How would you assess encrypted traffic without compromising privacy?",
+    "category": "cybersecurity",
+    "subcategory": "network-security",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-network-security-how-would-you-secure-communication-across-untrusted-networks",
+    "title": "How would you secure communication across untrusted networks?",
+    "category": "cybersecurity",
+    "subcategory": "network-security",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cryptography-what-is-encryption",
+    "title": "What is encryption?",
+    "category": "cybersecurity",
+    "subcategory": "cryptography",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cryptography-what-is-hashing",
+    "title": "What is hashing?",
+    "category": "cybersecurity",
+    "subcategory": "cryptography",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cryptography-what-is-a-digital-signature",
+    "title": "What is a digital signature?",
+    "category": "cybersecurity",
+    "subcategory": "cryptography",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cryptography-what-is-symmetric-encryption",
+    "title": "What is symmetric encryption?",
+    "category": "cybersecurity",
+    "subcategory": "cryptography",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cryptography-what-is-asymmetric-encryption",
+    "title": "What is asymmetric encryption?",
+    "category": "cybersecurity",
+    "subcategory": "cryptography",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cryptography-what-is-a-cryptographic-salt",
+    "title": "What is a cryptographic salt?",
+    "category": "cybersecurity",
+    "subcategory": "cryptography",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cryptography-why-is-hashing-different-from-encryption",
+    "title": "Why is hashing different from encryption?",
+    "category": "cybersecurity",
+    "subcategory": "cryptography",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cryptography-how-does-public-key-cryptography-work",
+    "title": "How does public-key cryptography work?",
+    "category": "cybersecurity",
+    "subcategory": "cryptography",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cryptography-what-is-a-message-authentication-code",
+    "title": "What is a message authentication code?",
+    "category": "cybersecurity",
+    "subcategory": "cryptography",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cryptography-how-does-a-certificate-authority-establish-trust",
+    "title": "How does a certificate authority establish trust?",
+    "category": "cybersecurity",
+    "subcategory": "cryptography",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cryptography-what-is-authenticated-encryption",
+    "title": "What is authenticated encryption?",
+    "category": "cybersecurity",
+    "subcategory": "cryptography",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cryptography-why-use-password-hashing-algorithms",
+    "title": "Why use password hashing algorithms?",
+    "category": "cybersecurity",
+    "subcategory": "cryptography",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cryptography-what-is-a-cryptographic-nonce",
+    "title": "What is a cryptographic nonce?",
+    "category": "cybersecurity",
+    "subcategory": "cryptography",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cryptography-how-does-diffie-hellman-key-exchange-work",
+    "title": "How does Diffie-Hellman key exchange work?",
+    "category": "cybersecurity",
+    "subcategory": "cryptography",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cryptography-why-is-nonce-reuse-dangerous-in-aes-gcm",
+    "title": "Why is nonce reuse dangerous in AES-GCM?",
+    "category": "cybersecurity",
+    "subcategory": "cryptography",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cryptography-how-does-forward-secrecy-protect-past-sessions",
+    "title": "How does forward secrecy protect past sessions?",
+    "category": "cybersecurity",
+    "subcategory": "cryptography",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cryptography-how-would-you-design-a-key-rotation-strategy",
+    "title": "How would you design a key rotation strategy?",
+    "category": "cybersecurity",
+    "subcategory": "cryptography",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cryptography-how-do-timing-side-channels-expose-secrets",
+    "title": "How do timing side channels expose secrets?",
+    "category": "cybersecurity",
+    "subcategory": "cryptography",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cryptography-how-would-you-choose-parameters-for-argon2",
+    "title": "How would you choose parameters for Argon2?",
+    "category": "cybersecurity",
+    "subcategory": "cryptography",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cryptography-how-does-envelope-encryption-simplify-key-management",
+    "title": "How does envelope encryption simplify key management?",
+    "category": "cybersecurity",
+    "subcategory": "cryptography",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cloud-security-what-is-the-shared-responsibility-model",
+    "title": "What is the shared responsibility model?",
     "category": "cybersecurity",
     "subcategory": "cloud-security",
     "difficulty": "beginner",
@@ -513,8 +729,53 @@
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-cloud-security-iam-and-least-privilege-2",
-    "title": "Imagine you are introducing IAM and least privilege to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-cybersecurity-cloud-security-what-is-a-cloud-service-account",
+    "title": "What is a cloud service account?",
+    "category": "cybersecurity",
+    "subcategory": "cloud-security",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cloud-security-what-is-a-cloud-security-group",
+    "title": "What is a cloud security group?",
+    "category": "cybersecurity",
+    "subcategory": "cloud-security",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cloud-security-what-is-a-secrets-manager",
+    "title": "What is a secrets manager?",
+    "category": "cybersecurity",
+    "subcategory": "cloud-security",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cloud-security-what-is-encryption-at-rest",
+    "title": "What is encryption at rest?",
+    "category": "cybersecurity",
+    "subcategory": "cloud-security",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cloud-security-what-is-a-cloud-audit-log",
+    "title": "What is a cloud audit log?",
+    "category": "cybersecurity",
+    "subcategory": "cloud-security",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cloud-security-how-does-workload-identity-avoid-static-credentials",
+    "title": "How does workload identity avoid static credentials?",
     "category": "cybersecurity",
     "subcategory": "cloud-security",
     "difficulty": "intermediate",
@@ -522,8 +783,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-cloud-security-iam-and-least-privilege-3",
-    "title": "Compare IAM and least privilege with roles and temporary credentials. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-cybersecurity-cloud-security-what-is-cloud-security-posture-management",
+    "title": "What is cloud security posture management?",
     "category": "cybersecurity",
     "subcategory": "cloud-security",
     "difficulty": "intermediate",
@@ -531,8 +792,62 @@
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-cloud-security-iam-and-least-privilege-4",
-    "title": "Consider this scenario: a workload needs access to one cloud resource. Explain how you would apply your understanding of IAM and least privilege, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-cybersecurity-cloud-security-how-do-private-endpoints-reduce-exposure",
+    "title": "How do private endpoints reduce exposure?",
+    "category": "cybersecurity",
+    "subcategory": "cloud-security",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cloud-security-how-does-cloud-key-management-work",
+    "title": "How does cloud key management work?",
+    "category": "cybersecurity",
+    "subcategory": "cloud-security",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cloud-security-what-is-a-cloud-resource-policy",
+    "title": "What is a cloud resource policy?",
+    "category": "cybersecurity",
+    "subcategory": "cloud-security",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cloud-security-how-would-you-restrict-public-storage-access",
+    "title": "How would you restrict public storage access?",
+    "category": "cybersecurity",
+    "subcategory": "cloud-security",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cloud-security-how-do-short-lived-credentials-reduce-risk",
+    "title": "How do short-lived credentials reduce risk?",
+    "category": "cybersecurity",
+    "subcategory": "cloud-security",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cloud-security-how-would-you-monitor-cloud-privilege-changes",
+    "title": "How would you monitor cloud privilege changes?",
+    "category": "cybersecurity",
+    "subcategory": "cloud-security",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cybersecurity-cloud-security-how-would-you-detect-excessive-cloud-iam-permissions",
+    "title": "How would you detect excessive cloud IAM permissions?",
     "category": "cybersecurity",
     "subcategory": "cloud-security",
     "difficulty": "advanced",
@@ -540,361 +855,46 @@
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-security-operations-logging-and-auditing-1",
-    "title": "Explain logging and auditing in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-cybersecurity-cloud-security-how-would-you-isolate-workloads-across-cloud-accounts",
+    "title": "How would you isolate workloads across cloud accounts?",
     "category": "cybersecurity",
-    "subcategory": "security-operations",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-security-operations-logging-and-auditing-2",
-    "title": "Imagine you are introducing logging and auditing to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cybersecurity",
-    "subcategory": "security-operations",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-security-operations-logging-and-auditing-3",
-    "title": "Compare logging and auditing with alerting and retention. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cybersecurity",
-    "subcategory": "security-operations",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-security-operations-logging-and-auditing-4",
-    "title": "Consider this scenario: an organization investigates suspicious account activity. Explain how you would apply your understanding of logging and auditing, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cybersecurity",
-    "subcategory": "security-operations",
+    "subcategory": "cloud-security",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-security-operations-incident-response-1",
-    "title": "Explain incident response in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-cybersecurity-cloud-security-how-would-you-mitigate-cloud-metadata-credential-theft",
+    "title": "How would you mitigate cloud metadata credential theft?",
     "category": "cybersecurity",
-    "subcategory": "security-operations",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-security-operations-incident-response-2",
-    "title": "Imagine you are introducing incident response to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cybersecurity",
-    "subcategory": "security-operations",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-security-operations-incident-response-3",
-    "title": "Compare incident response with eradication and lessons learned. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cybersecurity",
-    "subcategory": "security-operations",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-security-operations-incident-response-4",
-    "title": "Consider this scenario: credentials are discovered in a public repository. Explain how you would apply your understanding of incident response, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cybersecurity",
-    "subcategory": "security-operations",
+    "subcategory": "cloud-security",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-security-fundamentals-threat-modeling-1",
-    "title": "Explain threat modeling in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-cybersecurity-cloud-security-how-would-you-govern-cross-account-trust-relationships",
+    "title": "How would you govern cross-account trust relationships?",
     "category": "cybersecurity",
-    "subcategory": "security-fundamentals",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-security-fundamentals-threat-modeling-2",
-    "title": "Imagine you are introducing threat modeling to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cybersecurity",
-    "subcategory": "security-fundamentals",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-security-fundamentals-threat-modeling-3",
-    "title": "Compare threat modeling with STRIDE. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cybersecurity",
-    "subcategory": "security-fundamentals",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-security-fundamentals-threat-modeling-4",
-    "title": "Consider this scenario: a team designs a new payment feature. Explain how you would apply your understanding of threat modeling, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cybersecurity",
-    "subcategory": "security-fundamentals",
+    "subcategory": "cloud-security",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-security-fundamentals-zero-trust-1",
-    "title": "Explain zero trust in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-cybersecurity-cloud-security-how-would-you-investigate-an-exposed-cloud-access-key",
+    "title": "How would you investigate an exposed cloud access key?",
     "category": "cybersecurity",
-    "subcategory": "security-fundamentals",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-security-fundamentals-zero-trust-2",
-    "title": "Imagine you are introducing zero trust to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cybersecurity",
-    "subcategory": "security-fundamentals",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-security-fundamentals-zero-trust-3",
-    "title": "Compare zero trust with identity and device posture. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cybersecurity",
-    "subcategory": "security-fundamentals",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-security-fundamentals-zero-trust-4",
-    "title": "Consider this scenario: employees access internal tools remotely. Explain how you would apply your understanding of zero trust, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cybersecurity",
-    "subcategory": "security-fundamentals",
+    "subcategory": "cloud-security",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "cybersecurity-security-fundamentals-social-engineering-1",
-    "title": "Explain social engineering in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-cybersecurity-cloud-security-how-would-you-enforce-encryption-policies-across-cloud-resources",
+    "title": "How would you enforce encryption policies across cloud resources?",
     "category": "cybersecurity",
-    "subcategory": "security-fundamentals",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-security-fundamentals-social-engineering-2",
-    "title": "Imagine you are introducing social engineering to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cybersecurity",
-    "subcategory": "security-fundamentals",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-security-fundamentals-social-engineering-3",
-    "title": "Compare social engineering with phishing and pretexting. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cybersecurity",
-    "subcategory": "security-fundamentals",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-security-fundamentals-social-engineering-4",
-    "title": "Consider this scenario: an employee receives an urgent credential request. Explain how you would apply your understanding of social engineering, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cybersecurity",
-    "subcategory": "security-fundamentals",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-security-fundamentals-supply-chain-security-1",
-    "title": "Explain supply chain security in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "cybersecurity",
-    "subcategory": "security-fundamentals",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-security-fundamentals-supply-chain-security-2",
-    "title": "Imagine you are introducing supply chain security to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cybersecurity",
-    "subcategory": "security-fundamentals",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-security-fundamentals-supply-chain-security-3",
-    "title": "Compare supply chain security with SBOM and signed artifacts. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cybersecurity",
-    "subcategory": "security-fundamentals",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-security-fundamentals-supply-chain-security-4",
-    "title": "Consider this scenario: a popular package is compromised. Explain how you would apply your understanding of supply chain security, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cybersecurity",
-    "subcategory": "security-fundamentals",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-privacy-data-minimization-1",
-    "title": "Explain data minimization in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "cybersecurity",
-    "subcategory": "privacy",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-privacy-data-minimization-2",
-    "title": "Imagine you are introducing data minimization to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cybersecurity",
-    "subcategory": "privacy",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-privacy-data-minimization-3",
-    "title": "Compare data minimization with retention and consent. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cybersecurity",
-    "subcategory": "privacy",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-privacy-data-minimization-4",
-    "title": "Consider this scenario: a product adds analytics tracking. Explain how you would apply your understanding of data minimization, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cybersecurity",
-    "subcategory": "privacy",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-mobile-security-mobile-application-security-1",
-    "title": "Explain mobile application security in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "cybersecurity",
-    "subcategory": "mobile-security",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-mobile-security-mobile-application-security-2",
-    "title": "Imagine you are introducing mobile application security to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cybersecurity",
-    "subcategory": "mobile-security",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-mobile-security-mobile-application-security-3",
-    "title": "Compare mobile application security with certificate pinning and secure storage. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cybersecurity",
-    "subcategory": "mobile-security",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-mobile-security-mobile-application-security-4",
-    "title": "Consider this scenario: an app stores authentication tokens. Explain how you would apply your understanding of mobile application security, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cybersecurity",
-    "subcategory": "mobile-security",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-api-security-api-rate-limiting-and-abuse-prevention-1",
-    "title": "Explain API rate limiting and abuse prevention in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "cybersecurity",
-    "subcategory": "api-security",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-api-security-api-rate-limiting-and-abuse-prevention-2",
-    "title": "Imagine you are introducing API rate limiting and abuse prevention to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cybersecurity",
-    "subcategory": "api-security",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-api-security-api-rate-limiting-and-abuse-prevention-3",
-    "title": "Compare API rate limiting and abuse prevention with quotas and bot detection. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cybersecurity",
-    "subcategory": "api-security",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-api-security-api-rate-limiting-and-abuse-prevention-4",
-    "title": "Consider this scenario: a public endpoint is scraped aggressively. Explain how you would apply your understanding of API rate limiting and abuse prevention, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cybersecurity",
-    "subcategory": "api-security",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-security-architecture-defense-in-depth-1",
-    "title": "Explain defense in depth in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "cybersecurity",
-    "subcategory": "security-architecture",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-security-architecture-defense-in-depth-2",
-    "title": "Imagine you are introducing defense in depth to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cybersecurity",
-    "subcategory": "security-architecture",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-security-architecture-defense-in-depth-3",
-    "title": "Compare defense in depth with single points of failure. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cybersecurity",
-    "subcategory": "security-architecture",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cybersecurity-security-architecture-defense-in-depth-4",
-    "title": "Consider this scenario: one security control is bypassed. Explain how you would apply your understanding of defense in depth, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cybersecurity",
-    "subcategory": "security-architecture",
+    "subcategory": "cloud-security",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120

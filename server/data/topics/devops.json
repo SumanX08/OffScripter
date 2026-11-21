@@ -1,7 +1,7 @@
 [
   {
-    "slug": "devops-linux-process-and-service-management-1",
-    "title": "Explain process and service management in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-devops-linux-what-is-a-linux-process",
+    "title": "What is a Linux process?",
     "category": "devops",
     "subcategory": "linux",
     "difficulty": "beginner",
@@ -9,8 +9,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "devops-linux-process-and-service-management-2",
-    "title": "Imagine you are introducing process and service management to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-devops-linux-what-is-a-linux-file-permission",
+    "title": "What is a Linux file permission?",
     "category": "devops",
     "subcategory": "linux",
     "difficulty": "beginner",
@@ -18,8 +18,44 @@
     "speakingTime": 120
   },
   {
-    "slug": "devops-linux-process-and-service-management-3",
-    "title": "Compare process and service management with systemd and signals. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-devops-linux-what-is-a-symbolic-link",
+    "title": "What is a symbolic link?",
+    "category": "devops",
+    "subcategory": "linux",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-linux-what-is-a-shell-environment-variable",
+    "title": "What is a shell environment variable?",
+    "category": "devops",
+    "subcategory": "linux",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-linux-what-is-a-linux-service",
+    "title": "What is a Linux service?",
+    "category": "devops",
+    "subcategory": "linux",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-linux-what-is-a-linux-pipe",
+    "title": "What is a Linux pipe?",
+    "category": "devops",
+    "subcategory": "linux",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-linux-how-do-linux-signals-work",
+    "title": "How do Linux signals work?",
     "category": "devops",
     "subcategory": "linux",
     "difficulty": "intermediate",
@@ -27,35 +63,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "devops-linux-process-and-service-management-4",
-    "title": "Consider this scenario: a production service stops unexpectedly. Explain how you would apply your understanding of process and service management, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "devops",
-    "subcategory": "linux",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-linux-file-permissions-1",
-    "title": "Explain file permissions in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "devops",
-    "subcategory": "linux",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-linux-file-permissions-2",
-    "title": "Imagine you are introducing file permissions to a classmate. How does it work, and where would someone encounter it?",
-    "category": "devops",
-    "subcategory": "linux",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-linux-file-permissions-3",
-    "title": "Compare file permissions with users groups and ACLs. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-devops-linux-how-does-systemd-manage-services",
+    "title": "How does systemd manage services?",
     "category": "devops",
     "subcategory": "linux",
     "difficulty": "intermediate",
@@ -63,35 +72,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "devops-linux-file-permissions-4",
-    "title": "Consider this scenario: an application cannot read a deployed file. Explain how you would apply your understanding of file permissions, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "devops",
-    "subcategory": "linux",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-linux-shell-pipelines-1",
-    "title": "Explain shell pipelines in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "devops",
-    "subcategory": "linux",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-linux-shell-pipelines-2",
-    "title": "Imagine you are introducing shell pipelines to a classmate. How does it work, and where would someone encounter it?",
-    "category": "devops",
-    "subcategory": "linux",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-linux-shell-pipelines-3",
-    "title": "Compare shell pipelines with pipes and redirection. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-devops-linux-what-is-a-linux-file-descriptor",
+    "title": "What is a Linux file descriptor?",
     "category": "devops",
     "subcategory": "linux",
     "difficulty": "intermediate",
@@ -99,8 +81,53 @@
     "speakingTime": 120
   },
   {
-    "slug": "devops-linux-shell-pipelines-4",
-    "title": "Consider this scenario: an operator needs to inspect a large log. Explain how you would apply your understanding of shell pipelines, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-devops-linux-how-do-linux-cron-jobs-work",
+    "title": "How do Linux cron jobs work?",
+    "category": "devops",
+    "subcategory": "linux",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-linux-how-does-ssh-key-authentication-work",
+    "title": "How does SSH key authentication work?",
+    "category": "devops",
+    "subcategory": "linux",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-linux-how-do-linux-ownership-permissions-work",
+    "title": "How do Linux ownership permissions work?",
+    "category": "devops",
+    "subcategory": "linux",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-linux-how-would-you-inspect-listening-ports",
+    "title": "How would you inspect listening ports?",
+    "category": "devops",
+    "subcategory": "linux",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-linux-what-is-a-linux-mount-point",
+    "title": "What is a Linux mount point?",
+    "category": "devops",
+    "subcategory": "linux",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-linux-how-would-you-diagnose-linux-high-load-with-low-cpu-usage",
+    "title": "How would you diagnose Linux high load with low CPU usage?",
     "category": "devops",
     "subcategory": "linux",
     "difficulty": "advanced",
@@ -108,8 +135,53 @@
     "speakingTime": 120
   },
   {
-    "slug": "devops-git-merge-and-rebase-1",
-    "title": "Explain merge and rebase in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-devops-linux-how-do-linux-cgroups-limit-resources",
+    "title": "How do Linux cgroups limit resources?",
+    "category": "devops",
+    "subcategory": "linux",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-linux-how-would-you-investigate-file-descriptor-exhaustion",
+    "title": "How would you investigate file descriptor exhaustion?",
+    "category": "devops",
+    "subcategory": "linux",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-linux-how-do-linux-namespaces-isolate-processes",
+    "title": "How do Linux namespaces isolate processes?",
+    "category": "devops",
+    "subcategory": "linux",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-linux-how-would-you-diagnose-filesystem-inode-exhaustion",
+    "title": "How would you diagnose filesystem inode exhaustion?",
+    "category": "devops",
+    "subcategory": "linux",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-linux-how-would-you-troubleshoot-linux-oom-kills",
+    "title": "How would you troubleshoot Linux OOM kills?",
+    "category": "devops",
+    "subcategory": "linux",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-git-what-is-a-git-commit",
+    "title": "What is a Git commit?",
     "category": "devops",
     "subcategory": "git",
     "difficulty": "beginner",
@@ -117,8 +189,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "devops-git-merge-and-rebase-2",
-    "title": "Imagine you are introducing merge and rebase to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-devops-git-what-is-a-git-branch",
+    "title": "What is a Git branch?",
     "category": "devops",
     "subcategory": "git",
     "difficulty": "beginner",
@@ -126,26 +198,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "devops-git-merge-and-rebase-3",
-    "title": "Compare merge and rebase with fast-forward and conflict resolution. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "devops",
-    "subcategory": "git",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-git-merge-and-rebase-4",
-    "title": "Consider this scenario: a team maintains a shared feature branch. Explain how you would apply your understanding of merge and rebase, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "devops",
-    "subcategory": "git",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-git-revert-reset-and-reflog-1",
-    "title": "Explain revert reset and reflog in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-devops-git-what-is-a-git-remote",
+    "title": "What is a Git remote?",
     "category": "devops",
     "subcategory": "git",
     "difficulty": "beginner",
@@ -153,8 +207,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "devops-git-revert-reset-and-reflog-2",
-    "title": "Imagine you are introducing revert reset and reflog to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-devops-git-what-is-git-staging",
+    "title": "What is Git staging?",
     "category": "devops",
     "subcategory": "git",
     "difficulty": "beginner",
@@ -162,8 +216,26 @@
     "speakingTime": 120
   },
   {
-    "slug": "devops-git-revert-reset-and-reflog-3",
-    "title": "Compare revert reset and reflog with public and local commits. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-devops-git-what-is-a-git-tag",
+    "title": "What is a Git tag?",
+    "category": "devops",
+    "subcategory": "git",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-git-what-is-gitignore",
+    "title": "What is .gitignore?",
+    "category": "devops",
+    "subcategory": "git",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-git-git-merge-vs-rebase",
+    "title": "Git merge vs rebase.",
     "category": "devops",
     "subcategory": "git",
     "difficulty": "intermediate",
@@ -171,8 +243,71 @@
     "speakingTime": 120
   },
   {
-    "slug": "devops-git-revert-reset-and-reflog-4",
-    "title": "Consider this scenario: a developer needs to undo a bad change. Explain how you would apply your understanding of revert reset and reflog, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-devops-git-how-does-git-stash-work",
+    "title": "How does Git stash work?",
+    "category": "devops",
+    "subcategory": "git",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-git-how-do-you-resolve-merge-conflicts",
+    "title": "How do you resolve merge conflicts?",
+    "category": "devops",
+    "subcategory": "git",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-git-git-reset-vs-revert",
+    "title": "Git reset vs revert.",
+    "category": "devops",
+    "subcategory": "git",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-git-what-is-git-cherry-pick",
+    "title": "What is Git cherry-pick?",
+    "category": "devops",
+    "subcategory": "git",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-git-how-does-git-bisect-work",
+    "title": "How does Git bisect work?",
+    "category": "devops",
+    "subcategory": "git",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-git-what-is-a-detached-head",
+    "title": "What is a detached HEAD?",
+    "category": "devops",
+    "subcategory": "git",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-git-how-does-git-reflog-help-recovery",
+    "title": "How does Git reflog help recovery?",
+    "category": "devops",
+    "subcategory": "git",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-git-how-would-you-recover-a-deleted-git-branch",
+    "title": "How would you recover a deleted Git branch?",
     "category": "devops",
     "subcategory": "git",
     "difficulty": "advanced",
@@ -180,224 +315,53 @@
     "speakingTime": 120
   },
   {
-    "slug": "devops-docker-containers-and-virtual-machines-1",
-    "title": "Explain containers and virtual machines in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-devops-git-how-does-interactive-rebase-rewrite-history",
+    "title": "How does interactive rebase rewrite history?",
     "category": "devops",
-    "subcategory": "docker",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-docker-containers-and-virtual-machines-2",
-    "title": "Imagine you are introducing containers and virtual machines to a classmate. How does it work, and where would someone encounter it?",
-    "category": "devops",
-    "subcategory": "docker",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-docker-containers-and-virtual-machines-3",
-    "title": "Compare containers and virtual machines with images and namespaces. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "devops",
-    "subcategory": "docker",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-docker-containers-and-virtual-machines-4",
-    "title": "Consider this scenario: a team standardizes development environments. Explain how you would apply your understanding of containers and virtual machines, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "devops",
-    "subcategory": "docker",
+    "subcategory": "git",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "devops-docker-docker-image-layers-1",
-    "title": "Explain Docker image layers in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-devops-git-how-would-you-remove-a-secret-from-git-history",
+    "title": "How would you remove a secret from Git history?",
     "category": "devops",
-    "subcategory": "docker",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-docker-docker-image-layers-2",
-    "title": "Imagine you are introducing Docker image layers to a classmate. How does it work, and where would someone encounter it?",
-    "category": "devops",
-    "subcategory": "docker",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-docker-docker-image-layers-3",
-    "title": "Compare Docker image layers with Dockerfile ordering. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "devops",
-    "subcategory": "docker",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-docker-docker-image-layers-4",
-    "title": "Consider this scenario: a small code change triggers a huge rebuild. Explain how you would apply your understanding of Docker image layers, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "devops",
-    "subcategory": "docker",
+    "subcategory": "git",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "devops-docker-volumes-and-networking-1",
-    "title": "Explain volumes and networking in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-devops-git-how-does-git-handle-three-way-merges",
+    "title": "How does Git handle three-way merges?",
     "category": "devops",
-    "subcategory": "docker",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-docker-volumes-and-networking-2",
-    "title": "Imagine you are introducing volumes and networking to a classmate. How does it work, and where would someone encounter it?",
-    "category": "devops",
-    "subcategory": "docker",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-docker-volumes-and-networking-3",
-    "title": "Compare volumes and networking with bind mounts and bridge networks. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "devops",
-    "subcategory": "docker",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-docker-volumes-and-networking-4",
-    "title": "Consider this scenario: an API container must connect to a database. Explain how you would apply your understanding of volumes and networking, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "devops",
-    "subcategory": "docker",
+    "subcategory": "git",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "devops-kubernetes-pods-and-deployments-1",
-    "title": "Explain pods and deployments in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-devops-git-how-would-you-resolve-recurring-conflicts-during-rebases",
+    "title": "How would you resolve recurring conflicts during rebases?",
     "category": "devops",
-    "subcategory": "kubernetes",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-kubernetes-pods-and-deployments-2",
-    "title": "Imagine you are introducing pods and deployments to a classmate. How does it work, and where would someone encounter it?",
-    "category": "devops",
-    "subcategory": "kubernetes",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-kubernetes-pods-and-deployments-3",
-    "title": "Compare pods and deployments with replica sets. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "devops",
-    "subcategory": "kubernetes",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-kubernetes-pods-and-deployments-4",
-    "title": "Consider this scenario: a container crashes repeatedly. Explain how you would apply your understanding of pods and deployments, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "devops",
-    "subcategory": "kubernetes",
+    "subcategory": "git",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "devops-kubernetes-services-and-ingress-1",
-    "title": "Explain services and ingress in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-devops-git-how-do-git-packfiles-reduce-storage-usage",
+    "title": "How do Git packfiles reduce storage usage?",
     "category": "devops",
-    "subcategory": "kubernetes",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-kubernetes-services-and-ingress-2",
-    "title": "Imagine you are introducing services and ingress to a classmate. How does it work, and where would someone encounter it?",
-    "category": "devops",
-    "subcategory": "kubernetes",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-kubernetes-services-and-ingress-3",
-    "title": "Compare services and ingress with ClusterIP and ingress controllers. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "devops",
-    "subcategory": "kubernetes",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-kubernetes-services-and-ingress-4",
-    "title": "Consider this scenario: external traffic must reach an internal service. Explain how you would apply your understanding of services and ingress, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "devops",
-    "subcategory": "kubernetes",
+    "subcategory": "git",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "devops-kubernetes-probes-and-health-checks-1",
-    "title": "Explain probes and health checks in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "devops",
-    "subcategory": "kubernetes",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-kubernetes-probes-and-health-checks-2",
-    "title": "Imagine you are introducing probes and health checks to a classmate. How does it work, and where would someone encounter it?",
-    "category": "devops",
-    "subcategory": "kubernetes",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-kubernetes-probes-and-health-checks-3",
-    "title": "Compare probes and health checks with restart behavior. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "devops",
-    "subcategory": "kubernetes",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-kubernetes-probes-and-health-checks-4",
-    "title": "Consider this scenario: a slow-starting service is killed prematurely. Explain how you would apply your understanding of probes and health checks, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "devops",
-    "subcategory": "kubernetes",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-ci-cd-continuous-integration-1",
-    "title": "Explain continuous integration in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-devops-ci-cd-what-is-continuous-integration",
+    "title": "What is continuous integration?",
     "category": "devops",
     "subcategory": "ci-cd",
     "difficulty": "beginner",
@@ -405,35 +369,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "devops-ci-cd-continuous-integration-2",
-    "title": "Imagine you are introducing continuous integration to a classmate. How does it work, and where would someone encounter it?",
-    "category": "devops",
-    "subcategory": "ci-cd",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-ci-cd-continuous-integration-3",
-    "title": "Compare continuous integration with pipeline stages. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "devops",
-    "subcategory": "ci-cd",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-ci-cd-continuous-integration-4",
-    "title": "Consider this scenario: a team merges code several times a day. Explain how you would apply your understanding of continuous integration, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "devops",
-    "subcategory": "ci-cd",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-ci-cd-deployment-strategies-1",
-    "title": "Explain deployment strategies in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-devops-ci-cd-what-is-continuous-delivery",
+    "title": "What is continuous delivery?",
     "category": "devops",
     "subcategory": "ci-cd",
     "difficulty": "beginner",
@@ -441,8 +378,44 @@
     "speakingTime": 120
   },
   {
-    "slug": "devops-ci-cd-deployment-strategies-2",
-    "title": "Imagine you are introducing deployment strategies to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-devops-ci-cd-what-is-a-ci-pipeline",
+    "title": "What is a CI pipeline?",
+    "category": "devops",
+    "subcategory": "ci-cd",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-ci-cd-what-is-a-build-artifact",
+    "title": "What is a build artifact?",
+    "category": "devops",
+    "subcategory": "ci-cd",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-ci-cd-what-is-a-deployment-environment",
+    "title": "What is a deployment environment?",
+    "category": "devops",
+    "subcategory": "ci-cd",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-ci-cd-what-is-a-pipeline-trigger",
+    "title": "What is a pipeline trigger?",
+    "category": "devops",
+    "subcategory": "ci-cd",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-ci-cd-continuous-delivery-vs-continuous-deployment",
+    "title": "Continuous delivery vs continuous deployment.",
     "category": "devops",
     "subcategory": "ci-cd",
     "difficulty": "intermediate",
@@ -450,8 +423,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "devops-ci-cd-deployment-strategies-3",
-    "title": "Compare deployment strategies with rollback and blast radius. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-devops-ci-cd-how-do-pipeline-caches-accelerate-builds",
+    "title": "How do pipeline caches accelerate builds?",
     "category": "devops",
     "subcategory": "ci-cd",
     "difficulty": "intermediate",
@@ -459,8 +432,62 @@
     "speakingTime": 120
   },
   {
-    "slug": "devops-ci-cd-deployment-strategies-4",
-    "title": "Consider this scenario: a risky release must reach users gradually. Explain how you would apply your understanding of deployment strategies, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-devops-ci-cd-what-is-a-deployment-approval-gate",
+    "title": "What is a deployment approval gate?",
+    "category": "devops",
+    "subcategory": "ci-cd",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-ci-cd-how-should-ci-pipelines-manage-secrets",
+    "title": "How should CI pipelines manage secrets?",
+    "category": "devops",
+    "subcategory": "ci-cd",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-ci-cd-how-does-blue-green-deployment-work",
+    "title": "How does blue-green deployment work?",
+    "category": "devops",
+    "subcategory": "ci-cd",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-ci-cd-what-is-a-rolling-deployment",
+    "title": "What is a rolling deployment?",
+    "category": "devops",
+    "subcategory": "ci-cd",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-ci-cd-how-do-matrix-builds-work",
+    "title": "How do matrix builds work?",
+    "category": "devops",
+    "subcategory": "ci-cd",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-ci-cd-what-is-artifact-versioning",
+    "title": "What is artifact versioning?",
+    "category": "devops",
+    "subcategory": "ci-cd",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-ci-cd-how-would-you-prevent-concurrent-deployment-conflicts",
+    "title": "How would you prevent concurrent deployment conflicts?",
     "category": "devops",
     "subcategory": "ci-cd",
     "difficulty": "advanced",
@@ -468,332 +495,233 @@
     "speakingTime": 120
   },
   {
-    "slug": "devops-infrastructure-as-code-terraform-state-1",
-    "title": "Explain Terraform state in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-devops-ci-cd-how-would-you-secure-a-software-build-supply-chain",
+    "title": "How would you secure a software build supply chain?",
     "category": "devops",
-    "subcategory": "infrastructure-as-code",
+    "subcategory": "ci-cd",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-ci-cd-how-would-you-implement-immutable-artifact-promotion",
+    "title": "How would you implement immutable artifact promotion?",
+    "category": "devops",
+    "subcategory": "ci-cd",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-ci-cd-how-would-you-roll-back-incompatible-database-deployments",
+    "title": "How would you roll back incompatible database deployments?",
+    "category": "devops",
+    "subcategory": "ci-cd",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-ci-cd-how-would-you-optimize-a-slow-monorepo-pipeline",
+    "title": "How would you optimize a slow monorepo pipeline?",
+    "category": "devops",
+    "subcategory": "ci-cd",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-ci-cd-how-would-you-verify-build-provenance",
+    "title": "How would you verify build provenance?",
+    "category": "devops",
+    "subcategory": "ci-cd",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-docker-what-is-a-docker-image",
+    "title": "What is a Docker image?",
+    "category": "devops",
+    "subcategory": "docker",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "devops-infrastructure-as-code-terraform-state-2",
-    "title": "Imagine you are introducing Terraform state to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-devops-docker-what-is-a-docker-container",
+    "title": "What is a Docker container?",
     "category": "devops",
-    "subcategory": "infrastructure-as-code",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-infrastructure-as-code-terraform-state-3",
-    "title": "Compare Terraform state with remote backends and locking. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "devops",
-    "subcategory": "infrastructure-as-code",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-infrastructure-as-code-terraform-state-4",
-    "title": "Consider this scenario: two engineers apply changes simultaneously. Explain how you would apply your understanding of Terraform state, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "devops",
-    "subcategory": "infrastructure-as-code",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-infrastructure-as-code-configuration-management-1",
-    "title": "Explain configuration management in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "devops",
-    "subcategory": "infrastructure-as-code",
+    "subcategory": "docker",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "devops-infrastructure-as-code-configuration-management-2",
-    "title": "Imagine you are introducing configuration management to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-devops-docker-what-is-a-dockerfile",
+    "title": "What is a Dockerfile?",
     "category": "devops",
-    "subcategory": "infrastructure-as-code",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-infrastructure-as-code-configuration-management-3",
-    "title": "Compare configuration management with Ansible and idempotency. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "devops",
-    "subcategory": "infrastructure-as-code",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-infrastructure-as-code-configuration-management-4",
-    "title": "Consider this scenario: a fleet needs consistent configuration. Explain how you would apply your understanding of configuration management, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "devops",
-    "subcategory": "infrastructure-as-code",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-monitoring-metrics-logs-and-traces-1",
-    "title": "Explain metrics logs and traces in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "devops",
-    "subcategory": "monitoring",
+    "subcategory": "docker",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "devops-monitoring-metrics-logs-and-traces-2",
-    "title": "Imagine you are introducing metrics logs and traces to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-devops-docker-what-is-docker-compose",
+    "title": "What is Docker Compose?",
     "category": "devops",
-    "subcategory": "monitoring",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-monitoring-metrics-logs-and-traces-3",
-    "title": "Compare metrics logs and traces with SLI and SLO. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "devops",
-    "subcategory": "monitoring",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-monitoring-metrics-logs-and-traces-4",
-    "title": "Consider this scenario: an incident needs fast diagnosis. Explain how you would apply your understanding of metrics logs and traces, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "devops",
-    "subcategory": "monitoring",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-monitoring-alert-design-1",
-    "title": "Explain alert design in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "devops",
-    "subcategory": "monitoring",
+    "subcategory": "docker",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "devops-monitoring-alert-design-2",
-    "title": "Imagine you are introducing alert design to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-devops-docker-what-is-a-docker-volume",
+    "title": "What is a Docker volume?",
     "category": "devops",
-    "subcategory": "monitoring",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-monitoring-alert-design-3",
-    "title": "Compare alert design with thresholds and error budgets. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "devops",
-    "subcategory": "monitoring",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-monitoring-alert-design-4",
-    "title": "Consider this scenario: an on-call team receives too many alerts. Explain how you would apply your understanding of alert design, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "devops",
-    "subcategory": "monitoring",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-networking-reverse-proxies-1",
-    "title": "Explain reverse proxies in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "devops",
-    "subcategory": "networking",
+    "subcategory": "docker",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "devops-networking-reverse-proxies-2",
-    "title": "Imagine you are introducing reverse proxies to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-devops-docker-what-is-a-container-registry",
+    "title": "What is a container registry?",
     "category": "devops",
-    "subcategory": "networking",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-networking-reverse-proxies-3",
-    "title": "Compare reverse proxies with Nginx and load balancing. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "devops",
-    "subcategory": "networking",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-networking-reverse-proxies-4",
-    "title": "Consider this scenario: TLS termination is centralized. Explain how you would apply your understanding of reverse proxies, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "devops",
-    "subcategory": "networking",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-security-secrets-management-1",
-    "title": "Explain secrets management in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "devops",
-    "subcategory": "security",
+    "subcategory": "docker",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "devops-security-secrets-management-2",
-    "title": "Imagine you are introducing secrets management to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-devops-docker-how-does-docker-layer-caching-work",
+    "title": "How does Docker layer caching work?",
     "category": "devops",
-    "subcategory": "security",
+    "subcategory": "docker",
     "difficulty": "intermediate",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "devops-security-secrets-management-3",
-    "title": "Compare secrets management with vaults and environment variables. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-devops-docker-cmd-vs-entrypoint",
+    "title": "CMD vs ENTRYPOINT.",
     "category": "devops",
-    "subcategory": "security",
+    "subcategory": "docker",
     "difficulty": "intermediate",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "devops-security-secrets-management-4",
-    "title": "Consider this scenario: a secret was accidentally committed. Explain how you would apply your understanding of secrets management, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-devops-docker-how-do-docker-bridge-networks-work",
+    "title": "How do Docker bridge networks work?",
     "category": "devops",
-    "subcategory": "security",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-release-engineering-artifact-management-1",
-    "title": "Explain artifact management in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "devops",
-    "subcategory": "release-engineering",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-release-engineering-artifact-management-2",
-    "title": "Imagine you are introducing artifact management to a classmate. How does it work, and where would someone encounter it?",
-    "category": "devops",
-    "subcategory": "release-engineering",
+    "subcategory": "docker",
     "difficulty": "intermediate",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "devops-release-engineering-artifact-management-3",
-    "title": "Compare artifact management with immutable artifacts. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-devops-docker-what-is-a-multi-stage-docker-build",
+    "title": "What is a multi-stage Docker build?",
     "category": "devops",
-    "subcategory": "release-engineering",
+    "subcategory": "docker",
     "difficulty": "intermediate",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "devops-release-engineering-artifact-management-4",
-    "title": "Consider this scenario: staging and production run different binaries. Explain how you would apply your understanding of artifact management, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-devops-docker-bind-mounts-vs-docker-volumes",
+    "title": "Bind mounts vs Docker volumes.",
     "category": "devops",
-    "subcategory": "release-engineering",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-reliability-backup-and-disaster-recovery-1",
-    "title": "Explain backup and disaster recovery in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "devops",
-    "subcategory": "reliability",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-reliability-backup-and-disaster-recovery-2",
-    "title": "Imagine you are introducing backup and disaster recovery to a classmate. How does it work, and where would someone encounter it?",
-    "category": "devops",
-    "subcategory": "reliability",
+    "subcategory": "docker",
     "difficulty": "intermediate",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "devops-reliability-backup-and-disaster-recovery-3",
-    "title": "Compare backup and disaster recovery with RPO and RTO. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-devops-docker-how-does-docker-handle-container-environment-variables",
+    "title": "How does Docker handle container environment variables?",
     "category": "devops",
-    "subcategory": "reliability",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-reliability-backup-and-disaster-recovery-4",
-    "title": "Consider this scenario: a region becomes unavailable. Explain how you would apply your understanding of backup and disaster recovery, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "devops",
-    "subcategory": "reliability",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-containers-container-security-1",
-    "title": "Explain container security in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "devops",
-    "subcategory": "containers",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-containers-container-security-2",
-    "title": "Imagine you are introducing container security to a classmate. How does it work, and where would someone encounter it?",
-    "category": "devops",
-    "subcategory": "containers",
+    "subcategory": "docker",
     "difficulty": "intermediate",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "devops-containers-container-security-3",
-    "title": "Compare container security with rootless containers and scanning. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-devops-docker-why-run-containers-as-non-root-users",
+    "title": "Why run containers as non-root users?",
     "category": "devops",
-    "subcategory": "containers",
+    "subcategory": "docker",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-docker-how-do-docker-health-checks-work",
+    "title": "How do Docker health checks work?",
+    "category": "devops",
+    "subcategory": "docker",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-docker-how-would-you-reduce-docker-image-size",
+    "title": "How would you reduce Docker image size?",
+    "category": "devops",
+    "subcategory": "docker",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "devops-containers-container-security-4",
-    "title": "Consider this scenario: a vulnerable base image is discovered. Explain how you would apply your understanding of container security, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-devops-docker-how-would-you-diagnose-container-startup-failures",
+    "title": "How would you diagnose container startup failures?",
     "category": "devops",
-    "subcategory": "containers",
+    "subcategory": "docker",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "devops-kubernetes-autoscaling-1",
-    "title": "Explain autoscaling in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-devops-docker-how-does-overlayfs-support-container-layers",
+    "title": "How does OverlayFS support container layers?",
+    "category": "devops",
+    "subcategory": "docker",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-docker-how-would-you-secure-docker-build-secrets",
+    "title": "How would you secure Docker build secrets?",
+    "category": "devops",
+    "subcategory": "docker",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-docker-how-would-you-diagnose-container-network-isolation-issues",
+    "title": "How would you diagnose container network isolation issues?",
+    "category": "devops",
+    "subcategory": "docker",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-docker-how-would-you-handle-graceful-shutdown-in-docker",
+    "title": "How would you handle graceful shutdown in Docker?",
+    "category": "devops",
+    "subcategory": "docker",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-kubernetes-what-is-a-kubernetes-pod",
+    "title": "What is a Kubernetes Pod?",
     "category": "devops",
     "subcategory": "kubernetes",
     "difficulty": "beginner",
@@ -801,100 +729,532 @@
     "speakingTime": 120
   },
   {
-    "slug": "devops-kubernetes-autoscaling-2",
-    "title": "Imagine you are introducing autoscaling to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-devops-kubernetes-what-is-a-kubernetes-deployment",
+    "title": "What is a Kubernetes Deployment?",
     "category": "devops",
     "subcategory": "kubernetes",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-kubernetes-autoscaling-3",
-    "title": "Compare autoscaling with HPA and cluster autoscaler. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "devops",
-    "subcategory": "kubernetes",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-kubernetes-autoscaling-4",
-    "title": "Consider this scenario: traffic changes sharply throughout the day. Explain how you would apply your understanding of autoscaling, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "devops",
-    "subcategory": "kubernetes",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-devops-culture-devops-principles-1",
-    "title": "Explain DevOps principles in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "devops",
-    "subcategory": "devops-culture",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "devops-devops-culture-devops-principles-2",
-    "title": "Imagine you are introducing DevOps principles to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-devops-kubernetes-what-is-a-kubernetes-service",
+    "title": "What is a Kubernetes Service?",
     "category": "devops",
-    "subcategory": "devops-culture",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-devops-culture-devops-principles-3",
-    "title": "Compare DevOps principles with feedback loops and automation. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "devops",
-    "subcategory": "devops-culture",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-devops-culture-devops-principles-4",
-    "title": "Consider this scenario: teams have slow and risky releases. Explain how you would apply your understanding of DevOps principles, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "devops",
-    "subcategory": "devops-culture",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "devops-troubleshooting-production-incident-response-1",
-    "title": "Explain production incident response in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "devops",
-    "subcategory": "troubleshooting",
+    "subcategory": "kubernetes",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "devops-troubleshooting-production-incident-response-2",
-    "title": "Imagine you are introducing production incident response to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-devops-kubernetes-what-is-a-kubernetes-namespace",
+    "title": "What is a Kubernetes namespace?",
     "category": "devops",
-    "subcategory": "troubleshooting",
+    "subcategory": "kubernetes",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-kubernetes-what-is-a-configmap",
+    "title": "What is a ConfigMap?",
+    "category": "devops",
+    "subcategory": "kubernetes",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-kubernetes-what-is-a-kubernetes-secret",
+    "title": "What is a Kubernetes Secret?",
+    "category": "devops",
+    "subcategory": "kubernetes",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-kubernetes-how-does-kubernetes-scheduling-work",
+    "title": "How does Kubernetes scheduling work?",
+    "category": "devops",
+    "subcategory": "kubernetes",
     "difficulty": "intermediate",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "devops-troubleshooting-production-incident-response-3",
-    "title": "Compare production incident response with runbooks and postmortems. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-devops-kubernetes-what-is-a-kubernetes-ingress",
+    "title": "What is a Kubernetes Ingress?",
     "category": "devops",
-    "subcategory": "troubleshooting",
+    "subcategory": "kubernetes",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-kubernetes-how-does-a-statefulset-differ-from-a-deployment",
+    "title": "How does a StatefulSet differ from a Deployment?",
+    "category": "devops",
+    "subcategory": "kubernetes",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-kubernetes-how-do-readiness-and-liveness-probes-differ",
+    "title": "How do readiness and liveness probes differ?",
+    "category": "devops",
+    "subcategory": "kubernetes",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-kubernetes-what-is-a-daemonset",
+    "title": "What is a DaemonSet?",
+    "category": "devops",
+    "subcategory": "kubernetes",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-kubernetes-how-does-horizontal-pod-autoscaling-work",
+    "title": "How does horizontal pod autoscaling work?",
+    "category": "devops",
+    "subcategory": "kubernetes",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-kubernetes-how-do-kubernetes-persistent-volumes-work",
+    "title": "How do Kubernetes persistent volumes work?",
+    "category": "devops",
+    "subcategory": "kubernetes",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-kubernetes-what-are-kubernetes-resource-requests-and-limits",
+    "title": "What are Kubernetes resource requests and limits?",
+    "category": "devops",
+    "subcategory": "kubernetes",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-kubernetes-how-would-you-diagnose-crashloopbackoff",
+    "title": "How would you diagnose CrashLoopBackOff?",
+    "category": "devops",
+    "subcategory": "kubernetes",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "devops-troubleshooting-production-incident-response-4",
-    "title": "Consider this scenario: latency rises after a deployment. Explain how you would apply your understanding of production incident response, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-devops-kubernetes-how-do-pod-disruption-budgets-affect-upgrades",
+    "title": "How do pod disruption budgets affect upgrades?",
     "category": "devops",
-    "subcategory": "troubleshooting",
+    "subcategory": "kubernetes",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-kubernetes-how-would-you-troubleshoot-kubernetes-dns-failures",
+    "title": "How would you troubleshoot Kubernetes DNS failures?",
+    "category": "devops",
+    "subcategory": "kubernetes",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-kubernetes-how-does-kubernetes-network-policy-isolate-workloads",
+    "title": "How does Kubernetes network policy isolate workloads?",
+    "category": "devops",
+    "subcategory": "kubernetes",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-kubernetes-how-would-you-diagnose-unschedulable-pods",
+    "title": "How would you diagnose unschedulable Pods?",
+    "category": "devops",
+    "subcategory": "kubernetes",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-kubernetes-how-would-you-design-a-safe-kubernetes-cluster-upgrade",
+    "title": "How would you design a safe Kubernetes cluster upgrade?",
+    "category": "devops",
+    "subcategory": "kubernetes",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-infrastructure-as-code-what-is-infrastructure-as-code",
+    "title": "What is infrastructure as code?",
+    "category": "devops",
+    "subcategory": "infrastructure-as-code",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-infrastructure-as-code-what-is-terraform",
+    "title": "What is Terraform?",
+    "category": "devops",
+    "subcategory": "infrastructure-as-code",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-infrastructure-as-code-what-is-ansible",
+    "title": "What is Ansible?",
+    "category": "devops",
+    "subcategory": "infrastructure-as-code",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-infrastructure-as-code-what-is-terraform-state",
+    "title": "What is Terraform state?",
+    "category": "devops",
+    "subcategory": "infrastructure-as-code",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-infrastructure-as-code-what-is-a-terraform-provider",
+    "title": "What is a Terraform provider?",
+    "category": "devops",
+    "subcategory": "infrastructure-as-code",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-infrastructure-as-code-what-is-a-terraform-module",
+    "title": "What is a Terraform module?",
+    "category": "devops",
+    "subcategory": "infrastructure-as-code",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-infrastructure-as-code-how-does-terraform-plan-work",
+    "title": "How does Terraform plan work?",
+    "category": "devops",
+    "subcategory": "infrastructure-as-code",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-infrastructure-as-code-declarative-vs-imperative-infrastructure-management",
+    "title": "Declarative vs imperative infrastructure management.",
+    "category": "devops",
+    "subcategory": "infrastructure-as-code",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-infrastructure-as-code-how-does-terraform-remote-state-work",
+    "title": "How does Terraform remote state work?",
+    "category": "devops",
+    "subcategory": "infrastructure-as-code",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-infrastructure-as-code-what-is-infrastructure-drift",
+    "title": "What is infrastructure drift?",
+    "category": "devops",
+    "subcategory": "infrastructure-as-code",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-infrastructure-as-code-how-do-ansible-inventories-work",
+    "title": "How do Ansible inventories work?",
+    "category": "devops",
+    "subcategory": "infrastructure-as-code",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-infrastructure-as-code-what-is-idempotence-in-ansible",
+    "title": "What is idempotence in Ansible?",
+    "category": "devops",
+    "subcategory": "infrastructure-as-code",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-infrastructure-as-code-how-does-terraform-import-work",
+    "title": "How does Terraform import work?",
+    "category": "devops",
+    "subcategory": "infrastructure-as-code",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-infrastructure-as-code-how-do-terraform-variables-and-outputs-differ",
+    "title": "How do Terraform variables and outputs differ?",
+    "category": "devops",
+    "subcategory": "infrastructure-as-code",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-infrastructure-as-code-how-would-you-recover-corrupted-terraform-state",
+    "title": "How would you recover corrupted Terraform state?",
+    "category": "devops",
+    "subcategory": "infrastructure-as-code",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-infrastructure-as-code-how-would-you-refactor-terraform-modules-without-recreating-resources",
+    "title": "How would you refactor Terraform modules without recreating resources?",
+    "category": "devops",
+    "subcategory": "infrastructure-as-code",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-infrastructure-as-code-how-would-you-manage-infrastructure-secrets-safely",
+    "title": "How would you manage infrastructure secrets safely?",
+    "category": "devops",
+    "subcategory": "infrastructure-as-code",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-infrastructure-as-code-how-would-you-prevent-concurrent-terraform-state-changes",
+    "title": "How would you prevent concurrent Terraform state changes?",
+    "category": "devops",
+    "subcategory": "infrastructure-as-code",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-infrastructure-as-code-how-would-you-detect-destructive-infrastructure-changes-in-ci",
+    "title": "How would you detect destructive infrastructure changes in CI?",
+    "category": "devops",
+    "subcategory": "infrastructure-as-code",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-infrastructure-as-code-how-would-you-design-reusable-multi-environment-terraform-configurations",
+    "title": "How would you design reusable multi-environment Terraform configurations?",
+    "category": "devops",
+    "subcategory": "infrastructure-as-code",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-monitoring-reliability-what-is-application-monitoring",
+    "title": "What is application monitoring?",
+    "category": "devops",
+    "subcategory": "monitoring-reliability",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-monitoring-reliability-what-is-a-metric",
+    "title": "What is a metric?",
+    "category": "devops",
+    "subcategory": "monitoring-reliability",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-monitoring-reliability-what-is-a-log",
+    "title": "What is a log?",
+    "category": "devops",
+    "subcategory": "monitoring-reliability",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-monitoring-reliability-what-is-a-distributed-trace",
+    "title": "What is a distributed trace?",
+    "category": "devops",
+    "subcategory": "monitoring-reliability",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-monitoring-reliability-what-is-an-alert",
+    "title": "What is an alert?",
+    "category": "devops",
+    "subcategory": "monitoring-reliability",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-monitoring-reliability-what-is-an-slo",
+    "title": "What is an SLO?",
+    "category": "devops",
+    "subcategory": "monitoring-reliability",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-monitoring-reliability-how-does-prometheus-collect-metrics",
+    "title": "How does Prometheus collect metrics?",
+    "category": "devops",
+    "subcategory": "monitoring-reliability",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-monitoring-reliability-what-is-a-grafana-dashboard",
+    "title": "What is a Grafana dashboard?",
+    "category": "devops",
+    "subcategory": "monitoring-reliability",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-monitoring-reliability-what-is-an-error-budget",
+    "title": "What is an error budget?",
+    "category": "devops",
+    "subcategory": "monitoring-reliability",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-monitoring-reliability-what-is-structured-logging",
+    "title": "What is structured logging?",
+    "category": "devops",
+    "subcategory": "monitoring-reliability",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-monitoring-reliability-what-is-a-latency-percentile",
+    "title": "What is a latency percentile?",
+    "category": "devops",
+    "subcategory": "monitoring-reliability",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-monitoring-reliability-how-do-correlation-ids-help-debugging",
+    "title": "How do correlation IDs help debugging?",
+    "category": "devops",
+    "subcategory": "monitoring-reliability",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-monitoring-reliability-what-is-synthetic-monitoring",
+    "title": "What is synthetic monitoring?",
+    "category": "devops",
+    "subcategory": "monitoring-reliability",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-monitoring-reliability-what-is-an-incident-postmortem",
+    "title": "What is an incident postmortem?",
+    "category": "devops",
+    "subcategory": "monitoring-reliability",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-monitoring-reliability-how-would-you-reduce-alert-fatigue",
+    "title": "How would you reduce alert fatigue?",
+    "category": "devops",
+    "subcategory": "monitoring-reliability",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-monitoring-reliability-how-would-you-diagnose-high-cardinality-metrics",
+    "title": "How would you diagnose high-cardinality metrics?",
+    "category": "devops",
+    "subcategory": "monitoring-reliability",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-monitoring-reliability-how-would-you-design-burn-rate-alerts",
+    "title": "How would you design burn-rate alerts?",
+    "category": "devops",
+    "subcategory": "monitoring-reliability",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-monitoring-reliability-how-would-you-troubleshoot-intermittent-production-failures",
+    "title": "How would you troubleshoot intermittent production failures?",
+    "category": "devops",
+    "subcategory": "monitoring-reliability",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-monitoring-reliability-how-would-you-trace-latency-across-asynchronous-services",
+    "title": "How would you trace latency across asynchronous services?",
+    "category": "devops",
+    "subcategory": "monitoring-reliability",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-devops-monitoring-reliability-how-would-you-plan-capacity-using-saturation-metrics",
+    "title": "How would you plan capacity using saturation metrics?",
+    "category": "devops",
+    "subcategory": "monitoring-reliability",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120

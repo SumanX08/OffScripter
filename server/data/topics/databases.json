@@ -1,43 +1,187 @@
 [
   {
-    "slug": "databases-relational-databases-relational-model-1",
-    "title": "Explain relational model in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-databases-database-fundamentals-what-is-a-relational-database",
+    "title": "What is a relational database?",
     "category": "databases",
-    "subcategory": "relational-databases",
+    "subcategory": "database-fundamentals",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "databases-relational-databases-relational-model-2",
-    "title": "Imagine you are introducing relational model to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-databases-database-fundamentals-what-is-a-primary-key",
+    "title": "What is a primary key?",
     "category": "databases",
-    "subcategory": "relational-databases",
+    "subcategory": "database-fundamentals",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "databases-relational-databases-relational-model-3",
-    "title": "Compare relational model with documents and graphs. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-databases-database-fundamentals-what-is-a-foreign-key",
+    "title": "What is a foreign key?",
     "category": "databases",
-    "subcategory": "relational-databases",
+    "subcategory": "database-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-database-fundamentals-what-is-database-normalization",
+    "title": "What is database normalization?",
+    "category": "databases",
+    "subcategory": "database-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-database-fundamentals-what-is-a-database-index",
+    "title": "What is a database index?",
+    "category": "databases",
+    "subcategory": "database-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-database-fundamentals-explain-acid-properties",
+    "title": "Explain ACID properties.",
+    "category": "databases",
+    "subcategory": "database-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-database-fundamentals-sql-vs-nosql-databases",
+    "title": "SQL vs NoSQL databases.",
+    "category": "databases",
+    "subcategory": "database-fundamentals",
     "difficulty": "intermediate",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "databases-relational-databases-relational-model-4",
-    "title": "Consider this scenario: a product catalog needs consistent relationships. Explain how you would apply your understanding of relational model, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-databases-database-fundamentals-what-is-third-normal-form",
+    "title": "What is third normal form?",
     "category": "databases",
-    "subcategory": "relational-databases",
+    "subcategory": "database-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-database-fundamentals-how-does-a-b-tree-index-work",
+    "title": "How does a B-tree index work?",
+    "category": "databases",
+    "subcategory": "database-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-database-fundamentals-what-is-a-composite-index",
+    "title": "What is a composite index?",
+    "category": "databases",
+    "subcategory": "database-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-database-fundamentals-what-is-a-database-transaction",
+    "title": "What is a database transaction?",
+    "category": "databases",
+    "subcategory": "database-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-database-fundamentals-what-is-optimistic-locking",
+    "title": "What is optimistic locking?",
+    "category": "databases",
+    "subcategory": "database-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-database-fundamentals-what-is-database-denormalization",
+    "title": "What is database denormalization?",
+    "category": "databases",
+    "subcategory": "database-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-database-fundamentals-what-is-a-database-replica",
+    "title": "What is a database replica?",
+    "category": "databases",
+    "subcategory": "database-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-database-fundamentals-how-do-isolation-levels-affect-concurrent-transactions",
+    "title": "How do isolation levels affect concurrent transactions?",
+    "category": "databases",
+    "subcategory": "database-fundamentals",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "databases-sql-joins-1",
-    "title": "Explain joins in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-databases-database-fundamentals-how-would-you-choose-a-database-partition-key",
+    "title": "How would you choose a database partition key?",
+    "category": "databases",
+    "subcategory": "database-fundamentals",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-database-fundamentals-what-causes-database-replication-lag",
+    "title": "What causes database replication lag?",
+    "category": "databases",
+    "subcategory": "database-fundamentals",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-database-fundamentals-how-would-you-migrate-a-large-table-without-downtime",
+    "title": "How would you migrate a large table without downtime?",
+    "category": "databases",
+    "subcategory": "database-fundamentals",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-database-fundamentals-how-do-query-optimizers-estimate-cardinality",
+    "title": "How do query optimizers estimate cardinality?",
+    "category": "databases",
+    "subcategory": "database-fundamentals",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-database-fundamentals-how-would-you-prevent-write-skew",
+    "title": "How would you prevent write skew?",
+    "category": "databases",
+    "subcategory": "database-fundamentals",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-sql-what-is-a-sql-join",
+    "title": "What is a SQL JOIN?",
     "category": "databases",
     "subcategory": "sql",
     "difficulty": "beginner",
@@ -45,8 +189,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "databases-sql-joins-2",
-    "title": "Imagine you are introducing joins to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-databases-sql-what-is-a-where-clause",
+    "title": "What is a WHERE clause?",
     "category": "databases",
     "subcategory": "sql",
     "difficulty": "beginner",
@@ -54,8 +198,44 @@
     "speakingTime": 120
   },
   {
-    "slug": "databases-sql-joins-3",
-    "title": "Compare joins with inner and outer joins. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-databases-sql-what-is-group-by",
+    "title": "What is GROUP BY?",
+    "category": "databases",
+    "subcategory": "sql",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-sql-what-is-a-primary-key-constraint-in-sql",
+    "title": "What is a primary key constraint in SQL?",
+    "category": "databases",
+    "subcategory": "sql",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-sql-what-is-a-sql-view",
+    "title": "What is a SQL view?",
+    "category": "databases",
+    "subcategory": "sql",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-sql-what-is-a-null-value-in-sql",
+    "title": "What is a NULL value in SQL?",
+    "category": "databases",
+    "subcategory": "sql",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-sql-inner-join-vs-left-join",
+    "title": "INNER JOIN vs LEFT JOIN.",
     "category": "databases",
     "subcategory": "sql",
     "difficulty": "intermediate",
@@ -63,8 +243,71 @@
     "speakingTime": 120
   },
   {
-    "slug": "databases-sql-joins-4",
-    "title": "Consider this scenario: a report must include customers with no orders. Explain how you would apply your understanding of joins, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-databases-sql-where-vs-having",
+    "title": "WHERE vs HAVING.",
+    "category": "databases",
+    "subcategory": "sql",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-sql-union-vs-union-all",
+    "title": "UNION vs UNION ALL.",
+    "category": "databases",
+    "subcategory": "sql",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-sql-how-does-a-correlated-subquery-work",
+    "title": "How does a correlated subquery work?",
+    "category": "databases",
+    "subcategory": "sql",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-sql-what-is-a-common-table-expression",
+    "title": "What is a common table expression?",
+    "category": "databases",
+    "subcategory": "sql",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-sql-how-do-sql-window-functions-work",
+    "title": "How do SQL window functions work?",
+    "category": "databases",
+    "subcategory": "sql",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-sql-what-is-a-self-join",
+    "title": "What is a self join?",
+    "category": "databases",
+    "subcategory": "sql",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-sql-how-does-sql-handle-three-valued-logic",
+    "title": "How does SQL handle three-valued logic?",
+    "category": "databases",
+    "subcategory": "sql",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-sql-how-would-you-find-gaps-in-sequential-sql-records",
+    "title": "How would you find gaps in sequential SQL records?",
     "category": "databases",
     "subcategory": "sql",
     "difficulty": "advanced",
@@ -72,35 +315,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "databases-sql-aggregation-and-grouping-1",
-    "title": "Explain aggregation and grouping in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "databases",
-    "subcategory": "sql",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-sql-aggregation-and-grouping-2",
-    "title": "Imagine you are introducing aggregation and grouping to a classmate. How does it work, and where would someone encounter it?",
-    "category": "databases",
-    "subcategory": "sql",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-sql-aggregation-and-grouping-3",
-    "title": "Compare aggregation and grouping with GROUP BY and HAVING. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "databases",
-    "subcategory": "sql",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-sql-aggregation-and-grouping-4",
-    "title": "Consider this scenario: a dashboard reports monthly totals. Explain how you would apply your understanding of aggregation and grouping, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-databases-sql-how-does-a-recursive-cte-traverse-hierarchies",
+    "title": "How does a recursive CTE traverse hierarchies?",
     "category": "databases",
     "subcategory": "sql",
     "difficulty": "advanced",
@@ -108,35 +324,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "databases-sql-indexes-1",
-    "title": "Explain indexes in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "databases",
-    "subcategory": "sql",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-sql-indexes-2",
-    "title": "Imagine you are introducing indexes to a classmate. How does it work, and where would someone encounter it?",
-    "category": "databases",
-    "subcategory": "sql",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-sql-indexes-3",
-    "title": "Compare indexes with B-trees and hash indexes. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "databases",
-    "subcategory": "sql",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-sql-indexes-4",
-    "title": "Consider this scenario: a query becomes slow as a table grows. Explain how you would apply your understanding of indexes, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-databases-sql-how-would-you-optimize-a-query-with-multiple-joins",
+    "title": "How would you optimize a query with multiple joins?",
     "category": "databases",
     "subcategory": "sql",
     "difficulty": "advanced",
@@ -144,152 +333,35 @@
     "speakingTime": 120
   },
   {
-    "slug": "databases-database-design-normalization-1",
-    "title": "Explain normalization in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-databases-sql-how-do-window-frame-boundaries-affect-aggregates",
+    "title": "How do window frame boundaries affect aggregates?",
     "category": "databases",
-    "subcategory": "database-design",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-database-design-normalization-2",
-    "title": "Imagine you are introducing normalization to a classmate. How does it work, and where would someone encounter it?",
-    "category": "databases",
-    "subcategory": "database-design",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-database-design-normalization-3",
-    "title": "Compare normalization with denormalization. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "databases",
-    "subcategory": "database-design",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-database-design-normalization-4",
-    "title": "Consider this scenario: customer information appears inconsistently. Explain how you would apply your understanding of normalization, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "databases",
-    "subcategory": "database-design",
+    "subcategory": "sql",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "databases-transactions-acid-properties-1",
-    "title": "Explain ACID properties in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-databases-sql-how-would-you-identify-overlapping-date-ranges-using-sql",
+    "title": "How would you identify overlapping date ranges using SQL?",
     "category": "databases",
-    "subcategory": "transactions",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-transactions-acid-properties-2",
-    "title": "Imagine you are introducing ACID properties to a classmate. How does it work, and where would someone encounter it?",
-    "category": "databases",
-    "subcategory": "transactions",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-transactions-acid-properties-3",
-    "title": "Compare ACID properties with atomicity and isolation. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "databases",
-    "subcategory": "transactions",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-transactions-acid-properties-4",
-    "title": "Consider this scenario: a bank transfer updates two accounts. Explain how you would apply your understanding of ACID properties, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "databases",
-    "subcategory": "transactions",
+    "subcategory": "sql",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "databases-transactions-isolation-levels-1",
-    "title": "Explain isolation levels in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-databases-sql-how-can-correlated-subqueries-be-rewritten-as-joins",
+    "title": "How can correlated subqueries be rewritten as joins?",
     "category": "databases",
-    "subcategory": "transactions",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-transactions-isolation-levels-2",
-    "title": "Imagine you are introducing isolation levels to a classmate. How does it work, and where would someone encounter it?",
-    "category": "databases",
-    "subcategory": "transactions",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-transactions-isolation-levels-3",
-    "title": "Compare isolation levels with dirty and phantom reads. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "databases",
-    "subcategory": "transactions",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-transactions-isolation-levels-4",
-    "title": "Consider this scenario: two users update the same inventory. Explain how you would apply your understanding of isolation levels, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "databases",
-    "subcategory": "transactions",
+    "subcategory": "sql",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "databases-transactions-locking-and-mvcc-1",
-    "title": "Explain locking and MVCC in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "databases",
-    "subcategory": "transactions",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-transactions-locking-and-mvcc-2",
-    "title": "Imagine you are introducing locking and MVCC to a classmate. How does it work, and where would someone encounter it?",
-    "category": "databases",
-    "subcategory": "transactions",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-transactions-locking-and-mvcc-3",
-    "title": "Compare locking and MVCC with pessimistic and optimistic concurrency. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "databases",
-    "subcategory": "transactions",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-transactions-locking-and-mvcc-4",
-    "title": "Consider this scenario: a high-traffic table experiences contention. Explain how you would apply your understanding of locking and MVCC, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "databases",
-    "subcategory": "transactions",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-postgresql-query-planning-1",
-    "title": "Explain query planning in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-databases-postgresql-what-is-postgresql",
+    "title": "What is PostgreSQL?",
     "category": "databases",
     "subcategory": "postgresql",
     "difficulty": "beginner",
@@ -297,35 +369,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "databases-postgresql-query-planning-2",
-    "title": "Imagine you are introducing query planning to a classmate. How does it work, and where would someone encounter it?",
-    "category": "databases",
-    "subcategory": "postgresql",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-postgresql-query-planning-3",
-    "title": "Compare query planning with statistics and EXPLAIN. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "databases",
-    "subcategory": "postgresql",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-postgresql-query-planning-4",
-    "title": "Consider this scenario: an index exists but is not selected. Explain how you would apply your understanding of query planning, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "databases",
-    "subcategory": "postgresql",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-postgresql-json-and-relational-data-1",
-    "title": "Explain JSON and relational data in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-databases-postgresql-what-is-a-postgresql-schema",
+    "title": "What is a PostgreSQL schema?",
     "category": "databases",
     "subcategory": "postgresql",
     "difficulty": "beginner",
@@ -333,8 +378,44 @@
     "speakingTime": 120
   },
   {
-    "slug": "databases-postgresql-json-and-relational-data-2",
-    "title": "Imagine you are introducing JSON and relational data to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-databases-postgresql-what-is-jsonb",
+    "title": "What is JSONB?",
+    "category": "databases",
+    "subcategory": "postgresql",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-postgresql-what-is-a-postgresql-sequence",
+    "title": "What is a PostgreSQL sequence?",
+    "category": "databases",
+    "subcategory": "postgresql",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-postgresql-what-is-a-materialized-view",
+    "title": "What is a materialized view?",
+    "category": "databases",
+    "subcategory": "postgresql",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-postgresql-what-is-a-postgresql-extension",
+    "title": "What is a PostgreSQL extension?",
+    "category": "databases",
+    "subcategory": "postgresql",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-postgresql-how-does-postgresql-mvcc-work",
+    "title": "How does PostgreSQL MVCC work?",
     "category": "databases",
     "subcategory": "postgresql",
     "difficulty": "intermediate",
@@ -342,8 +423,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "databases-postgresql-json-and-relational-data-3",
-    "title": "Compare JSON and relational data with JSONB and normalization. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-databases-postgresql-what-does-vacuum-do",
+    "title": "What does VACUUM do?",
     "category": "databases",
     "subcategory": "postgresql",
     "difficulty": "intermediate",
@@ -351,8 +432,62 @@
     "speakingTime": 120
   },
   {
-    "slug": "databases-postgresql-json-and-relational-data-4",
-    "title": "Consider this scenario: a product has flexible attributes. Explain how you would apply your understanding of JSON and relational data, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-databases-postgresql-how-does-postgresql-explain-analyze-work",
+    "title": "How does PostgreSQL EXPLAIN ANALYZE work?",
+    "category": "databases",
+    "subcategory": "postgresql",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-postgresql-what-is-a-partial-index",
+    "title": "What is a partial index?",
+    "category": "databases",
+    "subcategory": "postgresql",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-postgresql-how-do-gin-indexes-work",
+    "title": "How do GIN indexes work?",
+    "category": "databases",
+    "subcategory": "postgresql",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-postgresql-what-is-postgresql-row-level-security",
+    "title": "What is PostgreSQL row-level security?",
+    "category": "databases",
+    "subcategory": "postgresql",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-postgresql-how-does-postgresql-upsert-work",
+    "title": "How does PostgreSQL UPSERT work?",
+    "category": "databases",
+    "subcategory": "postgresql",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-postgresql-how-does-pgbouncer-pool-connections",
+    "title": "How does PgBouncer pool connections?",
+    "category": "databases",
+    "subcategory": "postgresql",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-postgresql-how-would-you-diagnose-postgresql-table-bloat",
+    "title": "How would you diagnose PostgreSQL table bloat?",
     "category": "databases",
     "subcategory": "postgresql",
     "difficulty": "advanced",
@@ -360,8 +495,53 @@
     "speakingTime": 120
   },
   {
-    "slug": "databases-mysql-storage-engines-1",
-    "title": "Explain storage engines in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-databases-postgresql-how-do-postgresql-hot-updates-reduce-index-writes",
+    "title": "How do PostgreSQL HOT updates reduce index writes?",
+    "category": "databases",
+    "subcategory": "postgresql",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-postgresql-how-does-postgresql-logical-replication-work",
+    "title": "How does PostgreSQL logical replication work?",
+    "category": "databases",
+    "subcategory": "postgresql",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-postgresql-how-would-you-troubleshoot-postgresql-lock-contention",
+    "title": "How would you troubleshoot PostgreSQL lock contention?",
+    "category": "databases",
+    "subcategory": "postgresql",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-postgresql-how-would-you-tune-autovacuum-for-a-high-write-table",
+    "title": "How would you tune autovacuum for a high-write table?",
+    "category": "databases",
+    "subcategory": "postgresql",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-postgresql-how-does-postgresql-serializable-snapshot-isolation-work",
+    "title": "How does PostgreSQL serializable snapshot isolation work?",
+    "category": "databases",
+    "subcategory": "postgresql",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-mysql-what-is-mysql",
+    "title": "What is MySQL?",
     "category": "databases",
     "subcategory": "mysql",
     "difficulty": "beginner",
@@ -369,8 +549,53 @@
     "speakingTime": 120
   },
   {
-    "slug": "databases-mysql-storage-engines-2",
-    "title": "Imagine you are introducing storage engines to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-databases-mysql-what-is-innodb",
+    "title": "What is InnoDB?",
+    "category": "databases",
+    "subcategory": "mysql",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-mysql-what-is-auto-increment",
+    "title": "What is AUTO_INCREMENT?",
+    "category": "databases",
+    "subcategory": "mysql",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-mysql-what-is-a-mysql-stored-procedure",
+    "title": "What is a MySQL stored procedure?",
+    "category": "databases",
+    "subcategory": "mysql",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-mysql-what-is-a-mysql-trigger",
+    "title": "What is a MySQL trigger?",
+    "category": "databases",
+    "subcategory": "mysql",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-mysql-what-is-a-mysql-collation",
+    "title": "What is a MySQL collation?",
+    "category": "databases",
+    "subcategory": "mysql",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-mysql-how-does-innodb-organize-clustered-indexes",
+    "title": "How does InnoDB organize clustered indexes?",
     "category": "databases",
     "subcategory": "mysql",
     "difficulty": "intermediate",
@@ -378,8 +603,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "databases-mysql-storage-engines-3",
-    "title": "Compare storage engines with InnoDB and MyISAM. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-databases-mysql-what-is-the-mysql-binary-log",
+    "title": "What is the MySQL binary log?",
     "category": "databases",
     "subcategory": "mysql",
     "difficulty": "intermediate",
@@ -387,8 +612,62 @@
     "speakingTime": 120
   },
   {
-    "slug": "databases-mysql-storage-engines-4",
-    "title": "Consider this scenario: a workload needs reliable transactions. Explain how you would apply your understanding of storage engines, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-databases-mysql-how-does-mysql-replication-work",
+    "title": "How does MySQL replication work?",
+    "category": "databases",
+    "subcategory": "mysql",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-mysql-how-do-mysql-covering-indexes-work",
+    "title": "How do MySQL covering indexes work?",
+    "category": "databases",
+    "subcategory": "mysql",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-mysql-what-is-mysql-strict-mode",
+    "title": "What is MySQL strict mode?",
+    "category": "databases",
+    "subcategory": "mysql",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-mysql-how-does-mysql-explain-describe-execution-plans",
+    "title": "How does MySQL EXPLAIN describe execution plans?",
+    "category": "databases",
+    "subcategory": "mysql",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-mysql-what-is-the-innodb-buffer-pool",
+    "title": "What is the InnoDB buffer pool?",
+    "category": "databases",
+    "subcategory": "mysql",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-mysql-how-does-mysql-handle-upserts",
+    "title": "How does MySQL handle upserts?",
+    "category": "databases",
+    "subcategory": "mysql",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-mysql-how-do-innodb-gap-locks-prevent-phantom-reads",
+    "title": "How do InnoDB gap locks prevent phantom reads?",
     "category": "databases",
     "subcategory": "mysql",
     "difficulty": "advanced",
@@ -396,8 +675,53 @@
     "speakingTime": 120
   },
   {
-    "slug": "databases-mongodb-document-data-modeling-1",
-    "title": "Explain document data modeling in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-databases-mysql-how-would-you-diagnose-mysql-replication-lag",
+    "title": "How would you diagnose MySQL replication lag?",
+    "category": "databases",
+    "subcategory": "mysql",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-mysql-how-does-innodb-purge-reclaim-old-row-versions",
+    "title": "How does InnoDB purge reclaim old row versions?",
+    "category": "databases",
+    "subcategory": "mysql",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-mysql-how-would-you-perform-online-mysql-schema-changes",
+    "title": "How would you perform online MySQL schema changes?",
+    "category": "databases",
+    "subcategory": "mysql",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-mysql-how-do-mysql-undo-and-redo-logs-differ",
+    "title": "How do MySQL undo and redo logs differ?",
+    "category": "databases",
+    "subcategory": "mysql",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-mysql-how-would-you-troubleshoot-mysql-metadata-lock-contention",
+    "title": "How would you troubleshoot MySQL metadata lock contention?",
+    "category": "databases",
+    "subcategory": "mysql",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-mongodb-what-is-a-mongodb-document",
+    "title": "What is a MongoDB document?",
     "category": "databases",
     "subcategory": "mongodb",
     "difficulty": "beginner",
@@ -405,35 +729,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "databases-mongodb-document-data-modeling-2",
-    "title": "Imagine you are introducing document data modeling to a classmate. How does it work, and where would someone encounter it?",
-    "category": "databases",
-    "subcategory": "mongodb",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-mongodb-document-data-modeling-3",
-    "title": "Compare document data modeling with referencing and embedding. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "databases",
-    "subcategory": "mongodb",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-mongodb-document-data-modeling-4",
-    "title": "Consider this scenario: an order contains multiple line items. Explain how you would apply your understanding of document data modeling, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "databases",
-    "subcategory": "mongodb",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-mongodb-replica-sets-1",
-    "title": "Explain replica sets in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-databases-mongodb-what-is-a-mongodb-collection",
+    "title": "What is a MongoDB collection?",
     "category": "databases",
     "subcategory": "mongodb",
     "difficulty": "beginner",
@@ -441,35 +738,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "databases-mongodb-replica-sets-2",
-    "title": "Imagine you are introducing replica sets to a classmate. How does it work, and where would someone encounter it?",
-    "category": "databases",
-    "subcategory": "mongodb",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-mongodb-replica-sets-3",
-    "title": "Compare replica sets with primary election and replication lag. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "databases",
-    "subcategory": "mongodb",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-mongodb-replica-sets-4",
-    "title": "Consider this scenario: a database node fails. Explain how you would apply your understanding of replica sets, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "databases",
-    "subcategory": "mongodb",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-mongodb-sharding-1",
-    "title": "Explain sharding in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-databases-mongodb-what-is-bson",
+    "title": "What is BSON?",
     "category": "databases",
     "subcategory": "mongodb",
     "difficulty": "beginner",
@@ -477,8 +747,35 @@
     "speakingTime": 120
   },
   {
-    "slug": "databases-mongodb-sharding-2",
-    "title": "Imagine you are introducing sharding to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-databases-mongodb-what-is-a-mongodb-objectid",
+    "title": "What is a MongoDB ObjectId?",
+    "category": "databases",
+    "subcategory": "mongodb",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-mongodb-what-is-a-mongodb-cursor",
+    "title": "What is a MongoDB cursor?",
+    "category": "databases",
+    "subcategory": "mongodb",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-mongodb-what-is-a-mongodb-replica-set",
+    "title": "What is a MongoDB replica set?",
+    "category": "databases",
+    "subcategory": "mongodb",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-mongodb-embedding-vs-referencing-in-mongodb",
+    "title": "Embedding vs referencing in MongoDB.",
     "category": "databases",
     "subcategory": "mongodb",
     "difficulty": "intermediate",
@@ -486,8 +783,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "databases-mongodb-sharding-3",
-    "title": "Compare sharding with shard keys and hotspots. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-databases-mongodb-how-does-mongodb-aggregation-work",
+    "title": "How does MongoDB aggregation work?",
     "category": "databases",
     "subcategory": "mongodb",
     "difficulty": "intermediate",
@@ -495,8 +792,62 @@
     "speakingTime": 120
   },
   {
-    "slug": "databases-mongodb-sharding-4",
-    "title": "Consider this scenario: a collection grows beyond one server. Explain how you would apply your understanding of sharding, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-databases-mongodb-how-do-mongodb-compound-indexes-work",
+    "title": "How do MongoDB compound indexes work?",
+    "category": "databases",
+    "subcategory": "mongodb",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-mongodb-what-is-mongodb-schema-validation",
+    "title": "What is MongoDB schema validation?",
+    "category": "databases",
+    "subcategory": "mongodb",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-mongodb-how-does-mongodb-sharding-work",
+    "title": "How does MongoDB sharding work?",
+    "category": "databases",
+    "subcategory": "mongodb",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-mongodb-what-are-mongodb-change-streams",
+    "title": "What are MongoDB change streams?",
+    "category": "databases",
+    "subcategory": "mongodb",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-mongodb-what-is-a-mongodb-ttl-index",
+    "title": "What is a MongoDB TTL index?",
+    "category": "databases",
+    "subcategory": "mongodb",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-mongodb-how-do-mongodb-read-preferences-work",
+    "title": "How do MongoDB read preferences work?",
+    "category": "databases",
+    "subcategory": "mongodb",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-mongodb-how-would-you-choose-a-mongodb-shard-key",
+    "title": "How would you choose a MongoDB shard key?",
     "category": "databases",
     "subcategory": "mongodb",
     "difficulty": "advanced",
@@ -504,8 +855,53 @@
     "speakingTime": 120
   },
   {
-    "slug": "databases-redis-caching-patterns-1",
-    "title": "Explain caching patterns in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-databases-mongodb-how-do-mongodb-write-concerns-affect-durability",
+    "title": "How do MongoDB write concerns affect durability?",
+    "category": "databases",
+    "subcategory": "mongodb",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-mongodb-how-would-you-diagnose-mongodb-aggregation-memory-usage",
+    "title": "How would you diagnose MongoDB aggregation memory usage?",
+    "category": "databases",
+    "subcategory": "mongodb",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-mongodb-how-does-mongodb-handle-distributed-transactions",
+    "title": "How does MongoDB handle distributed transactions?",
+    "category": "databases",
+    "subcategory": "mongodb",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-mongodb-how-would-you-prevent-unbounded-array-growth-in-mongodb",
+    "title": "How would you prevent unbounded array growth in MongoDB?",
+    "category": "databases",
+    "subcategory": "mongodb",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-mongodb-how-would-you-troubleshoot-mongodb-replica-elections",
+    "title": "How would you troubleshoot MongoDB replica elections?",
+    "category": "databases",
+    "subcategory": "mongodb",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-redis-what-is-redis",
+    "title": "What is Redis?",
     "category": "databases",
     "subcategory": "redis",
     "difficulty": "beginner",
@@ -513,35 +909,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "databases-redis-caching-patterns-2",
-    "title": "Imagine you are introducing caching patterns to a classmate. How does it work, and where would someone encounter it?",
-    "category": "databases",
-    "subcategory": "redis",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-redis-caching-patterns-3",
-    "title": "Compare caching patterns with cache-aside and write-through. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "databases",
-    "subcategory": "redis",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-redis-caching-patterns-4",
-    "title": "Consider this scenario: a popular product page receives heavy traffic. Explain how you would apply your understanding of caching patterns, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "databases",
-    "subcategory": "redis",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-redis-expiration-and-eviction-1",
-    "title": "Explain expiration and eviction in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-databases-redis-what-is-a-redis-hash",
+    "title": "What is a Redis hash?",
     "category": "databases",
     "subcategory": "redis",
     "difficulty": "beginner",
@@ -549,8 +918,44 @@
     "speakingTime": 120
   },
   {
-    "slug": "databases-redis-expiration-and-eviction-2",
-    "title": "Imagine you are introducing expiration and eviction to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-databases-redis-what-is-a-redis-sorted-set",
+    "title": "What is a Redis sorted set?",
+    "category": "databases",
+    "subcategory": "redis",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-redis-what-is-key-expiration-in-redis",
+    "title": "What is key expiration in Redis?",
+    "category": "databases",
+    "subcategory": "redis",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-redis-what-is-redis-pub-sub",
+    "title": "What is Redis Pub/Sub?",
+    "category": "databases",
+    "subcategory": "redis",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-redis-what-is-a-redis-list",
+    "title": "What is a Redis list?",
+    "category": "databases",
+    "subcategory": "redis",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-redis-how-do-redis-eviction-policies-work",
+    "title": "How do Redis eviction policies work?",
     "category": "databases",
     "subcategory": "redis",
     "difficulty": "intermediate",
@@ -558,8 +963,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "databases-redis-expiration-and-eviction-3",
-    "title": "Compare expiration and eviction with TTL and eviction policies. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-databases-redis-what-is-redis-pipelining",
+    "title": "What is Redis pipelining?",
     "category": "databases",
     "subcategory": "redis",
     "difficulty": "intermediate",
@@ -567,8 +972,62 @@
     "speakingTime": 120
   },
   {
-    "slug": "databases-redis-expiration-and-eviction-4",
-    "title": "Consider this scenario: a cache reaches its memory limit. Explain how you would apply your understanding of expiration and eviction, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-databases-redis-rdb-vs-aof-persistence",
+    "title": "RDB vs AOF persistence.",
+    "category": "databases",
+    "subcategory": "redis",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-redis-how-do-redis-streams-work",
+    "title": "How do Redis Streams work?",
+    "category": "databases",
+    "subcategory": "redis",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-redis-what-is-redis-sentinel",
+    "title": "What is Redis Sentinel?",
+    "category": "databases",
+    "subcategory": "redis",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-redis-how-do-redis-transactions-work",
+    "title": "How do Redis transactions work?",
+    "category": "databases",
+    "subcategory": "redis",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-redis-how-do-redis-bitmaps-work",
+    "title": "How do Redis bitmaps work?",
+    "category": "databases",
+    "subcategory": "redis",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-redis-how-does-redis-cluster-distribute-keys",
+    "title": "How does Redis Cluster distribute keys?",
+    "category": "databases",
+    "subcategory": "redis",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-databases-redis-how-would-you-prevent-redis-hot-key-bottlenecks",
+    "title": "How would you prevent Redis hot-key bottlenecks?",
     "category": "databases",
     "subcategory": "redis",
     "difficulty": "advanced",
@@ -576,325 +1035,46 @@
     "speakingTime": 120
   },
   {
-    "slug": "databases-database-design-constraints-and-keys-1",
-    "title": "Explain constraints and keys in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-databases-redis-how-do-redis-hash-tags-enable-multi-key-operations",
+    "title": "How do Redis hash tags enable multi-key operations?",
     "category": "databases",
-    "subcategory": "database-design",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-database-design-constraints-and-keys-2",
-    "title": "Imagine you are introducing constraints and keys to a classmate. How does it work, and where would someone encounter it?",
-    "category": "databases",
-    "subcategory": "database-design",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-database-design-constraints-and-keys-3",
-    "title": "Compare constraints and keys with referential integrity. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "databases",
-    "subcategory": "database-design",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-database-design-constraints-and-keys-4",
-    "title": "Consider this scenario: duplicate or orphan records appear. Explain how you would apply your understanding of constraints and keys, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "databases",
-    "subcategory": "database-design",
+    "subcategory": "redis",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "databases-database-performance-connection-pooling-1",
-    "title": "Explain connection pooling in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-databases-redis-how-would-you-handle-redis-consumer-group-pending-messages",
+    "title": "How would you handle Redis consumer group pending messages?",
     "category": "databases",
-    "subcategory": "database-performance",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-database-performance-connection-pooling-2",
-    "title": "Imagine you are introducing connection pooling to a classmate. How does it work, and where would someone encounter it?",
-    "category": "databases",
-    "subcategory": "database-performance",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-database-performance-connection-pooling-3",
-    "title": "Compare connection pooling with pool sizing and timeouts. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "databases",
-    "subcategory": "database-performance",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-database-performance-connection-pooling-4",
-    "title": "Consider this scenario: traffic spikes exhaust available connections. Explain how you would apply your understanding of connection pooling, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "databases",
-    "subcategory": "database-performance",
+    "subcategory": "redis",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "databases-database-performance-query-optimization-1",
-    "title": "Explain query optimization in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-databases-redis-how-would-you-diagnose-redis-memory-fragmentation",
+    "title": "How would you diagnose Redis memory fragmentation?",
     "category": "databases",
-    "subcategory": "database-performance",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-database-performance-query-optimization-2",
-    "title": "Imagine you are introducing query optimization to a classmate. How does it work, and where would someone encounter it?",
-    "category": "databases",
-    "subcategory": "database-performance",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-database-performance-query-optimization-3",
-    "title": "Compare query optimization with indexes and execution plans. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "databases",
-    "subcategory": "database-performance",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-database-performance-query-optimization-4",
-    "title": "Consider this scenario: a query scans millions of rows. Explain how you would apply your understanding of query optimization, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "databases",
-    "subcategory": "database-performance",
+    "subcategory": "redis",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "databases-distributed-databases-replication-and-consistency-1",
-    "title": "Explain replication and consistency in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-databases-redis-how-does-redis-failover-affect-acknowledged-writes",
+    "title": "How does Redis failover affect acknowledged writes?",
     "category": "databases",
-    "subcategory": "distributed-databases",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-distributed-databases-replication-and-consistency-2",
-    "title": "Imagine you are introducing replication and consistency to a classmate. How does it work, and where would someone encounter it?",
-    "category": "databases",
-    "subcategory": "distributed-databases",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-distributed-databases-replication-and-consistency-3",
-    "title": "Compare replication and consistency with strong and eventual consistency. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "databases",
-    "subcategory": "distributed-databases",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-distributed-databases-replication-and-consistency-4",
-    "title": "Consider this scenario: a user reads stale data after an update. Explain how you would apply your understanding of replication and consistency, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "databases",
-    "subcategory": "distributed-databases",
+    "subcategory": "redis",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "databases-distributed-databases-cap-theorem-1",
-    "title": "Explain CAP theorem in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-databases-redis-how-would-you-implement-safe-redis-lock-ownership",
+    "title": "How would you implement safe Redis lock ownership?",
     "category": "databases",
-    "subcategory": "distributed-databases",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-distributed-databases-cap-theorem-2",
-    "title": "Imagine you are introducing CAP theorem to a classmate. How does it work, and where would someone encounter it?",
-    "category": "databases",
-    "subcategory": "distributed-databases",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-distributed-databases-cap-theorem-3",
-    "title": "Compare CAP theorem with availability and consistency. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "databases",
-    "subcategory": "distributed-databases",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-distributed-databases-cap-theorem-4",
-    "title": "Consider this scenario: a distributed database loses communication between regions. Explain how you would apply your understanding of CAP theorem, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "databases",
-    "subcategory": "distributed-databases",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-database-operations-backup-and-recovery-1",
-    "title": "Explain backup and recovery in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "databases",
-    "subcategory": "database-operations",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-database-operations-backup-and-recovery-2",
-    "title": "Imagine you are introducing backup and recovery to a classmate. How does it work, and where would someone encounter it?",
-    "category": "databases",
-    "subcategory": "database-operations",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-database-operations-backup-and-recovery-3",
-    "title": "Compare backup and recovery with PITR and snapshots. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "databases",
-    "subcategory": "database-operations",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-database-operations-backup-and-recovery-4",
-    "title": "Consider this scenario: an operator accidentally deletes records. Explain how you would apply your understanding of backup and recovery, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "databases",
-    "subcategory": "database-operations",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-database-operations-migrations-1",
-    "title": "Explain migrations in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "databases",
-    "subcategory": "database-operations",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-database-operations-migrations-2",
-    "title": "Imagine you are introducing migrations to a classmate. How does it work, and where would someone encounter it?",
-    "category": "databases",
-    "subcategory": "database-operations",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-database-operations-migrations-3",
-    "title": "Compare migrations with expand-and-contract patterns. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "databases",
-    "subcategory": "database-operations",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-database-operations-migrations-4",
-    "title": "Consider this scenario: a live application must add a required column. Explain how you would apply your understanding of migrations, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "databases",
-    "subcategory": "database-operations",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-nosql-choosing-a-database-model-1",
-    "title": "Explain choosing a database model in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "databases",
-    "subcategory": "nosql",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-nosql-choosing-a-database-model-2",
-    "title": "Imagine you are introducing choosing a database model to a classmate. How does it work, and where would someone encounter it?",
-    "category": "databases",
-    "subcategory": "nosql",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-nosql-choosing-a-database-model-3",
-    "title": "Compare choosing a database model with query patterns and consistency. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "databases",
-    "subcategory": "nosql",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-nosql-choosing-a-database-model-4",
-    "title": "Consider this scenario: a new product needs a storage technology. Explain how you would apply your understanding of choosing a database model, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "databases",
-    "subcategory": "nosql",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-database-security-database-access-control-1",
-    "title": "Explain database access control in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "databases",
-    "subcategory": "database-security",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-database-security-database-access-control-2",
-    "title": "Imagine you are introducing database access control to a classmate. How does it work, and where would someone encounter it?",
-    "category": "databases",
-    "subcategory": "database-security",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-database-security-database-access-control-3",
-    "title": "Compare database access control with encryption and auditing. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "databases",
-    "subcategory": "database-security",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "databases-database-security-database-access-control-4",
-    "title": "Consider this scenario: an application account has excessive permissions. Explain how you would apply your understanding of database access control, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "databases",
-    "subcategory": "database-security",
+    "subcategory": "redis",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120

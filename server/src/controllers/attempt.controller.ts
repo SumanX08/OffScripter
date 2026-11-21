@@ -16,6 +16,15 @@ import { transcribeAudio } from "../services/transcription.service.js";
 
 import { getUserStreak } from "../services/streak.service.js";
 
+import { unlink } from "fs/promises";
+
+import { getAttemptForSubmission } from "../services/attempt.service.js";
+
+import {
+  getRealtimeTranscript,
+  deleteRealtimeTranscript,
+} from "../services/realtime-transcript.store.js";
+
 type AttemptParams = {
   attemptId: string;
 };
@@ -133,72 +142,260 @@ export const submit = async (
 
 
 
+
+
 export const submitAudio = async (
   req: Request<AttemptParams>,
   res: Response
 ) => {
+  const controllerStart = performance.now();
+
+  const { attemptId } = req.params;
+  const user = res.locals.user;
+  const processingAttempts = new Set<string>();
+  const submissionKey = `${user.id}:${attemptId}`;
+
+  let needsCleanup = Boolean(req.file);
+  let acquiredLock = false;
+
   try {
-    const { attemptId } = req.params;
-    const user = res.locals.user;
+    /*
+     * Prevent duplicate concurrent submissions.
+     */
 
-    console.log("SUBMIT AUDIO REQUEST", {
-      attemptId,
-      userId: user.id,
-      hasFile: Boolean(req.file),
-    });
-
-    if (!req.file) {
-      res.status(400).json({
+    if (processingAttempts.has(submissionKey)) {
+      res.status(409).json({
         success: false,
         error: {
-          code: "AUDIO_REQUIRED",
-          message: "Audio recording is required",
+          code: "SUBMISSION_IN_PROGRESS",
+          message: "Attempt is already being processed",
         },
       });
+
       return;
     }
 
-    console.log("AUDIO FILE RECEIVED", {
-      path: req.file.path,
-      originalName: req.file.originalname,
-      mimetype: req.file.mimetype,
-      size: req.file.size,
-    });
+    processingAttempts.add(submissionKey);
+    acquiredLock = true;
 
-    // 1. Convert speech → text
-    const transcript = await transcribeAudio(req.file);
+    /*
+     * 1. Validate attempt
+     */
 
-    console.log("TRANSCRIPT:", transcript);
+    const validationStart = performance.now();
 
-    // 2. Save transcript and mark attempt submitted
-    await submitAudioAttempt(
-      attemptId,
-      user.id,
-      transcript
-    );
-
-    console.log("TRANSCRIPT SAVED");
-
-    // 3. Evaluate transcript 
-    const evaluation = await evaluateAttempt(
+    let attempt = await getAttemptForSubmission(
       attemptId,
       user.id
     );
 
-    console.log("EVALUATION CREATED", {
-      evaluationId: evaluation.id,
-      overallScore: evaluation.overallScore,
-    });
+    console.log(
+      "[PERF] Attempt validation:",
+      (performance.now() - validationStart).toFixed(2),
+      "ms"
+    );
 
-    // 4. Return everything needed by results page
+    /*
+     * 2. Recover previously submitted attempts
+     */
+
+    if (
+      attempt.stage === "SUBMITTED" &&
+      attempt.status === "COMPLETED"
+    ) {
+      if (!attempt.transcript) {
+        throw new Error(
+          "Submitted attempt has no transcript"
+        );
+      }
+
+      console.log(
+        "[SUBMISSION] Resuming existing submission"
+      );
+
+      deleteRealtimeTranscript(attemptId, user.id);
+
+      const evaluation =
+        attempt.evaluation ??
+        await evaluateAttempt(
+          attemptId,
+          user.id,
+          attempt
+        );
+
+      res.status(200).json({
+        success: true,
+        data: {
+          attemptId,
+          transcript: attempt.transcript,
+          evaluation,
+        },
+      });
+
+      return;
+    }
+
+    /*
+     * 3. Validate attempt state
+     */
+
+    if (
+      attempt.stage !== "SPEAKING" ||
+      attempt.status !== "IN_PROGRESS"
+    ) {
+      res.status(409).json({
+        success: false,
+        error: {
+          code: "INVALID_ATTEMPT_STATE",
+          message: "Attempt is not in the speaking phase",
+        },
+      });
+
+      return;
+    }
+
+    /*
+     * 4. Check server-side realtime transcript
+     */
+
+    const cachedTranscript = getRealtimeTranscript(
+      attemptId,
+      user.id
+    );
+
+    let transcript: string;
+
+    let speakingEndedAt = new Date();
+
+    let transcriptionSource:
+      | "realtime"
+      | "audio";
+
+    /*
+     * 5. Realtime transcription successful
+     */
+
+    if (cachedTranscript) {
+      transcript = cachedTranscript.transcript;
+
+      speakingEndedAt =
+        cachedTranscript.speakingEndedAt;
+
+      transcriptionSource = "realtime";
+
+      console.log(
+        "[TRANSCRIPTION] Using cached realtime transcript"
+      );
+
+      console.log(
+        "[PERF] Traditional transcription skipped"
+      );
+    }
+
+    /*
+     * 6. Fallback transcription
+     */
+
+    else {
+      if (!req.file) {
+        res.status(409).json({
+          success: false,
+          error: {
+            code: "REALTIME_TRANSCRIPT_UNAVAILABLE",
+            message: "Please submit the recorded audio",
+          },
+        });
+
+        return;
+      }
+
+      console.log(
+        "[TRANSCRIPTION] Using audio fallback"
+      );
+
+      transcriptionSource = "audio";
+
+      const transcriptionStart = performance.now();
+
+      // transcribeAudio handles file cleanup.
+      needsCleanup = false;
+
+      transcript = await transcribeAudio(req.file);
+
+      console.log(
+        "[PERF] Audio transcription:",
+        (performance.now() - transcriptionStart).toFixed(2),
+        "ms"
+      );
+    }
+
+    if (!transcript.trim()) {
+      res.status(422).json({
+        success: false,
+        error: {
+          code: "EMPTY_TRANSCRIPT",
+          message: "No speech was detected",
+        },
+      });
+
+      return;
+    }
+
+    /*
+     * 7. Persist transcript
+     */
+
+    const saveStart = performance.now();
+
+    attempt = await submitAudioAttempt(
+      attemptId,
+      user.id,
+      transcript,
+      speakingEndedAt
+    );
+
+    // Database now owns the transcript.
+    deleteRealtimeTranscript(attemptId, user.id);
+
+    console.log(
+      "[PERF] Submit attempt DB update:",
+      (performance.now() - saveStart).toFixed(2),
+      "ms"
+    );
+
+    /*
+     * 8. Evaluate attempt
+     */
+
+    const evaluationStart = performance.now();
+
+    const evaluation = await evaluateAttempt(
+      attemptId,
+      user.id,
+      attempt
+    );
+
+    console.log(
+      "[PERF] Complete evaluation service:",
+      (performance.now() - evaluationStart).toFixed(2),
+      "ms"
+    );
+
+    console.log(
+      "[SUBMISSION] Transcription source:",
+      transcriptionSource
+    );
+
     res.status(200).json({
       success: true,
       data: {
         attemptId,
-        transcript,
+        transcript: attempt.transcript,
         evaluation,
+        transcriptionSource,
       },
     });
+
   } catch (error) {
     console.error("SUBMIT AUDIO ERROR:", error);
 
@@ -212,8 +409,32 @@ export const submitAudio = async (
             : "Failed to process audio",
       },
     });
+
+  } finally {
+    if (acquiredLock) {
+      processingAttempts.delete(submissionKey);
+    }
+
+    if (needsCleanup && req.file) {
+      try {
+        await unlink(req.file.path);
+      } catch (error) {
+        console.error(
+          "Audio cleanup failed:",
+          error
+        );
+      }
+    }
+
+    console.log(
+      "[PERF] Total controller processing:",
+      (performance.now() - controllerStart).toFixed(2),
+      "ms"
+    );
   }
 };
+
+
 
 export const getHistory = async (
   req: Request,

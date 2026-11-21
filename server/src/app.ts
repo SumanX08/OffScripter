@@ -18,6 +18,7 @@ import feedbackRoutes from "./routes/feedback.routes.js"
 import { razorpayWebhook } from "./controllers/payment.controller.js";
 import { prisma } from "./config/prisma.js";
 
+
 const app = express();
 
 app.use(cors());
@@ -32,6 +33,27 @@ app.use(
 
 // Parse JSON for all other API requests.
 app.use(express.json());
+
+app.use((req, res, next) => {
+  if (
+    req.method !== "POST" ||
+    !req.path.endsWith("/submit-audio")
+  ) {
+    return next();
+  }
+
+  const start = performance.now();
+
+  res.on("finish", () => {
+    console.log(
+      "[PERF] Full audio HTTP request:",
+      (performance.now() - start).toFixed(2),
+      "ms"
+    );
+  });
+
+  next();
+});
 
 app.use(clerkMiddleware());
 
@@ -104,5 +126,7 @@ app.use(
 
 app.use(notFoundHandler);
 app.use(errorHandler);
+
+
 
 export default app;

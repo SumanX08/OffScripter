@@ -1,7 +1,7 @@
 [
   {
-    "slug": "generative-ai-llms-transformer-architecture-1",
-    "title": "Explain transformer architecture in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-generative-ai-llms-what-is-a-large-language-model",
+    "title": "What is a large language model?",
     "category": "generative-ai",
     "subcategory": "llms",
     "difficulty": "beginner",
@@ -9,8 +9,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-llms-transformer-architecture-2",
-    "title": "Imagine you are introducing transformer architecture to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-generative-ai-llms-what-is-tokenization-in-llms",
+    "title": "What is tokenization in LLMs?",
     "category": "generative-ai",
     "subcategory": "llms",
     "difficulty": "beginner",
@@ -18,8 +18,62 @@
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-llms-transformer-architecture-3",
-    "title": "Compare transformer architecture with encoder and decoder architectures. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-generative-ai-llms-what-is-a-context-window",
+    "title": "What is a context window?",
+    "category": "generative-ai",
+    "subcategory": "llms",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llms-how-do-llms-generate-text",
+    "title": "How do LLMs generate text?",
+    "category": "generative-ai",
+    "subcategory": "llms",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llms-what-is-an-attention-mechanism",
+    "title": "What is an attention mechanism?",
+    "category": "generative-ai",
+    "subcategory": "llms",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llms-what-is-hallucination-in-llms",
+    "title": "What is hallucination in LLMs?",
+    "category": "generative-ai",
+    "subcategory": "llms",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llms-what-is-a-transformer",
+    "title": "What is a transformer?",
+    "category": "generative-ai",
+    "subcategory": "llms",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "title": "What is a model parameter?",
+    "category": "generative-ai",
+    "subcategory": "llms",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120,
+    "slug": "v2-generative-ai-llms-what-is-a-model-parameter"
+  },
+  {
+    "slug": "v2-generative-ai-llms-how-does-self-attention-work",
+    "title": "How does self-attention work?",
     "category": "generative-ai",
     "subcategory": "llms",
     "difficulty": "intermediate",
@@ -27,35 +81,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-llms-transformer-architecture-4",
-    "title": "Consider this scenario: a team chooses a model for text generation. Explain how you would apply your understanding of transformer architecture, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "generative-ai",
-    "subcategory": "llms",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-llms-tokenization-1",
-    "title": "Explain tokenization in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "generative-ai",
-    "subcategory": "llms",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-llms-tokenization-2",
-    "title": "Imagine you are introducing tokenization to a classmate. How does it work, and where would someone encounter it?",
-    "category": "generative-ai",
-    "subcategory": "llms",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-llms-tokenization-3",
-    "title": "Compare tokenization with tokens and context windows. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-generative-ai-llms-encoder-only-vs-decoder-only-transformers",
+    "title": "Encoder-only vs decoder-only transformers.",
     "category": "generative-ai",
     "subcategory": "llms",
     "difficulty": "intermediate",
@@ -63,35 +90,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-llms-tokenization-4",
-    "title": "Consider this scenario: a prompt unexpectedly exceeds a model limit. Explain how you would apply your understanding of tokenization, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "generative-ai",
-    "subcategory": "llms",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-llms-context-windows-1",
-    "title": "Explain context windows in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "generative-ai",
-    "subcategory": "llms",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-llms-context-windows-2",
-    "title": "Imagine you are introducing context windows to a classmate. How does it work, and where would someone encounter it?",
-    "category": "generative-ai",
-    "subcategory": "llms",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-llms-context-windows-3",
-    "title": "Compare context windows with truncation and long-context retrieval. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-generative-ai-llms-how-does-positional-encoding-work",
+    "title": "How does positional encoding work?",
     "category": "generative-ai",
     "subcategory": "llms",
     "difficulty": "intermediate",
@@ -99,35 +99,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-llms-context-windows-4",
-    "title": "Consider this scenario: a long document must be analyzed. Explain how you would apply your understanding of context windows, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "generative-ai",
-    "subcategory": "llms",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-llms-temperature-and-sampling-1",
-    "title": "Explain temperature and sampling in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "generative-ai",
-    "subcategory": "llms",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-llms-temperature-and-sampling-2",
-    "title": "Imagine you are introducing temperature and sampling to a classmate. How does it work, and where would someone encounter it?",
-    "category": "generative-ai",
-    "subcategory": "llms",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-llms-temperature-and-sampling-3",
-    "title": "Compare temperature and sampling with top-p and deterministic decoding. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-generative-ai-llms-how-does-bpe-tokenization-work",
+    "title": "How does BPE tokenization work?",
     "category": "generative-ai",
     "subcategory": "llms",
     "difficulty": "intermediate",
@@ -135,8 +108,71 @@
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-llms-temperature-and-sampling-4",
-    "title": "Consider this scenario: a product needs consistent structured responses. Explain how you would apply your understanding of temperature and sampling, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-generative-ai-llms-temperature-vs-top-p-sampling",
+    "title": "Temperature vs top-p sampling.",
+    "category": "generative-ai",
+    "subcategory": "llms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llms-what-is-the-difference-between-pretraining-and-inference",
+    "title": "What is the difference between pretraining and inference?",
+    "category": "generative-ai",
+    "subcategory": "llms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llms-how-does-autoregressive-decoding-work",
+    "title": "How does autoregressive decoding work?",
+    "category": "generative-ai",
+    "subcategory": "llms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llms-what-is-multi-head-attention",
+    "title": "What is multi-head attention?",
+    "category": "generative-ai",
+    "subcategory": "llms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llms-what-is-perplexity-in-language-modeling",
+    "title": "What is perplexity in language modeling?",
+    "category": "generative-ai",
+    "subcategory": "llms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llms-how-does-subword-tokenization-handle-unfamiliar-words",
+    "title": "How does subword tokenization handle unfamiliar words?",
+    "category": "generative-ai",
+    "subcategory": "llms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "title": "How does causal attention mask future tokens?",
+    "category": "generative-ai",
+    "subcategory": "llms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120,
+    "slug": "v2-generative-ai-llms-how-does-causal-attention-mask-future-tokens"
+  },
+  {
+    "slug": "v2-generative-ai-llms-how-does-grouped-query-attention-reduce-memory-usage",
+    "title": "How does grouped-query attention reduce memory usage?",
     "category": "generative-ai",
     "subcategory": "llms",
     "difficulty": "advanced",
@@ -144,8 +180,71 @@
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-prompt-engineering-instruction-hierarchy-1",
-    "title": "Explain instruction hierarchy in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-generative-ai-llms-how-does-rotary-positional-embedding-work",
+    "title": "How does rotary positional embedding work?",
+    "category": "generative-ai",
+    "subcategory": "llms",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llms-how-do-mixture-of-experts-models-route-tokens",
+    "title": "How do mixture-of-experts models route tokens?",
+    "category": "generative-ai",
+    "subcategory": "llms",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llms-why-does-attention-become-expensive-with-long-contexts",
+    "title": "Why does attention become expensive with long contexts?",
+    "category": "generative-ai",
+    "subcategory": "llms",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llms-how-does-beam-search-differ-from-nucleus-sampling",
+    "title": "How does beam search differ from nucleus sampling?",
+    "category": "generative-ai",
+    "subcategory": "llms",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llms-what-causes-the-lost-in-the-middle-problem",
+    "title": "What causes the lost-in-the-middle problem?",
+    "category": "generative-ai",
+    "subcategory": "llms",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llms-how-does-tokenization-affect-multilingual-llm-performance",
+    "title": "How does tokenization affect multilingual LLM performance?",
+    "category": "generative-ai",
+    "subcategory": "llms",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llms-how-does-sliding-window-attention-work",
+    "title": "How does sliding-window attention work?",
+    "category": "generative-ai",
+    "subcategory": "llms",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-prompt-engineering-what-is-prompt-engineering",
+    "title": "What is prompt engineering?",
     "category": "generative-ai",
     "subcategory": "prompt-engineering",
     "difficulty": "beginner",
@@ -153,8 +252,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-prompt-engineering-instruction-hierarchy-2",
-    "title": "Imagine you are introducing instruction hierarchy to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-generative-ai-prompt-engineering-what-is-zero-shot-prompting",
+    "title": "What is zero-shot prompting?",
     "category": "generative-ai",
     "subcategory": "prompt-engineering",
     "difficulty": "beginner",
@@ -162,26 +261,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-prompt-engineering-instruction-hierarchy-3",
-    "title": "Compare instruction hierarchy with prompt injection. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "generative-ai",
-    "subcategory": "prompt-engineering",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-prompt-engineering-instruction-hierarchy-4",
-    "title": "Consider this scenario: an assistant receives conflicting instructions. Explain how you would apply your understanding of instruction hierarchy, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "generative-ai",
-    "subcategory": "prompt-engineering",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-prompt-engineering-few-shot-prompting-1",
-    "title": "Explain few-shot prompting in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-generative-ai-prompt-engineering-what-is-few-shot-prompting",
+    "title": "What is few-shot prompting?",
     "category": "generative-ai",
     "subcategory": "prompt-engineering",
     "difficulty": "beginner",
@@ -189,8 +270,35 @@
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-prompt-engineering-few-shot-prompting-2",
-    "title": "Imagine you are introducing few-shot prompting to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-generative-ai-prompt-engineering-what-are-system-instructions",
+    "title": "What are system instructions?",
+    "category": "generative-ai",
+    "subcategory": "prompt-engineering",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-prompt-engineering-why-are-delimiters-useful-in-prompts",
+    "title": "Why are delimiters useful in prompts?",
+    "category": "generative-ai",
+    "subcategory": "prompt-engineering",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-prompt-engineering-what-is-an-output-format-instruction",
+    "title": "What is an output format instruction?",
+    "category": "generative-ai",
+    "subcategory": "prompt-engineering",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-prompt-engineering-how-does-example-ordering-affect-few-shot-prompting",
+    "title": "How does example ordering affect few-shot prompting?",
     "category": "generative-ai",
     "subcategory": "prompt-engineering",
     "difficulty": "intermediate",
@@ -198,8 +306,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-prompt-engineering-few-shot-prompting-3",
-    "title": "Compare few-shot prompting with zero-shot prompting. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-generative-ai-prompt-engineering-how-does-instruction-hierarchy-work",
+    "title": "How does instruction hierarchy work?",
     "category": "generative-ai",
     "subcategory": "prompt-engineering",
     "difficulty": "intermediate",
@@ -207,8 +315,62 @@
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-prompt-engineering-few-shot-prompting-4",
-    "title": "Consider this scenario: a model must classify support tickets consistently. Explain how you would apply your understanding of few-shot prompting, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-generative-ai-prompt-engineering-how-do-prompts-influence-structured-output",
+    "title": "How do prompts influence structured output?",
+    "category": "generative-ai",
+    "subcategory": "prompt-engineering",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-prompt-engineering-what-is-prompt-chaining",
+    "title": "What is prompt chaining?",
+    "category": "generative-ai",
+    "subcategory": "prompt-engineering",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-prompt-engineering-how-does-role-prompting-affect-responses",
+    "title": "How does role prompting affect responses?",
+    "category": "generative-ai",
+    "subcategory": "prompt-engineering",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-prompt-engineering-how-do-you-design-prompts-for-classification",
+    "title": "How do you design prompts for classification?",
+    "category": "generative-ai",
+    "subcategory": "prompt-engineering",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-prompt-engineering-how-do-you-select-few-shot-examples",
+    "title": "How do you select few-shot examples?",
+    "category": "generative-ai",
+    "subcategory": "prompt-engineering",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-prompt-engineering-how-do-you-reduce-ambiguity-in-prompts",
+    "title": "How do you reduce ambiguity in prompts?",
+    "category": "generative-ai",
+    "subcategory": "prompt-engineering",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-prompt-engineering-how-would-you-evaluate-prompt-variants-systematically",
+    "title": "How would you evaluate prompt variants systematically?",
     "category": "generative-ai",
     "subcategory": "prompt-engineering",
     "difficulty": "advanced",
@@ -216,8 +378,53 @@
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-rag-retrieval-augmented-generation-1",
-    "title": "Explain retrieval augmented generation in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-generative-ai-prompt-engineering-how-can-prompt-templates-generalize-across-diverse-inputs",
+    "title": "How can prompt templates generalize across diverse inputs?",
+    "category": "generative-ai",
+    "subcategory": "prompt-engineering",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-prompt-engineering-how-do-you-manage-conflicting-prompt-requirements",
+    "title": "How do you manage conflicting prompt requirements?",
+    "category": "generative-ai",
+    "subcategory": "prompt-engineering",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-prompt-engineering-how-can-irrelevant-examples-degrade-few-shot-performance",
+    "title": "How can irrelevant examples degrade few-shot performance?",
+    "category": "generative-ai",
+    "subcategory": "prompt-engineering",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-prompt-engineering-how-would-you-optimize-prompts-for-long-context-tasks",
+    "title": "How would you optimize prompts for long-context tasks?",
+    "category": "generative-ai",
+    "subcategory": "prompt-engineering",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-prompt-engineering-how-does-automated-prompt-optimization-work",
+    "title": "How does automated prompt optimization work?",
+    "category": "generative-ai",
+    "subcategory": "prompt-engineering",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-rag-what-is-retrieval-augmented-generation",
+    "title": "What is retrieval-augmented generation?",
     "category": "generative-ai",
     "subcategory": "rag",
     "difficulty": "beginner",
@@ -225,35 +432,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-rag-retrieval-augmented-generation-2",
-    "title": "Imagine you are introducing retrieval augmented generation to a classmate. How does it work, and where would someone encounter it?",
-    "category": "generative-ai",
-    "subcategory": "rag",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-rag-retrieval-augmented-generation-3",
-    "title": "Compare retrieval augmented generation with fine-tuning. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "generative-ai",
-    "subcategory": "rag",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-rag-retrieval-augmented-generation-4",
-    "title": "Consider this scenario: a company assistant must answer from internal documents. Explain how you would apply your understanding of retrieval augmented generation, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "generative-ai",
-    "subcategory": "rag",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-rag-chunking-strategies-1",
-    "title": "Explain chunking strategies in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-generative-ai-rag-what-are-vector-embeddings",
+    "title": "What are vector embeddings?",
     "category": "generative-ai",
     "subcategory": "rag",
     "difficulty": "beginner",
@@ -261,35 +441,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-rag-chunking-strategies-2",
-    "title": "Imagine you are introducing chunking strategies to a classmate. How does it work, and where would someone encounter it?",
-    "category": "generative-ai",
-    "subcategory": "rag",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-rag-chunking-strategies-3",
-    "title": "Compare chunking strategies with overlap and semantic chunking. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "generative-ai",
-    "subcategory": "rag",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-rag-chunking-strategies-4",
-    "title": "Consider this scenario: a long technical manual produces poor search results. Explain how you would apply your understanding of chunking strategies, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "generative-ai",
-    "subcategory": "rag",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-rag-retrieval-evaluation-1",
-    "title": "Explain retrieval evaluation in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-generative-ai-rag-what-is-a-vector-database",
+    "title": "What is a vector database?",
     "category": "generative-ai",
     "subcategory": "rag",
     "difficulty": "beginner",
@@ -297,8 +450,62 @@
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-rag-retrieval-evaluation-2",
-    "title": "Imagine you are introducing retrieval evaluation to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-generative-ai-rag-what-is-semantic-search",
+    "title": "What is semantic search?",
+    "category": "generative-ai",
+    "subcategory": "rag",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-rag-why-are-documents-chunked-in-rag",
+    "title": "Why are documents chunked in RAG?",
+    "category": "generative-ai",
+    "subcategory": "rag",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-rag-what-is-cosine-similarity",
+    "title": "What is cosine similarity?",
+    "category": "generative-ai",
+    "subcategory": "rag",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-rag-what-are-metadata-filters",
+    "title": "What are metadata filters?",
+    "category": "generative-ai",
+    "subcategory": "rag",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-rag-what-is-keyword-search",
+    "title": "What is keyword search?",
+    "category": "generative-ai",
+    "subcategory": "rag",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-rag-what-is-document-indexing-in-rag",
+    "title": "What is document indexing in RAG?",
+    "category": "generative-ai",
+    "subcategory": "rag",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-rag-how-does-a-rag-pipeline-work",
+    "title": "How does a RAG pipeline work?",
     "category": "generative-ai",
     "subcategory": "rag",
     "difficulty": "intermediate",
@@ -306,8 +513,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-rag-retrieval-evaluation-3",
-    "title": "Compare retrieval evaluation with precision and recall at K. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-generative-ai-rag-how-does-hybrid-search-work",
+    "title": "How does hybrid search work?",
     "category": "generative-ai",
     "subcategory": "rag",
     "difficulty": "intermediate",
@@ -315,8 +522,98 @@
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-rag-retrieval-evaluation-4",
-    "title": "Consider this scenario: answers cite irrelevant passages. Explain how you would apply your understanding of retrieval evaluation, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-generative-ai-rag-fixed-size-vs-semantic-chunking",
+    "title": "Fixed-size vs semantic chunking.",
+    "category": "generative-ai",
+    "subcategory": "rag",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-rag-what-is-reranking-in-rag",
+    "title": "What is reranking in RAG?",
+    "category": "generative-ai",
+    "subcategory": "rag",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-rag-how-does-chunk-overlap-affect-retrieval",
+    "title": "How does chunk overlap affect retrieval?",
+    "category": "generative-ai",
+    "subcategory": "rag",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-rag-how-does-hnsw-indexing-work",
+    "title": "How does HNSW indexing work?",
+    "category": "generative-ai",
+    "subcategory": "rag",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-rag-how-do-embeddings-differ-from-token-ids",
+    "title": "How do embeddings differ from token IDs?",
+    "category": "generative-ai",
+    "subcategory": "rag",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-rag-how-does-query-expansion-improve-retrieval",
+    "title": "How does query expansion improve retrieval?",
+    "category": "generative-ai",
+    "subcategory": "rag",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-rag-what-is-reciprocal-rank-fusion",
+    "title": "What is reciprocal rank fusion?",
+    "category": "generative-ai",
+    "subcategory": "rag",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-rag-how-do-you-measure-retrieval-recall",
+    "title": "How do you measure retrieval recall?",
+    "category": "generative-ai",
+    "subcategory": "rag",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-rag-how-do-citations-improve-rag-responses",
+    "title": "How do citations improve RAG responses?",
+    "category": "generative-ai",
+    "subcategory": "rag",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-rag-how-do-you-update-a-rag-knowledge-base",
+    "title": "How do you update a RAG knowledge base?",
+    "category": "generative-ai",
+    "subcategory": "rag",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-rag-how-would-you-diagnose-poor-retrieval-quality",
+    "title": "How would you diagnose poor retrieval quality?",
     "category": "generative-ai",
     "subcategory": "rag",
     "difficulty": "advanced",
@@ -324,116 +621,80 @@
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-embeddings-vector-embeddings-1",
-    "title": "Explain vector embeddings in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-generative-ai-rag-how-do-you-evaluate-faithfulness-in-rag",
+    "title": "How do you evaluate faithfulness in RAG?",
     "category": "generative-ai",
-    "subcategory": "embeddings",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-embeddings-vector-embeddings-2",
-    "title": "Imagine you are introducing vector embeddings to a classmate. How does it work, and where would someone encounter it?",
-    "category": "generative-ai",
-    "subcategory": "embeddings",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-embeddings-vector-embeddings-3",
-    "title": "Compare vector embeddings with similarity metrics. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "generative-ai",
-    "subcategory": "embeddings",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-embeddings-vector-embeddings-4",
-    "title": "Consider this scenario: a search system must find conceptually related text. Explain how you would apply your understanding of vector embeddings, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "generative-ai",
-    "subcategory": "embeddings",
+    "subcategory": "rag",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-vector-databases-vector-indexing-1",
-    "title": "Explain vector indexing in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-generative-ai-rag-how-does-hierarchical-retrieval-work",
+    "title": "How does hierarchical retrieval work?",
     "category": "generative-ai",
-    "subcategory": "vector-databases",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-vector-databases-vector-indexing-2",
-    "title": "Imagine you are introducing vector indexing to a classmate. How does it work, and where would someone encounter it?",
-    "category": "generative-ai",
-    "subcategory": "vector-databases",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-vector-databases-vector-indexing-3",
-    "title": "Compare vector indexing with HNSW and IVF. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "generative-ai",
-    "subcategory": "vector-databases",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-vector-databases-vector-indexing-4",
-    "title": "Consider this scenario: a collection grows to millions of vectors. Explain how you would apply your understanding of vector indexing, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "generative-ai",
-    "subcategory": "vector-databases",
+    "subcategory": "rag",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-ai-agents-agent-architecture-1",
-    "title": "Explain agent architecture in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-generative-ai-rag-how-would-you-handle-conflicting-retrieved-documents",
+    "title": "How would you handle conflicting retrieved documents?",
     "category": "generative-ai",
-    "subcategory": "ai-agents",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-ai-agents-agent-architecture-2",
-    "title": "Imagine you are introducing agent architecture to a classmate. How does it work, and where would someone encounter it?",
-    "category": "generative-ai",
-    "subcategory": "ai-agents",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-ai-agents-agent-architecture-3",
-    "title": "Compare agent architecture with workflows and autonomous agents. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "generative-ai",
-    "subcategory": "ai-agents",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-ai-agents-agent-architecture-4",
-    "title": "Consider this scenario: an assistant must call APIs to finish a task. Explain how you would apply your understanding of agent architecture, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "generative-ai",
-    "subcategory": "ai-agents",
+    "subcategory": "rag",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-ai-agents-tool-calling-1",
-    "title": "Explain tool calling in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-generative-ai-rag-how-do-you-enforce-document-level-permissions-in-rag",
+    "title": "How do you enforce document-level permissions in RAG?",
+    "category": "generative-ai",
+    "subcategory": "rag",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-rag-how-does-embedding-drift-affect-retrieval",
+    "title": "How does embedding drift affect retrieval?",
+    "category": "generative-ai",
+    "subcategory": "rag",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-rag-how-would-you-optimize-retrieval-latency-at-scale",
+    "title": "How would you optimize retrieval latency at scale?",
+    "category": "generative-ai",
+    "subcategory": "rag",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-rag-how-do-approximate-nearest-neighbor-indexes-trade-accuracy-for-speed",
+    "title": "How do approximate nearest-neighbor indexes trade accuracy for speed?",
+    "category": "generative-ai",
+    "subcategory": "rag",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-rag-how-does-multi-hop-retrieval-work",
+    "title": "How does multi-hop retrieval work?",
+    "category": "generative-ai",
+    "subcategory": "rag",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-ai-agents-what-is-an-ai-agent",
+    "title": "What is an AI agent?",
     "category": "generative-ai",
     "subcategory": "ai-agents",
     "difficulty": "beginner",
@@ -441,35 +702,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-ai-agents-tool-calling-2",
-    "title": "Imagine you are introducing tool calling to a classmate. How does it work, and where would someone encounter it?",
-    "category": "generative-ai",
-    "subcategory": "ai-agents",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-ai-agents-tool-calling-3",
-    "title": "Compare tool calling with structured outputs. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "generative-ai",
-    "subcategory": "ai-agents",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-ai-agents-tool-calling-4",
-    "title": "Consider this scenario: an agent must safely query an order system. Explain how you would apply your understanding of tool calling, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "generative-ai",
-    "subcategory": "ai-agents",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-ai-agents-agent-memory-1",
-    "title": "Explain agent memory in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-generative-ai-ai-agents-what-is-tool-calling",
+    "title": "What is tool calling?",
     "category": "generative-ai",
     "subcategory": "ai-agents",
     "difficulty": "beginner",
@@ -477,35 +711,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-ai-agents-agent-memory-2",
-    "title": "Imagine you are introducing agent memory to a classmate. How does it work, and where would someone encounter it?",
-    "category": "generative-ai",
-    "subcategory": "ai-agents",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-ai-agents-agent-memory-3",
-    "title": "Compare agent memory with conversation history and retrieval. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "generative-ai",
-    "subcategory": "ai-agents",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-ai-agents-agent-memory-4",
-    "title": "Consider this scenario: an assistant should remember project preferences. Explain how you would apply your understanding of agent memory, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "generative-ai",
-    "subcategory": "ai-agents",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-ai-agents-multi-agent-systems-1",
-    "title": "Explain multi-agent systems in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-generative-ai-ai-agents-what-is-model-context-protocol",
+    "title": "What is Model Context Protocol?",
     "category": "generative-ai",
     "subcategory": "ai-agents",
     "difficulty": "beginner",
@@ -513,35 +720,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-ai-agents-multi-agent-systems-2",
-    "title": "Imagine you are introducing multi-agent systems to a classmate. How does it work, and where would someone encounter it?",
-    "category": "generative-ai",
-    "subcategory": "ai-agents",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-ai-agents-multi-agent-systems-3",
-    "title": "Compare multi-agent systems with handoffs and orchestration. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "generative-ai",
-    "subcategory": "ai-agents",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-ai-agents-multi-agent-systems-4",
-    "title": "Consider this scenario: a research task has separate planning and review stages. Explain how you would apply your understanding of multi-agent systems, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "generative-ai",
-    "subcategory": "ai-agents",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-ai-agents-agent-evaluation-1",
-    "title": "Explain agent evaluation in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-generative-ai-ai-agents-what-is-agent-memory",
+    "title": "What is agent memory?",
     "category": "generative-ai",
     "subcategory": "ai-agents",
     "difficulty": "beginner",
@@ -549,71 +729,206 @@
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-ai-agents-agent-evaluation-2",
-    "title": "Imagine you are introducing agent evaluation to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-generative-ai-ai-agents-ai-agents-vs-chatbots",
+    "title": "AI agents vs chatbots.",
     "category": "generative-ai",
     "subcategory": "ai-agents",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-ai-agents-agent-evaluation-3",
-    "title": "Compare agent evaluation with trajectory evaluation. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "generative-ai",
-    "subcategory": "ai-agents",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-ai-agents-agent-evaluation-4",
-    "title": "Consider this scenario: an agent sometimes reaches the right answer through unsafe steps. Explain how you would apply your understanding of agent evaluation, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "generative-ai",
-    "subcategory": "ai-agents",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-mcp-model-context-protocol-1",
-    "title": "Explain Model Context Protocol in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "generative-ai",
-    "subcategory": "mcp",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-mcp-model-context-protocol-2",
-    "title": "Imagine you are introducing Model Context Protocol to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-generative-ai-ai-agents-what-is-human-in-the-loop-approval",
+    "title": "What is human-in-the-loop approval?",
     "category": "generative-ai",
-    "subcategory": "mcp",
+    "subcategory": "ai-agents",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-ai-agents-what-is-an-agent-workflow",
+    "title": "What is an agent workflow?",
+    "category": "generative-ai",
+    "subcategory": "ai-agents",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-ai-agents-what-are-mcp-resources",
+    "title": "What are MCP resources?",
+    "category": "generative-ai",
+    "subcategory": "ai-agents",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "title": "What is a tool schema?",
+    "category": "generative-ai",
+    "subcategory": "ai-agents",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120,
+    "slug": "v2-generative-ai-ai-agents-what-is-a-tool-schema"
+  },
+  {
+    "slug": "v2-generative-ai-ai-agents-how-does-the-react-agent-pattern-work",
+    "title": "How does the ReAct agent pattern work?",
+    "category": "generative-ai",
+    "subcategory": "ai-agents",
     "difficulty": "intermediate",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-mcp-model-context-protocol-3",
-    "title": "Compare Model Context Protocol with custom tool integrations. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-generative-ai-ai-agents-how-do-agents-select-tools",
+    "title": "How do agents select tools?",
     "category": "generative-ai",
-    "subcategory": "mcp",
+    "subcategory": "ai-agents",
     "difficulty": "intermediate",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-mcp-model-context-protocol-4",
-    "title": "Consider this scenario: an assistant needs standardized access to developer tools. Explain how you would apply your understanding of Model Context Protocol, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-generative-ai-ai-agents-how-does-an-agent-execution-loop-work",
+    "title": "How does an agent execution loop work?",
     "category": "generative-ai",
-    "subcategory": "mcp",
+    "subcategory": "ai-agents",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-ai-agents-what-is-the-difference-between-mcp-clients-and-servers",
+    "title": "What is the difference between MCP clients and servers?",
+    "category": "generative-ai",
+    "subcategory": "ai-agents",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-ai-agents-how-do-mcp-tools-differ-from-resources",
+    "title": "How do MCP tools differ from resources?",
+    "category": "generative-ai",
+    "subcategory": "ai-agents",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-ai-agents-how-do-agents-maintain-conversation-state",
+    "title": "How do agents maintain conversation state?",
+    "category": "generative-ai",
+    "subcategory": "ai-agents",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-ai-agents-what-is-a-multi-agent-system",
+    "title": "What is a multi-agent system?",
+    "category": "generative-ai",
+    "subcategory": "ai-agents",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-ai-agents-how-do-you-validate-tool-call-arguments",
+    "title": "How do you validate tool-call arguments?",
+    "category": "generative-ai",
+    "subcategory": "ai-agents",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-ai-agents-how-do-agents-handle-tool-execution-errors",
+    "title": "How do agents handle tool execution errors?",
+    "category": "generative-ai",
+    "subcategory": "ai-agents",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-ai-agents-how-does-agent-planning-differ-from-execution",
+    "title": "How does agent planning differ from execution?",
+    "category": "generative-ai",
+    "subcategory": "ai-agents",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-ai-agents-how-would-you-prevent-infinite-agent-loops",
+    "title": "How would you prevent infinite agent loops?",
+    "category": "generative-ai",
+    "subcategory": "ai-agents",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-fine-tuning-fine-tuning-versus-prompting-1",
-    "title": "Explain fine-tuning versus prompting in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-generative-ai-ai-agents-how-do-you-isolate-untrusted-tool-outputs",
+    "title": "How do you isolate untrusted tool outputs?",
+    "category": "generative-ai",
+    "subcategory": "ai-agents",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-ai-agents-how-would-you-make-agent-tool-calls-idempotent",
+    "title": "How would you make agent tool calls idempotent?",
+    "category": "generative-ai",
+    "subcategory": "ai-agents",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-ai-agents-how-do-you-coordinate-concurrent-agents",
+    "title": "How do you coordinate concurrent agents?",
+    "category": "generative-ai",
+    "subcategory": "ai-agents",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-ai-agents-how-would-you-evaluate-an-agent-s-task-success",
+    "title": "How would you evaluate an agent's task success?",
+    "category": "generative-ai",
+    "subcategory": "ai-agents",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-ai-agents-how-do-you-recover-interrupted-agent-workflows",
+    "title": "How do you recover interrupted agent workflows?",
+    "category": "generative-ai",
+    "subcategory": "ai-agents",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-ai-agents-how-would-you-enforce-least-privilege-tool-access",
+    "title": "How would you enforce least-privilege tool access?",
+    "category": "generative-ai",
+    "subcategory": "ai-agents",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-fine-tuning-what-is-fine-tuning-in-llms",
+    "title": "What is fine-tuning in LLMs?",
     "category": "generative-ai",
     "subcategory": "fine-tuning",
     "difficulty": "beginner",
@@ -621,8 +936,44 @@
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-fine-tuning-fine-tuning-versus-prompting-2",
-    "title": "Imagine you are introducing fine-tuning versus prompting to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-generative-ai-fine-tuning-what-is-supervised-fine-tuning",
+    "title": "What is supervised fine-tuning?",
+    "category": "generative-ai",
+    "subcategory": "fine-tuning",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-fine-tuning-what-is-a-training-dataset",
+    "title": "What is a training dataset?",
+    "category": "generative-ai",
+    "subcategory": "fine-tuning",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-fine-tuning-what-is-transfer-learning",
+    "title": "What is transfer learning?",
+    "category": "generative-ai",
+    "subcategory": "fine-tuning",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "title": "What is a model checkpoint?",
+    "category": "generative-ai",
+    "subcategory": "fine-tuning",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120,
+    "slug": "v2-generative-ai-fine-tuning-what-is-a-model-checkpoint"
+  },
+  {
+    "slug": "v2-generative-ai-fine-tuning-fine-tuning-vs-rag",
+    "title": "Fine-tuning vs RAG.",
     "category": "generative-ai",
     "subcategory": "fine-tuning",
     "difficulty": "intermediate",
@@ -630,8 +981,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-fine-tuning-fine-tuning-versus-prompting-3",
-    "title": "Compare fine-tuning versus prompting with RAG and few-shot examples. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-generative-ai-fine-tuning-how-does-lora-work",
+    "title": "How does LoRA work?",
     "category": "generative-ai",
     "subcategory": "fine-tuning",
     "difficulty": "intermediate",
@@ -639,8 +990,44 @@
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-fine-tuning-fine-tuning-versus-prompting-4",
-    "title": "Consider this scenario: a domain task needs consistent terminology. Explain how you would apply your understanding of fine-tuning versus prompting, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-generative-ai-fine-tuning-what-is-parameter-efficient-fine-tuning",
+    "title": "What is parameter-efficient fine-tuning?",
+    "category": "generative-ai",
+    "subcategory": "fine-tuning",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-fine-tuning-what-is-instruction-tuning",
+    "title": "What is instruction tuning?",
+    "category": "generative-ai",
+    "subcategory": "fine-tuning",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-fine-tuning-what-is-preference-tuning",
+    "title": "What is preference tuning?",
+    "category": "generative-ai",
+    "subcategory": "fine-tuning",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-fine-tuning-how-do-you-prepare-fine-tuning-datasets",
+    "title": "How do you prepare fine-tuning datasets?",
+    "category": "generative-ai",
+    "subcategory": "fine-tuning",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-fine-tuning-how-does-qlora-reduce-training-memory",
+    "title": "How does QLoRA reduce training memory?",
     "category": "generative-ai",
     "subcategory": "fine-tuning",
     "difficulty": "advanced",
@@ -648,253 +1035,316 @@
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-llm-safety-hallucinations-1",
-    "title": "Explain hallucinations in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-generative-ai-fine-tuning-how-does-direct-preference-optimization-work",
+    "title": "How does direct preference optimization work?",
     "category": "generative-ai",
-    "subcategory": "llm-safety",
+    "subcategory": "fine-tuning",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-fine-tuning-how-can-fine-tuning-cause-catastrophic-forgetting",
+    "title": "How can fine-tuning cause catastrophic forgetting?",
+    "category": "generative-ai",
+    "subcategory": "fine-tuning",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-fine-tuning-how-would-you-detect-overfitting-in-fine-tuned-llms",
+    "title": "How would you detect overfitting in fine-tuned LLMs?",
+    "category": "generative-ai",
+    "subcategory": "fine-tuning",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-fine-tuning-how-does-reinforcement-learning-from-human-feedback-work",
+    "title": "How does reinforcement learning from human feedback work?",
+    "category": "generative-ai",
+    "subcategory": "fine-tuning",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llm-engineering-what-is-llm-inference-latency",
+    "title": "What is LLM inference latency?",
+    "category": "generative-ai",
+    "subcategory": "llm-engineering",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-llm-safety-hallucinations-2",
-    "title": "Imagine you are introducing hallucinations to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-generative-ai-llm-engineering-what-is-time-to-first-token",
+    "title": "What is time to first token?",
     "category": "generative-ai",
-    "subcategory": "llm-safety",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-llm-safety-hallucinations-3",
-    "title": "Compare hallucinations with grounding and uncertainty. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "generative-ai",
-    "subcategory": "llm-safety",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-llm-safety-hallucinations-4",
-    "title": "Consider this scenario: a customer-facing assistant invents a policy. Explain how you would apply your understanding of hallucinations, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "generative-ai",
-    "subcategory": "llm-safety",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-llm-safety-prompt-injection-defense-1",
-    "title": "Explain prompt injection defense in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "generative-ai",
-    "subcategory": "llm-safety",
+    "subcategory": "llm-engineering",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-llm-safety-prompt-injection-defense-2",
-    "title": "Imagine you are introducing prompt injection defense to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-generative-ai-llm-engineering-what-is-token-streaming",
+    "title": "What is token streaming?",
     "category": "generative-ai",
-    "subcategory": "llm-safety",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-llm-safety-prompt-injection-defense-3",
-    "title": "Compare prompt injection defense with input isolation and tool permissions. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "generative-ai",
-    "subcategory": "llm-safety",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-llm-safety-prompt-injection-defense-4",
-    "title": "Consider this scenario: a retrieved document contains malicious instructions. Explain how you would apply your understanding of prompt injection defense, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "generative-ai",
-    "subcategory": "llm-safety",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-llm-operations-llm-observability-1",
-    "title": "Explain LLM observability in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "generative-ai",
-    "subcategory": "llm-operations",
+    "subcategory": "llm-engineering",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-llm-operations-llm-observability-2",
-    "title": "Imagine you are introducing LLM observability to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-generative-ai-llm-engineering-what-is-prompt-injection",
+    "title": "What is prompt injection?",
     "category": "generative-ai",
-    "subcategory": "llm-operations",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-llm-operations-llm-observability-3",
-    "title": "Compare LLM observability with tracing and evaluation. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "generative-ai",
-    "subcategory": "llm-operations",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-llm-operations-llm-observability-4",
-    "title": "Consider this scenario: a model update causes answer quality to drop. Explain how you would apply your understanding of LLM observability, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "generative-ai",
-    "subcategory": "llm-operations",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-multimodal-ai-vision-language-models-1",
-    "title": "Explain vision-language models in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "generative-ai",
-    "subcategory": "multimodal-ai",
+    "subcategory": "llm-engineering",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-multimodal-ai-vision-language-models-2",
-    "title": "Imagine you are introducing vision-language models to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-generative-ai-llm-engineering-what-is-model-quantization",
+    "title": "What is model quantization?",
     "category": "generative-ai",
-    "subcategory": "multimodal-ai",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-multimodal-ai-vision-language-models-3",
-    "title": "Compare vision-language models with OCR and visual reasoning. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "generative-ai",
-    "subcategory": "multimodal-ai",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-multimodal-ai-vision-language-models-4",
-    "title": "Consider this scenario: an assistant must explain a diagram. Explain how you would apply your understanding of vision-language models, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "generative-ai",
-    "subcategory": "multimodal-ai",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-llm-applications-structured-outputs-1",
-    "title": "Explain structured outputs in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "generative-ai",
-    "subcategory": "llm-applications",
+    "subcategory": "llm-engineering",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-llm-applications-structured-outputs-2",
-    "title": "Imagine you are introducing structured outputs to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-generative-ai-llm-engineering-what-is-a-multimodal-model",
+    "title": "What is a multimodal model?",
     "category": "generative-ai",
-    "subcategory": "llm-applications",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-llm-applications-structured-outputs-3",
-    "title": "Compare structured outputs with JSON mode and validation. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "generative-ai",
-    "subcategory": "llm-applications",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-llm-applications-structured-outputs-4",
-    "title": "Consider this scenario: an application needs reliable machine-readable output. Explain how you would apply your understanding of structured outputs, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "generative-ai",
-    "subcategory": "llm-applications",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-llm-applications-model-selection-1",
-    "title": "Explain model selection in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "generative-ai",
-    "subcategory": "llm-applications",
+    "subcategory": "llm-engineering",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-llm-applications-model-selection-2",
-    "title": "Imagine you are introducing model selection to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-generative-ai-llm-engineering-what-is-an-llm-evaluation-dataset",
+    "title": "What is an LLM evaluation dataset?",
     "category": "generative-ai",
-    "subcategory": "llm-applications",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-llm-applications-model-selection-3",
-    "title": "Compare model selection with routing and fallback models. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "generative-ai",
-    "subcategory": "llm-applications",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-llm-applications-model-selection-4",
-    "title": "Consider this scenario: a product serves both simple and complex requests. Explain how you would apply your understanding of model selection, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "generative-ai",
-    "subcategory": "llm-applications",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "generative-ai-llm-operations-llm-cost-optimization-1",
-    "title": "Explain LLM cost optimization in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "generative-ai",
-    "subcategory": "llm-operations",
+    "subcategory": "llm-engineering",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-llm-operations-llm-cost-optimization-2",
-    "title": "Imagine you are introducing LLM cost optimization to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-generative-ai-llm-engineering-what-is-prompt-caching",
+    "title": "What is prompt caching?",
     "category": "generative-ai",
-    "subcategory": "llm-operations",
+    "subcategory": "llm-engineering",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llm-engineering-how-does-kv-caching-speed-up-inference",
+    "title": "How does KV caching speed up inference?",
+    "category": "generative-ai",
+    "subcategory": "llm-engineering",
     "difficulty": "intermediate",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-llm-operations-llm-cost-optimization-3",
-    "title": "Compare LLM cost optimization with quality-cost trade-offs. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-generative-ai-llm-engineering-how-does-continuous-batching-improve-llm-throughput",
+    "title": "How does continuous batching improve LLM throughput?",
     "category": "generative-ai",
-    "subcategory": "llm-operations",
+    "subcategory": "llm-engineering",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llm-engineering-how-do-you-validate-structured-llm-outputs",
+    "title": "How do you validate structured LLM outputs?",
+    "category": "generative-ai",
+    "subcategory": "llm-engineering",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llm-engineering-how-does-model-routing-reduce-inference-costs",
+    "title": "How does model routing reduce inference costs?",
+    "category": "generative-ai",
+    "subcategory": "llm-engineering",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llm-engineering-how-do-you-measure-llm-response-quality",
+    "title": "How do you measure LLM response quality?",
+    "category": "generative-ai",
+    "subcategory": "llm-engineering",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llm-engineering-how-do-you-handle-llm-api-rate-limits",
+    "title": "How do you handle LLM API rate limits?",
+    "category": "generative-ai",
+    "subcategory": "llm-engineering",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llm-engineering-how-does-image-tokenization-work-in-multimodal-models",
+    "title": "How does image tokenization work in multimodal models?",
+    "category": "generative-ai",
+    "subcategory": "llm-engineering",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llm-engineering-how-do-output-token-limits-affect-latency",
+    "title": "How do output token limits affect latency?",
+    "category": "generative-ai",
+    "subcategory": "llm-engineering",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llm-engineering-how-do-you-monitor-llm-applications",
+    "title": "How do you monitor LLM applications?",
+    "category": "generative-ai",
+    "subcategory": "llm-engineering",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llm-engineering-how-do-you-redact-sensitive-data-before-inference",
+    "title": "How do you redact sensitive data before inference?",
+    "category": "generative-ai",
+    "subcategory": "llm-engineering",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "title": "How does request queuing affect inference latency?",
+    "category": "generative-ai",
+    "subcategory": "llm-engineering",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120,
+    "slug": "v2-generative-ai-llm-engineering-how-does-request-queuing-affect-inference-latency"
+  },
+  {
+    "title": "How do vision-language models combine visual and text inputs?",
+    "category": "generative-ai",
+    "subcategory": "llm-engineering",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120,
+    "slug": "v2-generative-ai-llm-engineering-how-do-vision-language-models-combine-visual-and-text-inputs"
+  },
+  {
+    "title": "How do you estimate LLM API costs?",
+    "category": "generative-ai",
+    "subcategory": "llm-engineering",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120,
+    "slug": "v2-generative-ai-llm-engineering-how-do-you-estimate-llm-api-costs"
+  },
+  {
+    "slug": "v2-generative-ai-llm-engineering-how-does-speculative-decoding-accelerate-inference",
+    "title": "How does speculative decoding accelerate inference?",
+    "category": "generative-ai",
+    "subcategory": "llm-engineering",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "generative-ai-llm-operations-llm-cost-optimization-4",
-    "title": "Consider this scenario: usage grows while the product has a fixed budget. Explain how you would apply your understanding of LLM cost optimization, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-generative-ai-llm-engineering-how-would-you-benchmark-llm-inference-performance",
+    "title": "How would you benchmark LLM inference performance?",
     "category": "generative-ai",
-    "subcategory": "llm-operations",
+    "subcategory": "llm-engineering",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llm-engineering-how-do-you-defend-against-indirect-prompt-injection",
+    "title": "How do you defend against indirect prompt injection?",
+    "category": "generative-ai",
+    "subcategory": "llm-engineering",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llm-engineering-how-does-quantization-affect-model-accuracy",
+    "title": "How does quantization affect model accuracy?",
+    "category": "generative-ai",
+    "subcategory": "llm-engineering",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llm-engineering-how-would-you-detect-evaluation-dataset-contamination",
+    "title": "How would you detect evaluation dataset contamination?",
+    "category": "generative-ai",
+    "subcategory": "llm-engineering",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llm-engineering-how-do-you-balance-llm-throughput-and-tail-latency",
+    "title": "How do you balance LLM throughput and tail latency?",
+    "category": "generative-ai",
+    "subcategory": "llm-engineering",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llm-engineering-how-would-you-build-a-reliable-llm-fallback-strategy",
+    "title": "How would you build a reliable LLM fallback strategy?",
+    "category": "generative-ai",
+    "subcategory": "llm-engineering",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llm-engineering-how-would-you-evaluate-an-llm-judge-for-bias",
+    "title": "How would you evaluate an LLM judge for bias?",
+    "category": "generative-ai",
+    "subcategory": "llm-engineering",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llm-engineering-how-does-prefix-caching-differ-from-semantic-response-caching",
+    "title": "How does prefix caching differ from semantic response caching?",
+    "category": "generative-ai",
+    "subcategory": "llm-engineering",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-generative-ai-llm-engineering-how-do-you-mitigate-gpu-memory-fragmentation-during-inference",
+    "title": "How do you mitigate GPU memory fragmentation during inference?",
+    "category": "generative-ai",
+    "subcategory": "llm-engineering",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120

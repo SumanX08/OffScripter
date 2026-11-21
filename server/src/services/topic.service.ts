@@ -3,12 +3,24 @@ import { Prisma } from "../generated/prisma/client.js";
 import { prisma } from "../config/prisma.js";
 import type { SpinFilters } from "../validator/topic.validator.js";
 
-
-
-
 const FREE_DAILY_LIMIT = 2;
-const PRO_DAILY_LIMIT = 5;
-const MAX_TRANSACTION_RETRIES = 3;
+const PRO_DAILY_LIMIT = 10;
+const MAX_TRANSACTION_RETRIES = 10;
+
+type TopicSelectionRow = {
+  id: string | null;
+  slug: string | null;
+  title: string | null;
+  category: string | null;
+  subcategory: string | null;
+  difficulty: string | null;
+  researchTime: number | null;
+  speakingTime: number | null;
+  createdAt: Date | null;
+  updatedAt: Date | null;
+  usedToday: bigint;
+  hasActiveSubscription: boolean;
+};
 
 function getUtcDayBounds() {
   const now = new Date();
@@ -27,142 +39,202 @@ function getUtcDayBounds() {
   return { start, end };
 }
 
+function buildTopicCondition(filters: SpinFilters) {
+  const categories = filters.categories ?? [];
+
+  if (categories.length === 0) {
+    return Prisma.sql`TRUE`;
+  }
+
+  const conditions = categories.map(
+    ({ id, subcategories }) => {
+      if (subcategories.length === 0) {
+        return Prisma.sql`
+          t."category" = ${id}
+        `;
+      }
+
+      return Prisma.sql`
+        (
+          t."category" = ${id}
+          AND t."subcategory" IN (
+            ${Prisma.join(subcategories)}
+          )
+        )
+      `;
+    }
+  );
+
+  return Prisma.sql`
+    (${Prisma.join(conditions, " OR ")})
+  `;
+}
 
 export const spinChallenge = async (
   filters: SpinFilters,
   userId: string
 ) => {
+  const serviceStart = performance.now();
 
-  for (let retry = 0; retry < MAX_TRANSACTION_RETRIES; retry++) {
+  const { start, end } = getUtcDayBounds();
+
+  const topicCondition = buildTopicCondition(filters);
+
+  for (
+    let retry = 0;
+    retry < MAX_TRANSACTION_RETRIES;
+    retry++
+  ) {
     try {
 
-      return await prisma.$transaction(
+      const result = await prisma.$transaction(
         async (tx) => {
-          const now = new Date();
+          // 1. Check subscription, attempt count,
+          //    and select random topic in one query.
 
+          const queryStart = performance.now();
 
-          const activeSubscription = await tx.subscription.findFirst({
-            where: {
-              userId,
-              status: "active",
-              currentPeriodEnd: {
-                gt: now,
-              },
-            },
-            select: { id: true },
-          });
+          const rows = await tx.$queryRaw<TopicSelectionRow[]>`
+            WITH account_status AS (
+              SELECT
+                EXISTS (
+                  SELECT 1
+                  FROM "Subscription" s
+                  WHERE s."userId" = ${userId}
+                    AND s."status" = 'active'
+                    AND s."currentPeriodEnd" > NOW()
+                ) AS "hasActiveSubscription",
 
+                (
+                  SELECT COUNT(*)
+                  FROM "Attempt" a
+                  WHERE a."userId" = ${userId}
+                    AND a."createdAt" >= ${start}
+                    AND a."createdAt" < ${end}
+                ) AS "usedToday"
+            ),
 
-          const dailyLimit = activeSubscription
+           selected_topic AS (
+  SELECT t.*
+  FROM "Topic" t
+  WHERE t."isActive" = true
+    AND (${topicCondition})
+  ORDER BY RANDOM()
+  LIMIT 1
+)
+
+            SELECT
+              t.*,
+              a."hasActiveSubscription",
+              a."usedToday"
+            FROM account_status a
+            LEFT JOIN selected_topic t ON TRUE
+          `;
+
+          console.log(
+            "[PERF] Combined query:",
+            (performance.now() - queryStart).toFixed(2),
+            "ms"
+          );
+
+          const row = rows[0];
+
+          if (!row) {
+            throw new Error(
+              "Failed to retrieve topic selection"
+            );
+          }
+
+          const dailyLimit = row.hasActiveSubscription
             ? PRO_DAILY_LIMIT
             : FREE_DAILY_LIMIT;
 
-          const { start, end } = getUtcDayBounds();
+          if (Number(row.usedToday) >= dailyLimit) {
+            throw new Error(
+              row.hasActiveSubscription
+                ? "PRO_DAILY_LIMIT_REACHED"
+                : "FREE_DAILY_LIMIT_REACHED"
+            );
+          }
 
-
-          const usedToday = await tx.attempt.count({
-            where: {
-              userId,
-              createdAt: {
-                gte: start,
-                lt: end,
-              },
-            },
-          });
-
-
-          if (usedToday >= dailyLimit) {
-  throw new Error(
-    activeSubscription
-      ? "PRO_DAILY_LIMIT_REACHED"
-      : "FREE_DAILY_LIMIT_REACHED"
-  );
-}
-
-const categoryFilters = filters.categories?.map(
-  ({ id, subcategories }) => ({
-    category: id,
-    ...(subcategories?.length
-      ? {
-          subcategory: {
-            in: subcategories,
-          },
-        }
-      : {}),
-  })
-);
-
-const where: Prisma.TopicWhereInput = categoryFilters?.length
-  ? { OR: categoryFilters }
-  : {};
-
-console.log(
-  "[SPIN] Prisma where:",
-  JSON.stringify(where, null, 2)
-);
-
-const topicCount = await tx.topic.count({ where });
-
-console.log("[SPIN] Matching topics:", topicCount);
-
-
-
-          if (topicCount === 0) {
+          if (!row.id) {
             throw new Error(
               "No topics available for the selected filters"
             );
           }
 
-          const randomIndex = Math.floor(
-            Math.random() * topicCount
-          );
-
-
-          const topic = await tx.topic.findFirst({
-            where,
-            skip: randomIndex,
-          });
-
-          if (!topic) {
-            throw new Error("Failed to select a topic");
-          }
+          // 2. Create attempt inside the transaction.
 
 
           const attempt = await tx.attempt.create({
             data: {
-              topicId: topic.id,
+              topicId: row.id,
               userId,
             },
           });
 
+          
 
-          return { attempt, topic };
+          const topic = {
+            id: row.id,
+            slug: row.slug!,
+            title: row.title!,
+            category: row.category!,
+            subcategory: row.subcategory,
+            difficulty: row.difficulty!,
+            researchTime: row.researchTime!,
+            speakingTime: row.speakingTime!,
+            createdAt: row.createdAt!,
+            updatedAt: row.updatedAt!,
+          };
+
+          return {
+            attempt,
+            topic,
+          };
         },
         {
-          isolationLevel: Prisma.TransactionIsolationLevel.Serializable,
+          isolationLevel:
+            Prisma.TransactionIsolationLevel.Serializable,
           maxWait: 10000,
           timeout: 15000,
         }
       );
+
+      
+
+     
+
+      return result;
     } catch (error) {
       const isSerializationConflict =
-        error instanceof Prisma.PrismaClientKnownRequestError &&
-        
+        error instanceof
+          Prisma.PrismaClientKnownRequestError &&
+        error.code === "P2034";
 
-      console.error("[SPIN SERVICE] Transaction failed:", error);
+      console.error(
+        "[SPIN SERVICE] Transaction failed:",
+        error
+      );
 
       if (
         isSerializationConflict &&
         retry < MAX_TRANSACTION_RETRIES - 1
       ) {
-        console.log("[SPIN SERVICE] Retrying transaction");
+        console.log(
+          `[SPIN SERVICE] Retrying transaction (${retry + 1}/${MAX_TRANSACTION_RETRIES})`
+        );
+
         continue;
       }
+
+      
 
       throw error;
     }
   }
 
-  throw new Error("DAILY_TOPIC_LIMIT_CHECK_FAILED");
+  throw new Error(
+    "DAILY_TOPIC_LIMIT_CHECK_FAILED"
+  );
 };
-

@@ -1,7 +1,7 @@
 [
   {
-    "slug": "cloud-cloud-fundamentals-iaas-paas-and-saas-1",
-    "title": "Explain IaaS PaaS and SaaS in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-cloud-cloud-fundamentals-what-is-cloud-computing",
+    "title": "What is cloud computing?",
     "category": "cloud",
     "subcategory": "cloud-fundamentals",
     "difficulty": "beginner",
@@ -9,8 +9,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "cloud-cloud-fundamentals-iaas-paas-and-saas-2",
-    "title": "Imagine you are introducing IaaS PaaS and SaaS to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-cloud-cloud-fundamentals-what-is-iaas",
+    "title": "What is IaaS?",
     "category": "cloud",
     "subcategory": "cloud-fundamentals",
     "difficulty": "beginner",
@@ -18,8 +18,62 @@
     "speakingTime": 120
   },
   {
-    "slug": "cloud-cloud-fundamentals-iaas-paas-and-saas-3",
-    "title": "Compare IaaS PaaS and SaaS with managed services. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-cloud-cloud-fundamentals-what-is-paas",
+    "title": "What is PaaS?",
+    "category": "cloud",
+    "subcategory": "cloud-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-cloud-fundamentals-what-is-saas",
+    "title": "What is SaaS?",
+    "category": "cloud",
+    "subcategory": "cloud-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-cloud-fundamentals-what-is-a-cloud-availability-zone",
+    "title": "What is a cloud availability zone?",
+    "category": "cloud",
+    "subcategory": "cloud-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-cloud-fundamentals-what-is-object-storage",
+    "title": "What is object storage?",
+    "category": "cloud",
+    "subcategory": "cloud-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-cloud-fundamentals-what-is-serverless-computing",
+    "title": "What is serverless computing?",
+    "category": "cloud",
+    "subcategory": "cloud-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-cloud-fundamentals-what-is-a-virtual-machine",
+    "title": "What is a virtual machine?",
+    "category": "cloud",
+    "subcategory": "cloud-fundamentals",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-cloud-fundamentals-public-cloud-vs-private-cloud",
+    "title": "Public cloud vs private cloud.",
     "category": "cloud",
     "subcategory": "cloud-fundamentals",
     "difficulty": "intermediate",
@@ -27,8 +81,89 @@
     "speakingTime": 120
   },
   {
-    "slug": "cloud-cloud-fundamentals-iaas-paas-and-saas-4",
-    "title": "Consider this scenario: a team chooses how much infrastructure to operate. Explain how you would apply your understanding of IaaS PaaS and SaaS, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-cloud-cloud-fundamentals-what-is-a-virtual-private-cloud",
+    "title": "What is a virtual private cloud?",
+    "category": "cloud",
+    "subcategory": "cloud-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-cloud-fundamentals-how-does-cloud-elastic-scaling-work",
+    "title": "How does cloud elastic scaling work?",
+    "category": "cloud",
+    "subcategory": "cloud-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-cloud-fundamentals-what-is-a-managed-database",
+    "title": "What is a managed database?",
+    "category": "cloud",
+    "subcategory": "cloud-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-cloud-fundamentals-what-is-a-cloud-load-balancer",
+    "title": "What is a cloud load balancer?",
+    "category": "cloud",
+    "subcategory": "cloud-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-cloud-fundamentals-what-is-a-cloud-region",
+    "title": "What is a cloud region?",
+    "category": "cloud",
+    "subcategory": "cloud-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-cloud-fundamentals-how-do-cloud-storage-tiers-differ",
+    "title": "How do cloud storage tiers differ?",
+    "category": "cloud",
+    "subcategory": "cloud-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-cloud-fundamentals-what-is-a-cloud-cost-allocation-tag",
+    "title": "What is a cloud cost allocation tag?",
+    "category": "cloud",
+    "subcategory": "cloud-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-cloud-fundamentals-what-is-a-cloud-disaster-recovery-plan",
+    "title": "What is a cloud disaster recovery plan?",
+    "category": "cloud",
+    "subcategory": "cloud-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-cloud-fundamentals-what-is-a-cloud-nat-gateway",
+    "title": "What is a cloud NAT gateway?",
+    "category": "cloud",
+    "subcategory": "cloud-fundamentals",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-cloud-fundamentals-how-would-you-choose-a-multi-region-deployment-strategy",
+    "title": "How would you choose a multi-region deployment strategy?",
     "category": "cloud",
     "subcategory": "cloud-fundamentals",
     "difficulty": "advanced",
@@ -36,44 +171,62 @@
     "speakingTime": 120
   },
   {
-    "slug": "cloud-cloud-architecture-regions-and-availability-zones-1",
-    "title": "Explain regions and availability zones in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-cloud-cloud-fundamentals-how-would-you-minimize-cloud-egress-costs",
+    "title": "How would you minimize cloud egress costs?",
     "category": "cloud",
-    "subcategory": "cloud-architecture",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-architecture-regions-and-availability-zones-2",
-    "title": "Imagine you are introducing regions and availability zones to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cloud",
-    "subcategory": "cloud-architecture",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-architecture-regions-and-availability-zones-3",
-    "title": "Compare regions and availability zones with fault domains. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cloud",
-    "subcategory": "cloud-architecture",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-architecture-regions-and-availability-zones-4",
-    "title": "Consider this scenario: an application must survive a data-center outage. Explain how you would apply your understanding of regions and availability zones, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cloud",
-    "subcategory": "cloud-architecture",
+    "subcategory": "cloud-fundamentals",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "cloud-aws-ec2-instances-1",
-    "title": "Explain EC2 instances in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-cloud-cloud-fundamentals-how-would-you-plan-a-zero-downtime-cloud-migration",
+    "title": "How would you plan a zero-downtime cloud migration?",
+    "category": "cloud",
+    "subcategory": "cloud-fundamentals",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-cloud-fundamentals-how-would-you-estimate-serverless-workload-costs",
+    "title": "How would you estimate serverless workload costs?",
+    "category": "cloud",
+    "subcategory": "cloud-fundamentals",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-cloud-fundamentals-how-would-you-choose-between-managed-containers-and-virtual-machines",
+    "title": "How would you choose between managed containers and virtual machines?",
+    "category": "cloud",
+    "subcategory": "cloud-fundamentals",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-cloud-fundamentals-how-would-you-design-cloud-resource-isolation",
+    "title": "How would you design cloud resource isolation?",
+    "category": "cloud",
+    "subcategory": "cloud-fundamentals",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-cloud-fundamentals-how-would-you-recover-from-a-regional-cloud-outage",
+    "title": "How would you recover from a regional cloud outage?",
+    "category": "cloud",
+    "subcategory": "cloud-fundamentals",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-aws-what-is-amazon-ec2",
+    "title": "What is Amazon EC2?",
     "category": "cloud",
     "subcategory": "aws",
     "difficulty": "beginner",
@@ -81,8 +234,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "cloud-aws-ec2-instances-2",
-    "title": "Imagine you are introducing EC2 instances to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-cloud-aws-what-is-amazon-s3",
+    "title": "What is Amazon S3?",
     "category": "cloud",
     "subcategory": "aws",
     "difficulty": "beginner",
@@ -90,8 +243,53 @@
     "speakingTime": 120
   },
   {
-    "slug": "cloud-aws-ec2-instances-3",
-    "title": "Compare EC2 instances with instance families and autoscaling. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-cloud-aws-what-is-aws-lambda",
+    "title": "What is AWS Lambda?",
+    "category": "cloud",
+    "subcategory": "aws",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-aws-what-is-amazon-rds",
+    "title": "What is Amazon RDS?",
+    "category": "cloud",
+    "subcategory": "aws",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-aws-what-is-amazon-vpc",
+    "title": "What is Amazon VPC?",
+    "category": "cloud",
+    "subcategory": "aws",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-aws-what-is-aws-iam",
+    "title": "What is AWS IAM?",
+    "category": "cloud",
+    "subcategory": "aws",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-aws-what-is-amazon-cloudwatch",
+    "title": "What is Amazon CloudWatch?",
+    "category": "cloud",
+    "subcategory": "aws",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-aws-how-do-aws-iam-roles-differ-from-policies",
+    "title": "How do AWS IAM roles differ from policies?",
     "category": "cloud",
     "subcategory": "aws",
     "difficulty": "intermediate",
@@ -99,8 +297,89 @@
     "speakingTime": 120
   },
   {
-    "slug": "cloud-aws-ec2-instances-4",
-    "title": "Consider this scenario: a workload has variable compute demand. Explain how you would apply your understanding of EC2 instances, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-cloud-aws-how-do-ec2-security-groups-work",
+    "title": "How do EC2 security groups work?",
+    "category": "cloud",
+    "subcategory": "aws",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-aws-how-does-amazon-sqs-handle-messages",
+    "title": "How does Amazon SQS handle messages?",
+    "category": "cloud",
+    "subcategory": "aws",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-aws-what-is-amazon-sns",
+    "title": "What is Amazon SNS?",
+    "category": "cloud",
+    "subcategory": "aws",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-aws-how-does-dynamodb-partition-data",
+    "title": "How does DynamoDB partition data?",
+    "category": "cloud",
+    "subcategory": "aws",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-aws-how-does-aws-auto-scaling-work",
+    "title": "How does AWS Auto Scaling work?",
+    "category": "cloud",
+    "subcategory": "aws",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-aws-how-does-aws-api-gateway-integrate-with-lambda",
+    "title": "How does AWS API Gateway integrate with Lambda?",
+    "category": "cloud",
+    "subcategory": "aws",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-aws-what-is-an-s3-lifecycle-policy",
+    "title": "What is an S3 lifecycle policy?",
+    "category": "cloud",
+    "subcategory": "aws",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-aws-how-does-amazon-cloudfront-cache-content",
+    "title": "How does Amazon CloudFront cache content?",
+    "category": "cloud",
+    "subcategory": "aws",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-aws-what-is-an-aws-application-load-balancer",
+    "title": "What is an AWS Application Load Balancer?",
+    "category": "cloud",
+    "subcategory": "aws",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-aws-how-would-you-prevent-dynamodb-hot-partitions",
+    "title": "How would you prevent DynamoDB hot partitions?",
     "category": "cloud",
     "subcategory": "aws",
     "difficulty": "advanced",
@@ -108,35 +387,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "cloud-aws-s3-object-storage-1",
-    "title": "Explain S3 object storage in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "cloud",
-    "subcategory": "aws",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-aws-s3-object-storage-2",
-    "title": "Imagine you are introducing S3 object storage to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cloud",
-    "subcategory": "aws",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-aws-s3-object-storage-3",
-    "title": "Compare S3 object storage with block and file storage. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cloud",
-    "subcategory": "aws",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-aws-s3-object-storage-4",
-    "title": "Consider this scenario: a product stores user uploads and backups. Explain how you would apply your understanding of S3 object storage, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-cloud-aws-how-does-aws-iam-evaluate-conflicting-policies",
+    "title": "How does AWS IAM evaluate conflicting policies?",
     "category": "cloud",
     "subcategory": "aws",
     "difficulty": "advanced",
@@ -144,35 +396,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "cloud-aws-iam-policies-and-roles-1",
-    "title": "Explain IAM policies and roles in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "cloud",
-    "subcategory": "aws",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-aws-iam-policies-and-roles-2",
-    "title": "Imagine you are introducing IAM policies and roles to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cloud",
-    "subcategory": "aws",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-aws-iam-policies-and-roles-3",
-    "title": "Compare IAM policies and roles with least privilege and temporary credentials. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cloud",
-    "subcategory": "aws",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-aws-iam-policies-and-roles-4",
-    "title": "Consider this scenario: an application needs access to one storage bucket. Explain how you would apply your understanding of IAM policies and roles, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-cloud-aws-how-would-you-manage-lambda-cold-starts",
+    "title": "How would you manage Lambda cold starts?",
     "category": "cloud",
     "subcategory": "aws",
     "difficulty": "advanced",
@@ -180,35 +405,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "cloud-aws-vpc-networking-1",
-    "title": "Explain VPC networking in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "cloud",
-    "subcategory": "aws",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-aws-vpc-networking-2",
-    "title": "Imagine you are introducing VPC networking to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cloud",
-    "subcategory": "aws",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-aws-vpc-networking-3",
-    "title": "Compare VPC networking with public and private subnets. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cloud",
-    "subcategory": "aws",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-aws-vpc-networking-4",
-    "title": "Consider this scenario: a database must not be internet accessible. Explain how you would apply your understanding of VPC networking, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-cloud-aws-how-would-you-design-cross-account-s3-access",
+    "title": "How would you design cross-account S3 access?",
     "category": "cloud",
     "subcategory": "aws",
     "difficulty": "advanced",
@@ -216,35 +414,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "cloud-aws-lambda-and-serverless-1",
-    "title": "Explain Lambda and serverless in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "cloud",
-    "subcategory": "aws",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-aws-lambda-and-serverless-2",
-    "title": "Imagine you are introducing Lambda and serverless to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cloud",
-    "subcategory": "aws",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-aws-lambda-and-serverless-3",
-    "title": "Compare Lambda and serverless with cold starts and event triggers. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cloud",
-    "subcategory": "aws",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-aws-lambda-and-serverless-4",
-    "title": "Consider this scenario: a service processes occasional uploaded files. Explain how you would apply your understanding of Lambda and serverless, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-cloud-aws-how-would-you-troubleshoot-vpc-routing-failures",
+    "title": "How would you troubleshoot VPC routing failures?",
     "category": "cloud",
     "subcategory": "aws",
     "difficulty": "advanced",
@@ -252,8 +423,35 @@
     "speakingTime": 120
   },
   {
-    "slug": "cloud-azure-azure-identity-and-resource-organization-1",
-    "title": "Explain Azure identity and resource organization in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-cloud-aws-how-would-you-optimize-ec2-purchase-options",
+    "title": "How would you optimize EC2 purchase options?",
+    "category": "cloud",
+    "subcategory": "aws",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-aws-how-would-you-recover-an-rds-database-across-regions",
+    "title": "How would you recover an RDS database across regions?",
+    "category": "cloud",
+    "subcategory": "aws",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-aws-how-would-you-handle-sqs-visibility-timeout-correctly",
+    "title": "How would you handle SQS visibility timeout correctly?",
+    "category": "cloud",
+    "subcategory": "aws",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-azure-what-are-azure-virtual-machines",
+    "title": "What are Azure Virtual Machines?",
     "category": "cloud",
     "subcategory": "azure",
     "difficulty": "beginner",
@@ -261,8 +459,71 @@
     "speakingTime": 120
   },
   {
-    "slug": "cloud-azure-azure-identity-and-resource-organization-2",
-    "title": "Imagine you are introducing Azure identity and resource organization to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-cloud-azure-what-is-azure-blob-storage",
+    "title": "What is Azure Blob Storage?",
+    "category": "cloud",
+    "subcategory": "azure",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-azure-what-is-azure-functions",
+    "title": "What is Azure Functions?",
+    "category": "cloud",
+    "subcategory": "azure",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-azure-what-is-azure-app-service",
+    "title": "What is Azure App Service?",
+    "category": "cloud",
+    "subcategory": "azure",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-azure-what-is-azure-virtual-network",
+    "title": "What is Azure Virtual Network?",
+    "category": "cloud",
+    "subcategory": "azure",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-azure-what-is-microsoft-entra-id",
+    "title": "What is Microsoft Entra ID?",
+    "category": "cloud",
+    "subcategory": "azure",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-azure-what-is-azure-sql-database",
+    "title": "What is Azure SQL Database?",
+    "category": "cloud",
+    "subcategory": "azure",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-azure-what-is-azure-key-vault",
+    "title": "What is Azure Key Vault?",
+    "category": "cloud",
+    "subcategory": "azure",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-azure-how-do-azure-managed-identities-work",
+    "title": "How do Azure managed identities work?",
     "category": "cloud",
     "subcategory": "azure",
     "difficulty": "intermediate",
@@ -270,8 +531,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "cloud-azure-azure-identity-and-resource-organization-3",
-    "title": "Compare Azure identity and resource organization with RBAC and managed identities. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-cloud-azure-how-does-azure-service-bus-handle-messages",
+    "title": "How does Azure Service Bus handle messages?",
     "category": "cloud",
     "subcategory": "azure",
     "difficulty": "intermediate",
@@ -279,8 +540,80 @@
     "speakingTime": 120
   },
   {
-    "slug": "cloud-azure-azure-identity-and-resource-organization-4",
-    "title": "Consider this scenario: a company separates development and production. Explain how you would apply your understanding of Azure identity and resource organization, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-cloud-azure-what-is-an-azure-resource-group",
+    "title": "What is an Azure resource group?",
+    "category": "cloud",
+    "subcategory": "azure",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-azure-how-do-azure-network-security-groups-work",
+    "title": "How do Azure network security groups work?",
+    "category": "cloud",
+    "subcategory": "azure",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-azure-what-is-azure-api-management",
+    "title": "What is Azure API Management?",
+    "category": "cloud",
+    "subcategory": "azure",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-azure-how-does-azure-monitor-collect-telemetry",
+    "title": "How does Azure Monitor collect telemetry?",
+    "category": "cloud",
+    "subcategory": "azure",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-azure-what-is-azure-cosmos-db",
+    "title": "What is Azure Cosmos DB?",
+    "category": "cloud",
+    "subcategory": "azure",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-azure-how-do-azure-deployment-slots-work",
+    "title": "How do Azure deployment slots work?",
+    "category": "cloud",
+    "subcategory": "azure",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-azure-how-does-azure-front-door-route-traffic",
+    "title": "How does Azure Front Door route traffic?",
+    "category": "cloud",
+    "subcategory": "azure",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-azure-what-is-an-azure-availability-set",
+    "title": "What is an Azure availability set?",
+    "category": "cloud",
+    "subcategory": "azure",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-azure-how-would-you-choose-a-cosmos-db-partition-key",
+    "title": "How would you choose a Cosmos DB partition key?",
     "category": "cloud",
     "subcategory": "azure",
     "difficulty": "advanced",
@@ -288,8 +621,62 @@
     "speakingTime": 120
   },
   {
-    "slug": "cloud-google-cloud-google-cloud-compute-and-storage-1",
-    "title": "Explain Google Cloud compute and storage in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-cloud-azure-how-would-you-configure-private-connectivity-to-azure-services",
+    "title": "How would you configure private connectivity to Azure services?",
+    "category": "cloud",
+    "subcategory": "azure",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-azure-how-would-you-troubleshoot-azure-functions-scaling",
+    "title": "How would you troubleshoot Azure Functions scaling?",
+    "category": "cloud",
+    "subcategory": "azure",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-azure-how-would-you-implement-multi-region-azure-failover",
+    "title": "How would you implement multi-region Azure failover?",
+    "category": "cloud",
+    "subcategory": "azure",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-azure-how-would-you-enforce-governance-using-azure-policy",
+    "title": "How would you enforce governance using Azure Policy?",
+    "category": "cloud",
+    "subcategory": "azure",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-azure-how-would-you-optimize-azure-reserved-capacity",
+    "title": "How would you optimize Azure reserved capacity?",
+    "category": "cloud",
+    "subcategory": "azure",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-azure-how-would-you-design-azure-service-bus-dead-letter-handling",
+    "title": "How would you design Azure Service Bus dead-letter handling?",
+    "category": "cloud",
+    "subcategory": "azure",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-google-cloud-what-is-google-compute-engine",
+    "title": "What is Google Compute Engine?",
     "category": "cloud",
     "subcategory": "google-cloud",
     "difficulty": "beginner",
@@ -297,8 +684,62 @@
     "speakingTime": 120
   },
   {
-    "slug": "cloud-google-cloud-google-cloud-compute-and-storage-2",
-    "title": "Imagine you are introducing Google Cloud compute and storage to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-cloud-google-cloud-what-is-google-cloud-storage",
+    "title": "What is Google Cloud Storage?",
+    "category": "cloud",
+    "subcategory": "google-cloud",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-google-cloud-what-is-google-cloud-run",
+    "title": "What is Google Cloud Run?",
+    "category": "cloud",
+    "subcategory": "google-cloud",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-google-cloud-what-is-google-kubernetes-engine",
+    "title": "What is Google Kubernetes Engine?",
+    "category": "cloud",
+    "subcategory": "google-cloud",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-google-cloud-what-is-bigquery",
+    "title": "What is BigQuery?",
+    "category": "cloud",
+    "subcategory": "google-cloud",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-google-cloud-what-is-google-cloud-pub-sub",
+    "title": "What is Google Cloud Pub/Sub?",
+    "category": "cloud",
+    "subcategory": "google-cloud",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-google-cloud-what-is-google-cloud-iam",
+    "title": "What is Google Cloud IAM?",
+    "category": "cloud",
+    "subcategory": "google-cloud",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-google-cloud-how-do-google-cloud-service-accounts-work",
+    "title": "How do Google Cloud service accounts work?",
     "category": "cloud",
     "subcategory": "google-cloud",
     "difficulty": "intermediate",
@@ -306,8 +747,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "cloud-google-cloud-google-cloud-compute-and-storage-3",
-    "title": "Compare Google Cloud compute and storage with Compute Engine and Cloud Storage. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-cloud-google-cloud-how-does-cloud-run-scale-instances",
+    "title": "How does Cloud Run scale instances?",
     "category": "cloud",
     "subcategory": "google-cloud",
     "difficulty": "intermediate",
@@ -315,8 +756,80 @@
     "speakingTime": 120
   },
   {
-    "slug": "cloud-google-cloud-google-cloud-compute-and-storage-4",
-    "title": "Consider this scenario: a workload must move to managed cloud infrastructure. Explain how you would apply your understanding of Google Cloud compute and storage, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-cloud-google-cloud-what-is-google-cloud-vpc",
+    "title": "What is Google Cloud VPC?",
+    "category": "cloud",
+    "subcategory": "google-cloud",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-google-cloud-how-does-bigquery-partition-tables",
+    "title": "How does BigQuery partition tables?",
+    "category": "cloud",
+    "subcategory": "google-cloud",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-google-cloud-how-does-cloud-sql-manage-availability",
+    "title": "How does Cloud SQL manage availability?",
+    "category": "cloud",
+    "subcategory": "google-cloud",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-google-cloud-what-is-google-cloud-load-balancing",
+    "title": "What is Google Cloud Load Balancing?",
+    "category": "cloud",
+    "subcategory": "google-cloud",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-google-cloud-how-do-pub-sub-subscriptions-work",
+    "title": "How do Pub/Sub subscriptions work?",
+    "category": "cloud",
+    "subcategory": "google-cloud",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-google-cloud-what-is-google-cloud-secret-manager",
+    "title": "What is Google Cloud Secret Manager?",
+    "category": "cloud",
+    "subcategory": "google-cloud",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-google-cloud-how-does-cloud-tasks-schedule-work",
+    "title": "How does Cloud Tasks schedule work?",
+    "category": "cloud",
+    "subcategory": "google-cloud",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-google-cloud-what-is-a-google-cloud-organization-policy",
+    "title": "What is a Google Cloud organization policy?",
+    "category": "cloud",
+    "subcategory": "google-cloud",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-cloud-google-cloud-how-would-you-optimize-bigquery-query-costs",
+    "title": "How would you optimize BigQuery query costs?",
     "category": "cloud",
     "subcategory": "google-cloud",
     "difficulty": "advanced",
@@ -324,577 +837,64 @@
     "speakingTime": 120
   },
   {
-    "slug": "cloud-cloud-architecture-serverless-architecture-1",
-    "title": "Explain serverless architecture in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-cloud-google-cloud-how-would-you-configure-cloud-run-concurrency",
+    "title": "How would you configure Cloud Run concurrency?",
     "category": "cloud",
-    "subcategory": "cloud-architecture",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-architecture-serverless-architecture-2",
-    "title": "Imagine you are introducing serverless architecture to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cloud",
-    "subcategory": "cloud-architecture",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-architecture-serverless-architecture-3",
-    "title": "Compare serverless architecture with functions and managed databases. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cloud",
-    "subcategory": "cloud-architecture",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-architecture-serverless-architecture-4",
-    "title": "Consider this scenario: a small team wants minimal operations overhead. Explain how you would apply your understanding of serverless architecture, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cloud",
-    "subcategory": "cloud-architecture",
+    "subcategory": "google-cloud",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "cloud-cloud-architecture-autoscaling-1",
-    "title": "Explain autoscaling in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-cloud-google-cloud-how-would-you-handle-pub-sub-message-redelivery",
+    "title": "How would you handle Pub/Sub message redelivery?",
     "category": "cloud",
-    "subcategory": "cloud-architecture",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-architecture-autoscaling-2",
-    "title": "Imagine you are introducing autoscaling to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cloud",
-    "subcategory": "cloud-architecture",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-architecture-autoscaling-3",
-    "title": "Compare autoscaling with horizontal scaling and metrics. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cloud",
-    "subcategory": "cloud-architecture",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-architecture-autoscaling-4",
-    "title": "Consider this scenario: traffic has daily peaks. Explain how you would apply your understanding of autoscaling, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cloud",
-    "subcategory": "cloud-architecture",
+    "subcategory": "google-cloud",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "cloud-cloud-architecture-load-balancing-1",
-    "title": "Explain load balancing in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-cloud-google-cloud-how-would-you-design-private-access-to-google-cloud-services",
+    "title": "How would you design private access to Google Cloud services?",
     "category": "cloud",
-    "subcategory": "cloud-architecture",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-architecture-load-balancing-2",
-    "title": "Imagine you are introducing load balancing to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cloud",
-    "subcategory": "cloud-architecture",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-architecture-load-balancing-3",
-    "title": "Compare load balancing with health checks and zones. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cloud",
-    "subcategory": "cloud-architecture",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-architecture-load-balancing-4",
-    "title": "Consider this scenario: instances are deployed across zones. Explain how you would apply your understanding of load balancing, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cloud",
-    "subcategory": "cloud-architecture",
+    "subcategory": "google-cloud",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "cloud-cloud-security-cloud-shared-responsibility-1",
-    "title": "Explain cloud shared responsibility in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-cloud-google-cloud-how-would-you-troubleshoot-gke-workload-identity",
+    "title": "How would you troubleshoot GKE workload identity?",
     "category": "cloud",
-    "subcategory": "cloud-security",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-security-cloud-shared-responsibility-2",
-    "title": "Imagine you are introducing cloud shared responsibility to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cloud",
-    "subcategory": "cloud-security",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-security-cloud-shared-responsibility-3",
-    "title": "Compare cloud shared responsibility with configuration and compliance. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cloud",
-    "subcategory": "cloud-security",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-security-cloud-shared-responsibility-4",
-    "title": "Consider this scenario: a team assumes the provider secures application data. Explain how you would apply your understanding of cloud shared responsibility, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cloud",
-    "subcategory": "cloud-security",
+    "subcategory": "google-cloud",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "cloud-cloud-security-cloud-encryption-1",
-    "title": "Explain cloud encryption in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-cloud-google-cloud-how-would-you-manage-cross-project-iam-permissions",
+    "title": "How would you manage cross-project IAM permissions?",
     "category": "cloud",
-    "subcategory": "cloud-security",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-security-cloud-encryption-2",
-    "title": "Imagine you are introducing cloud encryption to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cloud",
-    "subcategory": "cloud-security",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-security-cloud-encryption-3",
-    "title": "Compare cloud encryption with KMS and key rotation. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cloud",
-    "subcategory": "cloud-security",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-security-cloud-encryption-4",
-    "title": "Consider this scenario: sensitive backups are stored in object storage. Explain how you would apply your understanding of cloud encryption, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cloud",
-    "subcategory": "cloud-security",
+    "subcategory": "google-cloud",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "cloud-cloud-networking-cdns-1",
-    "title": "Explain CDNs in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-cloud-google-cloud-how-would-you-implement-regional-failover-on-google-cloud",
+    "title": "How would you implement regional failover on Google Cloud?",
     "category": "cloud",
-    "subcategory": "cloud-networking",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-networking-cdns-2",
-    "title": "Imagine you are introducing CDNs to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cloud",
-    "subcategory": "cloud-networking",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-networking-cdns-3",
-    "title": "Compare CDNs with edge caching and invalidation. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cloud",
-    "subcategory": "cloud-networking",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-networking-cdns-4",
-    "title": "Consider this scenario: global users download large assets. Explain how you would apply your understanding of CDNs, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cloud",
-    "subcategory": "cloud-networking",
+    "subcategory": "google-cloud",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "cloud-cloud-databases-managed-database-services-1",
-    "title": "Explain managed database services in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-cloud-google-cloud-how-would-you-diagnose-bigquery-slot-contention",
+    "title": "How would you diagnose BigQuery slot contention?",
     "category": "cloud",
-    "subcategory": "cloud-databases",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-databases-managed-database-services-2",
-    "title": "Imagine you are introducing managed database services to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cloud",
-    "subcategory": "cloud-databases",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-databases-managed-database-services-3",
-    "title": "Compare managed database services with backups and maintenance windows. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cloud",
-    "subcategory": "cloud-databases",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-databases-managed-database-services-4",
-    "title": "Consider this scenario: a small team needs reliable relational storage. Explain how you would apply your understanding of managed database services, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cloud",
-    "subcategory": "cloud-databases",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-operations-cloud-monitoring-1",
-    "title": "Explain cloud monitoring in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "cloud",
-    "subcategory": "cloud-operations",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-operations-cloud-monitoring-2",
-    "title": "Imagine you are introducing cloud monitoring to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cloud",
-    "subcategory": "cloud-operations",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-operations-cloud-monitoring-3",
-    "title": "Compare cloud monitoring with alerts and dashboards. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cloud",
-    "subcategory": "cloud-operations",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-operations-cloud-monitoring-4",
-    "title": "Consider this scenario: a service becomes slow after a configuration change. Explain how you would apply your understanding of cloud monitoring, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cloud",
-    "subcategory": "cloud-operations",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-cost-cloud-cost-optimization-1",
-    "title": "Explain cloud cost optimization in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "cloud",
-    "subcategory": "cloud-cost",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-cost-cloud-cost-optimization-2",
-    "title": "Imagine you are introducing cloud cost optimization to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cloud",
-    "subcategory": "cloud-cost",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-cost-cloud-cost-optimization-3",
-    "title": "Compare cloud cost optimization with reserved capacity and autoscaling. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cloud",
-    "subcategory": "cloud-cost",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-cost-cloud-cost-optimization-4",
-    "title": "Consider this scenario: monthly cloud spend doubles unexpectedly. Explain how you would apply your understanding of cloud cost optimization, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cloud",
-    "subcategory": "cloud-cost",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-reliability-multi-region-architecture-1",
-    "title": "Explain multi-region architecture in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "cloud",
-    "subcategory": "cloud-reliability",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-reliability-multi-region-architecture-2",
-    "title": "Imagine you are introducing multi-region architecture to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cloud",
-    "subcategory": "cloud-reliability",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-reliability-multi-region-architecture-3",
-    "title": "Compare multi-region architecture with failover and data replication. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cloud",
-    "subcategory": "cloud-reliability",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-reliability-multi-region-architecture-4",
-    "title": "Consider this scenario: a business needs regional disaster recovery. Explain how you would apply your understanding of multi-region architecture, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cloud",
-    "subcategory": "cloud-reliability",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-storage-object-block-and-file-storage-1",
-    "title": "Explain object block and file storage in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "cloud",
-    "subcategory": "cloud-storage",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-storage-object-block-and-file-storage-2",
-    "title": "Imagine you are introducing object block and file storage to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cloud",
-    "subcategory": "cloud-storage",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-storage-object-block-and-file-storage-3",
-    "title": "Compare object block and file storage with latency and durability. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cloud",
-    "subcategory": "cloud-storage",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-storage-object-block-and-file-storage-4",
-    "title": "Consider this scenario: an application stores media and database files. Explain how you would apply your understanding of object block and file storage, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cloud",
-    "subcategory": "cloud-storage",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-deployment-infrastructure-as-code-1",
-    "title": "Explain infrastructure as code in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "cloud",
-    "subcategory": "cloud-deployment",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-deployment-infrastructure-as-code-2",
-    "title": "Imagine you are introducing infrastructure as code to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cloud",
-    "subcategory": "cloud-deployment",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-deployment-infrastructure-as-code-3",
-    "title": "Compare infrastructure as code with Terraform and templates. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cloud",
-    "subcategory": "cloud-deployment",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-deployment-infrastructure-as-code-4",
-    "title": "Consider this scenario: multiple environments must remain consistent. Explain how you would apply your understanding of infrastructure as code, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cloud",
-    "subcategory": "cloud-deployment",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-containers-managed-container-services-1",
-    "title": "Explain managed container services in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "cloud",
-    "subcategory": "cloud-containers",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-containers-managed-container-services-2",
-    "title": "Imagine you are introducing managed container services to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cloud",
-    "subcategory": "cloud-containers",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-containers-managed-container-services-3",
-    "title": "Compare managed container services with ECS and Kubernetes services. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cloud",
-    "subcategory": "cloud-containers",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-containers-managed-container-services-4",
-    "title": "Consider this scenario: a team deploys multiple microservices. Explain how you would apply your understanding of managed container services, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cloud",
-    "subcategory": "cloud-containers",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-identity-federation-and-single-sign-on-1",
-    "title": "Explain federation and single sign-on in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "cloud",
-    "subcategory": "cloud-identity",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-identity-federation-and-single-sign-on-2",
-    "title": "Imagine you are introducing federation and single sign-on to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cloud",
-    "subcategory": "cloud-identity",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-identity-federation-and-single-sign-on-3",
-    "title": "Compare federation and single sign-on with SAML and OIDC. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cloud",
-    "subcategory": "cloud-identity",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-identity-federation-and-single-sign-on-4",
-    "title": "Consider this scenario: employees need access to several cloud tools. Explain how you would apply your understanding of federation and single sign-on, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cloud",
-    "subcategory": "cloud-identity",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-migration-cloud-migration-strategies-1",
-    "title": "Explain cloud migration strategies in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "cloud",
-    "subcategory": "cloud-migration",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-migration-cloud-migration-strategies-2",
-    "title": "Imagine you are introducing cloud migration strategies to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cloud",
-    "subcategory": "cloud-migration",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-migration-cloud-migration-strategies-3",
-    "title": "Compare cloud migration strategies with rehost refactor and replace. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cloud",
-    "subcategory": "cloud-migration",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-migration-cloud-migration-strategies-4",
-    "title": "Consider this scenario: a legacy application must move with limited downtime. Explain how you would apply your understanding of cloud migration strategies, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cloud",
-    "subcategory": "cloud-migration",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-governance-policy-and-compliance-1",
-    "title": "Explain policy and compliance in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "cloud",
-    "subcategory": "cloud-governance",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-governance-policy-and-compliance-2",
-    "title": "Imagine you are introducing policy and compliance to a classmate. How does it work, and where would someone encounter it?",
-    "category": "cloud",
-    "subcategory": "cloud-governance",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-governance-policy-and-compliance-3",
-    "title": "Compare policy and compliance with guardrails and audit trails. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "cloud",
-    "subcategory": "cloud-governance",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "cloud-cloud-governance-policy-and-compliance-4",
-    "title": "Consider this scenario: an organization needs consistent security controls. Explain how you would apply your understanding of policy and compliance, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "cloud",
-    "subcategory": "cloud-governance",
+    "subcategory": "google-cloud",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120

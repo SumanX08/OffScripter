@@ -127,15 +127,95 @@ export const getAttempt = async (
   return attempt;
 };
 
+
 export const submitAudioAttempt = async (
   attemptId: string,
   userId: string,
-  transcript: string
+  transcript: string,
+  speakingEndedAt: Date = new Date()
+) => {
+  const updateStart = performance.now();
+
+  const now = new Date();
+
+  const result = await prisma.attempt.updateMany({
+    where: {
+      id: attemptId,
+      userId,
+      stage: "SPEAKING",
+      status: "IN_PROGRESS",
+    },
+
+    data: {
+      transcript,
+      stage: "SUBMITTED",
+      status: "COMPLETED",
+
+      speakingEndedAt,
+      submittedAt: now,
+      endedAt: now,
+    },
+  });
+
+  console.log(
+    "[PERF] Attempt UPDATE:",
+    (performance.now() - updateStart).toFixed(2),
+    "ms"
+  );
+
+  const fetchStart = performance.now();
+
+  const attempt = await prisma.attempt.findFirst({
+    where: {
+      id: attemptId,
+      userId,
+    },
+
+    include: {
+      topic: true,
+      evaluation: true,
+    },
+  });
+
+  console.log(
+    "[PERF] Attempt FETCH with relations:",
+    (performance.now() - fetchStart).toFixed(2),
+    "ms"
+  );
+
+  if (!attempt) {
+    throw new Error("Attempt not found");
+  }
+
+  if (result.count === 0) {
+    if (
+      attempt.stage === "SUBMITTED" &&
+      attempt.status === "COMPLETED" &&
+      attempt.transcript
+    ) {
+      return attempt;
+    }
+
+    throw new Error(
+      `Invalid attempt state: ${attempt.stage}/${attempt.status}`
+    );
+  }
+
+  return attempt;
+};
+
+export const getAttemptForSubmission = async (
+  attemptId: string,
+  userId: string
 ) => {
   const attempt = await prisma.attempt.findFirst({
     where: {
       id: attemptId,
       userId,
+    },
+    include: {
+      topic: true,
+      evaluation: true,
     },
   });
 
@@ -143,26 +223,9 @@ export const submitAudioAttempt = async (
     throw new Error("Attempt not found");
   }
 
-  if (attempt.stage !== "SPEAKING") {
-    throw new Error(
-      "Attempt is not in the speaking phase"
-    );
-  }
-
-  return prisma.attempt.update({
-    where: {
-      id: attempt.id,
-    },
-    data: {
-      transcript,
-      stage: "SUBMITTED",
-      status: "COMPLETED",
-      speakingEndedAt: new Date(),
-      submittedAt: new Date(),
-      endedAt: new Date(),
-    },
-  });
+  return attempt;
 };
+
 
 export const getAttemptHistory = async (
   userId: string,

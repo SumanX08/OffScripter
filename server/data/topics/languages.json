@@ -1,7 +1,7 @@
 [
   {
-    "slug": "languages-javascript-variables-and-scope-1",
-    "title": "Explain variables and scope in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-languages-javascript-what-is-a-closure-in-javascript",
+    "title": "What is a closure in JavaScript?",
     "category": "languages",
     "subcategory": "javascript",
     "difficulty": "beginner",
@@ -9,8 +9,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-javascript-variables-and-scope-2",
-    "title": "Imagine you are introducing variables and scope to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-languages-javascript-what-is-hoisting",
+    "title": "What is hoisting?",
     "category": "languages",
     "subcategory": "javascript",
     "difficulty": "beginner",
@@ -18,8 +18,71 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-javascript-variables-and-scope-3",
-    "title": "Compare variables and scope with block scope and function scope. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-languages-javascript-how-do-let-const-and-var-differ",
+    "title": "How do let, const and var differ?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-javascript-what-are-javascript-primitive-types",
+    "title": "What are JavaScript primitive types?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-javascript-what-is-the-difference-between-null-and-undefined",
+    "title": "What is the difference between null and undefined?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-javascript-what-is-a-higher-order-function",
+    "title": "What is a higher-order function?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-javascript-what-is-destructuring-in-javascript",
+    "title": "What is destructuring in JavaScript?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-javascript-what-are-javascript-promises",
+    "title": "What are JavaScript promises?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-javascript-what-is-a-javascript-prototype",
+    "title": "What is a JavaScript prototype?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-javascript-how-does-the-javascript-event-loop-work",
+    "title": "How does the JavaScript event loop work?",
     "category": "languages",
     "subcategory": "javascript",
     "difficulty": "intermediate",
@@ -27,8 +90,107 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-javascript-variables-and-scope-4",
-    "title": "Consider this scenario: a variable unexpectedly retains an old value. Explain how you would apply your understanding of variables and scope, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-languages-javascript-how-does-lexical-scope-work",
+    "title": "How does lexical scope work?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-javascript-how-does-this-behave-in-arrow-functions",
+    "title": "How does this behave in arrow functions?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-javascript-how-does-promise-allsettled-work",
+    "title": "How does Promise.allSettled work?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-javascript-what-is-prototypal-inheritance",
+    "title": "What is prototypal inheritance?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-javascript-how-do-shallow-and-deep-copying-differ",
+    "title": "How do shallow and deep copying differ?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-javascript-how-does-optional-chaining-work",
+    "title": "How does optional chaining work?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-javascript-how-do-generators-work-in-javascript",
+    "title": "How do generators work in JavaScript?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-javascript-what-are-javascript-modules",
+    "title": "What are JavaScript modules?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-javascript-how-does-promise-race-work",
+    "title": "How does Promise.race work?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-javascript-how-do-map-and-weakmap-differ",
+    "title": "How do Map and WeakMap differ?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-javascript-what-is-the-temporal-dead-zone",
+    "title": "What is the temporal dead zone?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-javascript-how-do-nested-microtasks-affect-execution-order",
+    "title": "How do nested microtasks affect execution order?",
     "category": "languages",
     "subcategory": "javascript",
     "difficulty": "advanced",
@@ -36,35 +198,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-javascript-closures-1",
-    "title": "Explain closures in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "languages",
-    "subcategory": "javascript",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-javascript-closures-2",
-    "title": "Imagine you are introducing closures to a classmate. How does it work, and where would someone encounter it?",
-    "category": "languages",
-    "subcategory": "javascript",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-javascript-closures-3",
-    "title": "Compare closures with callbacks and modules. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "languages",
-    "subcategory": "javascript",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-javascript-closures-4",
-    "title": "Consider this scenario: a function is returned and called much later. Explain how you would apply your understanding of closures, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-languages-javascript-how-can-closures-cause-memory-leaks",
+    "title": "How can closures cause memory leaks?",
     "category": "languages",
     "subcategory": "javascript",
     "difficulty": "advanced",
@@ -72,35 +207,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-javascript-the-event-loop-1",
-    "title": "Explain the event loop in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "languages",
-    "subcategory": "javascript",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-javascript-the-event-loop-2",
-    "title": "Imagine you are introducing the event loop to a classmate. How does it work, and where would someone encounter it?",
-    "category": "languages",
-    "subcategory": "javascript",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-javascript-the-event-loop-3",
-    "title": "Compare the event loop with call stack and promise jobs. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "languages",
-    "subcategory": "javascript",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-javascript-the-event-loop-4",
-    "title": "Consider this scenario: a timer and several promises complete in a surprising order. Explain how you would apply your understanding of the event loop, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-languages-javascript-how-does-javascript-garbage-collection-work",
+    "title": "How does JavaScript garbage collection work?",
     "category": "languages",
     "subcategory": "javascript",
     "difficulty": "advanced",
@@ -108,35 +216,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-javascript-promises-1",
-    "title": "Explain promises in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "languages",
-    "subcategory": "javascript",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-javascript-promises-2",
-    "title": "Imagine you are introducing promises to a classmate. How does it work, and where would someone encounter it?",
-    "category": "languages",
-    "subcategory": "javascript",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-javascript-promises-3",
-    "title": "Compare promises with async and await. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "languages",
-    "subcategory": "javascript",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-javascript-promises-4",
-    "title": "Consider this scenario: several independent API calls must be coordinated. Explain how you would apply your understanding of promises, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-languages-javascript-how-do-property-descriptors-control-object-behavior",
+    "title": "How do property descriptors control object behavior?",
     "category": "languages",
     "subcategory": "javascript",
     "difficulty": "advanced",
@@ -144,35 +225,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-javascript-prototypes-1",
-    "title": "Explain prototypes in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "languages",
-    "subcategory": "javascript",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-javascript-prototypes-2",
-    "title": "Imagine you are introducing prototypes to a classmate. How does it work, and where would someone encounter it?",
-    "category": "languages",
-    "subcategory": "javascript",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-javascript-prototypes-3",
-    "title": "Compare prototypes with classes and inheritance. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "languages",
-    "subcategory": "javascript",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-javascript-prototypes-4",
-    "title": "Consider this scenario: two objects share behavior without duplicating methods. Explain how you would apply your understanding of prototypes, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-languages-javascript-how-do-proxies-intercept-object-operations",
+    "title": "How do proxies intercept object operations?",
     "category": "languages",
     "subcategory": "javascript",
     "difficulty": "advanced",
@@ -180,35 +234,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-javascript-this-binding-1",
-    "title": "Explain this binding in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "languages",
-    "subcategory": "javascript",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-javascript-this-binding-2",
-    "title": "Imagine you are introducing this binding to a classmate. How does it work, and where would someone encounter it?",
-    "category": "languages",
-    "subcategory": "javascript",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-javascript-this-binding-3",
-    "title": "Compare this binding with arrow functions and bind. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "languages",
-    "subcategory": "javascript",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-javascript-this-binding-4",
-    "title": "Consider this scenario: a method is passed as a callback and loses its expected context. Explain how you would apply your understanding of this binding, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-languages-javascript-how-does-async-iteration-work",
+    "title": "How does async iteration work?",
     "category": "languages",
     "subcategory": "javascript",
     "difficulty": "advanced",
@@ -216,35 +243,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-javascript-garbage-collection-1",
-    "title": "Explain garbage collection in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "languages",
-    "subcategory": "javascript",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-javascript-garbage-collection-2",
-    "title": "Imagine you are introducing garbage collection to a classmate. How does it work, and where would someone encounter it?",
-    "category": "languages",
-    "subcategory": "javascript",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-javascript-garbage-collection-3",
-    "title": "Compare garbage collection with references and memory leaks. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "languages",
-    "subcategory": "javascript",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-javascript-garbage-collection-4",
-    "title": "Consider this scenario: a long-running page gradually consumes more memory. Explain how you would apply your understanding of garbage collection, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-languages-javascript-how-do-circular-es-module-dependencies-behave",
+    "title": "How do circular ES module dependencies behave?",
     "category": "languages",
     "subcategory": "javascript",
     "difficulty": "advanced",
@@ -252,35 +252,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-javascript-modules-1",
-    "title": "Explain modules in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "languages",
-    "subcategory": "javascript",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-javascript-modules-2",
-    "title": "Imagine you are introducing modules to a classmate. How does it work, and where would someone encounter it?",
-    "category": "languages",
-    "subcategory": "javascript",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-javascript-modules-3",
-    "title": "Compare modules with CommonJS and ES modules. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "languages",
-    "subcategory": "javascript",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-javascript-modules-4",
-    "title": "Consider this scenario: a project mixes default and named imports. Explain how you would apply your understanding of modules, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-languages-javascript-how-does-promise-rejection-propagate-through-chains",
+    "title": "How does promise rejection propagate through chains?",
     "category": "languages",
     "subcategory": "javascript",
     "difficulty": "advanced",
@@ -288,8 +261,17 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-typescript-static-typing-1",
-    "title": "Explain static typing in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-languages-javascript-how-do-javascript-engines-optimize-hidden-classes",
+    "title": "How do JavaScript engines optimize hidden classes?",
+    "category": "languages",
+    "subcategory": "javascript",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-typescript-what-is-typescript",
+    "title": "What is TypeScript?",
     "category": "languages",
     "subcategory": "typescript",
     "difficulty": "beginner",
@@ -297,35 +279,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-typescript-static-typing-2",
-    "title": "Imagine you are introducing static typing to a classmate. How does it work, and where would someone encounter it?",
-    "category": "languages",
-    "subcategory": "typescript",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-typescript-static-typing-3",
-    "title": "Compare static typing with JavaScript runtime behavior. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "languages",
-    "subcategory": "typescript",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-typescript-static-typing-4",
-    "title": "Consider this scenario: an API response has an unexpected shape. Explain how you would apply your understanding of static typing, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "languages",
-    "subcategory": "typescript",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-typescript-interfaces-and-type-aliases-1",
-    "title": "Explain interfaces and type aliases in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-languages-typescript-what-are-union-types",
+    "title": "What are union types?",
     "category": "languages",
     "subcategory": "typescript",
     "difficulty": "beginner",
@@ -333,35 +288,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-typescript-interfaces-and-type-aliases-2",
-    "title": "Imagine you are introducing interfaces and type aliases to a classmate. How does it work, and where would someone encounter it?",
-    "category": "languages",
-    "subcategory": "typescript",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-typescript-interfaces-and-type-aliases-3",
-    "title": "Compare interfaces and type aliases with union and intersection types. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "languages",
-    "subcategory": "typescript",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-typescript-interfaces-and-type-aliases-4",
-    "title": "Consider this scenario: a team needs reusable contracts across modules. Explain how you would apply your understanding of interfaces and type aliases, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "languages",
-    "subcategory": "typescript",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-typescript-generics-1",
-    "title": "Explain generics in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-languages-typescript-what-are-intersection-types",
+    "title": "What are intersection types?",
     "category": "languages",
     "subcategory": "typescript",
     "difficulty": "beginner",
@@ -369,35 +297,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-typescript-generics-2",
-    "title": "Imagine you are introducing generics to a classmate. How does it work, and where would someone encounter it?",
-    "category": "languages",
-    "subcategory": "typescript",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-typescript-generics-3",
-    "title": "Compare generics with unknown and any. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "languages",
-    "subcategory": "typescript",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-typescript-generics-4",
-    "title": "Consider this scenario: a data utility must work with several item types. Explain how you would apply your understanding of generics, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "languages",
-    "subcategory": "typescript",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-typescript-type-narrowing-1",
-    "title": "Explain type narrowing in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-languages-typescript-what-is-a-typescript-interface",
+    "title": "What is a TypeScript interface?",
     "category": "languages",
     "subcategory": "typescript",
     "difficulty": "beginner",
@@ -405,8 +306,53 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-typescript-type-narrowing-2",
-    "title": "Imagine you are introducing type narrowing to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-languages-typescript-how-do-any-and-unknown-differ",
+    "title": "How do any and unknown differ?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-typescript-what-are-optional-properties",
+    "title": "What are optional properties?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-typescript-what-are-literal-types",
+    "title": "What are literal types?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-typescript-what-are-typescript-enums",
+    "title": "What are TypeScript enums?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-typescript-what-is-a-generic-type",
+    "title": "What is a generic type?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-typescript-how-do-interfaces-and-type-aliases-differ",
+    "title": "How do interfaces and type aliases differ?",
     "category": "languages",
     "subcategory": "typescript",
     "difficulty": "intermediate",
@@ -414,8 +360,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-typescript-type-narrowing-3",
-    "title": "Compare type narrowing with discriminated unions. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-languages-typescript-how-does-type-narrowing-work",
+    "title": "How does type narrowing work?",
     "category": "languages",
     "subcategory": "typescript",
     "difficulty": "intermediate",
@@ -423,8 +369,98 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-typescript-type-narrowing-4",
-    "title": "Consider this scenario: an API returns several possible result variants. Explain how you would apply your understanding of type narrowing, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-languages-typescript-what-are-discriminated-unions",
+    "title": "What are discriminated unions?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-typescript-how-does-keyof-work",
+    "title": "How does keyof work?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-typescript-how-do-utility-types-work",
+    "title": "How do utility types work?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-typescript-how-do-generic-constraints-work",
+    "title": "How do generic constraints work?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-typescript-what-is-structural-typing",
+    "title": "What is structural typing?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-typescript-how-does-the-satisfies-operator-work",
+    "title": "How does the satisfies operator work?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-typescript-what-is-function-overloading-in-typescript",
+    "title": "What is function overloading in TypeScript?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-typescript-how-do-type-predicates-work",
+    "title": "How do type predicates work?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-typescript-how-does-typescript-infer-return-types",
+    "title": "How does TypeScript infer return types?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-typescript-what-is-the-never-type",
+    "title": "What is the never type?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-typescript-how-do-conditional-types-work",
+    "title": "How do conditional types work?",
     "category": "languages",
     "subcategory": "typescript",
     "difficulty": "advanced",
@@ -432,8 +468,80 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-python-mutable-and-immutable-objects-1",
-    "title": "Explain mutable and immutable objects in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-languages-typescript-how-do-mapped-types-transform-properties",
+    "title": "How do mapped types transform properties?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-typescript-how-does-infer-work-in-conditional-types",
+    "title": "How does infer work in conditional types?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-typescript-how-do-distributive-conditional-types-behave",
+    "title": "How do distributive conditional types behave?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-typescript-how-does-variance-affect-typescript-assignability",
+    "title": "How does variance affect TypeScript assignability?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-typescript-how-do-recursive-types-work",
+    "title": "How do recursive types work?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-typescript-how-do-declaration-merging-rules-work",
+    "title": "How do declaration merging rules work?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-typescript-how-can-branded-types-enforce-semantic-distinctions",
+    "title": "How can branded types enforce semantic distinctions?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-typescript-how-do-template-literal-types-work",
+    "title": "How do template literal types work?",
+    "category": "languages",
+    "subcategory": "typescript",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-python-what-are-python-lists-and-tuples",
+    "title": "What are Python lists and tuples?",
     "category": "languages",
     "subcategory": "python",
     "difficulty": "beginner",
@@ -441,35 +549,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-python-mutable-and-immutable-objects-2",
-    "title": "Imagine you are introducing mutable and immutable objects to a classmate. How does it work, and where would someone encounter it?",
-    "category": "languages",
-    "subcategory": "python",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-python-mutable-and-immutable-objects-3",
-    "title": "Compare mutable and immutable objects with references and copying. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "languages",
-    "subcategory": "python",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-python-mutable-and-immutable-objects-4",
-    "title": "Consider this scenario: a list changes after being passed to a helper. Explain how you would apply your understanding of mutable and immutable objects, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "languages",
-    "subcategory": "python",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-python-decorators-1",
-    "title": "Explain decorators in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-languages-python-what-is-a-python-dictionary",
+    "title": "What is a Python dictionary?",
     "category": "languages",
     "subcategory": "python",
     "difficulty": "beginner",
@@ -477,35 +558,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-python-decorators-2",
-    "title": "Imagine you are introducing decorators to a classmate. How does it work, and where would someone encounter it?",
-    "category": "languages",
-    "subcategory": "python",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-python-decorators-3",
-    "title": "Compare decorators with closures and higher-order functions. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "languages",
-    "subcategory": "python",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-python-decorators-4",
-    "title": "Consider this scenario: several endpoints need the same logging behavior. Explain how you would apply your understanding of decorators, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "languages",
-    "subcategory": "python",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-python-generators-1",
-    "title": "Explain generators in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-languages-python-what-are-python-sets",
+    "title": "What are Python sets?",
     "category": "languages",
     "subcategory": "python",
     "difficulty": "beginner",
@@ -513,35 +567,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-python-generators-2",
-    "title": "Imagine you are introducing generators to a classmate. How does it work, and where would someone encounter it?",
-    "category": "languages",
-    "subcategory": "python",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-python-generators-3",
-    "title": "Compare generators with iterators and lists. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "languages",
-    "subcategory": "python",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-python-generators-4",
-    "title": "Consider this scenario: a program processes a very large file. Explain how you would apply your understanding of generators, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "languages",
-    "subcategory": "python",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-python-the-gil-1",
-    "title": "Explain the GIL in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-languages-python-how-does-python-slicing-work",
+    "title": "How does Python slicing work?",
     "category": "languages",
     "subcategory": "python",
     "difficulty": "beginner",
@@ -549,8 +576,53 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-python-the-gil-2",
-    "title": "Imagine you are introducing the GIL to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-languages-python-what-are-python-comprehensions",
+    "title": "What are Python comprehensions?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-python-what-are-mutable-and-immutable-objects",
+    "title": "What are mutable and immutable objects?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-python-what-is-a-python-module",
+    "title": "What is a Python module?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-python-what-are-positional-and-keyword-arguments",
+    "title": "What are positional and keyword arguments?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-python-how-does-python-exception-handling-work",
+    "title": "How does Python exception handling work?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-python-how-do-python-decorators-work",
+    "title": "How do Python decorators work?",
     "category": "languages",
     "subcategory": "python",
     "difficulty": "intermediate",
@@ -558,8 +630,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-python-the-gil-3",
-    "title": "Compare the GIL with processes and async I/O. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-languages-python-how-do-python-generators-work",
+    "title": "How do Python generators work?",
     "category": "languages",
     "subcategory": "python",
     "difficulty": "intermediate",
@@ -567,8 +639,98 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-python-the-gil-4",
-    "title": "Consider this scenario: a workload mixes CPU-heavy and network-heavy tasks. Explain how you would apply your understanding of the GIL, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-languages-python-how-does-python-s-legb-rule-work",
+    "title": "How does Python's LEGB rule work?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-python-what-are-context-managers-in-python",
+    "title": "What are context managers in Python?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-python-how-does-python-s-global-interpreter-lock-work",
+    "title": "How does Python's Global Interpreter Lock work?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-python-how-do-python-iterators-work",
+    "title": "How do Python iterators work?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-python-how-does-multiple-inheritance-work-in-python",
+    "title": "How does multiple inheritance work in Python?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-python-what-are-python-dataclasses",
+    "title": "What are Python dataclasses?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-python-how-do-python-virtual-environments-work",
+    "title": "How do Python virtual environments work?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-python-how-does-asyncio-work",
+    "title": "How does asyncio work?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-python-how-do-python-shallow-and-deep-copies-differ",
+    "title": "How do Python shallow and deep copies differ?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-python-what-are-python-descriptors",
+    "title": "What are Python descriptors?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-python-how-does-python-s-method-resolution-order-work",
+    "title": "How does Python's method resolution order work?",
     "category": "languages",
     "subcategory": "python",
     "difficulty": "advanced",
@@ -576,8 +738,80 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-java-jvm-and-bytecode-1",
-    "title": "Explain JVM and bytecode in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-languages-python-how-does-python-manage-cyclic-references",
+    "title": "How does Python manage cyclic references?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-python-how-do-async-generators-handle-cleanup",
+    "title": "How do async generators handle cleanup?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-python-how-do-metaclasses-customize-class-creation",
+    "title": "How do metaclasses customize class creation?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-python-how-do-python-multiprocessing-start-methods-differ",
+    "title": "How do Python multiprocessing start methods differ?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-python-how-does-python-s-descriptor-lookup-precedence-work",
+    "title": "How does Python's descriptor lookup precedence work?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-python-how-does-cancellation-propagate-in-asyncio-task-groups",
+    "title": "How does cancellation propagate in asyncio task groups?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-python-why-can-mutable-default-arguments-cause-bugs",
+    "title": "Why can mutable default arguments cause bugs?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-python-how-does-python-s-buffer-protocol-work",
+    "title": "How does Python's buffer protocol work?",
+    "category": "languages",
+    "subcategory": "python",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-java-what-is-the-jvm",
+    "title": "What is the JVM?",
     "category": "languages",
     "subcategory": "java",
     "difficulty": "beginner",
@@ -585,35 +819,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-java-jvm-and-bytecode-2",
-    "title": "Imagine you are introducing JVM and bytecode to a classmate. How does it work, and where would someone encounter it?",
-    "category": "languages",
-    "subcategory": "java",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-java-jvm-and-bytecode-3",
-    "title": "Compare JVM and bytecode with JIT compilation and garbage collection. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "languages",
-    "subcategory": "java",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-java-jvm-and-bytecode-4",
-    "title": "Consider this scenario: a Java service behaves differently after warming up. Explain how you would apply your understanding of JVM and bytecode, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "languages",
-    "subcategory": "java",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-java-collections-framework-1",
-    "title": "Explain collections framework in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-languages-java-what-is-java-bytecode",
+    "title": "What is Java bytecode?",
     "category": "languages",
     "subcategory": "java",
     "difficulty": "beginner",
@@ -621,35 +828,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-java-collections-framework-2",
-    "title": "Imagine you are introducing collections framework to a classmate. How does it work, and where would someone encounter it?",
-    "category": "languages",
-    "subcategory": "java",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-java-collections-framework-3",
-    "title": "Compare collections framework with lists sets and maps. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "languages",
-    "subcategory": "java",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-java-collections-framework-4",
-    "title": "Consider this scenario: an application needs fast lookup and predictable ordering. Explain how you would apply your understanding of collections framework, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "languages",
-    "subcategory": "java",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-java-exception-handling-1",
-    "title": "Explain exception handling in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-languages-java-how-do-jdk-and-jre-differ",
+    "title": "How do JDK and JRE differ?",
     "category": "languages",
     "subcategory": "java",
     "difficulty": "beginner",
@@ -657,71 +837,251 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-java-exception-handling-2",
-    "title": "Imagine you are introducing exception handling to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-languages-java-what-are-java-access-modifiers",
+    "title": "What are Java access modifiers?",
     "category": "languages",
     "subcategory": "java",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-java-exception-handling-3",
-    "title": "Compare exception handling with error propagation and resource cleanup. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "languages",
-    "subcategory": "java",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-java-exception-handling-4",
-    "title": "Consider this scenario: a file operation fails halfway through. Explain how you would apply your understanding of exception handling, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "languages",
-    "subcategory": "java",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-c-and-c-pointers-and-references-1",
-    "title": "Explain pointers and references in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "languages",
-    "subcategory": "c-and-c",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "languages-c-and-c-pointers-and-references-2",
-    "title": "Imagine you are introducing pointers and references to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-languages-java-what-is-method-overloading-in-java",
+    "title": "What is method overloading in Java?",
     "category": "languages",
-    "subcategory": "c-and-c",
+    "subcategory": "java",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-java-what-is-method-overriding-in-java",
+    "title": "What is method overriding in Java?",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-java-what-are-checked-exceptions",
+    "title": "What are checked exceptions?",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-java-what-is-the-java-collections-framework",
+    "title": "What is the Java Collections Framework?",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-java-what-is-a-java-interface",
+    "title": "What is a Java interface?",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-java-how-does-java-garbage-collection-work",
+    "title": "How does Java garbage collection work?",
+    "category": "languages",
+    "subcategory": "java",
     "difficulty": "intermediate",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "languages-c-and-c-pointers-and-references-3",
-    "title": "Compare pointers and references with stack and heap memory. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-languages-java-how-do-hashmap-and-treemap-differ",
+    "title": "How do HashMap and TreeMap differ?",
     "category": "languages",
-    "subcategory": "c-and-c",
+    "subcategory": "java",
     "difficulty": "intermediate",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "languages-c-and-c-pointers-and-references-4",
-    "title": "Consider this scenario: a function needs to modify a caller's data. Explain how you would apply your understanding of pointers and references, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-languages-java-how-does-java-s-equals-and-hashcode-contract-work",
+    "title": "How does Java's equals and hashCode contract work?",
     "category": "languages",
-    "subcategory": "c-and-c",
+    "subcategory": "java",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-java-how-do-java-streams-work",
+    "title": "How do Java streams work?",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-java-what-are-functional-interfaces-in-java",
+    "title": "What are functional interfaces in Java?",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-java-how-does-synchronization-work-in-java",
+    "title": "How does synchronization work in Java?",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-java-how-do-java-generics-work",
+    "title": "How do Java generics work?",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-java-how-do-stringbuilder-and-stringbuffer-differ",
+    "title": "How do StringBuilder and StringBuffer differ?",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-java-how-do-java-records-work",
+    "title": "How do Java records work?",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-java-what-are-virtual-threads-in-java",
+    "title": "What are virtual threads in Java?",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-java-how-does-completablefuture-work",
+    "title": "How does CompletableFuture work?",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-java-how-do-java-class-loaders-work",
+    "title": "How do Java class loaders work?",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-java-how-does-java-s-memory-model-define-happens-before",
+    "title": "How does Java's memory model define happens-before?",
+    "category": "languages",
+    "subcategory": "java",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "languages-c-raii-and-smart-pointers-1",
-    "title": "Explain RAII and smart pointers in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-languages-java-how-does-volatile-differ-from-synchronized",
+    "title": "How does volatile differ from synchronized?",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-java-how-does-java-type-erasure-affect-generics",
+    "title": "How does Java type erasure affect generics?",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-java-how-does-concurrenthashmap-support-concurrent-access",
+    "title": "How does ConcurrentHashMap support concurrent access?",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-java-how-do-jvm-garbage-collectors-trade-latency-for-throughput",
+    "title": "How do JVM garbage collectors trade latency for throughput?",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-java-how-does-escape-analysis-optimize-java-allocations",
+    "title": "How does escape analysis optimize Java allocations?",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-java-how-can-thread-pool-starvation-occur",
+    "title": "How can thread pool starvation occur?",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-java-how-does-java-handle-class-initialization-concurrency",
+    "title": "How does Java handle class initialization concurrency?",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-java-how-does-backpressure-work-in-java-reactive-streams",
+    "title": "How does backpressure work in Java reactive streams?",
+    "category": "languages",
+    "subcategory": "java",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-c-what-is-a-pointer-in-c",
+    "title": "What is a pointer in C?",
     "category": "languages",
     "subcategory": "c",
     "difficulty": "beginner",
@@ -729,8 +1089,53 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-c-raii-and-smart-pointers-2",
-    "title": "Imagine you are introducing RAII and smart pointers to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-languages-c-what-are-c-storage-classes",
+    "title": "What are C storage classes?",
+    "category": "languages",
+    "subcategory": "c",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-c-what-is-a-c-structure",
+    "title": "What is a C structure?",
+    "category": "languages",
+    "subcategory": "c",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-c-what-is-a-null-pointer",
+    "title": "What is a null pointer?",
+    "category": "languages",
+    "subcategory": "c",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-c-how-do-arrays-work-in-c",
+    "title": "How do arrays work in C?",
+    "category": "languages",
+    "subcategory": "c",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-c-what-is-a-c-header-file",
+    "title": "What is a C header file?",
+    "category": "languages",
+    "subcategory": "c",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-c-how-do-malloc-and-calloc-differ",
+    "title": "How do malloc and calloc differ?",
     "category": "languages",
     "subcategory": "c",
     "difficulty": "intermediate",
@@ -738,8 +1143,71 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-c-raii-and-smart-pointers-3",
-    "title": "Compare RAII and smart pointers with manual memory management. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-languages-c-how-does-pointer-arithmetic-work",
+    "title": "How does pointer arithmetic work?",
+    "category": "languages",
+    "subcategory": "c",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-c-what-are-function-pointers-in-c",
+    "title": "What are function pointers in C?",
+    "category": "languages",
+    "subcategory": "c",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-c-how-do-c-unions-work",
+    "title": "How do C unions work?",
+    "category": "languages",
+    "subcategory": "c",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-c-how-does-the-c-preprocessor-work",
+    "title": "How does the C preprocessor work?",
+    "category": "languages",
+    "subcategory": "c",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-c-how-do-static-variables-behave-in-c",
+    "title": "How do static variables behave in C?",
+    "category": "languages",
+    "subcategory": "c",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-c-how-do-stack-and-heap-allocations-differ-in-c",
+    "title": "How do stack and heap allocations differ in C?",
+    "category": "languages",
+    "subcategory": "c",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-c-what-is-a-dangling-pointer",
+    "title": "What is a dangling pointer?",
+    "category": "languages",
+    "subcategory": "c",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-c-how-does-undefined-behavior-affect-c-compiler-optimizations",
+    "title": "How does undefined behavior affect C compiler optimizations?",
     "category": "languages",
     "subcategory": "c",
     "difficulty": "advanced",
@@ -747,8 +1215,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-c-raii-and-smart-pointers-4",
-    "title": "Consider this scenario: a program must safely manage file and memory resources. Explain how you would apply your understanding of RAII and smart pointers, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-languages-c-how-does-structure-padding-affect-memory-layout",
+    "title": "How does structure padding affect memory layout?",
     "category": "languages",
     "subcategory": "c",
     "difficulty": "advanced",
@@ -756,8 +1224,224 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-go-goroutines-and-channels-1",
-    "title": "Explain goroutines and channels in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-languages-c-what-is-strict-aliasing-in-c",
+    "title": "What is strict aliasing in C?",
+    "category": "languages",
+    "subcategory": "c",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-c-how-do-flexible-array-members-work",
+    "title": "How do flexible array members work?",
+    "category": "languages",
+    "subcategory": "c",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-c-how-do-c-atomics-prevent-data-races",
+    "title": "How do C atomics prevent data races?",
+    "category": "languages",
+    "subcategory": "c",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-c-how-does-restrict-affect-pointer-aliasing",
+    "title": "How does restrict affect pointer aliasing?",
+    "category": "languages",
+    "subcategory": "c",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-cpp-what-are-references-in-c",
+    "title": "What are references in C++?",
+    "category": "languages",
+    "subcategory": "cpp",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-cpp-what-is-a-c-constructor",
+    "title": "What is a C++ constructor?",
+    "category": "languages",
+    "subcategory": "cpp",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-cpp-what-is-a-c-destructor",
+    "title": "What is a C++ destructor?",
+    "category": "languages",
+    "subcategory": "cpp",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-cpp-what-is-a-virtual-function",
+    "title": "What is a virtual function?",
+    "category": "languages",
+    "subcategory": "cpp",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-cpp-what-are-c-namespaces",
+    "title": "What are C++ namespaces?",
+    "category": "languages",
+    "subcategory": "cpp",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-cpp-what-is-the-stl",
+    "title": "What is the STL?",
+    "category": "languages",
+    "subcategory": "cpp",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-cpp-how-does-raii-work-in-c",
+    "title": "How does RAII work in C++?",
+    "category": "languages",
+    "subcategory": "cpp",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-cpp-how-do-unique-ptr-and-shared-ptr-differ",
+    "title": "How do unique_ptr and shared_ptr differ?",
+    "category": "languages",
+    "subcategory": "cpp",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-cpp-what-is-move-semantics-in-c",
+    "title": "What is move semantics in C++?",
+    "category": "languages",
+    "subcategory": "cpp",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-cpp-how-do-c-templates-work",
+    "title": "How do C++ templates work?",
+    "category": "languages",
+    "subcategory": "cpp",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-cpp-what-is-operator-overloading-in-c",
+    "title": "What is operator overloading in C++?",
+    "category": "languages",
+    "subcategory": "cpp",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-cpp-how-do-vector-and-list-differ-in-c",
+    "title": "How do vector and list differ in C++?",
+    "category": "languages",
+    "subcategory": "cpp",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-cpp-what-is-the-rule-of-five",
+    "title": "What is the rule of five?",
+    "category": "languages",
+    "subcategory": "cpp",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-cpp-how-do-c-lambda-captures-work",
+    "title": "How do C++ lambda captures work?",
+    "category": "languages",
+    "subcategory": "cpp",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-cpp-how-does-perfect-forwarding-work-in-c",
+    "title": "How does perfect forwarding work in C++?",
+    "category": "languages",
+    "subcategory": "cpp",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-cpp-how-does-template-specialization-work",
+    "title": "How does template specialization work?",
+    "category": "languages",
+    "subcategory": "cpp",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-cpp-how-does-object-slicing-occur-in-c",
+    "title": "How does object slicing occur in C++?",
+    "category": "languages",
+    "subcategory": "cpp",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-cpp-how-does-iterator-invalidation-affect-c-containers",
+    "title": "How does iterator invalidation affect C++ containers?",
+    "category": "languages",
+    "subcategory": "cpp",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-cpp-how-does-c-guarantee-thread-safe-static-initialization",
+    "title": "How does C++ guarantee thread-safe static initialization?",
+    "category": "languages",
+    "subcategory": "cpp",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-cpp-how-do-c-memory-ordering-constraints-work",
+    "title": "How do C++ memory ordering constraints work?",
+    "category": "languages",
+    "subcategory": "cpp",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-go-what-are-goroutines",
+    "title": "What are goroutines?",
     "category": "languages",
     "subcategory": "go",
     "difficulty": "beginner",
@@ -765,8 +1449,53 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-go-goroutines-and-channels-2",
-    "title": "Imagine you are introducing goroutines and channels to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-languages-go-what-are-go-channels",
+    "title": "What are Go channels?",
+    "category": "languages",
+    "subcategory": "go",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-go-what-are-go-slices",
+    "title": "What are Go slices?",
+    "category": "languages",
+    "subcategory": "go",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-go-what-are-go-interfaces",
+    "title": "What are Go interfaces?",
+    "category": "languages",
+    "subcategory": "go",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-go-how-does-go-handle-errors",
+    "title": "How does Go handle errors?",
+    "category": "languages",
+    "subcategory": "go",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-go-what-is-defer-in-go",
+    "title": "What is defer in Go?",
+    "category": "languages",
+    "subcategory": "go",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-go-how-do-buffered-and-unbuffered-channels-differ",
+    "title": "How do buffered and unbuffered channels differ?",
     "category": "languages",
     "subcategory": "go",
     "difficulty": "intermediate",
@@ -774,8 +1503,71 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-go-goroutines-and-channels-3",
-    "title": "Compare goroutines and channels with threads and message passing. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-languages-go-how-do-go-interfaces-achieve-implicit-implementation",
+    "title": "How do Go interfaces achieve implicit implementation?",
+    "category": "languages",
+    "subcategory": "go",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-go-how-does-select-work-in-go",
+    "title": "How does select work in Go?",
+    "category": "languages",
+    "subcategory": "go",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-go-how-do-go-contexts-propagate-cancellation",
+    "title": "How do Go contexts propagate cancellation?",
+    "category": "languages",
+    "subcategory": "go",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-go-how-do-go-maps-behave-under-concurrent-access",
+    "title": "How do Go maps behave under concurrent access?",
+    "category": "languages",
+    "subcategory": "go",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-go-how-does-go-s-garbage-collector-work",
+    "title": "How does Go's garbage collector work?",
+    "category": "languages",
+    "subcategory": "go",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-go-how-do-go-pointer-receivers-differ-from-value-receivers",
+    "title": "How do Go pointer receivers differ from value receivers?",
+    "category": "languages",
+    "subcategory": "go",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-go-how-do-go-generics-work",
+    "title": "How do Go generics work?",
+    "category": "languages",
+    "subcategory": "go",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-go-how-does-the-go-scheduler-multiplex-goroutines",
+    "title": "How does the Go scheduler multiplex goroutines?",
     "category": "languages",
     "subcategory": "go",
     "difficulty": "advanced",
@@ -783,8 +1575,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-go-goroutines-and-channels-4",
-    "title": "Consider this scenario: many independent jobs need bounded concurrency. Explain how you would apply your understanding of goroutines and channels, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-languages-go-how-do-goroutine-leaks-happen",
+    "title": "How do goroutine leaks happen?",
     "category": "languages",
     "subcategory": "go",
     "difficulty": "advanced",
@@ -792,8 +1584,44 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-rust-ownership-and-borrowing-1",
-    "title": "Explain ownership and borrowing in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-languages-go-how-does-go-escape-analysis-work",
+    "title": "How does Go escape analysis work?",
+    "category": "languages",
+    "subcategory": "go",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-go-how-does-the-go-memory-model-define-synchronization",
+    "title": "How does the Go memory model define synchronization?",
+    "category": "languages",
+    "subcategory": "go",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-go-how-can-channel-ownership-prevent-deadlocks",
+    "title": "How can channel ownership prevent deadlocks?",
+    "category": "languages",
+    "subcategory": "go",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-go-how-do-nil-interface-values-differ-from-typed-nils",
+    "title": "How do nil interface values differ from typed nils?",
+    "category": "languages",
+    "subcategory": "go",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-rust-what-is-ownership-in-rust",
+    "title": "What is ownership in Rust?",
     "category": "languages",
     "subcategory": "rust",
     "difficulty": "beginner",
@@ -801,100 +1629,172 @@
     "speakingTime": 120
   },
   {
-    "slug": "languages-rust-ownership-and-borrowing-2",
-    "title": "Imagine you are introducing ownership and borrowing to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-languages-rust-what-is-borrowing-in-rust",
+    "title": "What is borrowing in Rust?",
     "category": "languages",
     "subcategory": "rust",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-rust-ownership-and-borrowing-3",
-    "title": "Compare ownership and borrowing with lifetimes and references. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "languages",
-    "subcategory": "rust",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-rust-ownership-and-borrowing-4",
-    "title": "Consider this scenario: two parts of a program need to access the same data. Explain how you would apply your understanding of ownership and borrowing, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "languages",
-    "subcategory": "rust",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-oop-encapsulation-and-abstraction-1",
-    "title": "Explain encapsulation and abstraction in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "languages",
-    "subcategory": "oop",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "languages-oop-encapsulation-and-abstraction-2",
-    "title": "Imagine you are introducing encapsulation and abstraction to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-languages-rust-what-are-rust-lifetimes",
+    "title": "What are Rust lifetimes?",
     "category": "languages",
-    "subcategory": "oop",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-oop-encapsulation-and-abstraction-3",
-    "title": "Compare encapsulation and abstraction with inheritance and composition. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "languages",
-    "subcategory": "oop",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-oop-encapsulation-and-abstraction-4",
-    "title": "Consider this scenario: a domain model must evolve without breaking callers. Explain how you would apply your understanding of encapsulation and abstraction, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "languages",
-    "subcategory": "oop",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "languages-programming-paradigms-functional-programming-1",
-    "title": "Explain functional programming in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "languages",
-    "subcategory": "programming-paradigms",
+    "subcategory": "rust",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "languages-programming-paradigms-functional-programming-2",
-    "title": "Imagine you are introducing functional programming to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-languages-rust-what-is-a-rust-trait",
+    "title": "What is a Rust trait?",
     "category": "languages",
-    "subcategory": "programming-paradigms",
+    "subcategory": "rust",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-rust-how-does-rust-s-option-type-work",
+    "title": "How does Rust's Option type work?",
+    "category": "languages",
+    "subcategory": "rust",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-rust-how-does-rust-s-result-type-work",
+    "title": "How does Rust's Result type work?",
+    "category": "languages",
+    "subcategory": "rust",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-rust-how-does-rust-s-borrow-checker-work",
+    "title": "How does Rust's borrow checker work?",
+    "category": "languages",
+    "subcategory": "rust",
     "difficulty": "intermediate",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "languages-programming-paradigms-functional-programming-3",
-    "title": "Compare functional programming with imperative programming. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-languages-rust-how-do-string-and-str-differ-in-rust",
+    "title": "How do String and str differ in Rust?",
     "category": "languages",
-    "subcategory": "programming-paradigms",
+    "subcategory": "rust",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-rust-how-do-box-and-rc-differ",
+    "title": "How do Box and Rc differ?",
+    "category": "languages",
+    "subcategory": "rust",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-rust-how-do-rust-iterators-work",
+    "title": "How do Rust iterators work?",
+    "category": "languages",
+    "subcategory": "rust",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-rust-how-does-pattern-matching-work-in-rust",
+    "title": "How does pattern matching work in Rust?",
+    "category": "languages",
+    "subcategory": "rust",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-rust-how-do-rust-generics-work",
+    "title": "How do Rust generics work?",
+    "category": "languages",
+    "subcategory": "rust",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-rust-how-does-rust-implement-error-propagation",
+    "title": "How does Rust implement error propagation?",
+    "category": "languages",
+    "subcategory": "rust",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-rust-how-do-rust-closures-capture-values",
+    "title": "How do Rust closures capture values?",
+    "category": "languages",
+    "subcategory": "rust",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-rust-how-do-send-and-sync-constrain-rust-concurrency",
+    "title": "How do Send and Sync constrain Rust concurrency?",
+    "category": "languages",
+    "subcategory": "rust",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "languages-programming-paradigms-functional-programming-4",
-    "title": "Consider this scenario: a transformation pipeline becomes difficult to test. Explain how you would apply your understanding of functional programming, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-languages-rust-how-does-interior-mutability-work-in-rust",
+    "title": "How does interior mutability work in Rust?",
     "category": "languages",
-    "subcategory": "programming-paradigms",
+    "subcategory": "rust",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-rust-how-does-pin-support-self-referential-futures",
+    "title": "How does Pin support self-referential futures?",
+    "category": "languages",
+    "subcategory": "rust",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-rust-how-do-trait-objects-enable-dynamic-dispatch",
+    "title": "How do trait objects enable dynamic dispatch?",
+    "category": "languages",
+    "subcategory": "rust",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-rust-how-does-rust-prevent-data-races-at-compile-time",
+    "title": "How does Rust prevent data races at compile time?",
+    "category": "languages",
+    "subcategory": "rust",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-languages-rust-how-do-higher-ranked-trait-bounds-work-in-rust",
+    "title": "How do higher-ranked trait bounds work in Rust?",
+    "category": "languages",
+    "subcategory": "rust",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120

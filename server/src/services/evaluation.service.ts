@@ -4,30 +4,57 @@ import OpenAI from "openai";
 import { prisma } from "../config/prisma.js";
 import { env } from "../config/env.js";
 import { evaluationSchema } from "../validator/evaluation.validator.js";
-
+import type { Prisma } from "../generated/prisma/client.js";
 import { detectFillerWords } from "../utils/speech-analytics.js";
 import { calculateSpeakingPace } from "../utils/speech-analytics.js";
+
+
+type AttemptWithRelations = Prisma.AttemptGetPayload<{
+  include: {
+    topic: true;
+    evaluation: true;
+  };
+}>;
 
 const openai = new OpenAI({
   apiKey: env.OPENAI_API_KEY,
 });
 
 export const evaluateAttempt = async (
-  attemptId: string,
-  userId: string
+ attemptId: string,
+  userId: string,
+  existingAttempt?: AttemptWithRelations
 ) => {
-  const attempt = await prisma.attempt.findFirst({
-    where: {
-      id: attemptId,
-      userId,
-    },
-    include: {
-      topic: true,
-      evaluation: true,
-    },
-  });
+ const evaluationStart = performance.now();
+
+  let attempt = existingAttempt;
 
   if (!attempt) {
+    const dbReadStart = performance.now();
+
+    attempt = await prisma.attempt.findFirst({
+      where: {
+        id: attemptId,
+        userId,
+      },
+      include: {
+        topic: true,
+        evaluation: true,
+      },
+    }) ?? undefined;
+
+    console.log(
+      "[PERF] Evaluation DB lookup:",
+      (performance.now() - dbReadStart).toFixed(2),
+      "ms"
+    );
+  } else {
+    console.log(
+      "[PERF] Reusing submitted attempt - DB lookup skipped"
+    );
+  }
+
+  if (!attempt || attempt.userId !== userId || attempt.id !== attemptId) {
     throw new Error("Attempt not found");
   }
 
@@ -39,10 +66,11 @@ export const evaluateAttempt = async (
     throw new Error("Attempt has no transcript");
   }
 
-  // Avoid evaluating the same attempt twice.
   if (attempt.evaluation) {
     return attempt.evaluation;
   }
+
+  const analyticsStart = performance.now();
 
   // Calculate filler words on the backend.
   const fillerAnalytics = detectFillerWords(
@@ -56,6 +84,12 @@ export const evaluateAttempt = async (
     attempt.speakingEndedAt
   );
 
+  console.log(
+  "[PERF] Speech analytics:",
+  (performance.now() - analyticsStart).toFixed(2),
+  "ms"
+);
+
   const {
     total: fillerWordsCount,
   } = fillerAnalytics;
@@ -68,6 +102,7 @@ export const evaluateAttempt = async (
 
   const hasValidDuration =
     speakingDurationSeconds > 0;
+    const aiStart = performance.now();
 
   const response = await openai.responses.create({
     model: "gpt-4.1-mini",
@@ -349,6 +384,8 @@ ${JSON.stringify(fillerAnalytics.counts)}
         `,
       },
     ],
+    
+   
 
     text: {
       format: {
@@ -449,6 +486,18 @@ ${JSON.stringify(fillerAnalytics.counts)}
       },
     },
   });
+   console.log("[AI TOKEN USAGE]", {
+  inputTokens: response.usage?.input_tokens,
+  cachedTokens:
+    response.usage?.input_tokens_details?.cached_tokens,
+  outputTokens: response.usage?.output_tokens,
+  totalTokens: response.usage?.total_tokens,
+});
+  console.log(
+  "[PERF] OpenAI evaluation:",
+  (performance.now() - aiStart).toFixed(2),
+  "ms"
+);
 
   if (!response.output_text) {
     throw new Error("AI evaluation returned an empty response");
@@ -457,9 +506,10 @@ ${JSON.stringify(fillerAnalytics.counts)}
   const parsed = evaluationSchema.parse(
     JSON.parse(response.output_text)
   );
+const dbWriteStart = performance.now();
 
-  return prisma.evaluation.create({
-    data: {
+const evaluation = await prisma.evaluation.create({
+  data: {
       attemptId: attempt.id,
 
       overallScore: parsed.overallScore,
@@ -491,5 +541,20 @@ ${JSON.stringify(fillerAnalytics.counts)}
       model: "gpt-4.1-mini",
       promptVersion: "v2",
     },
-  });
+});
+
+console.log(
+  "[PERF] Evaluation DB write:",
+  (performance.now() - dbWriteStart).toFixed(2),
+  "ms"
+);
+
+console.log(
+  "[PERF] Evaluation service total:",
+  (performance.now() - evaluationStart).toFixed(2),
+  "ms"
+);
+
+return evaluation;
+  
 };

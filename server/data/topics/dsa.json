@@ -1,439 +1,232 @@
 [
   {
-    "slug": "dsa-arrays-array-operations-1",
-    "title": "Explain array operations in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-dsa-data-structures-what-is-an-array",
+    "title": "What is an array?",
     "category": "dsa",
-    "subcategory": "arrays",
+    "subcategory": "data-structures",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "dsa-arrays-array-operations-2",
-    "title": "Imagine you are introducing array operations to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-dsa-data-structures-what-is-a-linked-list",
+    "title": "What is a linked list?",
     "category": "dsa",
-    "subcategory": "arrays",
+    "subcategory": "data-structures",
     "difficulty": "beginner",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "dsa-arrays-array-operations-3",
-    "title": "Compare array operations with dynamic arrays. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-dsa-data-structures-what-is-a-stack",
+    "title": "What is a stack?",
     "category": "dsa",
-    "subcategory": "arrays",
+    "subcategory": "data-structures",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-data-structures-what-is-a-queue",
+    "title": "What is a queue?",
+    "category": "dsa",
+    "subcategory": "data-structures",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-data-structures-what-is-a-hash-table",
+    "title": "What is a hash table?",
+    "category": "dsa",
+    "subcategory": "data-structures",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-data-structures-what-is-a-binary-tree",
+    "title": "What is a binary tree?",
+    "category": "dsa",
+    "subcategory": "data-structures",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-data-structures-what-is-a-heap",
+    "title": "What is a heap?",
+    "category": "dsa",
+    "subcategory": "data-structures",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-data-structures-what-is-a-graph",
+    "title": "What is a graph?",
+    "category": "dsa",
+    "subcategory": "data-structures",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-data-structures-arrays-vs-linked-lists",
+    "title": "Arrays vs linked lists.",
+    "category": "dsa",
+    "subcategory": "data-structures",
     "difficulty": "intermediate",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "dsa-arrays-array-operations-4",
-    "title": "Consider this scenario: a feature stores a changing sequence of values. Explain how you would apply your understanding of array operations, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-dsa-data-structures-how-does-a-circular-queue-work",
+    "title": "How does a circular queue work?",
     "category": "dsa",
-    "subcategory": "arrays",
+    "subcategory": "data-structures",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-data-structures-how-does-a-hash-table-resolve-collisions",
+    "title": "How does a hash table resolve collisions?",
+    "category": "dsa",
+    "subcategory": "data-structures",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-data-structures-what-is-a-binary-search-tree",
+    "title": "What is a binary search tree?",
+    "category": "dsa",
+    "subcategory": "data-structures",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-data-structures-how-does-a-priority-queue-work",
+    "title": "How does a priority queue work?",
+    "category": "dsa",
+    "subcategory": "data-structures",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-data-structures-what-is-a-trie",
+    "title": "What is a trie?",
+    "category": "dsa",
+    "subcategory": "data-structures",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-data-structures-how-does-a-doubly-linked-list-work",
+    "title": "How does a doubly linked list work?",
+    "category": "dsa",
+    "subcategory": "data-structures",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-data-structures-adjacency-list-vs-adjacency-matrix",
+    "title": "Adjacency list vs adjacency matrix.",
+    "category": "dsa",
+    "subcategory": "data-structures",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-data-structures-how-does-a-disjoint-set-data-structure-work",
+    "title": "How does a disjoint-set data structure work?",
+    "category": "dsa",
+    "subcategory": "data-structures",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-data-structures-what-is-a-monotonic-stack",
+    "title": "What is a monotonic stack?",
+    "category": "dsa",
+    "subcategory": "data-structures",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-data-structures-how-do-avl-trees-maintain-balance",
+    "title": "How do AVL trees maintain balance?",
+    "category": "dsa",
+    "subcategory": "data-structures",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "dsa-strings-string-processing-1",
-    "title": "Explain string processing in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-dsa-data-structures-how-do-red-black-trees-maintain-balance",
+    "title": "How do red-black trees maintain balance?",
     "category": "dsa",
-    "subcategory": "strings",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-strings-string-processing-2",
-    "title": "Imagine you are introducing string processing to a classmate. How does it work, and where would someone encounter it?",
-    "category": "dsa",
-    "subcategory": "strings",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-strings-string-processing-3",
-    "title": "Compare string processing with immutability and encoding. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "dsa",
-    "subcategory": "strings",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-strings-string-processing-4",
-    "title": "Consider this scenario: a system processes user-generated text. Explain how you would apply your understanding of string processing, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "dsa",
-    "subcategory": "strings",
+    "subcategory": "data-structures",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "dsa-linked-lists-linked-list-structure-1",
-    "title": "Explain linked list structure in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-dsa-data-structures-how-does-a-segment-tree-answer-range-queries",
+    "title": "How does a segment tree answer range queries?",
     "category": "dsa",
-    "subcategory": "linked-lists",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-linked-lists-linked-list-structure-2",
-    "title": "Imagine you are introducing linked list structure to a classmate. How does it work, and where would someone encounter it?",
-    "category": "dsa",
-    "subcategory": "linked-lists",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-linked-lists-linked-list-structure-3",
-    "title": "Compare linked list structure with arrays. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "dsa",
-    "subcategory": "linked-lists",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-linked-lists-linked-list-structure-4",
-    "title": "Consider this scenario: frequent insertions occur in the middle of a collection. Explain how you would apply your understanding of linked list structure, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "dsa",
-    "subcategory": "linked-lists",
+    "subcategory": "data-structures",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "dsa-stacks-stack-data-structure-1",
-    "title": "Explain stack data structure in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-dsa-data-structures-how-does-a-fenwick-tree-update-prefix-sums",
+    "title": "How does a Fenwick tree update prefix sums?",
     "category": "dsa",
-    "subcategory": "stacks",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-stacks-stack-data-structure-2",
-    "title": "Imagine you are introducing stack data structure to a classmate. How does it work, and where would someone encounter it?",
-    "category": "dsa",
-    "subcategory": "stacks",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-stacks-stack-data-structure-3",
-    "title": "Compare stack data structure with call stacks and parsing. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "dsa",
-    "subcategory": "stacks",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-stacks-stack-data-structure-4",
-    "title": "Consider this scenario: a browser implements backtracking through pages. Explain how you would apply your understanding of stack data structure, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "dsa",
-    "subcategory": "stacks",
+    "subcategory": "data-structures",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "dsa-queues-queue-data-structure-1",
-    "title": "Explain queue data structure in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-dsa-data-structures-how-does-path-compression-optimize-disjoint-sets",
+    "title": "How does path compression optimize disjoint sets?",
     "category": "dsa",
-    "subcategory": "queues",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-queues-queue-data-structure-2",
-    "title": "Imagine you are introducing queue data structure to a classmate. How does it work, and where would someone encounter it?",
-    "category": "dsa",
-    "subcategory": "queues",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-queues-queue-data-structure-3",
-    "title": "Compare queue data structure with priority queues. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "dsa",
-    "subcategory": "queues",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-queues-queue-data-structure-4",
-    "title": "Consider this scenario: jobs must be processed in arrival order. Explain how you would apply your understanding of queue data structure, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "dsa",
-    "subcategory": "queues",
+    "subcategory": "data-structures",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "dsa-hashing-hash-tables-1",
-    "title": "Explain hash tables in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-dsa-data-structures-how-would-you-implement-an-lru-cache",
+    "title": "How would you implement an LRU cache?",
     "category": "dsa",
-    "subcategory": "hashing",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-hashing-hash-tables-2",
-    "title": "Imagine you are introducing hash tables to a classmate. How does it work, and where would someone encounter it?",
-    "category": "dsa",
-    "subcategory": "hashing",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-hashing-hash-tables-3",
-    "title": "Compare hash tables with collisions and load factor. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "dsa",
-    "subcategory": "hashing",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-hashing-hash-tables-4",
-    "title": "Consider this scenario: a service needs fast membership checks. Explain how you would apply your understanding of hash tables, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "dsa",
-    "subcategory": "hashing",
+    "subcategory": "data-structures",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "dsa-trees-binary-trees-1",
-    "title": "Explain binary trees in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-dsa-data-structures-how-does-a-skip-list-enable-efficient-search",
+    "title": "How does a skip list enable efficient search?",
     "category": "dsa",
-    "subcategory": "trees",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-trees-binary-trees-2",
-    "title": "Imagine you are introducing binary trees to a classmate. How does it work, and where would someone encounter it?",
-    "category": "dsa",
-    "subcategory": "trees",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-trees-binary-trees-3",
-    "title": "Compare binary trees with traversal strategies. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "dsa",
-    "subcategory": "trees",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-trees-binary-trees-4",
-    "title": "Consider this scenario: a file system is represented as a hierarchy. Explain how you would apply your understanding of binary trees, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "dsa",
-    "subcategory": "trees",
+    "subcategory": "data-structures",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "dsa-trees-binary-search-trees-1",
-    "title": "Explain binary search trees in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "dsa",
-    "subcategory": "trees",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-trees-binary-search-trees-2",
-    "title": "Imagine you are introducing binary search trees to a classmate. How does it work, and where would someone encounter it?",
-    "category": "dsa",
-    "subcategory": "trees",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-trees-binary-search-trees-3",
-    "title": "Compare binary search trees with balanced trees. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "dsa",
-    "subcategory": "trees",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-trees-binary-search-trees-4",
-    "title": "Consider this scenario: a lookup structure becomes skewed. Explain how you would apply your understanding of binary search trees, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "dsa",
-    "subcategory": "trees",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-trees-heaps-1",
-    "title": "Explain heaps in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "dsa",
-    "subcategory": "trees",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-trees-heaps-2",
-    "title": "Imagine you are introducing heaps to a classmate. How does it work, and where would someone encounter it?",
-    "category": "dsa",
-    "subcategory": "trees",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-trees-heaps-3",
-    "title": "Compare heaps with heapify and complexity. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "dsa",
-    "subcategory": "trees",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-trees-heaps-4",
-    "title": "Consider this scenario: a scheduler must select the most urgent task. Explain how you would apply your understanding of heaps, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "dsa",
-    "subcategory": "trees",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-graphs-graph-representations-1",
-    "title": "Explain graph representations in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "dsa",
-    "subcategory": "graphs",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-graphs-graph-representations-2",
-    "title": "Imagine you are introducing graph representations to a classmate. How does it work, and where would someone encounter it?",
-    "category": "dsa",
-    "subcategory": "graphs",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-graphs-graph-representations-3",
-    "title": "Compare graph representations with adjacency lists and matrices. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "dsa",
-    "subcategory": "graphs",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-graphs-graph-representations-4",
-    "title": "Consider this scenario: a social network models connections. Explain how you would apply your understanding of graph representations, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "dsa",
-    "subcategory": "graphs",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-graphs-breadth-first-search-1",
-    "title": "Explain breadth-first search in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "dsa",
-    "subcategory": "graphs",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-graphs-breadth-first-search-2",
-    "title": "Imagine you are introducing breadth-first search to a classmate. How does it work, and where would someone encounter it?",
-    "category": "dsa",
-    "subcategory": "graphs",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-graphs-breadth-first-search-3",
-    "title": "Compare breadth-first search with depth-first search. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "dsa",
-    "subcategory": "graphs",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-graphs-breadth-first-search-4",
-    "title": "Consider this scenario: a shortest path is needed in an unweighted graph. Explain how you would apply your understanding of breadth-first search, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "dsa",
-    "subcategory": "graphs",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-graphs-depth-first-search-1",
-    "title": "Explain depth-first search in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "dsa",
-    "subcategory": "graphs",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-graphs-depth-first-search-2",
-    "title": "Imagine you are introducing depth-first search to a classmate. How does it work, and where would someone encounter it?",
-    "category": "dsa",
-    "subcategory": "graphs",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-graphs-depth-first-search-3",
-    "title": "Compare depth-first search with recursion and explicit stacks. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "dsa",
-    "subcategory": "graphs",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-graphs-depth-first-search-4",
-    "title": "Consider this scenario: a maze must be explored. Explain how you would apply your understanding of depth-first search, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "dsa",
-    "subcategory": "graphs",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-algorithms-binary-search-1",
-    "title": "Explain binary search in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-dsa-algorithms-what-is-linear-search",
+    "title": "What is linear search?",
     "category": "dsa",
     "subcategory": "algorithms",
     "difficulty": "beginner",
@@ -441,8 +234,62 @@
     "speakingTime": 120
   },
   {
-    "slug": "dsa-algorithms-binary-search-2",
-    "title": "Imagine you are introducing binary search to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-dsa-algorithms-how-does-binary-search-work",
+    "title": "How does binary search work?",
+    "category": "dsa",
+    "subcategory": "algorithms",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-algorithms-how-does-bubble-sort-work",
+    "title": "How does bubble sort work?",
+    "category": "dsa",
+    "subcategory": "algorithms",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-algorithms-what-is-recursion",
+    "title": "What is recursion?",
+    "category": "dsa",
+    "subcategory": "algorithms",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-algorithms-what-is-breadth-first-search",
+    "title": "What is breadth-first search?",
+    "category": "dsa",
+    "subcategory": "algorithms",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-algorithms-what-is-depth-first-search",
+    "title": "What is depth-first search?",
+    "category": "dsa",
+    "subcategory": "algorithms",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-algorithms-how-does-insertion-sort-work",
+    "title": "How does insertion sort work?",
+    "category": "dsa",
+    "subcategory": "algorithms",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-algorithms-how-does-merge-sort-work",
+    "title": "How does merge sort work?",
     "category": "dsa",
     "subcategory": "algorithms",
     "difficulty": "intermediate",
@@ -450,8 +297,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "dsa-algorithms-binary-search-3",
-    "title": "Compare binary search with search space reduction. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-dsa-algorithms-how-does-quicksort-partition-an-array",
+    "title": "How does quicksort partition an array?",
     "category": "dsa",
     "subcategory": "algorithms",
     "difficulty": "intermediate",
@@ -459,8 +306,80 @@
     "speakingTime": 120
   },
   {
-    "slug": "dsa-algorithms-binary-search-4",
-    "title": "Consider this scenario: a large sorted collection needs fast lookup. Explain how you would apply your understanding of binary search, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-dsa-algorithms-what-is-a-greedy-algorithm",
+    "title": "What is a greedy algorithm?",
+    "category": "dsa",
+    "subcategory": "algorithms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-algorithms-how-does-dynamic-programming-work",
+    "title": "How does dynamic programming work?",
+    "category": "dsa",
+    "subcategory": "algorithms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-algorithms-what-is-backtracking",
+    "title": "What is backtracking?",
+    "category": "dsa",
+    "subcategory": "algorithms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-algorithms-how-does-topological-sorting-work",
+    "title": "How does topological sorting work?",
+    "category": "dsa",
+    "subcategory": "algorithms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-algorithms-how-does-dijkstra-s-algorithm-work",
+    "title": "How does Dijkstra’s algorithm work?",
+    "category": "dsa",
+    "subcategory": "algorithms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-algorithms-how-does-heap-sort-work",
+    "title": "How does heap sort work?",
+    "category": "dsa",
+    "subcategory": "algorithms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-algorithms-how-does-counting-sort-work",
+    "title": "How does counting sort work?",
+    "category": "dsa",
+    "subcategory": "algorithms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-algorithms-how-does-kruskal-s-algorithm-find-a-spanning-tree",
+    "title": "How does Kruskal’s algorithm find a spanning tree?",
+    "category": "dsa",
+    "subcategory": "algorithms",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-algorithms-when-should-you-prefer-bellman-ford-over-dijkstra",
+    "title": "When should you prefer Bellman-Ford over Dijkstra?",
     "category": "dsa",
     "subcategory": "algorithms",
     "difficulty": "advanced",
@@ -468,35 +387,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "dsa-algorithms-sorting-algorithms-1",
-    "title": "Explain sorting algorithms in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "dsa",
-    "subcategory": "algorithms",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-algorithms-sorting-algorithms-2",
-    "title": "Imagine you are introducing sorting algorithms to a classmate. How does it work, and where would someone encounter it?",
-    "category": "dsa",
-    "subcategory": "algorithms",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-algorithms-sorting-algorithms-3",
-    "title": "Compare sorting algorithms with time and space complexity. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "dsa",
-    "subcategory": "algorithms",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-algorithms-sorting-algorithms-4",
-    "title": "Consider this scenario: a system sorts millions of records. Explain how you would apply your understanding of sorting algorithms, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-dsa-algorithms-how-does-floyd-warshall-compute-all-pairs-shortest-paths",
+    "title": "How does Floyd-Warshall compute all-pairs shortest paths?",
     "category": "dsa",
     "subcategory": "algorithms",
     "difficulty": "advanced",
@@ -504,35 +396,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "dsa-algorithms-two-pointers-1",
-    "title": "Explain two pointers in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "dsa",
-    "subcategory": "algorithms",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-algorithms-two-pointers-2",
-    "title": "Imagine you are introducing two pointers to a classmate. How does it work, and where would someone encounter it?",
-    "category": "dsa",
-    "subcategory": "algorithms",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-algorithms-two-pointers-3",
-    "title": "Compare two pointers with nested loops. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "dsa",
-    "subcategory": "algorithms",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-algorithms-two-pointers-4",
-    "title": "Consider this scenario: a sorted array must be searched for a pair. Explain how you would apply your understanding of two pointers, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-dsa-algorithms-how-does-kmp-avoid-redundant-string-comparisons",
+    "title": "How does KMP avoid redundant string comparisons?",
     "category": "dsa",
     "subcategory": "algorithms",
     "difficulty": "advanced",
@@ -540,35 +405,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "dsa-algorithms-sliding-window-1",
-    "title": "Explain sliding window in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "dsa",
-    "subcategory": "algorithms",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-algorithms-sliding-window-2",
-    "title": "Imagine you are introducing sliding window to a classmate. How does it work, and where would someone encounter it?",
-    "category": "dsa",
-    "subcategory": "algorithms",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-algorithms-sliding-window-3",
-    "title": "Compare sliding window with prefix sums. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "dsa",
-    "subcategory": "algorithms",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-algorithms-sliding-window-4",
-    "title": "Consider this scenario: a stream needs the maximum sum over a fixed window. Explain how you would apply your understanding of sliding window, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-dsa-algorithms-how-does-tarjan-s-algorithm-find-strongly-connected-components",
+    "title": "How does Tarjan’s algorithm find strongly connected components?",
     "category": "dsa",
     "subcategory": "algorithms",
     "difficulty": "advanced",
@@ -576,35 +414,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "dsa-algorithms-recursion-1",
-    "title": "Explain recursion in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "dsa",
-    "subcategory": "algorithms",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-algorithms-recursion-2",
-    "title": "Imagine you are introducing recursion to a classmate. How does it work, and where would someone encounter it?",
-    "category": "dsa",
-    "subcategory": "algorithms",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-algorithms-recursion-3",
-    "title": "Compare recursion with base cases and call stack. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "dsa",
-    "subcategory": "algorithms",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-algorithms-recursion-4",
-    "title": "Consider this scenario: a nested structure must be traversed. Explain how you would apply your understanding of recursion, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-dsa-algorithms-how-does-a-use-heuristics",
+    "title": "How does A* use heuristics?",
     "category": "dsa",
     "subcategory": "algorithms",
     "difficulty": "advanced",
@@ -612,35 +423,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "dsa-algorithms-dynamic-programming-1",
-    "title": "Explain dynamic programming in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "dsa",
-    "subcategory": "algorithms",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-algorithms-dynamic-programming-2",
-    "title": "Imagine you are introducing dynamic programming to a classmate. How does it work, and where would someone encounter it?",
-    "category": "dsa",
-    "subcategory": "algorithms",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-algorithms-dynamic-programming-3",
-    "title": "Compare dynamic programming with memoization and tabulation. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "dsa",
-    "subcategory": "algorithms",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-algorithms-dynamic-programming-4",
-    "title": "Consider this scenario: a naive recursive solution repeats work. Explain how you would apply your understanding of dynamic programming, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-dsa-algorithms-how-does-quickselect-find-an-order-statistic",
+    "title": "How does quickselect find an order statistic?",
     "category": "dsa",
     "subcategory": "algorithms",
     "difficulty": "advanced",
@@ -648,35 +432,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "dsa-algorithms-greedy-algorithms-1",
-    "title": "Explain greedy algorithms in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "dsa",
-    "subcategory": "algorithms",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-algorithms-greedy-algorithms-2",
-    "title": "Imagine you are introducing greedy algorithms to a classmate. How does it work, and where would someone encounter it?",
-    "category": "dsa",
-    "subcategory": "algorithms",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-algorithms-greedy-algorithms-3",
-    "title": "Compare greedy algorithms with proof of correctness. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "dsa",
-    "subcategory": "algorithms",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-algorithms-greedy-algorithms-4",
-    "title": "Consider this scenario: a scheduling problem needs an efficient strategy. Explain how you would apply your understanding of greedy algorithms, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-dsa-algorithms-how-does-radix-sort-handle-multiple-digits",
+    "title": "How does radix sort handle multiple digits?",
     "category": "dsa",
     "subcategory": "algorithms",
     "difficulty": "advanced",
@@ -684,35 +441,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "dsa-algorithms-backtracking-1",
-    "title": "Explain backtracking in your own words. What problem does it solve, and can you give a simple example?",
-    "category": "dsa",
-    "subcategory": "algorithms",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-algorithms-backtracking-2",
-    "title": "Imagine you are introducing backtracking to a classmate. How does it work, and where would someone encounter it?",
-    "category": "dsa",
-    "subcategory": "algorithms",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-algorithms-backtracking-3",
-    "title": "Compare backtracking with pruning. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "dsa",
-    "subcategory": "algorithms",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-algorithms-backtracking-4",
-    "title": "Consider this scenario: a puzzle has many possible configurations. Explain how you would apply your understanding of backtracking, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-dsa-algorithms-how-does-binary-lifting-accelerate-ancestor-queries",
+    "title": "How does binary lifting accelerate ancestor queries?",
     "category": "dsa",
     "subcategory": "algorithms",
     "difficulty": "advanced",
@@ -720,8 +450,233 @@
     "speakingTime": 120
   },
   {
-    "slug": "dsa-complexity-big-o-notation-1",
-    "title": "Explain Big O notation in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-dsa-problem-solving-what-is-a-base-case-in-recursion",
+    "title": "What is a base case in recursion?",
+    "category": "dsa",
+    "subcategory": "problem-solving",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-problem-solving-what-is-the-two-pointer-technique",
+    "title": "What is the two-pointer technique?",
+    "category": "dsa",
+    "subcategory": "problem-solving",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-problem-solving-what-is-a-sliding-window",
+    "title": "What is a sliding window?",
+    "category": "dsa",
+    "subcategory": "problem-solving",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-problem-solving-what-is-a-prefix-sum",
+    "title": "What is a prefix sum?",
+    "category": "dsa",
+    "subcategory": "problem-solving",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-problem-solving-what-is-brute-force",
+    "title": "What is brute force?",
+    "category": "dsa",
+    "subcategory": "problem-solving",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-problem-solving-what-is-memoization",
+    "title": "What is memoization?",
+    "category": "dsa",
+    "subcategory": "problem-solving",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-problem-solving-what-is-a-palindrome",
+    "title": "What is a palindrome?",
+    "category": "dsa",
+    "subcategory": "problem-solving",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-problem-solving-what-is-a-frequency-map",
+    "title": "What is a frequency map?",
+    "category": "dsa",
+    "subcategory": "problem-solving",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-problem-solving-how-would-you-detect-a-linked-list-cycle",
+    "title": "How would you detect a linked list cycle?",
+    "category": "dsa",
+    "subcategory": "problem-solving",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-problem-solving-how-would-you-find-two-numbers-summing-to-a-target",
+    "title": "How would you find two numbers summing to a target?",
+    "category": "dsa",
+    "subcategory": "problem-solving",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-problem-solving-how-would-you-merge-overlapping-intervals",
+    "title": "How would you merge overlapping intervals?",
+    "category": "dsa",
+    "subcategory": "problem-solving",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-problem-solving-how-would-you-find-the-longest-substring-without-repeated-characters",
+    "title": "How would you find the longest substring without repeated characters?",
+    "category": "dsa",
+    "subcategory": "problem-solving",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-problem-solving-how-would-you-reverse-a-linked-list",
+    "title": "How would you reverse a linked list?",
+    "category": "dsa",
+    "subcategory": "problem-solving",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-problem-solving-how-would-you-validate-balanced-parentheses",
+    "title": "How would you validate balanced parentheses?",
+    "category": "dsa",
+    "subcategory": "problem-solving",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-problem-solving-how-would-you-find-the-lowest-common-ancestor",
+    "title": "How would you find the lowest common ancestor?",
+    "category": "dsa",
+    "subcategory": "problem-solving",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-problem-solving-how-would-you-detect-a-cycle-in-a-directed-graph",
+    "title": "How would you detect a cycle in a directed graph?",
+    "category": "dsa",
+    "subcategory": "problem-solving",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-problem-solving-how-would-you-find-the-maximum-subarray-sum",
+    "title": "How would you find the maximum subarray sum?",
+    "category": "dsa",
+    "subcategory": "problem-solving",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-problem-solving-how-would-you-generate-all-permutations",
+    "title": "How would you generate all permutations?",
+    "category": "dsa",
+    "subcategory": "problem-solving",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-problem-solving-how-would-you-solve-the-edit-distance-problem",
+    "title": "How would you solve the edit distance problem?",
+    "category": "dsa",
+    "subcategory": "problem-solving",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-problem-solving-how-would-you-find-the-median-of-two-sorted-arrays",
+    "title": "How would you find the median of two sorted arrays?",
+    "category": "dsa",
+    "subcategory": "problem-solving",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-problem-solving-how-would-you-solve-the-longest-increasing-subsequence-problem",
+    "title": "How would you solve the longest increasing subsequence problem?",
+    "category": "dsa",
+    "subcategory": "problem-solving",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-problem-solving-how-would-you-find-the-largest-rectangle-in-a-histogram",
+    "title": "How would you find the largest rectangle in a histogram?",
+    "category": "dsa",
+    "subcategory": "problem-solving",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-problem-solving-how-would-you-solve-the-word-ladder-problem",
+    "title": "How would you solve the word ladder problem?",
+    "category": "dsa",
+    "subcategory": "problem-solving",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-problem-solving-how-would-you-count-inversions-efficiently",
+    "title": "How would you count inversions efficiently?",
+    "category": "dsa",
+    "subcategory": "problem-solving",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-problem-solving-how-would-you-find-minimum-window-substring",
+    "title": "How would you find minimum window substring?",
+    "category": "dsa",
+    "subcategory": "problem-solving",
+    "difficulty": "advanced",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-complexity-what-is-time-complexity",
+    "title": "What is time complexity?",
     "category": "dsa",
     "subcategory": "complexity",
     "difficulty": "beginner",
@@ -729,35 +684,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "dsa-complexity-big-o-notation-2",
-    "title": "Imagine you are introducing Big O notation to a classmate. How does it work, and where would someone encounter it?",
-    "category": "dsa",
-    "subcategory": "complexity",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-complexity-big-o-notation-3",
-    "title": "Compare Big O notation with best average and worst cases. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "dsa",
-    "subcategory": "complexity",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-complexity-big-o-notation-4",
-    "title": "Consider this scenario: two solutions behave differently as input grows. Explain how you would apply your understanding of Big O notation, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
-    "category": "dsa",
-    "subcategory": "complexity",
-    "difficulty": "advanced",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-complexity-amortized-analysis-1",
-    "title": "Explain amortized analysis in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-dsa-complexity-what-is-space-complexity",
+    "title": "What is space complexity?",
     "category": "dsa",
     "subcategory": "complexity",
     "difficulty": "beginner",
@@ -765,8 +693,53 @@
     "speakingTime": 120
   },
   {
-    "slug": "dsa-complexity-amortized-analysis-2",
-    "title": "Imagine you are introducing amortized analysis to a classmate. How does it work, and where would someone encounter it?",
+    "slug": "v2-dsa-complexity-what-is-big-o-notation",
+    "title": "What is Big O notation?",
+    "category": "dsa",
+    "subcategory": "complexity",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-complexity-what-is-constant-time-complexity",
+    "title": "What is constant time complexity?",
+    "category": "dsa",
+    "subcategory": "complexity",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-complexity-what-is-logarithmic-time-complexity",
+    "title": "What is logarithmic time complexity?",
+    "category": "dsa",
+    "subcategory": "complexity",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-complexity-what-is-quadratic-time-complexity",
+    "title": "What is quadratic time complexity?",
+    "category": "dsa",
+    "subcategory": "complexity",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-complexity-what-is-auxiliary-space",
+    "title": "What is auxiliary space?",
+    "category": "dsa",
+    "subcategory": "complexity",
+    "difficulty": "beginner",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-complexity-how-do-best-case-and-worst-case-complexity-differ",
+    "title": "How do best-case and worst-case complexity differ?",
     "category": "dsa",
     "subcategory": "complexity",
     "difficulty": "intermediate",
@@ -774,8 +747,89 @@
     "speakingTime": 120
   },
   {
-    "slug": "dsa-complexity-amortized-analysis-3",
-    "title": "Compare amortized analysis with dynamic array resizing. In what situations would you choose one over the other, and what practical factors influence that decision?",
+    "slug": "v2-dsa-complexity-how-do-nested-loops-affect-time-complexity",
+    "title": "How do nested loops affect time complexity?",
+    "category": "dsa",
+    "subcategory": "complexity",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-complexity-what-is-amortized-time-complexity",
+    "title": "What is amortized time complexity?",
+    "category": "dsa",
+    "subcategory": "complexity",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-complexity-how-does-recursion-affect-stack-space",
+    "title": "How does recursion affect stack space?",
+    "category": "dsa",
+    "subcategory": "complexity",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-complexity-what-is-big-theta-notation",
+    "title": "What is Big Theta notation?",
+    "category": "dsa",
+    "subcategory": "complexity",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-complexity-what-is-big-omega-notation",
+    "title": "What is Big Omega notation?",
+    "category": "dsa",
+    "subcategory": "complexity",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-complexity-how-do-you-analyze-binary-search-complexity",
+    "title": "How do you analyze binary search complexity?",
+    "category": "dsa",
+    "subcategory": "complexity",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-complexity-how-do-you-analyze-graph-traversal-complexity",
+    "title": "How do you analyze graph traversal complexity?",
+    "category": "dsa",
+    "subcategory": "complexity",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-complexity-why-is-comparison-sorting-typically-bounded-by-n-log-n",
+    "title": "Why is comparison sorting typically bounded by n log n?",
+    "category": "dsa",
+    "subcategory": "complexity",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-complexity-how-does-pseudopolynomial-complexity-differ-from-polynomial-complexity",
+    "title": "How does pseudopolynomial complexity differ from polynomial complexity?",
+    "category": "dsa",
+    "subcategory": "complexity",
+    "difficulty": "intermediate",
+    "researchTime": 600,
+    "speakingTime": 120
+  },
+  {
+    "slug": "v2-dsa-complexity-how-does-the-master-theorem-solve-recurrence-relations",
+    "title": "How does the master theorem solve recurrence relations?",
     "category": "dsa",
     "subcategory": "complexity",
     "difficulty": "advanced",
@@ -783,8 +837,8 @@
     "speakingTime": 120
   },
   {
-    "slug": "dsa-complexity-amortized-analysis-4",
-    "title": "Consider this scenario: one append sometimes triggers a costly resize. Explain how you would apply your understanding of amortized analysis, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-dsa-complexity-how-would-you-analyze-dynamic-array-resizing",
+    "title": "How would you analyze dynamic array resizing?",
     "category": "dsa",
     "subcategory": "complexity",
     "difficulty": "advanced",
@@ -792,109 +846,55 @@
     "speakingTime": 120
   },
   {
-    "slug": "dsa-problem-solving-choosing-a-data-structure-1",
-    "title": "Explain choosing a data structure in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-dsa-complexity-how-do-you-derive-quicksort-s-expected-time-complexity",
+    "title": "How do you derive quicksort’s expected time complexity?",
     "category": "dsa",
-    "subcategory": "problem-solving",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-problem-solving-choosing-a-data-structure-2",
-    "title": "Imagine you are introducing choosing a data structure to a classmate. How does it work, and where would someone encounter it?",
-    "category": "dsa",
-    "subcategory": "problem-solving",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-problem-solving-choosing-a-data-structure-3",
-    "title": "Compare choosing a data structure with operations and complexity. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "dsa",
-    "subcategory": "problem-solving",
+    "subcategory": "complexity",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "dsa-problem-solving-choosing-a-data-structure-4",
-    "title": "Consider this scenario: a problem needs fast updates and range queries. Explain how you would apply your understanding of choosing a data structure, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-dsa-complexity-how-would-you-analyze-a-nonuniform-recursive-recurrence",
+    "title": "How would you analyze a nonuniform recursive recurrence?",
     "category": "dsa",
-    "subcategory": "problem-solving",
+    "subcategory": "complexity",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "dsa-problem-solving-algorithm-trade-offs-1",
-    "title": "Explain algorithm trade-offs in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-dsa-complexity-how-do-output-sensitive-algorithms-express-complexity",
+    "title": "How do output-sensitive algorithms express complexity?",
     "category": "dsa",
-    "subcategory": "problem-solving",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-problem-solving-algorithm-trade-offs-2",
-    "title": "Imagine you are introducing algorithm trade-offs to a classmate. How does it work, and where would someone encounter it?",
-    "category": "dsa",
-    "subcategory": "problem-solving",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-problem-solving-algorithm-trade-offs-3",
-    "title": "Compare algorithm trade-offs with constraints and edge cases. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "dsa",
-    "subcategory": "problem-solving",
+    "subcategory": "complexity",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "dsa-problem-solving-algorithm-trade-offs-4",
-    "title": "Consider this scenario: a solution must run under tight limits. Explain how you would apply your understanding of algorithm trade-offs, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-dsa-complexity-how-does-the-potential-method-prove-amortized-bounds",
+    "title": "How does the potential method prove amortized bounds?",
     "category": "dsa",
-    "subcategory": "problem-solving",
+    "subcategory": "complexity",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "dsa-problem-solving-explaining-an-algorithm-1",
-    "title": "Explain explaining an algorithm in your own words. What problem does it solve, and can you give a simple example?",
+    "slug": "v2-dsa-complexity-how-would-you-analyze-union-find-amortized-complexity",
+    "title": "How would you analyze union-find amortized complexity?",
     "category": "dsa",
-    "subcategory": "problem-solving",
-    "difficulty": "beginner",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-problem-solving-explaining-an-algorithm-2",
-    "title": "Imagine you are introducing explaining an algorithm to a classmate. How does it work, and where would someone encounter it?",
-    "category": "dsa",
-    "subcategory": "problem-solving",
-    "difficulty": "intermediate",
-    "researchTime": 600,
-    "speakingTime": 120
-  },
-  {
-    "slug": "dsa-problem-solving-explaining-an-algorithm-3",
-    "title": "Compare explaining an algorithm with invariants and examples. In what situations would you choose one over the other, and what practical factors influence that decision?",
-    "category": "dsa",
-    "subcategory": "problem-solving",
+    "subcategory": "complexity",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120
   },
   {
-    "slug": "dsa-problem-solving-explaining-an-algorithm-4",
-    "title": "Consider this scenario: an interviewer asks you to justify your approach. Explain how you would apply your understanding of explaining an algorithm, what trade-offs or failure modes you would watch for, and how you would evaluate the result.",
+    "slug": "v2-dsa-complexity-what-is-the-difference-between-p-and-np",
+    "title": "What is the difference between P and NP?",
     "category": "dsa",
-    "subcategory": "problem-solving",
+    "subcategory": "complexity",
     "difficulty": "advanced",
     "researchTime": 600,
     "speakingTime": 120

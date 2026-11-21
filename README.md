@@ -44,6 +44,6 @@ Have suggestions or found a bug? Feel free to open an issue in the repository.
 
 ---
 
-**Built with ❤️ for developers who want to communicate better.**
+**Built with ❤️ for developers who want to communicate better**
 
  https://offscripter.in

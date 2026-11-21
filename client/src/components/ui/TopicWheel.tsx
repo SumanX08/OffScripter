@@ -236,7 +236,7 @@ export default function TopicWheel({
           "rounded-[3px]",
           "border border-[#283618]/40",
           "bg-soft",
-          "shadow-[8px_10px_0_rgba(204,213,174,0.7),0_22px_45px_rgba(40,54,24,0.13)]",
+          "shadow-[7px_8px_0_rgba(204,213,174,0.7),0_20px_40px_rgba(40,54,24,0.13)]",
           "transition-all duration-300",
 
           spinning
@@ -294,9 +294,9 @@ export default function TopicWheel({
               <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-[25%] bg-gradient-to-t from-[#FEFAE0] via-[#FEFAE0]/90 to-transparent" />
 
               {/* Center markers */}
-              <span className="absolute left-5 top-1/2 z-20 h-px w-[17px] -translate-y-1/2 bg-[#606C38] shadow-[0_0_7px_rgba(96,108,56,0.45)]" />
+              <span className="absolute left-0 top-1/2 z-20 h-px w-[17px] -translate-y-1/2 bg-[#606C38] shadow-[0_0_7px_rgba(96,108,56,0.45)]" />
 
-              <span className="absolute right-5 top-1/2 z-20 h-px w-[17px] -translate-y-1/2 bg-[#606C38] shadow-[0_0_7px_rgba(96,108,56,0.45)]" />
+              <span className="absolute right-0 top-1/2 z-20 h-px w-[17px] -translate-y-1/2 bg-[#606C38] shadow-[0_0_7px_rgba(96,108,56,0.45)]" />
 
               {/* Question reel */}
               <div
@@ -330,7 +330,9 @@ export default function TopicWheel({
                   <div className="absolute inset-x-[8%] top-0 h-px bg-gradient-to-r from-transparent via-[#606C38]/30 to-transparent" />
 
                   {/* Question */}
-                  <h2 className="max-w-[92%] font-serif text-[clamp(21px,2vw,30px)] font-normal leading-none tracking-[-0.02em] text-[#283618]">
+                 
+                   
+                   <h2 className="max-w-[92%] font-serif text-[clamp(19px,2vw,22px)] font-normal leading-none tracking-[-0.02em] text-[#283618]">
                     {displayQuestion}
                   </h2>
 

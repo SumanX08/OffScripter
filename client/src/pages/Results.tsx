@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 import { useUser } from "@clerk/clerk-react";
 import { useNavigate, useParams } from "react-router-dom";
-
+import EvaluationLoader from "../components/ui/EvaluationLoader";
 import { useAuthenticatedApi } from "../hooks/useAuthApi";
 
 type Evaluation = {
@@ -183,22 +183,10 @@ export default function Results() {
   }, [attemptId, api]);
 
   if (loading) {
-    return (
-      <main className="min-h-screen bg-cream px-5 py-16">
-        <div className="mx-auto flex min-h-[70vh] max-w-xl flex-col items-center justify-center text-center">
-          <div className="mb-6 h-12 w-12 animate-spin rounded-full border-4 border-mist border-t-olive" />
-
-          <h2 className="font-serif text-3xl text-forest">
-            Loading your results...
-          </h2>
-
-          <p className="mt-2 text-sm text-forest/60">
-            Getting your feedback ready.
-          </p>
-        </div>
-      </main>
-    );
-  }
+  return (
+    <EvaluationLoader stage="loading-results" />
+  );
+}
 
   if (error || !attempt) {
     return (

@@ -1,11 +1,13 @@
-
 import { useState } from "react";
 import { Menu, AlertCircle } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
+import TopicCategorySelector from "../components/ui/TopicCategorySelector";
 import TopicWheel from "../components/ui/TopicWheel";
 import SpinInfo from "../components/ui/SpinInfo";
+
 import { useAuthenticatedApi } from "../hooks/useAuthApi";
+import type { SelectedCategory } from "../data/topic-taxonomy";
 
 type SpinResponse = {
   attemptId: string;
@@ -13,6 +15,7 @@ type SpinResponse = {
     id: string;
     title: string;
     category: string;
+    subcategory: string | null;
     difficulty: string;
     researchTime: number;
     speakingTime: number;
@@ -34,11 +37,24 @@ export default function Challenge() {
   const [, setSidebarOpen] = useState(false);
 
   const [spinning, setSpinning] = useState(false);
-  const [selectedTopic, setSelectedTopic] = useState<string | null>(null);
-  const [attemptId, setAttemptId] = useState<string | null>(null);
+
+  const [selectedTopic, setSelectedTopic] = useState<
+    string | null
+  >(null);
+
+  const [attemptId, setAttemptId] = useState<
+    string | null
+  >(null);
+
   const [error, setError] = useState("");
   const [limitExceeded, setLimitExceeded] = useState(false);
   const [upgradeRequired, setUpgradeRequired] = useState(false);
+
+  const [selectedCategories, setSelectedCategories] =
+    useState<SelectedCategory[]>([]);
+
+  const isChallengeReady =
+    !spinning && Boolean(selectedTopic) && Boolean(attemptId);
 
   const handleSpin = async () => {
     if (spinning) return;
@@ -52,7 +68,16 @@ export default function Challenge() {
       setSelectedTopic(null);
       setAttemptId(null);
 
-      const response = await api.post("/topic/spin", {});
+      const validCategories = selectedCategories.filter(
+        (category) => typeof category.id === "string"
+      );
+
+      const payload =
+        validCategories.length > 0
+          ? { categories: validCategories }
+          : {};
+
+      const response = await api.post("/topic/spin", payload);
 
       const data: SpinResponse = response.data.data;
 
@@ -61,7 +86,7 @@ export default function Challenge() {
       }
 
       if (!data.topic?.title) {
-        throw new Error("No challenge question returned from server.");
+        throw new Error("No challenge question returned.");
       }
 
       setAttemptId(data.attemptId);
@@ -80,18 +105,23 @@ export default function Challenge() {
       if (apiError?.code === "FREE_DAILY_LIMIT_REACHED") {
         setLimitExceeded(true);
         setUpgradeRequired(true);
+
         setError(
           "You've exhausted your free daily topics. Upgrade to Pro for more topics."
         );
-      } else if (apiError?.code === "PRO_DAILY_LIMIT_REACHED") {
+      } else if (
+        apiError?.code === "PRO_DAILY_LIMIT_REACHED"
+      ) {
         setLimitExceeded(true);
         setUpgradeRequired(false);
+
         setError(
           "You've used all your daily topics. Your limit resets tomorrow. Come back tomorrow!"
         );
       } else {
         setLimitExceeded(false);
         setUpgradeRequired(false);
+
         setError(
           apiError?.message ||
             "Couldn't create your challenge. Please try again."
@@ -115,15 +145,31 @@ export default function Challenge() {
     navigate(`/challenge/${attemptId}/research`);
   };
 
+  const handleEditFilters = () => {
+    setSelectedTopic(null);
+    setAttemptId(null);
+    setError("");
+    // Existing category selections remain unchanged.
+  };
+
   return (
     <div className="flex min-h-screen bg-[#FCF9EC] text-[#263911]">
       <main className="min-w-0 flex-1">
-        {/* Mobile Header */}
-        <div className="flex items-center justify-between border-b border-[#263911]/10 px-5 py-4 lg:hidden">
+        {/* Mobile header */}
+        <div
+          className="
+            flex items-center justify-between
+            border-b border-[#263911]/10
+            px-5 py-4 lg:hidden
+          "
+        >
           <button
             type="button"
             onClick={() => setSidebarOpen(true)}
-            className="rounded-lg p-2 text-[#263911] transition hover:bg-[#263911]/5"
+            className="
+              rounded-lg p-2 text-[#263911]
+              transition hover:bg-[#263911]/5
+            "
             aria-label="Open menu"
           >
             <Menu size={20} />
@@ -136,19 +182,45 @@ export default function Challenge() {
           <div className="w-9" />
         </div>
 
-        {/* Main Content */}
-        <div className="mx-auto flex min-h-screen w-full max-w-7xl flex-col px-5 py-10 sm:px-8 lg:px-12 lg:py-14">
+        {/* Main content */}
+        <div
+          className="
+            mx-auto flex min-h-screen w-full
+            max-w-7xl flex-col
+            px-5 py-10 sm:px-8
+            lg:px-10 lg:py-10
+          "
+        >
           {/* Heading */}
-          <div className="mb-20 text-center">
-            <h1 className="font-serif text-4xl leading-tight tracking-[-0.03em] text-[#263911] sm:text-5xl">
+          <div className="mb-10 text-center lg:mb-16">
+            <h2
+              className="
+                font-serif text-3xl leading-tight
+                tracking-[-0.03em] text-[#263911]
+                sm:text-4xl lg:text-5xl
+                
+              "
+            >
               Pick your topic
-            </h1>
+            </h2>
           </div>
 
-          {/* Challenge Area */}
-          <div className="grid flex-1 grid-cols-1 items-start gap-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:gap-12">
-            {/* Topic Wheel */}
-            <div className="flex w-full items-center justify-center">
+          {/* Challenge area */}
+          <div
+            className="
+              grid grid-cols-1 items-start gap-6
+              lg:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)]
+              lg:gap-10 xl:gap-14
+            "
+          >
+            {/* LEFT: Topic wheel */}
+            <div
+              className="
+                order-2 flex w-full min-w-0
+                items-center justify-center
+                lg:order-1
+              "
+            >
               <TopicWheel
                 spinning={spinning}
                 selectedTopic={selectedTopic}
@@ -157,22 +229,46 @@ export default function Challenge() {
               />
             </div>
 
-            {/* Spin Info */}
-            <div className="flex w-full min-w-0 items-center justify-center lg:justify-self-center">
-              <SpinInfo
-                spinning={spinning}
-                selectedTopic={selectedTopic ?? undefined}
-                attemptId={attemptId ?? undefined}
-                handleStartChallenge={handleStartChallenge}
-              />
+            {/* RIGHT: Filters / Challenge summary */}
+            <div className="order-1 w-full min-w-0 lg:order-2">
+              {isChallengeReady ? (
+                <div className="w-full">
+                  <SpinInfo
+                    spinning={spinning}
+                    selectedTopic={selectedTopic ?? undefined}
+                    attemptId={attemptId ?? undefined}
+                    handleStartChallenge={handleStartChallenge}
+                  />
+
+                  <button
+                    type="button"
+                    onClick={handleEditFilters}
+                    className="
+                      mx-auto mt-5 block
+                      text-xs font-semibold
+                      text-[#B96B25] underline
+                      underline-offset-4
+                      transition hover:text-[#263911]
+                    "
+                  >
+                    Edit practice preferences
+                  </button>
+                </div>
+              ) : (
+                <TopicCategorySelector
+                  selectedCategories={selectedCategories}
+                  onChange={setSelectedCategories}
+                  disabled={spinning}
+                />
+              )}
             </div>
           </div>
 
-          {/* Error Notification */}
+          {/* Error notification */}
           {error && (
             <div
               role="alert"
-              className={`mx-auto mt-8 flex w-full max-w-xl items-start gap-3 rounded-xl border px-5 py-4 ${
+              className={`mx-auto mt-6 flex w-full max-w-xl items-start gap-3 rounded-xl border px-5 py-3 ${
                 limitExceeded
                   ? "border-rust/30 bg-amber/10"
                   : "border-red-200 bg-red-50"
@@ -181,7 +277,9 @@ export default function Challenge() {
               <AlertCircle
                 size={20}
                 className={`mt-0.5 shrink-0 ${
-                  limitExceeded ? "text-rust" : "text-red-600"
+                  limitExceeded
+                    ? "text-rust"
+                    : "text-red-600"
                 }`}
               />
 
@@ -192,7 +290,7 @@ export default function Challenge() {
                     : "Unable to create challenge"}
                 </p>
 
-                <p className="mt-1 text-sm leading-6 text-forest/75">
+                <p className="text-sm leading-6 text-forest/75">
                   {error}
                 </p>
 
@@ -200,7 +298,11 @@ export default function Challenge() {
                   <button
                     type="button"
                     onClick={() => navigate("/pricing")}
-                    className="mt-3 text-sm font-bold text-rust underline underline-offset-4 transition hover:text-forest"
+                    className="
+                      mt-1 text-sm font-bold text-rust
+                      underline underline-offset-4
+                      transition hover:text-forest
+                    "
                   >
                     Upgrade to Pro
                   </button>

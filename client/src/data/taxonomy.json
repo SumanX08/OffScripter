@@ -1,0 +1,382 @@
+{
+  "categories": [
+    {
+      "id": "ai-ml",
+      "name": "AI / ML",
+      "subcategories": [
+        {
+          "id": "machine-learning",
+          "name": "Machine Learning"
+        },
+        {
+          "id": "deep-learning",
+          "name": "Deep Learning"
+        },
+        {
+          "id": "nlp",
+          "name": "NLP"
+        },
+        {
+          "id": "model-evaluation",
+          "name": "Model Evaluation"
+        },
+        {
+          "id": "mlops",
+          "name": "MLOps"
+        }
+      ]
+    },
+    {
+      "id": "app-development",
+      "name": "App Development",
+      "subcategories": [
+        {
+          "id": "mobile-fundamentals",
+          "name": "Mobile Fundamentals"
+        },
+        {
+          "id": "android",
+          "name": "Android"
+        },
+        {
+          "id": "ios",
+          "name": "iOS"
+        },
+        {
+          "id": "react-native",
+          "name": "React Native"
+        },
+        {
+          "id": "flutter",
+          "name": "Flutter"
+        }
+      ]
+    },
+    {
+      "id": "cloud",
+      "name": "Cloud",
+      "subcategories": [
+        {
+          "id": "cloud-fundamentals",
+          "name": "Cloud Fundamentals"
+        },
+        {
+          "id": "aws",
+          "name": "AWS"
+        },
+        {
+          "id": "azure",
+          "name": "Azure"
+        },
+        {
+          "id": "google-cloud",
+          "name": "Google Cloud"
+        }
+      ]
+    },
+    {
+      "id": "computer-fundamentals",
+      "name": "Computer Fundamentals",
+      "subcategories": [
+        {
+          "id": "operating-systems",
+          "name": "Operating Systems"
+        },
+        {
+          "id": "computer-networks",
+          "name": "Computer Networks"
+        },
+        {
+          "id": "computer-architecture",
+          "name": "Computer Architecture"
+        },
+        {
+          "id": "oop",
+          "name": "OOP"
+        }
+      ]
+    },
+    {
+      "id": "cybersecurity",
+      "name": "Cybersecurity",
+      "subcategories": [
+        {
+          "id": "security-fundamentals",
+          "name": "Security Fundamentals"
+        },
+        {
+          "id": "application-security",
+          "name": "Application Security"
+        },
+        {
+          "id": "network-security",
+          "name": "Network Security"
+        },
+        {
+          "id": "cryptography",
+          "name": "Cryptography"
+        },
+        {
+          "id": "cloud-security",
+          "name": "Cloud Security"
+        }
+      ]
+    },
+    {
+      "id": "databases",
+      "name": "Databases",
+      "subcategories": [
+        {
+          "id": "database-fundamentals",
+          "name": "Database Fundamentals"
+        },
+        {
+          "id": "sql",
+          "name": "SQL"
+        },
+        {
+          "id": "postgresql",
+          "name": "PostgreSQL"
+        },
+        {
+          "id": "mysql",
+          "name": "MySQL"
+        },
+        {
+          "id": "mongodb",
+          "name": "MongoDB"
+        },
+        {
+          "id": "redis",
+          "name": "Redis"
+        }
+      ]
+    },
+    {
+      "id": "devops",
+      "name": "DevOps",
+      "subcategories": [
+        {
+          "id": "linux",
+          "name": "Linux"
+        },
+        {
+          "id": "git",
+          "name": "Git"
+        },
+        {
+          "id": "ci-cd",
+          "name": "CI/CD"
+        },
+        {
+          "id": "docker",
+          "name": "Docker"
+        },
+        {
+          "id": "kubernetes",
+          "name": "Kubernetes"
+        },
+        {
+          "id": "infrastructure-as-code",
+          "name": "Infrastructure as Code"
+        },
+        {
+          "id": "monitoring-reliability",
+          "name": "Monitoring & Reliability"
+        }
+      ]
+    },
+    {
+      "id": "dsa",
+      "name": "DSA",
+      "subcategories": [
+        {
+          "id": "data-structures",
+          "name": "Data Structures"
+        },
+        {
+          "id": "algorithms",
+          "name": "Algorithms"
+        },
+        {
+          "id": "problem-solving",
+          "name": "Problem Solving"
+        },
+        {
+          "id": "complexity",
+          "name": "Time & Space Complexity"
+        }
+      ]
+    },
+    {
+      "id": "generative-ai",
+      "name": "Generative AI",
+      "subcategories": [
+        {
+          "id": "llms",
+          "name": "LLMs"
+        },
+        {
+          "id": "prompt-engineering",
+          "name": "Prompt Engineering"
+        },
+        {
+          "id": "rag",
+          "name": "RAG"
+        },
+        {
+          "id": "ai-agents",
+          "name": "AI Agents"
+        },
+        {
+          "id": "fine-tuning",
+          "name": "Fine-Tuning"
+        },
+        {
+          "id": "llm-engineering",
+          "name": "LLM Engineering"
+        }
+      ]
+    },
+    {
+      "id": "languages",
+      "name": "Languages",
+      "subcategories": [
+        {
+          "id": "javascript",
+          "name": "JavaScript"
+        },
+        {
+          "id": "typescript",
+          "name": "TypeScript"
+        },
+        {
+          "id": "python",
+          "name": "Python"
+        },
+        {
+          "id": "java",
+          "name": "Java"
+        },
+        {
+          "id": "c",
+          "name": "C"
+        },
+        {
+          "id": "cpp",
+          "name": "C++"
+        },
+        {
+          "id": "go",
+          "name": "Go"
+        },
+        {
+          "id": "rust",
+          "name": "Rust"
+        }
+      ]
+    },
+    {
+      "id": "system-design",
+      "name": "System Design",
+      "subcategories": [
+        {
+          "id": "design-fundamentals",
+          "name": "Design Fundamentals"
+        },
+        {
+          "id": "scalability",
+          "name": "Scalability"
+        },
+        {
+          "id": "distributed-systems",
+          "name": "Distributed Systems"
+        },
+        {
+          "id": "architecture-patterns",
+          "name": "Architecture Patterns"
+        },
+        {
+          "id": "system-design-problems",
+          "name": "System Design Problems"
+        }
+      ]
+    },
+    {
+      "id": "testing",
+      "name": "Testing",
+      "subcategories": [
+        {
+          "id": "testing-fundamentals",
+          "name": "Testing Fundamentals"
+        },
+        {
+          "id": "test-automation",
+          "name": "Test Automation"
+        },
+        {
+          "id": "api-testing",
+          "name": "API Testing"
+        },
+        {
+          "id": "performance-testing",
+          "name": "Performance Testing"
+        },
+        {
+          "id": "end-to-end-testing",
+          "name": "End-to-End Testing"
+        }
+      ]
+    },
+    {
+      "id": "web-development",
+      "name": "Web Development",
+      "subcategories": [
+        {
+          "id": "web-fundamentals",
+          "name": "Web Fundamentals"
+        },
+        {
+          "id": "frontend",
+          "name": "Frontend"
+        },
+        {
+          "id": "backend",
+          "name": "Backend"
+        },
+        {
+          "id": "react",
+          "name": "React"
+        },
+        {
+          "id": "angular",
+          "name": "Angular"
+        },
+        {
+          "id": "vue",
+          "name": "Vue.js"
+        },
+        {
+          "id": "next-js",
+          "name": "Next.js"
+        },
+        {
+          "id": "node-js",
+          "name": "Node.js"
+        },
+        {
+          "id": "spring-boot",
+          "name": "Spring Boot"
+        },
+        {
+          "id": "django",
+          "name": "Django"
+        },
+        {
+          "id": "fastapi",
+          "name": "FastAPI"
+        }
+      ]
+    }
+  ]
+}

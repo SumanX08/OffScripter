@@ -273,7 +273,7 @@ export default function Results() {
           </p>
         </header>
 
-        {/* Score + Breakdown */}
+        {/* Score , Breakdown */}
         <section className="mb-7 grid overflow-hidden border border-forest/15 bg-[#FFFDF4] lg:grid-cols-[340px_1fr]">
 
           {/* Overall score */}
